@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Testing multithreaded code"
-date:   2017-05-13 13:07:00 +0200
+date:   2017-05-13 13:54:00 +0200
 categories: posts
 ---
 
@@ -9,7 +9,7 @@ Writing multi-threaded code is not the easiest of tasks. Making it testable can 
 
 <!--more-->
 
-In this post I will share with you a tool to make multi-threaded code more testable.
+In this post I will share with you a way to make multi-threaded code more testable.
 Let's first take a look at an implementation of a cache that can store named instances, including a `null` value... and let's for the (in)convenience forget about `ConcurrentHashMap`...
 
 ```java
