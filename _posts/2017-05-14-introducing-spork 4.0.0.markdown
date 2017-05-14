@@ -2,7 +2,7 @@
 layout: post
 title:  "Introducing Spork 4.0.0"
 date:   2017-05-14 17:11:00 +0200
-categories: post
+categories: posts
 ---
 
 I've been working hard on Spork 4.0.0 since last summer. Spork is a [high performance][spork-performance]
