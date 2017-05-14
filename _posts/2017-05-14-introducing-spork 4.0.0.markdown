@@ -1,22 +1,21 @@
 ---
 layout: post
-title:  "Spork 4.0.0 released"
-<!-- date:   2017-12-12 00:00:00 +0200 -->
+title:  "Introducing Spork 4.0.0"
+date:   2017-05-14 17:11:00 +0200
 categories: post
 ---
 
-It's been hard work, but Spork has finally reached version 4.0.0
+I've been working hard on Spork 4.0.0 since last summer. Spork is a [high performance][spork-performance]
+runtime annotation processing framework with bindings for Android and for dependency injection.
 
-Spork has been completely refactored into 4 libraries:
-- `spork` is the annotation processing core
-- `spork-android` and `spork-android-support` contain Android bindings similar to Butterknife
-- `spork-inject` provides dependency injection similar to Dagger
+Spork is intended as a replacement for [Butter Knife][butter-knife] and/or [Dagger 2][dagger], that's why
+its functionality is heavily modelled onto the design of these libraries.
 
-Let's take a look at the main features of Spork...
+Let's take a look at the Android and dependency injection features...
 
 ## Spork for Android
 
-Here's a code snippet of several Android bindings:
+Here's a code snippet of several Android bindings with the `spork-android` dependency:
 
 ```java
 @BindLayout(R.layout.activity_download)
@@ -41,7 +40,8 @@ public class DownloadActivity extends Activity {
 }
 ```
 
-By calling `Spork.bind()` in `onCreate()` the `View`, `OnClickListener` and the `Fragment` are all automatically resolved without the need for all that boilerplate code.
+By calling `Spork.bind()` in `onCreate()` the `View`, `OnClickListener` and the `Fragment` are
+all automatically resolved without the need for all that boilerplate code.
 This is all pretty much the same as with Spork 3.x
 
 These are all the supported annotations:
@@ -51,11 +51,10 @@ These are all the supported annotations:
 - `@BindResource`
 - `@BindClick`
 
-You can find API details and examples in the [documentation][spork-docs-android].
-
 ## Spork Dependency Injection
 
-The `spork-inject` library creates instances of your classes and satisfies their dependencies. Let's first take a look at a classical constructor injection without `spork-inject`:
+The `spork-inject` library creates instances of your classes and satisfies their dependencies.
+Let's first take a look at a regular constructor injection without `spork-inject`:
 
 ```java
 class CoffeeMug {
@@ -94,12 +93,13 @@ Dependencies should be defined in a `Module`:
 
 ```java
 @Provides
-pubilc Coffee provideCoffee() {
+public Coffee provideCoffee() {
     return new BlackCoffee();
 }
 ```
 
-It's possible for a `@Provides` method to require dependencies on its own by passing them as method arguments:
+A `@Provides` method can require dependencies on its own. These are passed on as method arguments and
+they are automatically resolved by Spork:
 
 ```java
 @Provides
@@ -168,7 +168,7 @@ class CoffeeMug {
 
 A scoped instance is an instance that belongs to a specific `ObjectGraph` created at a specific level of the application. It is tied to the lifecycle of that `ObjectGraph`.
 
-`Singleton` is a predefined scope that is always available at the root `ObjectGraph` in your application. It is tied to the lifecycle of that `ObjectGraph`.
+`@Singleton` is a predefined scope that is always available at the root `ObjectGraph` in your application. It is tied to the lifecycle of that `ObjectGraph`.
 
 `@Provides` methods in a module can specify a scope. It can be used like this:
 
@@ -256,6 +256,8 @@ Please file bug reports and feature requests at [Spork's GitHub repo][spork-gith
 
 [spork-website]: http://spork.bytewelder.com
 [spork-docs]: http://spork.bytewelder.com/docs/4.0/
-[spork-docs-android]: http://spork.bytewelder.com/docs/4.0/Android
 [spork-github]: https://github.com/ByteWelder/Spork
 [spork-userguide]: http://spork.bytewelder.com/docs/4.0/Dependency_Injection/User_Guide.html
+[spork-performance]: http://spork.bytewelder.com/docs/4.0/About/Performance/index.html
+[butter-knife]: https://jakewharton.github.io/butterknife/
+[dagger]: https://google.github.io/dagger/
