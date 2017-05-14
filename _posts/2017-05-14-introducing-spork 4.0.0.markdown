@@ -5,10 +5,13 @@ date:   2017-05-14 17:11:00 +0200
 categories: posts
 ---
 
-I've been working hard on Spork 4.0.0 since last summer. Spork is a [high performance][spork-performance]
-runtime annotation processing framework with bindings for Android and for dependency injection.
+I've been working hard on [Spork][spork-website] 4.0.0 since last summer.
 
-Spork is intended as a replacement for [Butter Knife][butter-knife] and/or [Dagger 2][dagger], that's why
+<!--more--> 
+
+Spork is a [high performance][spork-performance]
+runtime annotation processing framework with implementations for Android and for dependency injection.
+It is intended as a replacement for [Butter Knife][butter-knife] and/or [Dagger 2][dagger], that's why
 its functionality is heavily modelled onto the design of these libraries.
 
 Let's take a look at the Android and dependency injection features...
