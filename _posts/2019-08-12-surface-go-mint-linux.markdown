@@ -3,6 +3,7 @@ layout: post
 title:  "Installing Mint Linux on Surface Go"
 date:   2019-08-13 00:28:00 +0200
 categories: posts
+excerpt_separator: <!--more-->
 ---
 
 This is a step-by-step guide describing the steps I took to install Mint 19.2 on a Surface Go device as the sole OS.
