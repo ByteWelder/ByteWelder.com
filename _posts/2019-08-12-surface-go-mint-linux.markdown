@@ -9,7 +9,6 @@ This is a step-by-step guide describing the steps I took to install Mint 19.2 on
 
 <!--more--> 
 
-
 After a botched Mint installation, I succeeded in my second attempt a day later.
 It was then that I realized the need to document the process, in case I ever needed to do this dance again.
 
