@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Installing Mint Linux on Surface Go"
+title:  "Installing Linux Mint on a Surface Go"
 date:   2019-08-13 00:28:00 +0200
 categories: posts
 excerpt_separator: <!--more-->
 ---
 
-This is a step-by-step guide describing the steps I took to install Mint 19.2 on a Surface Go device as the sole OS.
+This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.
 
 <!--more--> 
 
@@ -37,7 +37,7 @@ Scroll down for information about the recovery process.
 
 ### Preparing the USB drive
 
-1. Download the [64 bit version](https://linuxmint.com) of Mint Linux. Version `19.2` is what this guide is based on.
+1. Download the [64 bit version](https://linuxmint.com) of Linux Mint. Version `19.2` is what this guide is based on.
 2. Download [Rufus](https://rufus.ie) to prepare the USB drive. (alternatively, you can use [UNetbootin](https://unetbootin.github.io))
 3. Run Rufus and leave all the defaults, but double-check these settings:
   - Partition scheme: `MBR`
