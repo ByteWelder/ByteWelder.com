@@ -4,6 +4,7 @@ title:  "Installing Linux Mint on a Surface Go"
 date:   2019-08-13 00:28:00 +0200
 categories: posts
 excerpt_separator: <!--more-->
+last_modified_at: 2019-08-13 17:10:00 +0200
 ---
 
 This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.
@@ -14,6 +15,14 @@ After a botched Mint installation, I succeeded in my second attempt a day later.
 It was then that I realized the need to document the process, in case I ever needed to do this dance again.
 
 This document contains my notes, that I rewrote into this post.
+
+Before you start, it's important to know that Linux Mint isn't perfect on the Surface Go. The cameras don't work, as there are no drivers available. I also currently have a non-working hybernate/sleep mode. This did work in the first few hours, so I'll
+investigate whether an apt-get update broke one of the applied fixes below.
+
+In return, though, you get increased battery life, and arguably a better user experience.
+You'll also gain over `15 GB` of disk space, and everything will feel more snappy.
+
+This post was last updated at {{ page.last_modified_at }}.
 
 ## Disclaimer
 
@@ -37,7 +46,7 @@ Scroll down for information about the recovery process.
 
 ### Preparing the USB drive
 
-1. Download the [64 bit version](https://linuxmint.com) of Linux Mint. Version `19.2` is what this guide is based on.
+1. Download the [64 bit version](https://linuxmint.com) of Linux Mint. Version `19.2` is what this guide is based on. I picked the Cinnamon-flavoured one, as this supposedly has the best touch support.
 2. Download [Rufus](https://rufus.ie) to prepare the USB drive. (alternatively, you can use [UNetbootin](https://unetbootin.github.io))
 3. Run Rufus and leave all the defaults, but double-check these settings:
   - Partition scheme: `MBR`
@@ -114,14 +123,15 @@ Firefox is the default browser, but the screen estate isn't great for tablets.
 There are also issues with touch, but they are [fixable](https://askubuntu.com/questions/853910/ubuntu-16-and-touchscreen-scrolling-in-firefox).
 
 I found that Chromium was working much better out of the box.
+You can even get the top bar collapsed into the tab bar to gain some screen estate.
 
 #### Hide cursor on touch
 
 One thing I noticed, is that wherever I touched the screen, the mouse cursor would teleport to that position
 on the screen. Windows 10 automatically hides the cursor, so I went searching online and found [a solution](https://github.com/nowrep/unclutter-xfixes):
 
-This project didn't compile for me, even with all the tools installed, so I had to disable the
-documentation part in the build process.
+This project didn't compile for me, even with all the tools installed,
+so I had to disable documentation part in the build process.
 
 1. First install the build tools: `sudo apt-get install build-essential ev libx11-dev libxi-dev`
 2. Then download [unclutter-xfixes](https://github.com/nowrep/unclutter-xfixes)
@@ -147,6 +157,12 @@ $(MANS): %.1: %.man
 	- Open `System Settings`
 	- Go to `Startup Applications`
 	- add new one with command "unclutter --touch"
+
+One thing to note, is that when you are using the mouse, the first following touch
+on the screen will still act like a mouse click. This means if you're switching from
+mouse to touch, and your intent is to scroll, you will actually click on whatever
+is under your finger. Any subsequent touches will be fine though.
+To avoid this, I generally just tap on a 'safe' area first, when switching to touch.
 
 ### Troubleshooting & Notes
 
