@@ -4,7 +4,7 @@ title:  "Installing Linux Mint on a Surface Go"
 date:   2019-08-13 00:28:00 +0200
 categories: posts
 excerpt_separator: <!--more-->
-last_modified_at: 2019-08-13 17:45:00 +0200
+last_modified_at: 2019-08-13 17:57:00 +0200
 ---
 
 This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.
@@ -16,7 +16,7 @@ It was then that I realized the need to document the process, in case I ever nee
 
 This document contains my notes, that I rewrote into this post.
 
-![Surface Go with Linux Mint]({{ site.url }}/assets/images/posts/surface-go-with-linux-mint.jpg){: .center-image }
+![Surface Go with Linux Mint]({{ site.url }}/assets/images/posts/surface-go-with-linux-mint.jpg){: .center }
 
 Before you start, it's important to know that Linux Mint isn't perfect on the Surface Go. The cameras don't work, as there are no drivers available. I also currently have a non-working hybernate/sleep mode. This did work in the first few hours, so I'll
 investigate whether an apt-get update broke one of the applied fixes below.
