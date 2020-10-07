@@ -16,14 +16,14 @@ but I hope it will be useful for developers that are somewhat new to networking 
 
 <!--more-->
 
-# Server(less)?
+## Server(less)?
 
 Does your game logic require a central server to host your game?
 How much centralized control does your game need?
 And how much control are you willing to cease to the local machine, a third party or even one of your players?
 Answering these questions will lead to one of the main choices that you'll make when designing a network stack for your game.
 
-## Server with logic
+### Server with logic
 
 This is the first type of server, and probably the most common one. I bet that if you'd ask 10 gamers what a multi-player server
 roughly does, this is what most of them will describe.
@@ -34,7 +34,7 @@ It keeps all the game state and ensures that all communication to the clients is
 
 The main benefit is that the server owner (most often the developer) is in full control of the game and everything that happens within it.
 
-## Peer-to-peer
+### Peer-to-peer
 
 With this approach, there simply is no server that runs game logic. A common peer-to-peer approach in gaming is that of master/slave:
 
@@ -47,13 +47,13 @@ Another problem is that this session master would possibly get increased traffic
 Peer-to-peer games might still have _some_ kind of server in their toolbox.
 For example: when there is a need of a lobby mechanism, a friend list, analytics, etc.
 
-## Server as multicasting component (no logic)
+### Server as multicasting component (no logic)
 
 Although this isn't entirely an approach on its own, a multi-casting server can be a tool for a serverless network setup.
 In the case of a peer-to-peer approach, it can help with the heavy lifting on the session master: The session master can
 leverage this machine to multicast messages to all the other clients, without sacrificing too much of its own bandwidth.
 
-# Network Protocols
+## Network Protocols
 
 Most games probably will solely rely on TCP/IP for its networking stack. This ensures that data arrives in order, or that it even arrives at all.
 Connections can still fail, of course, but at least the client knows it when data fails to send.
@@ -73,7 +73,7 @@ Unlike with TCP/IP, a UDP protocol like this will retain full control over how t
 would result in either a connection that stalls, or perhaps even disconnects! With a reliable UDP protocol, we can chose by ourselves which error scenarios
 are critical.
 
-# How much data?
+## How much data?
 
 Bandwidth is less of a consideration these days than it was before. In the 90s and early 2000s, bandwidth was simply a hard limitation.
 Games would often be designed to transfer at a rate of at most `56 kBps`, because otherwise it would affect the target market.
@@ -91,7 +91,7 @@ All these questions will influence the model of the data that you will come up w
 game might have hundreds of game entities moving along your screen. It might not be feasible to send updates for all
 these entities to the server at a high speed rate.
 
-# Cheat and other forms of abuse
+## Cheating and other forms of abuse
 
 Catching cheaters and hackers in your game is one of the more difficult tasks. Banning the wrong person can be damaging to your brand or product.
 
