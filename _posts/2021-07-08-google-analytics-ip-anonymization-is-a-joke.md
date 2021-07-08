@@ -54,7 +54,7 @@ Even with the partial IP, Google can still make a rough estimate of your physica
 
 While technically, the anonymization technique of Google _does_ anonymize the IP address, it does so very poorly. Only partial anonymization is happening. Calling it that gives a false impression.
 
-If someone would post your mobile phone number with only the last 2 digits removed in a public space, it would be easy for a caller to try all 99 numbers and see which one is the one where you pick up. Would you consider such a phone number _anonymous_? I know I wouldn't.
+If someone would post your mobile phone number with only the last 2 digits removed in a public space, it would be easy for a caller to try all 100 numbers and see which one is the one where you pick up. Would you consider such a phone number _anonymous_? I know I wouldn't.
 
 
 ## So what can we do about it?
