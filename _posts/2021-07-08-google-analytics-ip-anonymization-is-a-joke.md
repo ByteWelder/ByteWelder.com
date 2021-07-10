@@ -4,7 +4,7 @@ title:  "Google Analytics IP anonymization is a joke"
 date:   2021-07-08 22:30:00 +0200
 categories: posts
 excerpt_separator: <!--more-->
-last_modified_at: 2021-07-08 22:30:00 +0200
+last_modified_at: 2021-07-10 14:54:00 +0200
 ---
 
 Google Analytics, the popular data gathering and statistics analysis tool, has a feature called _IP Anonymization_ or _IP Masking_.
@@ -26,7 +26,7 @@ When you browse the web or use applications, your computer talks with various ot
 
 ## So how does Google store your IP?
 
-When a computer is talking to Google Analytics and asks it to enable IP anonymization, something happens to it before Google stores it: the last part of that number series is removed - replaced by a `0`. If our IP would be`101.102.103.104`, then it would look like this after Google's anonymization process: `101.102.103.0`
+When a computer is talking to Google Analytics and asks it to enable IP anonymization, something happens to it before Google stores it: the last part of that number series is removed - replaced by a `0`. If your IP would be `101.102.103.104`, then it would look like this after Google's anonymization process: `101.102.103.0`
 
 The removed number is always in the range of `[0 - 255]`. This means that Google is only `256` guesses away from recovering your "anonymized" IP address! "Why is this a problem?" you might ask:
 
