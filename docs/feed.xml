@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-16T18:46:17+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Byte Welder</title><subtitle>Learnings, experiments and projects.
+</subtitle><entry><title type="html">OpenPyrojet Print Head Prototype</title><link href="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html" rel="alternate" type="text/html" title="OpenPyrojet Print Head Prototype" /><published>2022-04-15T18:00:00+02:00</published><updated>2022-04-16T18:38:00+02:00</updated><id>http://localhost:4000/posts/2022/04/15/openpyrojet-print-head</id><content type="html" xml:base="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html">&lt;p&gt;A few weeks ago, I joined the &lt;a href=&quot;https://openpyrojet.com&quot;&gt;OpenPyrojet&lt;/a&gt; project.
+OpenPyrojet intends to build 3D printer technology based on thermal spraying.
+In this post, I’ll show you how I assembled the print head prototype.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;This is what the finished print head looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg&quot; alt=&quot;front view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;how-does-the-printer-work&quot;&gt;How does the printer work?&lt;/h1&gt;
+
+&lt;p&gt;The feedstock of the printer is a mix of micrometer-sized particles
+(e.g. metals or ceramics) with a fuel source like IPA or naphtha.
+A monofilament wire is inside the fuel chamber. Heating the wire creates a hot
+gas, which is then pushed out of a nozzle, mixes with air and catches fire.
+Due to the heat, the metal melts and hits a surface (substrate) to which it attaches.&lt;/p&gt;
+
+&lt;h1 id=&quot;lets-begin&quot;&gt;Let’s begin!&lt;/h1&gt;
+
+&lt;p&gt;To build a strong print head, we’re using multiple layers made from PCBs.
+These layers are stacked in the order as they are laid out below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg&quot; alt=&quot;all pcb parts&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I first prepared the inlet and outlet. I need to connect Viton tubing to the
+print head, so I’m soldering small copper pipes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3 mm&lt;/code&gt; diameter) to the PCB.
+The picture shows a larger copper pipe, because I used the wrong size when taking pictures:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg&quot; alt=&quot;pcb with inlet, outlet and copper pipes&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I started with adding solder to the pads:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg&quot; alt=&quot;inlet pad with some solder&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Initially, the solder will likely not connect neatly all around the copper pipe.
+It might look like the picture below. I take some extra solder on my iron and
+then place the iron at the base of the copper pipe to fix this issue:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg&quot; alt=&quot;copper pipe with bad solder connection&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another problem that might occur is when your solder smudges.
+I cleaned it off by wiping my (cleaned) soldering iron on it.
+It’s not problematic if there is some solder on the side,
+but I have to make sure it’s not sharp.
+That way, it won’t cut the Viton tubing later on:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg&quot; alt=&quot;solder smudged on copper pipe&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When I used too much solder, the inlet became too narrow. I could’ve desoldered
+it. Instead, I used a set of drills to carefully drill it out by hand.
+I kept increasing the drill diameter by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.1 mm&lt;/code&gt; until the diameter was the right size:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg&quot; alt=&quot;pcb with narrow inlet&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, I had a neat collar on the copper pipe:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg&quot; alt=&quot;copper pipe on pcb with solder&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg&quot; alt=&quot;finished inlet and oultet on pcb&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next step was to put the monofilament on one of the PCB layers. This monofilament
+is what heats up the fuel, which causes the fuel to eject through the nozzle.
+The filament gets sandwiched between the nozzle PCB and the PCB that holds the connector.
+I store the filament in a folded sheet of paper:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg&quot; alt=&quot;monofilament displayed&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;First I cut the filament to size. We make it as wide as possible, so the thickness
+of the glue won’t interfere with the electrical conductivity:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg&quot; alt=&quot;monofilament cut&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Combining them is tricky, because the filament won’t lay still on a flat surface.
+I used some CA glue on the edges to keep it into place. I learned later that
+glue is not the ideal way. In the future, I will tape it near the edges if the PCB
+with some kapton tape.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg&quot; alt=&quot;monofilament glued to PCB&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The nozzle PCB layer had holes that were too small in diameter. I widened them
+by hand with some cheap drills, slowly increasing the diameter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.1 mm&lt;/code&gt; at a time:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg&quot; alt=&quot;nozzle PCB with drill in it&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When attaching the nozzle PCB to the connector PCB, I start with a single row of screws:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg&quot; alt=&quot;nozzle PCB on connector PCB with a single row of screws&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s important to tighten the screws evenly, so initially all screws are kept loose.
+I then tightened them carefully and as evenly as possible. When everything stops sliding
+around, I start measuring resistance before continueing to tighten further.
+The resistance measurements are repeated until the values are in an acceptable range.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg&quot; alt=&quot;nozzle PCB on connector PCB with all screws&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had to make sure that the nozzle plate wasn’t crooked, like in the picture below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg&quot; alt=&quot;nozzle PCB badly aligned with connector PCB&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The prepared PCBs are ready to be combined. I took 8 pieces of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M2 x 10mm&lt;/code&gt; and
+some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M2&lt;/code&gt; nuts to match. I also used medium-strength loctite:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg&quot; alt=&quot;all layers finished, displayed with M2 hardware and loctite&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point, I have a finished physical assembly:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg&quot; alt=&quot;front view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg&quot; alt=&quot;back view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg&quot; alt=&quot;side view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.</summary></entry><entry><title type="html">Hobby CNC electronics</title><link href="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html" rel="alternate" type="text/html" title="Hobby CNC electronics" /><published>2021-12-28T00:00:00+01:00</published><updated>2021-12-28T00:00:00+01:00</updated><id>http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics</id><content type="html" xml:base="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html">&lt;p&gt;I recently started building an &lt;a href=&quot;https://indystry.cc/indymill/&quot;&gt;IndyMill&lt;/a&gt; CNC router.
+In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Please note that everything written below is written in the context of hobbyist CNC router hardware.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg&quot; alt=&quot;cabinet finished and opened&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;a-brief-intro-to-hobby-cnc-routers&quot;&gt;A brief intro to hobby CNC routers&lt;/h2&gt;
+
+&lt;p&gt;A CNC router (or mill) is not a complex machine. Its main job is to move a spindle (~ drill) along the X, Y and Z axis at a specific speed. In a hobby router, you generally use stepper motors, just like you would in a 3D printer - albeit perhaps more powerful ones.&lt;/p&gt;
+
+&lt;p&gt;These stepper motors require a lot of power, so they are controlled by &lt;em&gt;drivers&lt;/em&gt;. A driver is a device that gets low voltage input signals and translates it into high voltage power signals for the stepper motors.&lt;/p&gt;
+
+&lt;p&gt;The drivers themselves are controllerd by a &lt;em&gt;controller&lt;/em&gt;. The controller is the heart and brains of the CNC mill: It translates a “job” into signals that it sends to the drivers.&lt;/p&gt;
+
+&lt;p&gt;A CNC “job” is defined by “gcode” file. This contains all the commands for the machine to execute. A basic command could be something like “move the spindle 2mm along the X axis”.&lt;/p&gt;
+
+&lt;p&gt;There are few more bits and pieces that I’m not talking about here, but these are the main things a hobbyist CNC router is about.&lt;/p&gt;
+
+&lt;h1 id=&quot;choosing-a-cabinet&quot;&gt;Choosing a cabinet&lt;/h1&gt;
+
+&lt;p&gt;The first hard part is to find a cabinet that fits your needs. Here were some of my considerations:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Large enough (to work comfortably and to have space for upgrades)&lt;/li&gt;
+  &lt;li&gt;Affordable (cabinets often cost hundreds of euros)&lt;/li&gt;
+  &lt;li&gt;Easy to work with (drilling holes)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I settled on a cabinet from the German company &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BoxExpert&lt;/code&gt;. I chose the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;600 x 400 x 200 mm&lt;/code&gt; size. It comes with a transparent door that allows me to see the status LEDs of the hardware inside, and it comes with a metal plate to mount hardware on. I paid about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;82 EUR&lt;/code&gt; including shipping, so that was reasonable.&lt;/p&gt;
+
+&lt;h1 id=&quot;mounting-options&quot;&gt;Mounting options&lt;/h1&gt;
+
+&lt;p&gt;Initially, the plan was to mount the hardware directly to the plate. This has one major issue: you can’t change the layout at a later time. Imagine having to start drilling holes into it while there’s already hardware mounting!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/DIN_rail&quot;&gt;DIN-rails&lt;/a&gt; were the answer to this! Not only did they help with strengthen the steel mounting plate, they allow me to change the entire setup freely at any time. There are lots of helpful DIN-compatible components out there that helped me in making my build clean.&lt;/p&gt;
+
+&lt;h1 id=&quot;cabinet-layout&quot;&gt;Cabinet Layout&lt;/h1&gt;
+
+&lt;p&gt;To make the cabinet layout, I used &lt;a href=&quot;https://inkscape.org/&quot;&gt;InkScape&lt;/a&gt;. A vector graphics editor like that (or Affinity Designer and many others) is ideal for me: I created a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;600 x 400&lt;/code&gt; pixel image, where each pixel represents a millimeter. The end result looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-layout.png&quot; alt=&quot;cabinet layout design&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The yellow marked areas are space in the box that is unusable.&lt;/p&gt;
+
+&lt;p&gt;Some considerations included:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Separating high power components from lower power components&lt;/li&gt;
+  &lt;li&gt;Separating AC from DC components&lt;/li&gt;
+  &lt;li&gt;Ensuring everything is grounded&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;cabinet-airflow&quot;&gt;Cabinet Airflow&lt;/h1&gt;
+
+&lt;p&gt;Although airflow isn’t super critical, it’s important to have at least some. We’re not generating a lot of heat inside the cabinet, but since it’s a water-proof cabinet, we want to create some airflow.&lt;/p&gt;
+
+&lt;p&gt;I wanted to have a rough idea of how different kinds of airflow would behave, so I used the free tier of &lt;a href=&quot;https://www.simscale.com/&quot;&gt;SimScale&lt;/a&gt; to model some scenarios. Simulating airflow for the cabinet is overkill for a project like this, but it was fun to experiment with.&lt;/p&gt;
+
+&lt;p&gt;The first design has an intake fan on the bottom of the cabinet and an exit hole on the top-left. The downside of this designis that we can’t put the cabinet on a flat surface without obstructing the airflow:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-airflow1.png&quot; alt=&quot;airflow design 1&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second design has an intake fan on the bottom-left and the outtake hole on the top-left:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-airflow2.png&quot; alt=&quot;airflow design 2&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The last design is the one I ended up chosing, but both were viable options.&lt;/p&gt;
+
+&lt;h1 id=&quot;mounting-the-din-rails&quot;&gt;Mounting the DIN rails&lt;/h1&gt;
+
+&lt;p&gt;The first real build step was mounting the DIN rails on the steel plate of the cabinet.
+I used a medium-strength thread lock for the nuts and bolts. I also ensured that the plate could be grounded by drilling an extra hole for grounding.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-din-rails-mounted.jpg&quot; alt=&quot;base plate with din rails mounted&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;mounting-the-first-components&quot;&gt;Mounting the first components&lt;/h1&gt;
+
+&lt;p&gt;Once the rails were ready, it was time to try out the first components: The top row has all 4 stepper drivers, connected to the power supply below. I’m using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Wago&lt;/code&gt; clamps to tie it all together. The power cord is temporary:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-first-din-components.jpg&quot; alt=&quot;din plate with first components mounted&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;din-mounting-options&quot;&gt;DIN mounting options&lt;/h1&gt;
+
+&lt;p&gt;There are a lot of DIN parts on &lt;a href=&quot;https://www.thingiverse.com/&quot;&gt;Thingiverse&lt;/a&gt;. A lot of the DIN brackets that I used come from there. Some of them were custom. The controller and fan brackets are a remix of an existing ones on Thingiverse:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-controller-close-up.jpg&quot; alt=&quot;main controller close-up&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-fan-controller.jpg&quot; alt=&quot;fan controller close-up&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;finish-mounting-the-components&quot;&gt;Finish mounting the components&lt;/h1&gt;
+
+&lt;p&gt;The CNC controller that I’m using as &lt;a href=&quot;https://www.makerfr.com/en/cnc/grbl-32bits-board-v2/&quot;&gt;Grbl32bits&lt;/a&gt; board from Makerfr. I’ve mounted it together with its power supply and the fan controller in the below picture:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-all-components-mounted.jpg&quot; alt=&quot;all DIN components mounted on a steel plate&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;finishing-the-cabinet&quot;&gt;Finishing the cabinet&lt;/h1&gt;
+
+&lt;p&gt;The next step was drilling holes in the cabinet to facilitate all the connectors:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-holes.jpg&quot; alt=&quot;cabinet with holes visible&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In case you are wondering: yes, that is indeed my living room table being used as a workbench. My wife is awesome for putting up with it.&lt;/p&gt;
+
+&lt;p&gt;After everything is wired up, the cabinet is finished!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-finished-right.jpg&quot; alt=&quot;cabinet view from the right&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-finished-closed.jpg&quot; alt=&quot;cabinet with lid closed&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg&quot; alt=&quot;cabinet with lid open&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find my collection of 3D printable parts &lt;a href=&quot;https://www.thingiverse.com/kenvanhoeylandt/collections/cnc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.</summary></entry><entry><title type="html">Designing for privacy: A thought experiment</title><link href="http://localhost:4000/posts/2021/09/05/designing-for-privacy.html" rel="alternate" type="text/html" title="Designing for privacy: A thought experiment" /><published>2021-09-05T00:00:00+02:00</published><updated>2021-09-05T00:00:00+02:00</updated><id>http://localhost:4000/posts/2021/09/05/designing-for-privacy</id><content type="html" xml:base="http://localhost:4000/posts/2021/09/05/designing-for-privacy.html">&lt;p&gt;Apple’s &lt;a href=&quot;https://www.apple.com/child-safety/pdf/CSAM_Detection_Technical_Summary.pdf&quot;&gt;plans&lt;/a&gt; have been widely &lt;a href=&quot;https://appleprivacyletter.com/&quot;&gt;critiqued&lt;/a&gt;. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;the-idea&quot;&gt;The Idea&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A software development platform, where the user is - by default - the sole owner of its data.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For offline applications, this is easy. Anything you store on your own devices remains in your ownership. Any offline application automatically passes this criterium.&lt;/p&gt;
+
+&lt;p&gt;For online applications, this becomes a different story. Online applications imply that a server is a mediator that processes and likely also stores some of your data. There are few exceptions, such as instant messengers that implement &lt;a href=&quot;https://en.wikipedia.org/wiki/End-to-end_encryption&quot;&gt;E2EE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This made me wonder: What if we wrote more software on E2EE principles? What if a calendar or contacts service wouldn’t be able to read your calendar entries or contacts? And how do we move these concepts to more complex online applications? Sometimes the server simply &lt;strong&gt;must&lt;/strong&gt; know some data. Even an E2EE messenger needs to have a basic understanding of the recipient that you want to communicate with. Or perhaps you want to expose calendar through CalDAV, or share an entry from your address book via email? We want the user to remain the sole owner of its data, but we should also give the freedom to open up that data.&lt;/p&gt;
+
+&lt;h2 id=&quot;lets-get-more-specific&quot;&gt;Let’s get more specific&lt;/h2&gt;
+
+&lt;p&gt;In my thought experiment, all user data is encrypted before handing it over to an online service.&lt;/p&gt;
+
+&lt;p&gt;This service can do few things:&lt;/p&gt;
+
+&lt;h4 id=&quot;1-act-as-a-storage-system-for-encrypted-data-of-our-user&quot;&gt;1. Act as a storage system for encrypted data of our user&lt;/h4&gt;
+
+&lt;p&gt;It acts as an online file system. The user’s applications can store their data here.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-act-as-a-proxybroadcasting-system-for-applications&quot;&gt;2. Act as a proxy/broadcasting system for applications&lt;/h4&gt;
+
+&lt;p&gt;Applications can send encrypted data to other applications, within the user’s ownership.&lt;/p&gt;
+
+&lt;p&gt;For example: The user has a calendar application on their phone and on their desktop. When the user adds an address on their phone, the desktop needs to be notified to update its data.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-act-as-a-proxybroadcasting-system-for-other-service-hosts&quot;&gt;3. Act as a proxy/broadcasting system for other service hosts.&lt;/h4&gt;
+
+&lt;p&gt;For example: The user has a calendar application and whishes to share a calendar event with to a friend.
+This friend might be hosted on the same service, but he might also be hosting their own or use a third party to host it.&lt;/p&gt;
+
+&lt;h2 id=&quot;authentication&quot;&gt;Authentication&lt;/h2&gt;
+
+&lt;p&gt;If(!) this setup could work for various types of applications, we don’t want individual applications to have access to our secrets like our private key or password. This cryptographic secret is still required to be able to encrypt the data.
+To fix this, we could introduce a “controller” application that runs on each device. Consider this controller similar to how you can log in with iCloud on your iPhone, giving all iCloud-enabled applications access to your iCloud data, but not your iCloud credentials or cryptographic secrets.&lt;/p&gt;
+
+&lt;p&gt;This controller would serve the following purpose:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The controller authenticates directly with the main service that holds/transfers our encrypted data.&lt;/li&gt;
+  &lt;li&gt;The controller is a proxy to the applications on the local system that the controller is running on. It exposes an API to enable this.&lt;/li&gt;
+  &lt;li&gt;Local applications must get permission to connect with the controller. This requires direct interaction, instigated by the controller’s UI.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mitigations-and-considerations&quot;&gt;Mitigations and considerations&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ensure that there is an upgrade path for cryptographic algorithms.&lt;/li&gt;
+  &lt;li&gt;Users &lt;strong&gt;must&lt;/strong&gt; make sure to not lose their crypto secrets, because that would mean irreversible loss of access to their data.
+We need to consider ways to easily backup passwords.
+Perhaps we can consider having different types of passwords (e.g. word list, hex byte list, passphrase, etc.)&lt;/li&gt;
+  &lt;li&gt;The online service might be deployed by the users. There might be a need for such services to talk to each other.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;closing-words&quot;&gt;Closing words&lt;/h2&gt;
+
+&lt;p&gt;I’d like to hear your thoughts on this thought experiment, so feel free to contact me through twitter/email via &lt;a href=&quot;https://kenvanhoeylandt.net&quot;&gt;my main website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Apple’s plans have been widely critiqued. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.</summary></entry><entry><title type="html">Google Analytics IP anonymization is a joke</title><link href="http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html" rel="alternate" type="text/html" title="Google Analytics IP anonymization is a joke" /><published>2021-07-08T22:30:00+02:00</published><updated>2021-07-10T14:54:00+02:00</updated><id>http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke</id><content type="html" xml:base="http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html">&lt;p&gt;Google Analytics, the popular data gathering and statistics analysis tool, has a feature called &lt;em&gt;IP Anonymization&lt;/em&gt; or &lt;em&gt;IP Masking&lt;/em&gt;.
+The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;The best point to start with is the official &lt;a href=&quot;https://support.google.com/analytics/answer/2763052&quot;&gt;documentation&lt;/a&gt;. In its current state (July 8, 2021) it tells us:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When a customer of Analytics requests IP address anonymization, Analytics anonymizes the address as soon as technically feasible. The IP anonymization feature in Analytics sets the last octet of IPv4 user IP addresses and the last 80 bits of IPv6 addresses to zeros in memory shortly after being sent to Google Analytics. The full IP address is never written to disk in this case.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;whats-an-ip&quot;&gt;What’s an IP?&lt;/h2&gt;
+
+&lt;p&gt;(feel free to skip ahead)&lt;/p&gt;
+
+&lt;p&gt;Your internet connection is identifyable by something that is called an “IP address” - or in short: “IP”. Most people have an IP that looks somewhat like this: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101.102.103.104&lt;/code&gt;. For some devices and internet providers, this might change over time, but for many it stays the same over the course of years. This means that an IP can be used to help identify a user across the internet.&lt;/p&gt;
+
+&lt;p&gt;When you browse the web or use applications, your computer talks with various other machines and they can locate each other through these IP addresses. Google Analytics is one of those entities that you can communicate with.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-how-does-google-store-your-ip&quot;&gt;So how does Google store your IP?&lt;/h2&gt;
+
+&lt;p&gt;When a computer is talking to Google Analytics and asks it to enable IP anonymization, something happens to it before Google stores it: the last part of that number series is removed - replaced by a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;. If your IP would be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101.102.103.104&lt;/code&gt;, then it would look like this after Google’s anonymization process: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;101.102.103.0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The removed number is always in the range of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[0 - 255]&lt;/code&gt;. This means that Google is only &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;256&lt;/code&gt; guesses away from recovering your “anonymized” IP address! “Why is this a problem?” you might ask:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;256&lt;/code&gt;guesses aren’t a whole lot. It’s likely that Google stores other kinds of information along your IP. Data is the bread and butter that gets the analytics engine running after all. Let’s take a further look…&lt;/p&gt;
+
+&lt;p&gt;Firstly, when taking a look at the range of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.0&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.255&lt;/code&gt;, not all the related addresses are necessarily in use, which could reduce the sample set.&lt;/p&gt;
+
+&lt;p&gt;More likely, the program or website that is using analytics is sending other data through. A common data point is a “user agent”. The user agent is a short definition of what kind of software is contacting the server. It can look like this: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Homebrew/2.5.0 (Macintosh; Intel Mac OS X 10.15.6) curl/7.64.1&lt;/code&gt;. Depending on how unique your computer configuration is, this mere user agent is possibly unique enough to detect your computer in a group of at most &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;256&lt;/code&gt; machines.&lt;/p&gt;
+
+&lt;p&gt;A user agent is just 1 data point. There are many more that one can think of to help define a user uniquely, and that are consistent across various applications or websites.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-this-problematic&quot;&gt;Why is this problematic?&lt;/h2&gt;
+
+&lt;h3 id=&quot;privacy&quot;&gt;Privacy&lt;/h3&gt;
+
+&lt;p&gt;With sufficient data, Google has the ability to de-anonymize those IP addresses. With a known IP - especially combined with more data - one could easily cross-reference data from users across services.&lt;/p&gt;
+
+&lt;p&gt;We don’t know if Google does this, but we should be aware of the inherent risks of using Google Analytics. Both as a customer who runs Google Analytics with their software, and as an end-user who is browsing the web.&lt;/p&gt;
+
+&lt;p&gt;Even with the partial IP, Google can still make a rough estimate of your physical location. The documentation explains:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Geographic dimensions are later derived from anonymized IP addresses.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;the-power-of-words&quot;&gt;The power of words&lt;/h3&gt;
+
+&lt;p&gt;While technically, the anonymization technique of Google &lt;em&gt;does&lt;/em&gt; anonymize the IP address, it does so very poorly. Only partial anonymization is happening. Calling it that gives a false impression.&lt;/p&gt;
+
+&lt;p&gt;If someone would post your mobile phone number with only the last 2 digits removed in a public space, it would be easy for a caller to try all 100 numbers and see which one is the one where you pick up. Would you consider such a phone number &lt;em&gt;anonymous&lt;/em&gt;? I know I wouldn’t.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-what-can-we-do-about-it&quot;&gt;So what can we do about it?&lt;/h2&gt;
+
+&lt;p&gt;The average person on the web could pick one of the popular browser extensions to block advertisements and analytics, such as &lt;a href=&quot;https://ublockorigin.com/&quot;&gt;uBlock Origin&lt;/a&gt; and &lt;a href=&quot;https://alternativeto.net/software/ublock-origin/&quot;&gt;many more&lt;/a&gt;.
+Web developers could reconsider using Google Analytics. Google could use more clear language or it could simply not store partial IP addresses.&lt;/p&gt;
+
+&lt;h2 id=&quot;ipv6&quot;&gt;IPv6&lt;/h2&gt;
+
+&lt;p&gt;So what about IPv6? Luckily, Google did better here: when IP anonymization is applied, the last &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;80 bits&lt;/code&gt; of data are removed.
+This gives a massively larger pool of possible addresses when attempting to recover an IP.&lt;/p&gt;
+
+&lt;p&gt;However, since most internet users use IPv4, this is not very relevant.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Google Analytics, the popular data gathering and statistics analysis tool, has a feature called IP Anonymization or IP Masking. The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!</summary></entry><entry><title type="html">Thoughts on multiplayer networking</title><link href="http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking.html" rel="alternate" type="text/html" title="Thoughts on multiplayer networking" /><published>2020-10-07T23:00:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking</id><content type="html" xml:base="http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking.html">&lt;p&gt;The topic of gaming and networking was brought up on the &lt;a href=&quot;https://korge.org&quot;&gt;KorGE&lt;/a&gt; Discord server.
+This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different
+considerations for their development.&lt;/p&gt;
+
+&lt;p&gt;The intention of this article is to give a glimpse into various approaches and considerations. It’s likely not complete or perfect,
+but I hope it will be useful for developers that are somewhat new to networking for games.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;serverless&quot;&gt;Server(less)?&lt;/h2&gt;
+
+&lt;p&gt;Does your game logic require a central server to host your game?
+How much centralized control does your game need?
+And how much control are you willing to cease to the local machine, a third party or even one of your players?
+Answering these questions will lead to one of the main choices that you’ll make when designing a network stack for your game.&lt;/p&gt;
+
+&lt;h3 id=&quot;server-with-logic&quot;&gt;Server with logic&lt;/h3&gt;
+
+&lt;p&gt;This is the first type of server, and probably the most common one. I bet that if you’d ask 10 gamers what a multi-player server
+roughly does, this is what most of them will describe.&lt;/p&gt;
+
+&lt;p&gt;It is often a machine (or part of a machine) that all the players (clients) connect to.
+It that manages all the data and everything that happens in the game.
+It keeps all the game state and ensures that all communication to the clients is happening properly.&lt;/p&gt;
+
+&lt;p&gt;The main benefit is that the server owner (most often the developer) is in full control of the game and everything that happens within it.&lt;/p&gt;
+
+&lt;h3 id=&quot;peer-to-peer&quot;&gt;Peer-to-peer&lt;/h3&gt;
+
+&lt;p&gt;With this approach, there simply is no server that runs game logic. A common peer-to-peer approach in gaming is that of master/slave:&lt;/p&gt;
+
+&lt;p&gt;All the clients would vote for - and elect - a “session master”. This machine would basically act as a server. To ensure that this
+special client wouldn’t be cheating, the other clients can still observe it and vote to un-elect this machine if things don’t appear
+to be going in order.&lt;/p&gt;
+
+&lt;p&gt;Another problem is that this session master would possibly get increased traffic in certain kinds of scenarios, like that of a first person shooter game.&lt;/p&gt;
+
+&lt;p&gt;Peer-to-peer games might still have &lt;em&gt;some&lt;/em&gt; kind of server in their toolbox.
+For example: when there is a need of a lobby mechanism, a friend list, analytics, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;server-as-multicasting-component-no-logic&quot;&gt;Server as multicasting component (no logic)&lt;/h3&gt;
+
+&lt;p&gt;Although this isn’t entirely an approach on its own, a multi-casting server can be a tool for a serverless network setup.
+In the case of a peer-to-peer approach, it can help with the heavy lifting on the session master: The session master can
+leverage this machine to multicast messages to all the other clients, without sacrificing too much of its own bandwidth.&lt;/p&gt;
+
+&lt;h2 id=&quot;network-protocols&quot;&gt;Network Protocols&lt;/h2&gt;
+
+&lt;p&gt;Most games probably will solely rely on TCP/IP for its networking stack. This ensures that data arrives in order, or that it even arrives at all.
+Connections can still fail, of course, but at least the client knows it when data fails to send.&lt;/p&gt;
+
+&lt;p&gt;With UDP, this is different: Not only are you unsure about whether data (packets) arrive at their destination at all.
+There is also no guarantee about the order in which data is received, or even how many times a specific packet of data is received!
+The main reason to pick UDP would be due to its reduced latency. All that reliability of TCP costs extra bandwidth,
+because the recipient of the data must somehow acknowledge that data is received. UDP doesn’t have that kind of overhead.&lt;/p&gt;
+
+&lt;p&gt;To get best of both worlds, TCP and UDP can be combined.
+For example: You could send the audio data from a voice chat over UDP, while there is also an active control channel that manages some meta-data about the UDP link.&lt;/p&gt;
+
+&lt;p&gt;Another hybrid approach is &lt;em&gt;reliable UDP&lt;/em&gt;, which uses UDP to create a reliable data connection. In this case you might increase
+your bandwidth and/or latency to resolve some of the reliability issues that a plain UDP protocol has. An example would be the acknowledgment of
+received packages. When a package is not acknowledged by the receiver, the sender can then retry sending it.
+Unlike with TCP/IP, a UDP protocol like this will retain full control over how this error-handling is done. With TPC/IP, such a failure to send
+would result in either a connection that stalls, or perhaps even disconnects! With a reliable UDP protocol, we can chose by ourselves which error scenarios
+are critical.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-much-data&quot;&gt;How much data?&lt;/h2&gt;
+
+&lt;p&gt;Bandwidth is less of a consideration these days than it was before. In the 90s and early 2000s, bandwidth was simply a hard limitation.
+Games would often be designed to transfer at a rate of at most &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;56 kBps&lt;/code&gt;, because otherwise it would affect the target market.
+These days, most of us have broadband available. We’ll still have to deal with differences in latency, though. Especially when it
+comes to mobile gaming, when the user is traveling with his device.&lt;/p&gt;
+
+&lt;p&gt;Bandwidth, however, is never free. More data might also negatively affect that precious latency, which can be crucial for
+game types that are fast-paced.&lt;/p&gt;
+
+&lt;p&gt;So how much data do you expect to send from each client? And how much does the server need to handle?
+Do you need to send a lot of updates in a second? Perhaps you have large amount of game entities that all move around?
+Will it require a lot of CPU capacity to process all that?&lt;/p&gt;
+
+&lt;p&gt;All these questions will influence the model of the data that you will come up with. For example: a real-time strategy
+game might have hundreds of game entities moving along your screen. It might not be feasible to send updates for all
+these entities to the server at a high speed rate.&lt;/p&gt;
+
+&lt;h2 id=&quot;cheating-and-other-forms-of-abuse&quot;&gt;Cheating and other forms of abuse&lt;/h2&gt;
+
+&lt;p&gt;Catching cheaters and hackers in your game is one of the more difficult tasks. Banning the wrong person can be damaging to your brand or product.&lt;/p&gt;
+
+&lt;p&gt;While guarding against malicious usage should be a consideration during the game design phase,
+your network stack will also affect how much control you’ll have over these scenarios:
+The more control you have over the network stack, the easier it will be to deal with cheaters and abuse.&lt;/p&gt;
+
+&lt;p&gt;Since anti-cheating is a form of security, we must consider the security principle of: &lt;em&gt;Never trust the client-side application&lt;/em&gt;.
+In other words: You don’t know what a user does with your application, or whether he’s even using the application that &lt;em&gt;you&lt;/em&gt; built.
+Or that it is used without modifications, or using it in the way that &lt;em&gt;you&lt;/em&gt; thought up.&lt;/p&gt;
+
+&lt;p&gt;With that in mind, you can guess that a peer-to-peer approach is the riskiest when it comes to guarding your project.
+Since the clients &lt;em&gt;are&lt;/em&gt; the server, the server might also be compromised. In this scenario, the clients might guard against
+a potentially malicious server. Perhaps they could even report potentially malicious servers… this reporting mechanic by itself
+could then be abused, by a bunch of malicious clients: these clients could join a game and vote another user onto a ban list of some sort.
+As you can see: it’s complicated!&lt;/p&gt;
+
+&lt;p&gt;When a player breaks the game rules, it’s often easily visible to the players (and the server). In these scenario’s, it’s
+relatively easy to guard against it. When cheaters mimic real-world network scenarios, it becomes much harder.
+For example: a player connected to a wired network in a peer-to-peer game might use a foot switch to control when the outgoing data can exit his network.
+Imagine this player is in a first person shooter game, and he’s about to go around the corner to see (and attack) an opponent.
+He disconnects the receiving end of the network cable with his foot, walks around the corner, and shoots his opponent.
+His opponent didn’t receive his position, so he doesn’t even know he’s lost yet!
+At first, this looks like regular lag, but it starts to become more suspicious when it happens more often…&lt;/p&gt;
+
+&lt;h2 id=&quot;so-which-approach-is-the-right-one&quot;&gt;So which approach is the right one?&lt;/h2&gt;
+
+&lt;p&gt;In the end, your network stack design will depends on a lot of factors. While some games have more obvious approaches than others,
+I don’t think there is no cookie-cutter answer on how to tackle it.
+Instead of trying to give you such answer, here’s a summation of the main questions that will help you decide on your own stack:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What kind of game do you have? (RPG/RTS/shooter/TCG/etc.)&lt;/li&gt;
+  &lt;li&gt;What kind of data (and how much) is going on in a game? (how many players? how many active games at once?)&lt;/li&gt;
+  &lt;li&gt;How much money are you willing to spend? (on servers? on development?)&lt;/li&gt;
+  &lt;li&gt;How much control do you need? (in terms of your product/market, but also anti-cheating)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s it! I hope this is useful to someone out there…
+If you’d like to send me feedback, you can find my contact info on my personal &lt;a href=&quot;https://kenvanhoeylandt.net&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy development!&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">The topic of gaming and networking was brought up on the KorGE Discord server. This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different considerations for their development. The intention of this article is to give a glimpse into various approaches and considerations. It’s likely not complete or perfect, but I hope it will be useful for developers that are somewhat new to networking for games.</summary></entry><entry><title type="html">Upgrading your merge requests</title><link href="http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests.html" rel="alternate" type="text/html" title="Upgrading your merge requests" /><published>2020-02-26T23:00:00+01:00</published><updated>2020-02-26T23:00:00+01:00</updated><id>http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests</id><content type="html" xml:base="http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests.html">&lt;p&gt;I did a write-up on how to improve merge request (or pull request) quality control on &lt;a href=&quot;https://medium.com/ing-blog/upgrading-your-merge-requests-fe5e953b2f93&quot;&gt;ING’s Medium Blog&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I did a write-up on how to improve merge request (or pull request) quality control on ING’s Medium Blog.</summary></entry><entry><title type="html">Installing Linux Mint on a Surface Go</title><link href="http://localhost:4000/posts/2019/08/13/surface-go-linux-mint.html" rel="alternate" type="text/html" title="Installing Linux Mint on a Surface Go" /><published>2019-08-13T00:28:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>http://localhost:4000/posts/2019/08/13/surface-go-linux-mint</id><content type="html" xml:base="http://localhost:4000/posts/2019/08/13/surface-go-linux-mint.html">&lt;p&gt;This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;After a botched Mint installation, I succeeded in my second attempt a day later.
+It was then that I realized the need to document the process, in case I ever needed to do this dance again.&lt;/p&gt;
+
+&lt;p&gt;This document contains my notes, that I rewrote into this post.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/surface-go-with-linux-mint.jpg&quot; alt=&quot;Surface Go with Linux Mint&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before you start, it’s important to know that Linux Mint isn’t perfect on the Surface Go. The cameras don’t work, as there are no drivers available. I also currently have a non-working hybernate/sleep mode. This did work in the first few hours, so I’ll
+investigate whether an apt-get update broke one of the applied fixes below.&lt;/p&gt;
+
+&lt;p&gt;In return, though, you get increased battery life, and arguably a better user experience.
+You’ll also gain over &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;15 GB&lt;/code&gt; of disk space, and everything will feel more snappy.&lt;/p&gt;
+
+&lt;p&gt;This post was last updated at 2019-08-13 17:57:00 +0200.&lt;/p&gt;
+
+&lt;h2 id=&quot;disclaimer&quot;&gt;Disclaimer&lt;/h2&gt;
+
+&lt;p&gt;I have done my best to put all the details in here, but there is still a chance that some info is missing or incomplete.
+If you’re stuck, feel free to &lt;a href=&quot;https://kenvanhoeylandt.net&quot;&gt;contact me&lt;/a&gt; and I’ll see what I can do for you.
+However, there are no garantees and I take no responsibility if something goes wrong.
+If you follow this guide, you follow it at your own risk.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+
+&lt;p&gt;If you succeed with the installation in one go, you only need a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2 GB&lt;/code&gt; USB storage device.&lt;/p&gt;
+
+&lt;p&gt;If you have a USB-A connector for your storage device, you’ll also need an adapter or a hub.&lt;/p&gt;
+
+&lt;p&gt;You’ll need some basic Bash/Terminal experience to complete this guide.&lt;/p&gt;
+
+&lt;p&gt;If something fails, you will likely need to reinstall Windows 10. To do that, you’ll need an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;16 GB&lt;/code&gt; USB storage device.
+Scroll down for information about the recovery process.&lt;/p&gt;
+
+&lt;h2 id=&quot;lets-do-this&quot;&gt;Let’s do this!&lt;/h2&gt;
+
+&lt;h3 id=&quot;preparing-the-usb-drive&quot;&gt;Preparing the USB drive&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download the &lt;a href=&quot;https://linuxmint.com&quot;&gt;64 bit version&lt;/a&gt; of Linux Mint. Version &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;19.2&lt;/code&gt; is what this guide is based on. I picked the Cinnamon-flavoured one, as this supposedly has the best touch support.&lt;/li&gt;
+  &lt;li&gt;Download &lt;a href=&quot;https://rufus.ie&quot;&gt;Rufus&lt;/a&gt; to prepare the USB drive. (alternatively, you can use &lt;a href=&quot;https://unetbootin.github.io&quot;&gt;UNetbootin&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Run Rufus and leave all the defaults, but double-check these settings:
+    &lt;ul&gt;
+      &lt;li&gt;Partition scheme: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MBR&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Target system: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BIOS or UEFI&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;File system: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FAT32&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;START&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;When the process is done, eject the USB drive and insert it into the Surface.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;preparing-to-boot-from-usb&quot;&gt;Preparing to boot from USB&lt;/h3&gt;
+
+&lt;p&gt;To boot from USB, you need to first open the UEFI/BIOS on your Surface:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Power off the Surface Go.&lt;/li&gt;
+  &lt;li&gt;Keep &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volume down&lt;/code&gt; button pressed.&lt;/li&gt;
+  &lt;li&gt;Press the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;power&lt;/code&gt; button.&lt;/li&gt;
+  &lt;li&gt;Release &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volume up&lt;/code&gt; when you see the Windows logo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In the BIOS:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Click on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Boot Configuration&lt;/code&gt; and move &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;USB Storage&lt;/code&gt; up the list.&lt;/li&gt;
+  &lt;li&gt;Click on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Security&lt;/code&gt; and set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Secure Boot&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;disabled&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Click on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exit&lt;/code&gt;,&lt;/li&gt;
+  &lt;li&gt;Save the settings and reboot.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;booting-from-usb&quot;&gt;Booting from USB&lt;/h3&gt;
+
+&lt;p&gt;There should now be a blue screen with a warning about disk encryption.
+That’s because we’ve just disabled Secure Boot, and Windows has issues with that.
+There should be a button on the screen to skip/cancel this step. Click that.&lt;/p&gt;
+
+&lt;p&gt;You should now see/find the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Choose an option&lt;/code&gt; screen and then click &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Use a device&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There you can choose the item named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linpus&lt;/code&gt; boot option that should be visible.&lt;/p&gt;
+
+&lt;p&gt;If it isn’t visible, try the USB UEFI option.&lt;/p&gt;
+
+&lt;h3 id=&quot;installing-mint&quot;&gt;Installing Mint&lt;/h3&gt;
+
+&lt;p&gt;Follow the wizard. I chose to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Not enable full disk encryption. (the extra password prompt doesn’t work well on tablet)&lt;/li&gt;
+  &lt;li&gt;To enable the LVM option.&lt;/li&gt;
+  &lt;li&gt;Encrypt my home folder.&lt;/li&gt;
+  &lt;li&gt;Put a password on my BIOS.&lt;/li&gt;
+  &lt;li&gt;To install the commercial (closed-source) software (For things like MP3 support, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mint-improvements&quot;&gt;Mint improvements&lt;/h3&gt;
+
+&lt;p&gt;The following steps presume that you have some knowledge of terminal usage like Bash.&lt;/p&gt;
+
+&lt;h4 id=&quot;fix-wifi&quot;&gt;Fix WiFi:&lt;/h4&gt;
+
+&lt;p&gt;The WiFi is now visible, but you can’t see any networks. I fixed it with this GitHub project:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download the repo &lt;a href=&quot;https://github.com/jakeday/linux-surface&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo sh setup.sh&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I downloaded the repo to a USB drive and copied it onto the Surface.&lt;/p&gt;
+
+&lt;h4 id=&quot;fix-grub-30-second-delay&quot;&gt;Fix Grub 30 second delay:&lt;/h4&gt;
+
+&lt;p&gt;You’ll probably notice a black screen with some boot options for 30 seconds.
+If you’re suffering from this, do the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo sed -i &quot;/recordfail_broken=/{s/1/0/}&quot; /etc/grub.d/00_header&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo update-grub&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Reboot&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(&lt;a href=&quot;https://forums.linuxmint.com/viewtopic.php?t=287026&quot;&gt;source&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h4 id=&quot;firefox&quot;&gt;Firefox&lt;/h4&gt;
+
+&lt;p&gt;Firefox is the default browser, but the screen estate isn’t great for tablets.
+There are also issues with touch, but they are &lt;a href=&quot;https://askubuntu.com/questions/853910/ubuntu-16-and-touchscreen-scrolling-in-firefox&quot;&gt;fixable&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I found that Chromium was working much better out of the box.
+You can even get the top bar collapsed into the tab bar to gain some screen estate.&lt;/p&gt;
+
+&lt;h4 id=&quot;hide-cursor-on-touch&quot;&gt;Hide cursor on touch&lt;/h4&gt;
+
+&lt;p&gt;One thing I noticed, is that wherever I touched the screen, the mouse cursor would teleport to that position
+on the screen. Windows 10 automatically hides the cursor, so I went searching online and found &lt;a href=&quot;https://github.com/nowrep/unclutter-xfixes&quot;&gt;a solution&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;This project didn’t compile for me, even with all the tools installed,
+so I had to disable documentation part in the build process.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First install the build tools: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo apt-get install build-essential ev libx11-dev libxi-dev&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Then download &lt;a href=&quot;https://github.com/nowrep/unclutter-xfixes&quot;&gt;unclutter-xfixes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Edit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Makefile&lt;/code&gt;, and comment out the manual stuff (at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$(MANS)&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install:&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.PHONY: &lt;span class=&quot;nb&quot;&gt;install
+install&lt;/span&gt;: &lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;TARGET&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt; mans
+	&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;INSTALL&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Dm&lt;/span&gt; 0755 &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;TARGET&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;DESTDIR&lt;span class=&quot;si&quot;&gt;)$(&lt;/span&gt;BINDIR&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;TARGET&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#	$(INSTALL) -Dm 0644 man/unclutter-xfixes.1 &quot;$(DESTDIR)$(MANDIR)/unclutter.1&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#	$(INSTALL) -Dm 0644 -t &quot;$(DESTDIR)$(LICENSEDIR)/&quot; LICENSE&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;MANS&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;: %.1: %.man
+&lt;span class=&quot;c&quot;&gt;#	a2x --no-xmllint -f manpage &quot;$&amp;lt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;Skipped manual
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo make install&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Ensures it starts automatically:
+    &lt;ul&gt;
+      &lt;li&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System Settings&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Go to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Startup Applications&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;add new one with command “unclutter –touch”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;One thing to note, is that when you are using the mouse, the first following touch
+on the screen will still act like a mouse click. This means if you’re switching from
+mouse to touch, and your intent is to scroll, you will actually click on whatever
+is under your finger. Any subsequent touches will be fine though.
+To avoid this, I generally just tap on a ‘safe’ area first, when switching to touch.&lt;/p&gt;
+
+&lt;h3 id=&quot;troubleshooting--notes&quot;&gt;Troubleshooting &amp;amp; Notes&lt;/h3&gt;
+
+&lt;h4 id=&quot;windows-10-recovery&quot;&gt;Windows 10 recovery&lt;/h4&gt;
+
+&lt;p&gt;If anything fails, you’ll need to reinstall Windows 10.
+Follow the &lt;a href=&quot;https://support.microsoft.com/en-us/surfacerecoveryimage&quot;&gt;official guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To boot the recovery drive:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ensure your UEFI/BIOS is still configured to allow booting from an (untrusted) USB device.&lt;/li&gt;
+  &lt;li&gt;Power off the Surface Go&lt;/li&gt;
+  &lt;li&gt;Keep &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volume down&lt;/code&gt; button pressed&lt;/li&gt;
+  &lt;li&gt;Press the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;power&lt;/code&gt; button&lt;/li&gt;
+  &lt;li&gt;Release &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;volume down&lt;/code&gt; when you see the Windows logo&lt;/li&gt;
+  &lt;li&gt;Install Windows 10&lt;/li&gt;
+  &lt;li&gt;Revert UEFI/BIOS to its original settings&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;display-scaling&quot;&gt;Display scaling&lt;/h4&gt;
+
+&lt;p&gt;Open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;System Settings&lt;/code&gt; and:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;General&lt;/code&gt;, Configure &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;User interface scaling&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Double (HiDPI)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Login Window&lt;/code&gt;, its &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Settings&lt;/code&gt; tab, set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HiDPI support&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Enable&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;on-screen-keyboard&quot;&gt;On-screen keyboard&lt;/h4&gt;
+
+&lt;p&gt;Mint has 2 variants: “Virtual Keyboard” and “Onboard”.&lt;/p&gt;
+
+&lt;p&gt;Onboard is the one that can be used on your lock screen through the accessibility option. It can also be used on the desktop.
+I advise to solely rely on the Onboard variant, as it is more reliable and has more options.&lt;/p&gt;
+
+&lt;p&gt;Virtual Keyboard is prettier (follows the Mint theme), but was buggy as it glitched out and broke my screen layouts until reboot.&lt;/p&gt;
+
+&lt;h3 id=&quot;final-notes&quot;&gt;Final notes&lt;/h3&gt;
+
+&lt;p&gt;It was an interesting learning experience, and I was happy to have things running smoothly.
+I was pleasantly surprised that some of my favorite apps are now readily available through the package manager, including Sublime Text and Steam!&lt;/p&gt;
+
+&lt;p&gt;Sources and relevant articles:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.slashgear.com/surface-go-with-linux-review-almost-the-perfect-open-source-notepad-25558990/&quot;&gt;Surface Go with Linux review&lt;/a&gt; on SlashGear&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/SurfaceLinux/comments/7kb1ky/guide_installing_linux_on_surfaceseries_devices/&quot;&gt;Installing Linux on Surface-Series Devices&lt;/a&gt; on Reddit&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/SurfaceLinux/comments/94hjxv/surface_go_first_impressions/&quot;&gt;Surface Go: First Impressions&lt;/a&gt; on Reddit&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="posts" /><summary type="html">This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.</summary></entry><entry><title type="html">Introducing Spork 4.0.0</title><link href="http://localhost:4000/posts/2017/05/14/introducing-spork-4.0.0.html" rel="alternate" type="text/html" title="Introducing Spork 4.0.0" /><published>2017-05-14T17:11:00+02:00</published><updated>2017-05-14T17:11:00+02:00</updated><id>http://localhost:4000/posts/2017/05/14/introducing-spork%204.0.0</id><content type="html" xml:base="http://localhost:4000/posts/2017/05/14/introducing-spork-4.0.0.html">&lt;p&gt;I’ve been working hard on &lt;a href=&quot;http://spork.bytewelder.com&quot;&gt;Spork&lt;/a&gt; 4.0.0 since last summer.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Spork is a &lt;a href=&quot;http://spork.bytewelder.com/docs/4.0/About/Performance/index.html&quot;&gt;high performance&lt;/a&gt;
+runtime annotation processing framework with implementations for Android and for dependency injection.
+It is intended as a replacement for &lt;a href=&quot;https://jakewharton.github.io/butterknife/&quot;&gt;Butter Knife&lt;/a&gt; and/or &lt;a href=&quot;https://google.github.io/dagger/&quot;&gt;Dagger 2&lt;/a&gt;, that’s why
+its functionality is heavily modelled onto the design of these libraries.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at the Android and dependency injection features…&lt;/p&gt;
+
+&lt;h2 id=&quot;spork-for-android&quot;&gt;Spork for Android&lt;/h2&gt;
+
+&lt;p&gt;Here’s a code snippet of several Android bindings with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spork-android&lt;/code&gt; dependency:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@BindLayout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;activity_download&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DownloadActivity&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Activity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@BindView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;download_button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;downloadButton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@BindFragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;details_fragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DetailsFragment&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        
+        &lt;span class=&quot;nc&quot;&gt;Spork&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// bind() wires it all up!&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@BindClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;other_button&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onClickButton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;someButton&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;downloadManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;startDownload&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;By calling &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Spork.bind()&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCreate()&lt;/code&gt; the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OnClickListener&lt;/code&gt; and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fragment&lt;/code&gt; are
+all automatically resolved without the need for all that boilerplate code.
+This is all pretty much the same as with Spork 3.x&lt;/p&gt;
+
+&lt;p&gt;These are all the supported annotations:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@BindLayout&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@BindView&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@BindFragment&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@BindResource&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@BindClick&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;spork-dependency-injection&quot;&gt;Spork Dependency Injection&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spork-inject&lt;/code&gt; library creates instances of your classes and satisfies their dependencies.
+Let’s first take a look at a regular constructor injection without &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;spork-inject&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CoffeeMug&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Coffee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mug&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;CoffeeMug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Coffee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mug&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;coffee&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;mug&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Creating a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CoffeeMug&lt;/code&gt; requires you to pass along its dependencies manually.
+This is not a difficult task for a simple object with simple dependencies,
+but it gets a lot more tedious with scopes and lifecycle considerations. Spork takes care of all that.&lt;/p&gt;
+
+&lt;p&gt;Spork can inject fields directly. In this example it obtains a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Coffee&lt;/code&gt; and a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mug&lt;/code&gt; instance for the respective fields:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CoffeeMug&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Coffee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mug&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Spork also supports method injection, but Field injection is generally preferred.&lt;/p&gt;
+
+&lt;h3 id=&quot;declaring-dependencies&quot;&gt;Declaring Dependencies&lt;/h3&gt;
+
+&lt;p&gt;In the above sample, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Coffee&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Mug&lt;/code&gt; are injected. Of course these dependencies must come from somewhere.&lt;/p&gt;
+
+&lt;p&gt;Dependencies should be defined in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Module&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Coffee&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideCoffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;BlackCoffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Provides&lt;/code&gt; method can require dependencies on its own. These are passed on as method arguments and
+they are automatically resolved by Spork:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Coffee&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideCoffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Water&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CoffeeBeans&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;beans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;BlackCoffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;beans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;modules&quot;&gt;Modules&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Provides&lt;/code&gt;-annotated methods above are placed in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Module&lt;/code&gt;. Modules are POJO objects that define a set of dependencies:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BrewModule&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mug&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideMug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MugWithPrint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Input Java, output Java.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Water&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideWater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;BoilingWater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Beans&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideBeans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ArabicaBeans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Coffee&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideCoffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Water&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CoffeeBeans&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;beans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;BlackCoffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;water&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;beans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;building-an-objectgraph&quot;&gt;Building an ObjectGraph&lt;/h4&gt;
+
+&lt;p&gt;One or more modules are used to build an object graph. Object graphs hold state such as your singletons and named instances.&lt;/p&gt;
+
+&lt;p&gt;Creating an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectGraph&lt;/code&gt; is easy:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;ObjectGraph&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;objectGraph&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ObjectGraphs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;builder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BrewModule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When putting it all together, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CoffeeMug&lt;/code&gt; can now be injected with an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectGraph&lt;/code&gt; made with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BrewModule&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CoffeeMug&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Coffee&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coffee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Mug&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CoffeeMug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;ObjectGraphs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;builder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;BrewModule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;inject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// same as calling Spork.bind(this, objectGraph)&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;scoped-injection&quot;&gt;Scoped injection&lt;/h3&gt;
+
+&lt;p&gt;A scoped instance is an instance that belongs to a specific &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectGraph&lt;/code&gt; created at a specific level of the application. It is tied to the lifecycle of that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectGraph&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Singleton&lt;/code&gt; is a predefined scope that is always available at the root &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectGraph&lt;/code&gt; in your application. It is tied to the lifecycle of that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ObjectGraph&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Provides&lt;/code&gt; methods in a module can specify a scope. It can be used like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@Singleton&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CoffeeService&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideCoffeeService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CoffeeServiceImpl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Scopes can also be made custom.&lt;/p&gt;
+
+&lt;p&gt;Check out the full &lt;a href=&quot;http://spork.bytewelder.com/docs/4.0/Dependency_Injection/User_Guide.html&quot;&gt;spork-inject User Guide&lt;/a&gt; for more details.&lt;/p&gt;
+
+&lt;h3 id=&quot;qualifiers&quot;&gt;Qualifiers&lt;/h3&gt;
+
+&lt;p&gt;In some cases, you might want to identify an injection by some kind of identifier. This is done with a qualifier.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Named&lt;/code&gt; annotation is a qualifier that is available by default. It can be used in a module:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WaterModule&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Named&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cold&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Water&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideColdWater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Provides&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Named&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hot&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Water&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provideHotWater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WaterModule&lt;/code&gt; can then be used to inject a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Faucet&lt;/code&gt; class with the same annotation:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Faucet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt; &lt;span class=&quot;nd&quot;&gt;@Named&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;cold&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Water&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coldWater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Inject&lt;/span&gt; &lt;span class=&quot;nd&quot;&gt;@Named&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hot&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Water&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hotWater&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can even create your own qualifier annotations.&lt;/p&gt;
+
+&lt;h2 id=&quot;dependencies&quot;&gt;Dependencies&lt;/h2&gt;
+
+&lt;p&gt;All dependencies are hosted on jcenter, which is the default repository when developing Android projects.&lt;/p&gt;
+
+&lt;p&gt;To use dependency injection:&lt;/p&gt;
+
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.bytewelder.spork:spork-inject:4.0.0'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To use Android bindings:&lt;/p&gt;
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.bytewelder.spork:spork-android:4.0.0@aar'&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To use Android bindings with AppCompat/Support:&lt;/p&gt;
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;compile&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.bytewelder.spork:spork-android-support:4.0.0@aar'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;exclude&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;group:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.android.support'&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;closing-words&quot;&gt;Closing words&lt;/h2&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://spork.bytewelder.com&quot;&gt;Spork website&lt;/a&gt; or the &lt;a href=&quot;http://spork.bytewelder.com/docs/4.0/&quot;&gt;documentation&lt;/a&gt; for more information.&lt;/p&gt;
+
+&lt;p&gt;Please file bug reports and feature requests at &lt;a href=&quot;https://github.com/ByteWelder/Spork&quot;&gt;Spork’s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I’ve been working hard on Spork 4.0.0 since last summer.</summary></entry><entry><title type="html">Testing multithreaded code</title><link href="http://localhost:4000/posts/2017/05/13/testing-multithreaded-code.html" rel="alternate" type="text/html" title="Testing multithreaded code" /><published>2017-05-13T13:54:00+02:00</published><updated>2017-05-13T13:54:00+02:00</updated><id>http://localhost:4000/posts/2017/05/13/testing-multithreaded-code</id><content type="html" xml:base="http://localhost:4000/posts/2017/05/13/testing-multithreaded-code.html">&lt;p&gt;Writing multi-threaded code for Java/Android is not the easiest of tasks. Making it testable can also be a challenge.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;In this post I will share with you a way to make multi-threaded code more testable.
+Let’s first take a look at an implementation of a cache that can store named instances, including a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;null&lt;/code&gt; value… and let’s for the (in)convenience forget about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ConcurrentHashMap&lt;/code&gt;…&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Create a cache and a color factory&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorFactory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Cache creates and returns a white object&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;whiteObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;white&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Cache creates and returns a yellow object&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yellowObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;yellow&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Cache returns the same white object from before&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;whiteObject2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;white&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;colorFactory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is the implementation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Cache&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;());&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;synchronized&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;containsKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And this is how the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Factory&lt;/code&gt; looks like:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we can start testing whether &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;getOrCreate()&lt;/code&gt; creates the cache properly.&lt;/p&gt;
+
+&lt;p&gt;The following code uses &lt;a href=&quot;http://site.mockito.org&quot;&gt;Mockito&lt;/a&gt; for mocking and &lt;a href=&quot;http://hamcrest.org/JavaHamcrest/&quot;&gt;Hamcrest&lt;/a&gt; matchers for assertions:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// given&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;());&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// when getting an object with the same key twice in a row&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// then verify that the factory is called only once&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;verify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;verifyNoMoreInteractions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// and ensure the cache only has one item&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;assertThat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But how do you test the correct usage of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;synchronized&lt;/code&gt; block? You don’t!
+This is where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lock&lt;/code&gt; comes to play. Let’s refactor the example to use a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lock&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Lock&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Lock&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;mapLock&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;(),&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ReentrantLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;containsKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;finally&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;unlock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we can test whether our locking mechanism is used correctly:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// given&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;());&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Lock&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ReentrantLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// when getOrCreate() is called, ignoring the result&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// verify that the following methods are called in order&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;InOrder&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;verify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;verify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;containsKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;verify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;verify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;unlock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;verifyNoMoreInteractions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We can also verify the expected behavior when an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Exception&lt;/code&gt; is thrown:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// given&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;spy&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HashMap&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;());&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// given that creating a new item throws an exception&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;when&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;any&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;thenThrow&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;RuntimeException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;test&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// when we create a new item for our cache&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getOrCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;something&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;factory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ObjectGraphException&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;caught&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// catch, but do nothing&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// verify that there was locking and unlocking in the correct order&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;InOrder&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;verify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;verify&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mapLock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;unlock&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;inOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;verifyNoMoreInteractions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// and assure nothing is stored in our map since the operation failed&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;assertThat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see, there is no need to start threads to test correct usage of locks.
+We don’t really need to know whether the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Lock&lt;/code&gt; implementation works: We just want to
+see if our code is using it correctly in case the code is changed in the future.&lt;/p&gt;
+
+&lt;p&gt;This approach keeps your tests simple, readable and lightning fast to execute.&lt;/p&gt;
+
+&lt;p&gt;This does not cover everything there regarding &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html&quot;&gt;synchronization&lt;/a&gt;, but it’s at least a way to improve the testability of your code.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Writing multi-threaded code for Java/Android is not the easiest of tasks. Making it testable can also be a challenge.</summary></entry><entry><title type="html">Borrowing from Kotlin</title><link href="http://localhost:4000/posts/2017/05/08/borrowing-from-kotlin.html" rel="alternate" type="text/html" title="Borrowing from Kotlin" /><published>2017-05-08T23:17:00+02:00</published><updated>2017-05-08T23:17:00+02:00</updated><id>http://localhost:4000/posts/2017/05/08/borrowing-from-kotlin</id><content type="html" xml:base="http://localhost:4000/posts/2017/05/08/borrowing-from-kotlin.html">&lt;p&gt;Not all projects can be easily migrated to Kotlin, but that doesn’t mean we can’t benefit from Kotlin within other languages.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;One of the things we can borrow from Kotlin in Java/Android is its clever naming scheme for constructing/converting objects.
+Kotlin comes with various methods such as &lt;a href=&quot;https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/mutable-list-of.html&quot;&gt;mutableListOf()&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mutableListOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This allows Kotlin to define new static mapping/construction methods in a consistent manner.
+Kotlin follows a naming scheme where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YourClass&lt;/code&gt; becomes a static method &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yourClassOf(...)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The benefit of using this in Java lies within your development environment. Once you type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yourClassOf&lt;/code&gt;,
+you can summon up all implementations that create an instance of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YourClass&lt;/code&gt;. In Android Studio or IntelliJ, you just press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;F1&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2017-05-08-ide.png&quot; alt=&quot;Android Studio / IntelliJ IDEA&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So why not apply the same idiom to Java?&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Not all projects can be easily migrated to Kotlin, but that doesn’t mean we can’t benefit from Kotlin within other languages.</summary></entry></feed>

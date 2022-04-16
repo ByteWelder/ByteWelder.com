@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hobby CNC electronics</title>
+  <meta name="description" content="I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html">
+  <link rel="alternate" type="application/rss+xml" title="Byte Welder" href="/feed.xml">
+  <link rel="icon" type="image/png" href="assets/images/bytewelder.png">
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Byte Welder</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Hobby CNC electronics</h1>
+    <p class="post-meta">
+      <time datetime="2021-12-28T00:00:00+01:00" itemprop="datePublished">
+        
+        Dec 28, 2021
+      </time>
+      </p>
+      <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/style.css">
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I recently started building an <a href="https://indystry.cc/indymill/">IndyMill</a> CNC router.
+In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.</p>
+
+<!--more-->
+
+<p>Please note that everything written below is written in the context of hobbyist CNC router hardware.</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet finished and opened" class="center" /></p>
+
+<h2 id="a-brief-intro-to-hobby-cnc-routers">A brief intro to hobby CNC routers</h2>
+
+<p>A CNC router (or mill) is not a complex machine. Its main job is to move a spindle (~ drill) along the X, Y and Z axis at a specific speed. In a hobby router, you generally use stepper motors, just like you would in a 3D printer - albeit perhaps more powerful ones.</p>
+
+<p>These stepper motors require a lot of power, so they are controlled by <em>drivers</em>. A driver is a device that gets low voltage input signals and translates it into high voltage power signals for the stepper motors.</p>
+
+<p>The drivers themselves are controllerd by a <em>controller</em>. The controller is the heart and brains of the CNC mill: It translates a “job” into signals that it sends to the drivers.</p>
+
+<p>A CNC “job” is defined by “gcode” file. This contains all the commands for the machine to execute. A basic command could be something like “move the spindle 2mm along the X axis”.</p>
+
+<p>There are few more bits and pieces that I’m not talking about here, but these are the main things a hobbyist CNC router is about.</p>
+
+<h1 id="choosing-a-cabinet">Choosing a cabinet</h1>
+
+<p>The first hard part is to find a cabinet that fits your needs. Here were some of my considerations:</p>
+<ul>
+  <li>Large enough (to work comfortably and to have space for upgrades)</li>
+  <li>Affordable (cabinets often cost hundreds of euros)</li>
+  <li>Easy to work with (drilling holes)</li>
+</ul>
+
+<p>I settled on a cabinet from the German company <code class="language-plaintext highlighter-rouge">BoxExpert</code>. I chose the <code class="language-plaintext highlighter-rouge">600 x 400 x 200 mm</code> size. It comes with a transparent door that allows me to see the status LEDs of the hardware inside, and it comes with a metal plate to mount hardware on. I paid about <code class="language-plaintext highlighter-rouge">82 EUR</code> including shipping, so that was reasonable.</p>
+
+<h1 id="mounting-options">Mounting options</h1>
+
+<p>Initially, the plan was to mount the hardware directly to the plate. This has one major issue: you can’t change the layout at a later time. Imagine having to start drilling holes into it while there’s already hardware mounting!</p>
+
+<p><a href="https://en.wikipedia.org/wiki/DIN_rail">DIN-rails</a> were the answer to this! Not only did they help with strengthen the steel mounting plate, they allow me to change the entire setup freely at any time. There are lots of helpful DIN-compatible components out there that helped me in making my build clean.</p>
+
+<h1 id="cabinet-layout">Cabinet Layout</h1>
+
+<p>To make the cabinet layout, I used <a href="https://inkscape.org/">InkScape</a>. A vector graphics editor like that (or Affinity Designer and many others) is ideal for me: I created a <code class="language-plaintext highlighter-rouge">600 x 400</code> pixel image, where each pixel represents a millimeter. The end result looks like this:</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-layout.png" alt="cabinet layout design" class="center" /></p>
+
+<p>The yellow marked areas are space in the box that is unusable.</p>
+
+<p>Some considerations included:</p>
+<ul>
+  <li>Separating high power components from lower power components</li>
+  <li>Separating AC from DC components</li>
+  <li>Ensuring everything is grounded</li>
+</ul>
+
+<h1 id="cabinet-airflow">Cabinet Airflow</h1>
+
+<p>Although airflow isn’t super critical, it’s important to have at least some. We’re not generating a lot of heat inside the cabinet, but since it’s a water-proof cabinet, we want to create some airflow.</p>
+
+<p>I wanted to have a rough idea of how different kinds of airflow would behave, so I used the free tier of <a href="https://www.simscale.com/">SimScale</a> to model some scenarios. Simulating airflow for the cabinet is overkill for a project like this, but it was fun to experiment with.</p>
+
+<p>The first design has an intake fan on the bottom of the cabinet and an exit hole on the top-left. The downside of this designis that we can’t put the cabinet on a flat surface without obstructing the airflow:</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-airflow1.png" alt="airflow design 1" class="center" /></p>
+
+<p>The second design has an intake fan on the bottom-left and the outtake hole on the top-left:</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-airflow2.png" alt="airflow design 2" class="center" /></p>
+
+<p>The last design is the one I ended up chosing, but both were viable options.</p>
+
+<h1 id="mounting-the-din-rails">Mounting the DIN rails</h1>
+
+<p>The first real build step was mounting the DIN rails on the steel plate of the cabinet.
+I used a medium-strength thread lock for the nuts and bolts. I also ensured that the plate could be grounded by drilling an extra hole for grounding.</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-din-rails-mounted.jpg" alt="base plate with din rails mounted" class="center" /></p>
+
+<h1 id="mounting-the-first-components">Mounting the first components</h1>
+
+<p>Once the rails were ready, it was time to try out the first components: The top row has all 4 stepper drivers, connected to the power supply below. I’m using <code class="language-plaintext highlighter-rouge">Wago</code> clamps to tie it all together. The power cord is temporary:</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-first-din-components.jpg" alt="din plate with first components mounted" class="center" /></p>
+
+<h1 id="din-mounting-options">DIN mounting options</h1>
+
+<p>There are a lot of DIN parts on <a href="https://www.thingiverse.com/">Thingiverse</a>. A lot of the DIN brackets that I used come from there. Some of them were custom. The controller and fan brackets are a remix of an existing ones on Thingiverse:</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-controller-close-up.jpg" alt="main controller close-up" class="center" /></p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-fan-controller.jpg" alt="fan controller close-up" class="center" /></p>
+
+<h1 id="finish-mounting-the-components">Finish mounting the components</h1>
+
+<p>The CNC controller that I’m using as <a href="https://www.makerfr.com/en/cnc/grbl-32bits-board-v2/">Grbl32bits</a> board from Makerfr. I’ve mounted it together with its power supply and the fan controller in the below picture:</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-all-components-mounted.jpg" alt="all DIN components mounted on a steel plate" class="center" /></p>
+
+<h1 id="finishing-the-cabinet">Finishing the cabinet</h1>
+
+<p>The next step was drilling holes in the cabinet to facilitate all the connectors:</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-holes.jpg" alt="cabinet with holes visible" class="center" /></p>
+
+<p>In case you are wondering: yes, that is indeed my living room table being used as a workbench. My wife is awesome for putting up with it.</p>
+
+<p>After everything is wired up, the cabinet is finished!</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-right.jpg" alt="cabinet view from the right" class="center" /></p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-closed.jpg" alt="cabinet with lid closed" class="center" /></p>
+
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet with lid open" class="center" /></p>
+
+<p>You can find my collection of 3D printable parts <a href="https://www.thingiverse.com/kenvanhoeylandt/collections/cnc">here</a>.</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-1">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/ByteWelder"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">ByteWelder</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Learnings, experiments and projects.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Installing Linux Mint on a Surface Go</title>
+  <meta name="description" content="This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/posts/2019/08/13/surface-go-linux-mint.html">
+  <link rel="alternate" type="application/rss+xml" title="Byte Welder" href="/feed.xml">
+  <link rel="icon" type="image/png" href="assets/images/bytewelder.png">
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Byte Welder</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Installing Linux Mint on a Surface Go</h1>
+    <p class="post-meta">
+      <time datetime="2019-08-13T00:28:00+02:00" itemprop="datePublished">
+        
+        Aug 13, 2019
+      </time>
+      </p>
+      <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/style.css">
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.</p>
+
+<!--more-->
+
+<p>After a botched Mint installation, I succeeded in my second attempt a day later.
+It was then that I realized the need to document the process, in case I ever needed to do this dance again.</p>
+
+<p>This document contains my notes, that I rewrote into this post.</p>
+
+<p><img src="http://localhost:4000/assets/images/posts/surface-go-with-linux-mint.jpg" alt="Surface Go with Linux Mint" class="center" /></p>
+
+<p>Before you start, it’s important to know that Linux Mint isn’t perfect on the Surface Go. The cameras don’t work, as there are no drivers available. I also currently have a non-working hybernate/sleep mode. This did work in the first few hours, so I’ll
+investigate whether an apt-get update broke one of the applied fixes below.</p>
+
+<p>In return, though, you get increased battery life, and arguably a better user experience.
+You’ll also gain over <code class="language-plaintext highlighter-rouge">15 GB</code> of disk space, and everything will feel more snappy.</p>
+
+<p>This post was last updated at 2019-08-13 17:57:00 +0200.</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+
+<p>I have done my best to put all the details in here, but there is still a chance that some info is missing or incomplete.
+If you’re stuck, feel free to <a href="https://kenvanhoeylandt.net">contact me</a> and I’ll see what I can do for you.
+However, there are no garantees and I take no responsibility if something goes wrong.
+If you follow this guide, you follow it at your own risk.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>If you succeed with the installation in one go, you only need a <code class="language-plaintext highlighter-rouge">2 GB</code> USB storage device.</p>
+
+<p>If you have a USB-A connector for your storage device, you’ll also need an adapter or a hub.</p>
+
+<p>You’ll need some basic Bash/Terminal experience to complete this guide.</p>
+
+<p>If something fails, you will likely need to reinstall Windows 10. To do that, you’ll need an <code class="language-plaintext highlighter-rouge">16 GB</code> USB storage device.
+Scroll down for information about the recovery process.</p>
+
+<h2 id="lets-do-this">Let’s do this!</h2>
+
+<h3 id="preparing-the-usb-drive">Preparing the USB drive</h3>
+
+<ol>
+  <li>Download the <a href="https://linuxmint.com">64 bit version</a> of Linux Mint. Version <code class="language-plaintext highlighter-rouge">19.2</code> is what this guide is based on. I picked the Cinnamon-flavoured one, as this supposedly has the best touch support.</li>
+  <li>Download <a href="https://rufus.ie">Rufus</a> to prepare the USB drive. (alternatively, you can use <a href="https://unetbootin.github.io">UNetbootin</a>)</li>
+  <li>Run Rufus and leave all the defaults, but double-check these settings:
+    <ul>
+      <li>Partition scheme: <code class="language-plaintext highlighter-rouge">MBR</code></li>
+      <li>Target system: <code class="language-plaintext highlighter-rouge">BIOS or UEFI</code></li>
+      <li>File system: <code class="language-plaintext highlighter-rouge">FAT32</code></li>
+    </ul>
+  </li>
+  <li>Click <code class="language-plaintext highlighter-rouge">START</code>.</li>
+  <li>When the process is done, eject the USB drive and insert it into the Surface.</li>
+</ol>
+
+<h3 id="preparing-to-boot-from-usb">Preparing to boot from USB</h3>
+
+<p>To boot from USB, you need to first open the UEFI/BIOS on your Surface:</p>
+
+<ol>
+  <li>Power off the Surface Go.</li>
+  <li>Keep <code class="language-plaintext highlighter-rouge">volume down</code> button pressed.</li>
+  <li>Press the <code class="language-plaintext highlighter-rouge">power</code> button.</li>
+  <li>Release <code class="language-plaintext highlighter-rouge">volume up</code> when you see the Windows logo.</li>
+</ol>
+
+<p>In the BIOS:</p>
+
+<ol>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Boot Configuration</code> and move <code class="language-plaintext highlighter-rouge">USB Storage</code> up the list.</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Security</code> and set <code class="language-plaintext highlighter-rouge">Secure Boot</code> to <code class="language-plaintext highlighter-rouge">disabled</code>.</li>
+  <li>Click on <code class="language-plaintext highlighter-rouge">Exit</code>,</li>
+  <li>Save the settings and reboot.</li>
+</ol>
+
+<h3 id="booting-from-usb">Booting from USB</h3>
+
+<p>There should now be a blue screen with a warning about disk encryption.
+That’s because we’ve just disabled Secure Boot, and Windows has issues with that.
+There should be a button on the screen to skip/cancel this step. Click that.</p>
+
+<p>You should now see/find the <code class="language-plaintext highlighter-rouge">Choose an option</code> screen and then click <code class="language-plaintext highlighter-rouge">Use a device</code>.</p>
+
+<p>There you can choose the item named <code class="language-plaintext highlighter-rouge">Linpus</code> boot option that should be visible.</p>
+
+<p>If it isn’t visible, try the USB UEFI option.</p>
+
+<h3 id="installing-mint">Installing Mint</h3>
+
+<p>Follow the wizard. I chose to:</p>
+
+<ul>
+  <li>Not enable full disk encryption. (the extra password prompt doesn’t work well on tablet)</li>
+  <li>To enable the LVM option.</li>
+  <li>Encrypt my home folder.</li>
+  <li>Put a password on my BIOS.</li>
+  <li>To install the commercial (closed-source) software (For things like MP3 support, etc.)</li>
+</ul>
+
+<h3 id="mint-improvements">Mint improvements</h3>
+
+<p>The following steps presume that you have some knowledge of terminal usage like Bash.</p>
+
+<h4 id="fix-wifi">Fix WiFi:</h4>
+
+<p>The WiFi is now visible, but you can’t see any networks. I fixed it with this GitHub project:</p>
+
+<ol>
+  <li>Download the repo <a href="https://github.com/jakeday/linux-surface">here</a>.</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">sudo sh setup.sh</code></li>
+</ol>
+
+<p>I downloaded the repo to a USB drive and copied it onto the Surface.</p>
+
+<h4 id="fix-grub-30-second-delay">Fix Grub 30 second delay:</h4>
+
+<p>You’ll probably notice a black screen with some boot options for 30 seconds.
+If you’re suffering from this, do the following:</p>
+
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">sudo sed -i "/recordfail_broken=/{s/1/0/}" /etc/grub.d/00_header</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">sudo update-grub</code></li>
+  <li>Reboot</li>
+</ul>
+
+<p>(<a href="https://forums.linuxmint.com/viewtopic.php?t=287026">source</a>)</p>
+
+<h4 id="firefox">Firefox</h4>
+
+<p>Firefox is the default browser, but the screen estate isn’t great for tablets.
+There are also issues with touch, but they are <a href="https://askubuntu.com/questions/853910/ubuntu-16-and-touchscreen-scrolling-in-firefox">fixable</a>.</p>
+
+<p>I found that Chromium was working much better out of the box.
+You can even get the top bar collapsed into the tab bar to gain some screen estate.</p>
+
+<h4 id="hide-cursor-on-touch">Hide cursor on touch</h4>
+
+<p>One thing I noticed, is that wherever I touched the screen, the mouse cursor would teleport to that position
+on the screen. Windows 10 automatically hides the cursor, so I went searching online and found <a href="https://github.com/nowrep/unclutter-xfixes">a solution</a>:</p>
+
+<p>This project didn’t compile for me, even with all the tools installed,
+so I had to disable documentation part in the build process.</p>
+
+<ol>
+  <li>First install the build tools: <code class="language-plaintext highlighter-rouge">sudo apt-get install build-essential ev libx11-dev libxi-dev</code></li>
+  <li>Then download <a href="https://github.com/nowrep/unclutter-xfixes">unclutter-xfixes</a></li>
+  <li>Edit the <code class="language-plaintext highlighter-rouge">Makefile</code>, and comment out the manual stuff (at <code class="language-plaintext highlighter-rouge">$(MANS)</code> and <code class="language-plaintext highlighter-rouge">install:</code>)</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.PHONY: <span class="nb">install
+install</span>: <span class="si">$(</span>TARGET<span class="si">)</span> mans
+	<span class="si">$(</span>INSTALL<span class="si">)</span> <span class="nt">-Dm</span> 0755 <span class="s2">"</span><span class="si">$(</span>TARGET<span class="si">)</span><span class="s2">"</span> <span class="s2">"</span><span class="si">$(</span>DESTDIR<span class="si">)$(</span>BINDIR<span class="si">)</span><span class="s2">/</span><span class="si">$(</span>TARGET<span class="si">)</span><span class="s2">"</span>
+<span class="c">#	$(INSTALL) -Dm 0644 man/unclutter-xfixes.1 "$(DESTDIR)$(MANDIR)/unclutter.1"</span>
+<span class="c">#	$(INSTALL) -Dm 0644 -t "$(DESTDIR)$(LICENSEDIR)/" LICENSE</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="si">$(</span>MANS<span class="si">)</span>: %.1: %.man
+<span class="c">#	a2x --no-xmllint -f manpage "$&lt;"</span>
+    <span class="nb">echo </span>Skipped manual
+</code></pre></div></div>
+
+<ol>
+  <li>Run <code class="language-plaintext highlighter-rouge">make</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">sudo make install</code></li>
+  <li>Ensures it starts automatically:
+    <ul>
+      <li>Open <code class="language-plaintext highlighter-rouge">System Settings</code></li>
+      <li>Go to <code class="language-plaintext highlighter-rouge">Startup Applications</code></li>
+      <li>add new one with command “unclutter –touch”</li>
+    </ul>
+  </li>
+</ol>
+
+<p>One thing to note, is that when you are using the mouse, the first following touch
+on the screen will still act like a mouse click. This means if you’re switching from
+mouse to touch, and your intent is to scroll, you will actually click on whatever
+is under your finger. Any subsequent touches will be fine though.
+To avoid this, I generally just tap on a ‘safe’ area first, when switching to touch.</p>
+
+<h3 id="troubleshooting--notes">Troubleshooting &amp; Notes</h3>
+
+<h4 id="windows-10-recovery">Windows 10 recovery</h4>
+
+<p>If anything fails, you’ll need to reinstall Windows 10.
+Follow the <a href="https://support.microsoft.com/en-us/surfacerecoveryimage">official guide</a>.</p>
+
+<p>To boot the recovery drive:</p>
+
+<ol>
+  <li>Ensure your UEFI/BIOS is still configured to allow booting from an (untrusted) USB device.</li>
+  <li>Power off the Surface Go</li>
+  <li>Keep <code class="language-plaintext highlighter-rouge">volume down</code> button pressed</li>
+  <li>Press the <code class="language-plaintext highlighter-rouge">power</code> button</li>
+  <li>Release <code class="language-plaintext highlighter-rouge">volume down</code> when you see the Windows logo</li>
+  <li>Install Windows 10</li>
+  <li>Revert UEFI/BIOS to its original settings</li>
+</ol>
+
+<h4 id="display-scaling">Display scaling</h4>
+
+<p>Open <code class="language-plaintext highlighter-rouge">System Settings</code> and:</p>
+
+<ul>
+  <li>In <code class="language-plaintext highlighter-rouge">General</code>, Configure <code class="language-plaintext highlighter-rouge">User interface scaling</code> to <code class="language-plaintext highlighter-rouge">Double (HiDPI)</code></li>
+  <li>In <code class="language-plaintext highlighter-rouge">Login Window</code>, its <code class="language-plaintext highlighter-rouge">Settings</code> tab, set <code class="language-plaintext highlighter-rouge">HiDPI support</code> to <code class="language-plaintext highlighter-rouge">Enable</code></li>
+</ul>
+
+<h4 id="on-screen-keyboard">On-screen keyboard</h4>
+
+<p>Mint has 2 variants: “Virtual Keyboard” and “Onboard”.</p>
+
+<p>Onboard is the one that can be used on your lock screen through the accessibility option. It can also be used on the desktop.
+I advise to solely rely on the Onboard variant, as it is more reliable and has more options.</p>
+
+<p>Virtual Keyboard is prettier (follows the Mint theme), but was buggy as it glitched out and broke my screen layouts until reboot.</p>
+
+<h3 id="final-notes">Final notes</h3>
+
+<p>It was an interesting learning experience, and I was happy to have things running smoothly.
+I was pleasantly surprised that some of my favorite apps are now readily available through the package manager, including Sublime Text and Steam!</p>
+
+<p>Sources and relevant articles:</p>
+
+<ul>
+  <li><a href="https://www.slashgear.com/surface-go-with-linux-review-almost-the-perfect-open-source-notepad-25558990/">Surface Go with Linux review</a> on SlashGear</li>
+  <li><a href="https://www.reddit.com/r/SurfaceLinux/comments/7kb1ky/guide_installing_linux_on_surfaceseries_devices/">Installing Linux on Surface-Series Devices</a> on Reddit</li>
+  <li><a href="https://www.reddit.com/r/SurfaceLinux/comments/94hjxv/surface_go_first_impressions/">Surface Go: First Impressions</a> on Reddit</li>
+</ul>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-1">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/ByteWelder"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">ByteWelder</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Learnings, experiments and projects.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
