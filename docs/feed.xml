@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-16T18:46:17+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Byte Welder</title><subtitle>Learnings, experiments and projects.
-</subtitle><entry><title type="html">OpenPyrojet Print Head Prototype</title><link href="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html" rel="alternate" type="text/html" title="OpenPyrojet Print Head Prototype" /><published>2022-04-15T18:00:00+02:00</published><updated>2022-04-16T18:38:00+02:00</updated><id>http://localhost:4000/posts/2022/04/15/openpyrojet-print-head</id><content type="html" xml:base="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html">&lt;p&gt;A few weeks ago, I joined the &lt;a href=&quot;https://openpyrojet.com&quot;&gt;OpenPyrojet&lt;/a&gt; project.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-04-16T18:53:24+02:00</updated><id>/feed.xml</id><title type="html">Byte Welder</title><subtitle>Learnings, experiments and projects.
+</subtitle><entry><title type="html">OpenPyrojet Print Head Prototype</title><link href="/posts/2022/04/15/openpyrojet-print-head.html" rel="alternate" type="text/html" title="OpenPyrojet Print Head Prototype" /><published>2022-04-15T18:00:00+02:00</published><updated>2022-04-16T18:38:00+02:00</updated><id>/posts/2022/04/15/openpyrojet-print-head</id><content type="html" xml:base="/posts/2022/04/15/openpyrojet-print-head.html">&lt;p&gt;A few weeks ago, I joined the &lt;a href=&quot;https://openpyrojet.com&quot;&gt;OpenPyrojet&lt;/a&gt; project.
 OpenPyrojet intends to build 3D printer technology based on thermal spraying.
 In this post, I’ll show you how I assembled the print head prototype.&lt;/p&gt;
 
@@ -7,7 +7,7 @@ In this post, I’ll show you how I assembled the print head prototype.&lt;/p&gt
 
 &lt;p&gt;This is what the finished print head looks like:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg&quot; alt=&quot;front view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg&quot; alt=&quot;front view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;how-does-the-printer-work&quot;&gt;How does the printer work?&lt;/h1&gt;
 
@@ -22,23 +22,23 @@ Due to the heat, the metal melts and hits a surface (substrate) to which it atta
 &lt;p&gt;To build a strong print head, we’re using multiple layers made from PCBs.
 These layers are stacked in the order as they are laid out below:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg&quot; alt=&quot;all pcb parts&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg&quot; alt=&quot;all pcb parts&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I first prepared the inlet and outlet. I need to connect Viton tubing to the
 print head, so I’m soldering small copper pipes (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3 mm&lt;/code&gt; diameter) to the PCB.
 The picture shows a larger copper pipe, because I used the wrong size when taking pictures:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg&quot; alt=&quot;pcb with inlet, outlet and copper pipes&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg&quot; alt=&quot;pcb with inlet, outlet and copper pipes&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I started with adding solder to the pads:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg&quot; alt=&quot;inlet pad with some solder&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg&quot; alt=&quot;inlet pad with some solder&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Initially, the solder will likely not connect neatly all around the copper pipe.
 It might look like the picture below. I take some extra solder on my iron and
 then place the iron at the base of the copper pipe to fix this issue:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg&quot; alt=&quot;copper pipe with bad solder connection&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg&quot; alt=&quot;copper pipe with bad solder connection&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Another problem that might occur is when your solder smudges.
 I cleaned it off by wiping my (cleaned) soldering iron on it.
@@ -46,78 +46,78 @@ It’s not problematic if there is some solder on the side,
 but I have to make sure it’s not sharp.
 That way, it won’t cut the Viton tubing later on:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg&quot; alt=&quot;solder smudged on copper pipe&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg&quot; alt=&quot;solder smudged on copper pipe&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;When I used too much solder, the inlet became too narrow. I could’ve desoldered
 it. Instead, I used a set of drills to carefully drill it out by hand.
 I kept increasing the drill diameter by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.1 mm&lt;/code&gt; until the diameter was the right size:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg&quot; alt=&quot;pcb with narrow inlet&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg&quot; alt=&quot;pcb with narrow inlet&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Finally, I had a neat collar on the copper pipe:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg&quot; alt=&quot;copper pipe on pcb with solder&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg&quot; alt=&quot;copper pipe on pcb with solder&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg&quot; alt=&quot;finished inlet and oultet on pcb&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg&quot; alt=&quot;finished inlet and oultet on pcb&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The next step was to put the monofilament on one of the PCB layers. This monofilament
 is what heats up the fuel, which causes the fuel to eject through the nozzle.
 The filament gets sandwiched between the nozzle PCB and the PCB that holds the connector.
 I store the filament in a folded sheet of paper:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg&quot; alt=&quot;monofilament displayed&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg&quot; alt=&quot;monofilament displayed&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;First I cut the filament to size. We make it as wide as possible, so the thickness
 of the glue won’t interfere with the electrical conductivity:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg&quot; alt=&quot;monofilament cut&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg&quot; alt=&quot;monofilament cut&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Combining them is tricky, because the filament won’t lay still on a flat surface.
 I used some CA glue on the edges to keep it into place. I learned later that
 glue is not the ideal way. In the future, I will tape it near the edges if the PCB
 with some kapton tape.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg&quot; alt=&quot;monofilament glued to PCB&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg&quot; alt=&quot;monofilament glued to PCB&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The nozzle PCB layer had holes that were too small in diameter. I widened them
 by hand with some cheap drills, slowly increasing the diameter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.1 mm&lt;/code&gt; at a time:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg&quot; alt=&quot;nozzle PCB with drill in it&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg&quot; alt=&quot;nozzle PCB with drill in it&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;When attaching the nozzle PCB to the connector PCB, I start with a single row of screws:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg&quot; alt=&quot;nozzle PCB on connector PCB with a single row of screws&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg&quot; alt=&quot;nozzle PCB on connector PCB with a single row of screws&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It’s important to tighten the screws evenly, so initially all screws are kept loose.
 I then tightened them carefully and as evenly as possible. When everything stops sliding
 around, I start measuring resistance before continueing to tighten further.
 The resistance measurements are repeated until the values are in an acceptable range.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg&quot; alt=&quot;nozzle PCB on connector PCB with all screws&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg&quot; alt=&quot;nozzle PCB on connector PCB with all screws&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I had to make sure that the nozzle plate wasn’t crooked, like in the picture below:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg&quot; alt=&quot;nozzle PCB badly aligned with connector PCB&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg&quot; alt=&quot;nozzle PCB badly aligned with connector PCB&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The prepared PCBs are ready to be combined. I took 8 pieces of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M2 x 10mm&lt;/code&gt; and
 some &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;M2&lt;/code&gt; nuts to match. I also used medium-strength loctite:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg&quot; alt=&quot;all layers finished, displayed with M2 hardware and loctite&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg&quot; alt=&quot;all layers finished, displayed with M2 hardware and loctite&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;At this point, I have a finished physical assembly:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg&quot; alt=&quot;front view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg&quot; alt=&quot;front view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg&quot; alt=&quot;back view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg&quot; alt=&quot;back view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg&quot; alt=&quot;side view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.</summary></entry><entry><title type="html">Hobby CNC electronics</title><link href="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html" rel="alternate" type="text/html" title="Hobby CNC electronics" /><published>2021-12-28T00:00:00+01:00</published><updated>2021-12-28T00:00:00+01:00</updated><id>http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics</id><content type="html" xml:base="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html">&lt;p&gt;I recently started building an &lt;a href=&quot;https://indystry.cc/indymill/&quot;&gt;IndyMill&lt;/a&gt; CNC router.
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg&quot; alt=&quot;side view of assembled print head&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.</summary></entry><entry><title type="html">Hobby CNC electronics</title><link href="/posts/2021/12/28/hobby-cnc-electronics.html" rel="alternate" type="text/html" title="Hobby CNC electronics" /><published>2021-12-28T00:00:00+01:00</published><updated>2021-12-28T00:00:00+01:00</updated><id>/posts/2021/12/28/hobby-cnc-electronics</id><content type="html" xml:base="/posts/2021/12/28/hobby-cnc-electronics.html">&lt;p&gt;I recently started building an &lt;a href=&quot;https://indystry.cc/indymill/&quot;&gt;IndyMill&lt;/a&gt; CNC router.
 In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
 &lt;p&gt;Please note that everything written below is written in the context of hobbyist CNC router hardware.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg&quot; alt=&quot;cabinet finished and opened&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-cabinet-finished-open.jpg&quot; alt=&quot;cabinet finished and opened&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;a-brief-intro-to-hobby-cnc-routers&quot;&gt;A brief intro to hobby CNC routers&lt;/h2&gt;
 
@@ -152,7 +152,7 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 
 &lt;p&gt;To make the cabinet layout, I used &lt;a href=&quot;https://inkscape.org/&quot;&gt;InkScape&lt;/a&gt;. A vector graphics editor like that (or Affinity Designer and many others) is ideal for me: I created a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;600 x 400&lt;/code&gt; pixel image, where each pixel represents a millimeter. The end result looks like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-layout.png&quot; alt=&quot;cabinet layout design&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-cabinet-layout.png&quot; alt=&quot;cabinet layout design&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The yellow marked areas are space in the box that is unusable.&lt;/p&gt;
 
@@ -171,11 +171,11 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 
 &lt;p&gt;The first design has an intake fan on the bottom of the cabinet and an exit hole on the top-left. The downside of this designis that we can’t put the cabinet on a flat surface without obstructing the airflow:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-airflow1.png&quot; alt=&quot;airflow design 1&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-airflow1.png&quot; alt=&quot;airflow design 1&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The second design has an intake fan on the bottom-left and the outtake hole on the top-left:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-airflow2.png&quot; alt=&quot;airflow design 2&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-airflow2.png&quot; alt=&quot;airflow design 2&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The last design is the one I ended up chosing, but both were viable options.&lt;/p&gt;
 
@@ -184,45 +184,45 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 &lt;p&gt;The first real build step was mounting the DIN rails on the steel plate of the cabinet.
 I used a medium-strength thread lock for the nuts and bolts. I also ensured that the plate could be grounded by drilling an extra hole for grounding.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-din-rails-mounted.jpg&quot; alt=&quot;base plate with din rails mounted&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-din-rails-mounted.jpg&quot; alt=&quot;base plate with din rails mounted&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;mounting-the-first-components&quot;&gt;Mounting the first components&lt;/h1&gt;
 
 &lt;p&gt;Once the rails were ready, it was time to try out the first components: The top row has all 4 stepper drivers, connected to the power supply below. I’m using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Wago&lt;/code&gt; clamps to tie it all together. The power cord is temporary:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-first-din-components.jpg&quot; alt=&quot;din plate with first components mounted&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-first-din-components.jpg&quot; alt=&quot;din plate with first components mounted&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;din-mounting-options&quot;&gt;DIN mounting options&lt;/h1&gt;
 
 &lt;p&gt;There are a lot of DIN parts on &lt;a href=&quot;https://www.thingiverse.com/&quot;&gt;Thingiverse&lt;/a&gt;. A lot of the DIN brackets that I used come from there. Some of them were custom. The controller and fan brackets are a remix of an existing ones on Thingiverse:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-controller-close-up.jpg&quot; alt=&quot;main controller close-up&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-controller-close-up.jpg&quot; alt=&quot;main controller close-up&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-fan-controller.jpg&quot; alt=&quot;fan controller close-up&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-fan-controller.jpg&quot; alt=&quot;fan controller close-up&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;finish-mounting-the-components&quot;&gt;Finish mounting the components&lt;/h1&gt;
 
 &lt;p&gt;The CNC controller that I’m using as &lt;a href=&quot;https://www.makerfr.com/en/cnc/grbl-32bits-board-v2/&quot;&gt;Grbl32bits&lt;/a&gt; board from Makerfr. I’ve mounted it together with its power supply and the fan controller in the below picture:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-all-components-mounted.jpg&quot; alt=&quot;all DIN components mounted on a steel plate&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-all-components-mounted.jpg&quot; alt=&quot;all DIN components mounted on a steel plate&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;finishing-the-cabinet&quot;&gt;Finishing the cabinet&lt;/h1&gt;
 
 &lt;p&gt;The next step was drilling holes in the cabinet to facilitate all the connectors:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-holes.jpg&quot; alt=&quot;cabinet with holes visible&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-cabinet-holes.jpg&quot; alt=&quot;cabinet with holes visible&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In case you are wondering: yes, that is indeed my living room table being used as a workbench. My wife is awesome for putting up with it.&lt;/p&gt;
 
 &lt;p&gt;After everything is wired up, the cabinet is finished!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-finished-right.jpg&quot; alt=&quot;cabinet view from the right&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-cabinet-finished-right.jpg&quot; alt=&quot;cabinet view from the right&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-finished-closed.jpg&quot; alt=&quot;cabinet with lid closed&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-cabinet-finished-closed.jpg&quot; alt=&quot;cabinet with lid closed&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg&quot; alt=&quot;cabinet with lid open&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/indymill-cabinet-finished-open.jpg&quot; alt=&quot;cabinet with lid open&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You can find my collection of 3D printable parts &lt;a href=&quot;https://www.thingiverse.com/kenvanhoeylandt/collections/cnc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.</summary></entry><entry><title type="html">Designing for privacy: A thought experiment</title><link href="http://localhost:4000/posts/2021/09/05/designing-for-privacy.html" rel="alternate" type="text/html" title="Designing for privacy: A thought experiment" /><published>2021-09-05T00:00:00+02:00</published><updated>2021-09-05T00:00:00+02:00</updated><id>http://localhost:4000/posts/2021/09/05/designing-for-privacy</id><content type="html" xml:base="http://localhost:4000/posts/2021/09/05/designing-for-privacy.html">&lt;p&gt;Apple’s &lt;a href=&quot;https://www.apple.com/child-safety/pdf/CSAM_Detection_Technical_Summary.pdf&quot;&gt;plans&lt;/a&gt; have been widely &lt;a href=&quot;https://appleprivacyletter.com/&quot;&gt;critiqued&lt;/a&gt;. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.&lt;/p&gt;
+&lt;p&gt;You can find my collection of 3D printable parts &lt;a href=&quot;https://www.thingiverse.com/kenvanhoeylandt/collections/cnc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.</summary></entry><entry><title type="html">Designing for privacy: A thought experiment</title><link href="/posts/2021/09/05/designing-for-privacy.html" rel="alternate" type="text/html" title="Designing for privacy: A thought experiment" /><published>2021-09-05T00:00:00+02:00</published><updated>2021-09-05T00:00:00+02:00</updated><id>/posts/2021/09/05/designing-for-privacy</id><content type="html" xml:base="/posts/2021/09/05/designing-for-privacy.html">&lt;p&gt;Apple’s &lt;a href=&quot;https://www.apple.com/child-safety/pdf/CSAM_Detection_Technical_Summary.pdf&quot;&gt;plans&lt;/a&gt; have been widely &lt;a href=&quot;https://appleprivacyletter.com/&quot;&gt;critiqued&lt;/a&gt;. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -282,7 +282,7 @@ Perhaps we can consider having different types of passwords (e.g. word list, hex
 
 &lt;h2 id=&quot;closing-words&quot;&gt;Closing words&lt;/h2&gt;
 
-&lt;p&gt;I’d like to hear your thoughts on this thought experiment, so feel free to contact me through twitter/email via &lt;a href=&quot;https://kenvanhoeylandt.net&quot;&gt;my main website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Apple’s plans have been widely critiqued. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.</summary></entry><entry><title type="html">Google Analytics IP anonymization is a joke</title><link href="http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html" rel="alternate" type="text/html" title="Google Analytics IP anonymization is a joke" /><published>2021-07-08T22:30:00+02:00</published><updated>2021-07-10T14:54:00+02:00</updated><id>http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke</id><content type="html" xml:base="http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html">&lt;p&gt;Google Analytics, the popular data gathering and statistics analysis tool, has a feature called &lt;em&gt;IP Anonymization&lt;/em&gt; or &lt;em&gt;IP Masking&lt;/em&gt;.
+&lt;p&gt;I’d like to hear your thoughts on this thought experiment, so feel free to contact me through twitter/email via &lt;a href=&quot;https://kenvanhoeylandt.net&quot;&gt;my main website&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Apple’s plans have been widely critiqued. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.</summary></entry><entry><title type="html">Google Analytics IP anonymization is a joke</title><link href="/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html" rel="alternate" type="text/html" title="Google Analytics IP anonymization is a joke" /><published>2021-07-08T22:30:00+02:00</published><updated>2021-07-10T14:54:00+02:00</updated><id>/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke</id><content type="html" xml:base="/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html">&lt;p&gt;Google Analytics, the popular data gathering and statistics analysis tool, has a feature called &lt;em&gt;IP Anonymization&lt;/em&gt; or &lt;em&gt;IP Masking&lt;/em&gt;.
 The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!&lt;/p&gt;
 
 &lt;!--more--&gt;
@@ -345,7 +345,7 @@ Web developers could reconsider using Google Analytics. Google could use more cl
 &lt;p&gt;So what about IPv6? Luckily, Google did better here: when IP anonymization is applied, the last &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;80 bits&lt;/code&gt; of data are removed.
 This gives a massively larger pool of possible addresses when attempting to recover an IP.&lt;/p&gt;
 
-&lt;p&gt;However, since most internet users use IPv4, this is not very relevant.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Google Analytics, the popular data gathering and statistics analysis tool, has a feature called IP Anonymization or IP Masking. The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!</summary></entry><entry><title type="html">Thoughts on multiplayer networking</title><link href="http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking.html" rel="alternate" type="text/html" title="Thoughts on multiplayer networking" /><published>2020-10-07T23:00:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking</id><content type="html" xml:base="http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking.html">&lt;p&gt;The topic of gaming and networking was brought up on the &lt;a href=&quot;https://korge.org&quot;&gt;KorGE&lt;/a&gt; Discord server.
+&lt;p&gt;However, since most internet users use IPv4, this is not very relevant.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Google Analytics, the popular data gathering and statistics analysis tool, has a feature called IP Anonymization or IP Masking. The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!</summary></entry><entry><title type="html">Thoughts on multiplayer networking</title><link href="/posts/2020/10/07/thoughts-on-multiplayer-networking.html" rel="alternate" type="text/html" title="Thoughts on multiplayer networking" /><published>2020-10-07T23:00:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>/posts/2020/10/07/thoughts-on-multiplayer-networking</id><content type="html" xml:base="/posts/2020/10/07/thoughts-on-multiplayer-networking.html">&lt;p&gt;The topic of gaming and networking was brought up on the &lt;a href=&quot;https://korge.org&quot;&gt;KorGE&lt;/a&gt; Discord server.
 This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different
 considerations for their development.&lt;/p&gt;
 
@@ -471,7 +471,7 @@ Instead of trying to give you such answer, here’s a summation of the main ques
 &lt;p&gt;That’s it! I hope this is useful to someone out there…
 If you’d like to send me feedback, you can find my contact info on my personal &lt;a href=&quot;https://kenvanhoeylandt.net&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Happy development!&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">The topic of gaming and networking was brought up on the KorGE Discord server. This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different considerations for their development. The intention of this article is to give a glimpse into various approaches and considerations. It’s likely not complete or perfect, but I hope it will be useful for developers that are somewhat new to networking for games.</summary></entry><entry><title type="html">Upgrading your merge requests</title><link href="http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests.html" rel="alternate" type="text/html" title="Upgrading your merge requests" /><published>2020-02-26T23:00:00+01:00</published><updated>2020-02-26T23:00:00+01:00</updated><id>http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests</id><content type="html" xml:base="http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests.html">&lt;p&gt;I did a write-up on how to improve merge request (or pull request) quality control on &lt;a href=&quot;https://medium.com/ing-blog/upgrading-your-merge-requests-fe5e953b2f93&quot;&gt;ING’s Medium Blog&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I did a write-up on how to improve merge request (or pull request) quality control on ING’s Medium Blog.</summary></entry><entry><title type="html">Installing Linux Mint on a Surface Go</title><link href="http://localhost:4000/posts/2019/08/13/surface-go-linux-mint.html" rel="alternate" type="text/html" title="Installing Linux Mint on a Surface Go" /><published>2019-08-13T00:28:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>http://localhost:4000/posts/2019/08/13/surface-go-linux-mint</id><content type="html" xml:base="http://localhost:4000/posts/2019/08/13/surface-go-linux-mint.html">&lt;p&gt;This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.&lt;/p&gt;
+&lt;p&gt;Happy development!&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">The topic of gaming and networking was brought up on the KorGE Discord server. This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different considerations for their development. The intention of this article is to give a glimpse into various approaches and considerations. It’s likely not complete or perfect, but I hope it will be useful for developers that are somewhat new to networking for games.</summary></entry><entry><title type="html">Upgrading your merge requests</title><link href="/posts/2020/02/26/upgrading-your-merge-requests.html" rel="alternate" type="text/html" title="Upgrading your merge requests" /><published>2020-02-26T23:00:00+01:00</published><updated>2020-02-26T23:00:00+01:00</updated><id>/posts/2020/02/26/upgrading-your-merge-requests</id><content type="html" xml:base="/posts/2020/02/26/upgrading-your-merge-requests.html">&lt;p&gt;I did a write-up on how to improve merge request (or pull request) quality control on &lt;a href=&quot;https://medium.com/ing-blog/upgrading-your-merge-requests-fe5e953b2f93&quot;&gt;ING’s Medium Blog&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I did a write-up on how to improve merge request (or pull request) quality control on ING’s Medium Blog.</summary></entry><entry><title type="html">Installing Linux Mint on a Surface Go</title><link href="/posts/2019/08/13/surface-go-linux-mint.html" rel="alternate" type="text/html" title="Installing Linux Mint on a Surface Go" /><published>2019-08-13T00:28:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>/posts/2019/08/13/surface-go-linux-mint</id><content type="html" xml:base="/posts/2019/08/13/surface-go-linux-mint.html">&lt;p&gt;This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -480,7 +480,7 @@ It was then that I realized the need to document the process, in case I ever nee
 
 &lt;p&gt;This document contains my notes, that I rewrote into this post.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/surface-go-with-linux-mint.jpg&quot; alt=&quot;Surface Go with Linux Mint&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/surface-go-with-linux-mint.jpg&quot; alt=&quot;Surface Go with Linux Mint&quot; class=&quot;center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Before you start, it’s important to know that Linux Mint isn’t perfect on the Surface Go. The cameras don’t work, as there are no drivers available. I also currently have a non-working hybernate/sleep mode. This did work in the first few hours, so I’ll
 investigate whether an apt-get update broke one of the applied fixes below.&lt;/p&gt;
@@ -698,7 +698,7 @@ I was pleasantly surprised that some of my favorite apps are now readily availab
   &lt;li&gt;&lt;a href=&quot;https://www.slashgear.com/surface-go-with-linux-review-almost-the-perfect-open-source-notepad-25558990/&quot;&gt;Surface Go with Linux review&lt;/a&gt; on SlashGear&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/SurfaceLinux/comments/7kb1ky/guide_installing_linux_on_surfaceseries_devices/&quot;&gt;Installing Linux on Surface-Series Devices&lt;/a&gt; on Reddit&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/SurfaceLinux/comments/94hjxv/surface_go_first_impressions/&quot;&gt;Surface Go: First Impressions&lt;/a&gt; on Reddit&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="posts" /><summary type="html">This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.</summary></entry><entry><title type="html">Introducing Spork 4.0.0</title><link href="http://localhost:4000/posts/2017/05/14/introducing-spork-4.0.0.html" rel="alternate" type="text/html" title="Introducing Spork 4.0.0" /><published>2017-05-14T17:11:00+02:00</published><updated>2017-05-14T17:11:00+02:00</updated><id>http://localhost:4000/posts/2017/05/14/introducing-spork%204.0.0</id><content type="html" xml:base="http://localhost:4000/posts/2017/05/14/introducing-spork-4.0.0.html">&lt;p&gt;I’ve been working hard on &lt;a href=&quot;http://spork.bytewelder.com&quot;&gt;Spork&lt;/a&gt; 4.0.0 since last summer.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="posts" /><summary type="html">This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.</summary></entry><entry><title type="html">Introducing Spork 4.0.0</title><link href="/posts/2017/05/14/introducing-spork-4.0.0.html" rel="alternate" type="text/html" title="Introducing Spork 4.0.0" /><published>2017-05-14T17:11:00+02:00</published><updated>2017-05-14T17:11:00+02:00</updated><id>/posts/2017/05/14/introducing-spork%204.0.0</id><content type="html" xml:base="/posts/2017/05/14/introducing-spork-4.0.0.html">&lt;p&gt;I’ve been working hard on &lt;a href=&quot;http://spork.bytewelder.com&quot;&gt;Spork&lt;/a&gt; 4.0.0 since last summer.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -936,7 +936,7 @@ they are automatically resolved by Spork:&lt;/p&gt;
 
 &lt;p&gt;Check out the &lt;a href=&quot;http://spork.bytewelder.com&quot;&gt;Spork website&lt;/a&gt; or the &lt;a href=&quot;http://spork.bytewelder.com/docs/4.0/&quot;&gt;documentation&lt;/a&gt; for more information.&lt;/p&gt;
 
-&lt;p&gt;Please file bug reports and feature requests at &lt;a href=&quot;https://github.com/ByteWelder/Spork&quot;&gt;Spork’s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I’ve been working hard on Spork 4.0.0 since last summer.</summary></entry><entry><title type="html">Testing multithreaded code</title><link href="http://localhost:4000/posts/2017/05/13/testing-multithreaded-code.html" rel="alternate" type="text/html" title="Testing multithreaded code" /><published>2017-05-13T13:54:00+02:00</published><updated>2017-05-13T13:54:00+02:00</updated><id>http://localhost:4000/posts/2017/05/13/testing-multithreaded-code</id><content type="html" xml:base="http://localhost:4000/posts/2017/05/13/testing-multithreaded-code.html">&lt;p&gt;Writing multi-threaded code for Java/Android is not the easiest of tasks. Making it testable can also be a challenge.&lt;/p&gt;
+&lt;p&gt;Please file bug reports and feature requests at &lt;a href=&quot;https://github.com/ByteWelder/Spork&quot;&gt;Spork’s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">I’ve been working hard on Spork 4.0.0 since last summer.</summary></entry><entry><title type="html">Testing multithreaded code</title><link href="/posts/2017/05/13/testing-multithreaded-code.html" rel="alternate" type="text/html" title="Testing multithreaded code" /><published>2017-05-13T13:54:00+02:00</published><updated>2017-05-13T13:54:00+02:00</updated><id>/posts/2017/05/13/testing-multithreaded-code</id><content type="html" xml:base="/posts/2017/05/13/testing-multithreaded-code.html">&lt;p&gt;Writing multi-threaded code for Java/Android is not the easiest of tasks. Making it testable can also be a challenge.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -1098,7 +1098,7 @@ see if our code is using it correctly in case the code is changed in the future.
 
 &lt;p&gt;This approach keeps your tests simple, readable and lightning fast to execute.&lt;/p&gt;
 
-&lt;p&gt;This does not cover everything there regarding &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html&quot;&gt;synchronization&lt;/a&gt;, but it’s at least a way to improve the testability of your code.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Writing multi-threaded code for Java/Android is not the easiest of tasks. Making it testable can also be a challenge.</summary></entry><entry><title type="html">Borrowing from Kotlin</title><link href="http://localhost:4000/posts/2017/05/08/borrowing-from-kotlin.html" rel="alternate" type="text/html" title="Borrowing from Kotlin" /><published>2017-05-08T23:17:00+02:00</published><updated>2017-05-08T23:17:00+02:00</updated><id>http://localhost:4000/posts/2017/05/08/borrowing-from-kotlin</id><content type="html" xml:base="http://localhost:4000/posts/2017/05/08/borrowing-from-kotlin.html">&lt;p&gt;Not all projects can be easily migrated to Kotlin, but that doesn’t mean we can’t benefit from Kotlin within other languages.&lt;/p&gt;
+&lt;p&gt;This does not cover everything there regarding &lt;a href=&quot;https://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html&quot;&gt;synchronization&lt;/a&gt;, but it’s at least a way to improve the testability of your code.&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Writing multi-threaded code for Java/Android is not the easiest of tasks. Making it testable can also be a challenge.</summary></entry><entry><title type="html">Borrowing from Kotlin</title><link href="/posts/2017/05/08/borrowing-from-kotlin.html" rel="alternate" type="text/html" title="Borrowing from Kotlin" /><published>2017-05-08T23:17:00+02:00</published><updated>2017-05-08T23:17:00+02:00</updated><id>/posts/2017/05/08/borrowing-from-kotlin</id><content type="html" xml:base="/posts/2017/05/08/borrowing-from-kotlin.html">&lt;p&gt;Not all projects can be easily migrated to Kotlin, but that doesn’t mean we can’t benefit from Kotlin within other languages.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -1114,6 +1114,6 @@ Kotlin follows a naming scheme where &lt;code class=&quot;language-plaintext hig
 &lt;p&gt;The benefit of using this in Java lies within your development environment. Once you type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yourClassOf&lt;/code&gt;,
 you can summon up all implementations that create an instance of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YourClass&lt;/code&gt;. In Android Studio or IntelliJ, you just press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;F1&lt;/code&gt;:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2017-05-08-ide.png&quot; alt=&quot;Android Studio / IntelliJ IDEA&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2017-05-08-ide.png&quot; alt=&quot;Android Studio / IntelliJ IDEA&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So why not apply the same idiom to Java?&lt;/p&gt;</content><author><name></name></author><category term="posts" /><summary type="html">Not all projects can be easily migrated to Kotlin, but that doesn’t mean we can’t benefit from Kotlin within other languages.</summary></entry></feed>
