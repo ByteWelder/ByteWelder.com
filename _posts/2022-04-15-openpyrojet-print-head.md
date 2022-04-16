@@ -4,7 +4,7 @@ title:  "OpenPyrojet Print Head Prototype"
 date:   2022-04-15 18:00:00 +0200
 categories: posts
 excerpt_separator: <!--more-->
-last_modified_at: 2022-04-15 18:00:00 +0200
+last_modified_at: 2022-04-16 18:38:00 +0200
 ---
 
 A few weeks ago, I joined the [OpenPyrojet](https://openpyrojet.com) project.
@@ -12,6 +12,10 @@ OpenPyrojet intends to build 3D printer technology based on thermal spraying.
 In this post, I'll show you how I assembled the print head prototype.
 
 <!--more-->
+
+This is what the finished print head looks like:
+
+![front view of assembled print head]({{ site.url }}/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg){: .center }
 
 # How does the printer work?
 
@@ -77,8 +81,9 @@ of the glue won't interfere with the electrical conductivity:
 ![monofilament cut]({{ site.url }}/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg){: .center }
 
 Combining them is tricky, because the filament won't lay still on a flat surface.
-I used some CA glue on the edges to keep it into place. I wiped the excess off
-with nitrile gloves:
+I used some CA glue on the edges to keep it into place. I learned later that
+glue is not the ideal way. In the future, I will tape it near the edges if the PCB
+with some kapton tape.
 
 ![monofilament glued to PCB]({{ site.url }}/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg){: .center }
 
