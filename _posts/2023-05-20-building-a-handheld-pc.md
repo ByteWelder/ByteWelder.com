@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 last_modified_at: 2022-05-20 22:00:00 +0200
 ---
 
-I'd like to share with you my latest project: [Decktility](https://github.com/ByteWelder/Decktility).
+I'd like to share with you my latest project: Decktility!
 
 <!--more-->
 
@@ -190,4 +190,8 @@ and see if it's bending outwards too much, because you don't want a critical fai
 **Naming your project matters**: While "Decktility" is probably not the best name out there, it is a good name because it's easy to remember,
 and it's a unique name so an online search will easily turn up the correct results. You can use ChatGPT to help you find a good name.
 (Decktility refers to ductility/utility, where ductility is a wink towards the _welder_ part in my online persona)
+
+# Closing words
+
+If you want more details, check out the [Decktility GitHub repository](https://github.com/ByteWelder/Decktility).
 
