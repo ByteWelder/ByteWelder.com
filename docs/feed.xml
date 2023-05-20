@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-05-20T22:13:49+02:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
-</subtitle><entry><title type="html">OpenPyrojet Print Head Prototype</title><link href="/posts/2022/04/15/openpyrojet-print-head.html" rel="alternate" type="text/html" title="OpenPyrojet Print Head Prototype" /><published>2022-04-15T18:00:00+02:00</published><updated>2022-04-16T18:38:00+02:00</updated><id>/posts/2022/04/15/openpyrojet-print-head</id><content type="html" xml:base="/posts/2022/04/15/openpyrojet-print-head.html"><![CDATA[<p>A few weeks ago, I joined the <a href="https://openpyrojet.com">OpenPyrojet</a> project.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-20T22:17:01+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
+</subtitle><entry><title type="html">OpenPyrojet Print Head Prototype</title><link href="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html" rel="alternate" type="text/html" title="OpenPyrojet Print Head Prototype" /><published>2022-04-15T18:00:00+02:00</published><updated>2022-04-16T18:38:00+02:00</updated><id>http://localhost:4000/posts/2022/04/15/openpyrojet-print-head</id><content type="html" xml:base="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html"><![CDATA[<p>A few weeks ago, I joined the <a href="https://openpyrojet.com">OpenPyrojet</a> project.
 OpenPyrojet intends to build 3D printer technology based on thermal spraying.
 In this post, I’ll show you how I assembled the print head prototype.</p>
 
@@ -7,7 +7,7 @@ In this post, I’ll show you how I assembled the print head prototype.</p>
 
 <p>This is what the finished print head looks like:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
 
 <h1 id="how-does-the-printer-work">How does the printer work?</h1>
 
@@ -22,23 +22,23 @@ Due to the heat, the metal melts and hits a surface (substrate) to which it atta
 <p>To build a strong print head, we’re using multiple layers made from PCBs.
 These layers are stacked in the order as they are laid out below:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" alt="all pcb parts" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" alt="all pcb parts" class="center" /></p>
 
 <p>I first prepared the inlet and outlet. I need to connect Viton tubing to the
 print head, so I’m soldering small copper pipes (<code class="language-plaintext highlighter-rouge">3 mm</code> diameter) to the PCB.
 The picture shows a larger copper pipe, because I used the wrong size when taking pictures:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" alt="pcb with inlet, outlet and copper pipes" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" alt="pcb with inlet, outlet and copper pipes" class="center" /></p>
 
 <p>I started with adding solder to the pads:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" alt="inlet pad with some solder" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" alt="inlet pad with some solder" class="center" /></p>
 
 <p>Initially, the solder will likely not connect neatly all around the copper pipe.
 It might look like the picture below. I take some extra solder on my iron and
 then place the iron at the base of the copper pipe to fix this issue:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" alt="copper pipe with bad solder connection" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" alt="copper pipe with bad solder connection" class="center" /></p>
 
 <p>Another problem that might occur is when your solder smudges.
 I cleaned it off by wiping my (cleaned) soldering iron on it.
@@ -46,78 +46,78 @@ It’s not problematic if there is some solder on the side,
 but I have to make sure it’s not sharp.
 That way, it won’t cut the Viton tubing later on:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" alt="solder smudged on copper pipe" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" alt="solder smudged on copper pipe" class="center" /></p>
 
 <p>When I used too much solder, the inlet became too narrow. I could’ve desoldered
 it. Instead, I used a set of drills to carefully drill it out by hand.
 I kept increasing the drill diameter by <code class="language-plaintext highlighter-rouge">0.1 mm</code> until the diameter was the right size:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" alt="pcb with narrow inlet" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" alt="pcb with narrow inlet" class="center" /></p>
 
 <p>Finally, I had a neat collar on the copper pipe:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" alt="copper pipe on pcb with solder" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" alt="copper pipe on pcb with solder" class="center" /></p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" alt="finished inlet and oultet on pcb" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" alt="finished inlet and oultet on pcb" class="center" /></p>
 
 <p>The next step was to put the monofilament on one of the PCB layers. This monofilament
 is what heats up the fuel, which causes the fuel to eject through the nozzle.
 The filament gets sandwiched between the nozzle PCB and the PCB that holds the connector.
 I store the filament in a folded sheet of paper:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" alt="monofilament displayed" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" alt="monofilament displayed" class="center" /></p>
 
 <p>First I cut the filament to size. We make it as wide as possible, so the thickness
 of the glue won’t interfere with the electrical conductivity:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" alt="monofilament cut" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" alt="monofilament cut" class="center" /></p>
 
 <p>Combining them is tricky, because the filament won’t lay still on a flat surface.
 I used some CA glue on the edges to keep it into place. I learned later that
 glue is not the ideal way. In the future, I will tape it near the edges if the PCB
 with some kapton tape.</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" alt="monofilament glued to PCB" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" alt="monofilament glued to PCB" class="center" /></p>
 
 <p>The nozzle PCB layer had holes that were too small in diameter. I widened them
 by hand with some cheap drills, slowly increasing the diameter <code class="language-plaintext highlighter-rouge">0.1 mm</code> at a time:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" alt="nozzle PCB with drill in it" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" alt="nozzle PCB with drill in it" class="center" /></p>
 
 <p>When attaching the nozzle PCB to the connector PCB, I start with a single row of screws:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" alt="nozzle PCB on connector PCB with a single row of screws" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" alt="nozzle PCB on connector PCB with a single row of screws" class="center" /></p>
 
 <p>It’s important to tighten the screws evenly, so initially all screws are kept loose.
 I then tightened them carefully and as evenly as possible. When everything stops sliding
 around, I start measuring resistance before continueing to tighten further.
 The resistance measurements are repeated until the values are in an acceptable range.</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" alt="nozzle PCB on connector PCB with all screws" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" alt="nozzle PCB on connector PCB with all screws" class="center" /></p>
 
 <p>I had to make sure that the nozzle plate wasn’t crooked, like in the picture below:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" alt="nozzle PCB badly aligned with connector PCB" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" alt="nozzle PCB badly aligned with connector PCB" class="center" /></p>
 
 <p>The prepared PCBs are ready to be combined. I took 8 pieces of <code class="language-plaintext highlighter-rouge">M2 x 10mm</code> and
 some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match. I also used medium-strength loctite:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" alt="all layers finished, displayed with M2 hardware and loctite" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" alt="all layers finished, displayed with M2 hardware and loctite" class="center" /></p>
 
 <p>At this point, I have a finished physical assembly:</p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" alt="back view of assembled print head" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" alt="back view of assembled print head" class="center" /></p>
 
-<p><img src="/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" alt="side view of assembled print head" class="center" /></p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.]]></summary></entry><entry><title type="html">Hobby CNC electronics</title><link href="/posts/2021/12/28/hobby-cnc-electronics.html" rel="alternate" type="text/html" title="Hobby CNC electronics" /><published>2021-12-28T00:00:00+01:00</published><updated>2021-12-28T00:00:00+01:00</updated><id>/posts/2021/12/28/hobby-cnc-electronics</id><content type="html" xml:base="/posts/2021/12/28/hobby-cnc-electronics.html"><![CDATA[<p>I recently started building an <a href="https://indystry.cc/indymill/">IndyMill</a> CNC router.
+<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" alt="side view of assembled print head" class="center" /></p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.]]></summary></entry><entry><title type="html">Hobby CNC electronics</title><link href="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html" rel="alternate" type="text/html" title="Hobby CNC electronics" /><published>2021-12-28T00:00:00+01:00</published><updated>2021-12-28T00:00:00+01:00</updated><id>http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics</id><content type="html" xml:base="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html"><![CDATA[<p>I recently started building an <a href="https://indystry.cc/indymill/">IndyMill</a> CNC router.
 In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.</p>
 
 <!--more-->
 
 <p>Please note that everything written below is written in the context of hobbyist CNC router hardware.</p>
 
-<p><img src="/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet finished and opened" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet finished and opened" class="center" /></p>
 
 <h2 id="a-brief-intro-to-hobby-cnc-routers">A brief intro to hobby CNC routers</h2>
 
@@ -152,7 +152,7 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 
 <p>To make the cabinet layout, I used <a href="https://inkscape.org/">InkScape</a>. A vector graphics editor like that (or Affinity Designer and many others) is ideal for me: I created a <code class="language-plaintext highlighter-rouge">600 x 400</code> pixel image, where each pixel represents a millimeter. The end result looks like this:</p>
 
-<p><img src="/assets/images/posts/indymill-cabinet-layout.png" alt="cabinet layout design" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-layout.png" alt="cabinet layout design" class="center" /></p>
 
 <p>The yellow marked areas are space in the box that is unusable.</p>
 
@@ -171,11 +171,11 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 
 <p>The first design has an intake fan on the bottom of the cabinet and an exit hole on the top-left. The downside of this designis that we can’t put the cabinet on a flat surface without obstructing the airflow:</p>
 
-<p><img src="/assets/images/posts/indymill-airflow1.png" alt="airflow design 1" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-airflow1.png" alt="airflow design 1" class="center" /></p>
 
 <p>The second design has an intake fan on the bottom-left and the outtake hole on the top-left:</p>
 
-<p><img src="/assets/images/posts/indymill-airflow2.png" alt="airflow design 2" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-airflow2.png" alt="airflow design 2" class="center" /></p>
 
 <p>The last design is the one I ended up chosing, but both were viable options.</p>
 
@@ -184,45 +184,45 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 <p>The first real build step was mounting the DIN rails on the steel plate of the cabinet.
 I used a medium-strength thread lock for the nuts and bolts. I also ensured that the plate could be grounded by drilling an extra hole for grounding.</p>
 
-<p><img src="/assets/images/posts/indymill-din-rails-mounted.jpg" alt="base plate with din rails mounted" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-din-rails-mounted.jpg" alt="base plate with din rails mounted" class="center" /></p>
 
 <h1 id="mounting-the-first-components">Mounting the first components</h1>
 
 <p>Once the rails were ready, it was time to try out the first components: The top row has all 4 stepper drivers, connected to the power supply below. I’m using <code class="language-plaintext highlighter-rouge">Wago</code> clamps to tie it all together. The power cord is temporary:</p>
 
-<p><img src="/assets/images/posts/indymill-first-din-components.jpg" alt="din plate with first components mounted" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-first-din-components.jpg" alt="din plate with first components mounted" class="center" /></p>
 
 <h1 id="din-mounting-options">DIN mounting options</h1>
 
 <p>There are a lot of DIN parts on <a href="https://www.thingiverse.com/">Thingiverse</a>. A lot of the DIN brackets that I used come from there. Some of them were custom. The controller and fan brackets are a remix of an existing ones on Thingiverse:</p>
 
-<p><img src="/assets/images/posts/indymill-controller-close-up.jpg" alt="main controller close-up" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-controller-close-up.jpg" alt="main controller close-up" class="center" /></p>
 
-<p><img src="/assets/images/posts/indymill-fan-controller.jpg" alt="fan controller close-up" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-fan-controller.jpg" alt="fan controller close-up" class="center" /></p>
 
 <h1 id="finish-mounting-the-components">Finish mounting the components</h1>
 
 <p>The CNC controller that I’m using as <a href="https://www.makerfr.com/en/cnc/grbl-32bits-board-v2/">Grbl32bits</a> board from Makerfr. I’ve mounted it together with its power supply and the fan controller in the below picture:</p>
 
-<p><img src="/assets/images/posts/indymill-all-components-mounted.jpg" alt="all DIN components mounted on a steel plate" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-all-components-mounted.jpg" alt="all DIN components mounted on a steel plate" class="center" /></p>
 
 <h1 id="finishing-the-cabinet">Finishing the cabinet</h1>
 
 <p>The next step was drilling holes in the cabinet to facilitate all the connectors:</p>
 
-<p><img src="/assets/images/posts/indymill-cabinet-holes.jpg" alt="cabinet with holes visible" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-holes.jpg" alt="cabinet with holes visible" class="center" /></p>
 
 <p>In case you are wondering: yes, that is indeed my living room table being used as a workbench. My wife is awesome for putting up with it.</p>
 
 <p>After everything is wired up, the cabinet is finished!</p>
 
-<p><img src="/assets/images/posts/indymill-cabinet-finished-right.jpg" alt="cabinet view from the right" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-right.jpg" alt="cabinet view from the right" class="center" /></p>
 
-<p><img src="/assets/images/posts/indymill-cabinet-finished-closed.jpg" alt="cabinet with lid closed" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-closed.jpg" alt="cabinet with lid closed" class="center" /></p>
 
-<p><img src="/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet with lid open" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet with lid open" class="center" /></p>
 
-<p>You can find my collection of 3D printable parts <a href="https://www.thingiverse.com/kenvanhoeylandt/collections/cnc">here</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.]]></summary></entry><entry><title type="html">Designing for privacy: A thought experiment</title><link href="/posts/2021/09/05/designing-for-privacy.html" rel="alternate" type="text/html" title="Designing for privacy: A thought experiment" /><published>2021-09-05T00:00:00+02:00</published><updated>2021-09-05T00:00:00+02:00</updated><id>/posts/2021/09/05/designing-for-privacy</id><content type="html" xml:base="/posts/2021/09/05/designing-for-privacy.html"><![CDATA[<p>Apple’s <a href="https://www.apple.com/child-safety/pdf/CSAM_Detection_Technical_Summary.pdf">plans</a> have been widely <a href="https://appleprivacyletter.com/">critiqued</a>. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.</p>
+<p>You can find my collection of 3D printable parts <a href="https://www.thingiverse.com/kenvanhoeylandt/collections/cnc">here</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.]]></summary></entry><entry><title type="html">Designing for privacy: A thought experiment</title><link href="http://localhost:4000/posts/2021/09/05/designing-for-privacy.html" rel="alternate" type="text/html" title="Designing for privacy: A thought experiment" /><published>2021-09-05T00:00:00+02:00</published><updated>2021-09-05T00:00:00+02:00</updated><id>http://localhost:4000/posts/2021/09/05/designing-for-privacy</id><content type="html" xml:base="http://localhost:4000/posts/2021/09/05/designing-for-privacy.html"><![CDATA[<p>Apple’s <a href="https://www.apple.com/child-safety/pdf/CSAM_Detection_Technical_Summary.pdf">plans</a> have been widely <a href="https://appleprivacyletter.com/">critiqued</a>. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.</p>
 
 <!--more-->
 
@@ -282,7 +282,7 @@ Perhaps we can consider having different types of passwords (e.g. word list, hex
 
 <h2 id="closing-words">Closing words</h2>
 
-<p>I’d like to hear your thoughts on this thought experiment, so feel free to contact me through twitter/email via <a href="https://kenvanhoeylandt.net">my main website</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Apple’s plans have been widely critiqued. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.]]></summary></entry><entry><title type="html">Google Analytics IP anonymization is a joke</title><link href="/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html" rel="alternate" type="text/html" title="Google Analytics IP anonymization is a joke" /><published>2021-07-08T22:30:00+02:00</published><updated>2021-07-10T14:54:00+02:00</updated><id>/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke</id><content type="html" xml:base="/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html"><![CDATA[<p>Google Analytics, the popular data gathering and statistics analysis tool, has a feature called <em>IP Anonymization</em> or <em>IP Masking</em>.
+<p>I’d like to hear your thoughts on this thought experiment, so feel free to contact me through twitter/email via <a href="https://kenvanhoeylandt.net">my main website</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Apple’s plans have been widely critiqued. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.]]></summary></entry><entry><title type="html">Google Analytics IP anonymization is a joke</title><link href="http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html" rel="alternate" type="text/html" title="Google Analytics IP anonymization is a joke" /><published>2021-07-08T22:30:00+02:00</published><updated>2021-07-10T14:54:00+02:00</updated><id>http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke</id><content type="html" xml:base="http://localhost:4000/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html"><![CDATA[<p>Google Analytics, the popular data gathering and statistics analysis tool, has a feature called <em>IP Anonymization</em> or <em>IP Masking</em>.
 The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!</p>
 
 <!--more-->
@@ -345,7 +345,7 @@ Web developers could reconsider using Google Analytics. Google could use more cl
 <p>So what about IPv6? Luckily, Google did better here: when IP anonymization is applied, the last <code class="language-plaintext highlighter-rouge">80 bits</code> of data are removed.
 This gives a massively larger pool of possible addresses when attempting to recover an IP.</p>
 
-<p>However, since most internet users use IPv4, this is not very relevant.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Google Analytics, the popular data gathering and statistics analysis tool, has a feature called IP Anonymization or IP Masking. The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!]]></summary></entry><entry><title type="html">Thoughts on multiplayer networking</title><link href="/posts/2020/10/07/thoughts-on-multiplayer-networking.html" rel="alternate" type="text/html" title="Thoughts on multiplayer networking" /><published>2020-10-07T23:00:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>/posts/2020/10/07/thoughts-on-multiplayer-networking</id><content type="html" xml:base="/posts/2020/10/07/thoughts-on-multiplayer-networking.html"><![CDATA[<p>The topic of gaming and networking was brought up on the <a href="https://korge.org">KorGE</a> Discord server.
+<p>However, since most internet users use IPv4, this is not very relevant.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Google Analytics, the popular data gathering and statistics analysis tool, has a feature called IP Anonymization or IP Masking. The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!]]></summary></entry><entry><title type="html">Thoughts on multiplayer networking</title><link href="http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking.html" rel="alternate" type="text/html" title="Thoughts on multiplayer networking" /><published>2020-10-07T23:00:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking</id><content type="html" xml:base="http://localhost:4000/posts/2020/10/07/thoughts-on-multiplayer-networking.html"><![CDATA[<p>The topic of gaming and networking was brought up on the <a href="https://korge.org">KorGE</a> Discord server.
 This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different
 considerations for their development.</p>
 
@@ -471,12 +471,12 @@ Instead of trying to give you such answer, here’s a summation of the main ques
 <p>That’s it! I hope this is useful to someone out there…
 If you’d like to send me feedback, you can find my contact info on my personal <a href="https://kenvanhoeylandt.net">website</a>.</p>
 
-<p>Happy development!</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[The topic of gaming and networking was brought up on the KorGE Discord server. This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different considerations for their development. The intention of this article is to give a glimpse into various approaches and considerations. It’s likely not complete or perfect, but I hope it will be useful for developers that are somewhat new to networking for games.]]></summary></entry><entry><title type="html">Building a charging case</title><link href="/posts/2020/08/14/building-a-charging-case.html" rel="alternate" type="text/html" title="Building a charging case" /><published>2020-08-14T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>/posts/2020/08/14/building-a-charging-case</id><content type="html" xml:base="/posts/2020/08/14/building-a-charging-case.html"><![CDATA[<p>I will take you through the steps I took to create a charging case for 3 chargers.
+<p>Happy development!</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[The topic of gaming and networking was brought up on the KorGE Discord server. This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different considerations for their development. The intention of this article is to give a glimpse into various approaches and considerations. It’s likely not complete or perfect, but I hope it will be useful for developers that are somewhat new to networking for games.]]></summary></entry><entry><title type="html">Building a charging case</title><link href="http://localhost:4000/posts/2020/08/14/building-a-charging-case.html" rel="alternate" type="text/html" title="Building a charging case" /><published>2020-08-14T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>http://localhost:4000/posts/2020/08/14/building-a-charging-case</id><content type="html" xml:base="http://localhost:4000/posts/2020/08/14/building-a-charging-case.html"><![CDATA[<p>I will take you through the steps I took to create a charging case for 3 chargers.
 I hope you enjoy reading about my successes, findings and failures.</p>
 
 <!--more-->
 
-<p><img src="/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" /></p>
 
 <p><strong>Materials used:</strong></p>
 
@@ -513,8 +513,8 @@ I hope you enjoy reading about my successes, findings and failures.</p>
 <p><strong>I also designed some parts:</strong></p>
 
 <ul>
-  <li>ISDT Q6 bracket: <a href="/assets/images/posts/charging-case/isdt_q6_bracket.stl">STL</a>, <a href="/assets/images/posts/charging-case/isdt_q6_bracket.FCStd">FreeCAD</a></li>
-  <li>Balance board support plate: <a href="/assets/images/posts/charging-case/balance_board_plate.stl">STL</a>, <a href="/assets/images/posts/charging-case/balance_board_plate.FCStd">FreeCAD</a></li>
+  <li>ISDT Q6 bracket: <a href="http://localhost:4000/assets/images/posts/charging-case/isdt_q6_bracket.stl">STL</a>, <a href="http://localhost:4000/assets/images/posts/charging-case/isdt_q6_bracket.FCStd">FreeCAD</a></li>
+  <li>Balance board support plate: <a href="http://localhost:4000/assets/images/posts/charging-case/balance_board_plate.stl">STL</a>, <a href="http://localhost:4000/assets/images/posts/charging-case/balance_board_plate.FCStd">FreeCAD</a></li>
 </ul>
 
 <p>These parts are optional, as you can also use pieces of wood or plexiglass to construct something similar.</p>
@@ -527,15 +527,15 @@ You could probably bring the total down to slightly below EUR 200 if you’re ma
 
 <p>First, I bought a case. It was relatively cheap, and the only downside was that it is a bit heavy:</p>
 
-<p><img src="/assets/images/posts/charging-case/1_case_closed.jpg" alt="closed case" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/1_case_closed.jpg" alt="closed case" class="center" /></p>
 
-<p><img src="/assets/images/posts/charging-case/1_case_open.jpg" alt="open case" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/1_case_open.jpg" alt="open case" class="center" /></p>
 
 <p>The next step was to start creating a bottom plate. I wanted to keep it detachable, so I bought some 3M Dual Lock.
 I added a bit too much in retrospect, so when I detach the plate, sometimes the sticky tape comes off rather than the
 Dual Lock:</p>
 
-<p><img src="/assets/images/posts/charging-case/2_bottom_plate.jpg" alt="bottom plate" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/2_bottom_plate.jpg" alt="bottom plate" class="center" /></p>
 
 <p>On this bottom plate, I added the switching power supply. The main consideration here was to have it placed in such a way
 that the combined airflow of the power supply unit (PSU) was working well with the airflow of the chargers. Another
@@ -544,20 +544,20 @@ consideration was how the placement would affect the center of gravity of the ca
 <p>I mounted the PSU on the wooden plate with standoffs, so that the airflow would be better. I also wanted to make sure that
 if the power supply ever got really hot (which I don’t expect), it wouldn’t be touching the wood:</p>
 
-<p><img src="/assets/images/posts/charging-case/3_psu_on_bottom_plate_a.jpg" alt="power supply mounted" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/3_psu_on_bottom_plate_a.jpg" alt="power supply mounted" class="center" /></p>
 
 <p>Here it is placed in the case:</p>
 
-<p><img src="/assets/images/posts/charging-case/3_psu_on_bottom_plate_b.jpg" alt="power supply mounted" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/3_psu_on_bottom_plate_b.jpg" alt="power supply mounted" class="center" /></p>
 
 <p>Similarly, I created a top plate. It rests nicely on the rim of the case, and due to the design of the case, the lid
 still closes perfectly.</p>
 
-<p><img src="/assets/images/posts/charging-case/3_top_plate.jpg" alt="top plate" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/3_top_plate.jpg" alt="top plate" class="center" /></p>
 
 <p>I drew some edges on it, to visualize how much actual space was usable. That way, I wouldn’t be hitting the side of the case:</p>
 
-<p><img src="/assets/images/posts/charging-case/4_top_plate_edge.jpg" alt="top plate with edge marked" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/4_top_plate_edge.jpg" alt="top plate with edge marked" class="center" /></p>
 
 <p>I made many sketches on paper before picking my preferred layout. I laid some of the components on the paper to see if it would
 work well. The considerations were: airflow, wire connections (amount of wire needed), space during charging (how close is
@@ -565,20 +565,20 @@ everything to each other).</p>
 
 <p>After that was done, I transferred my layout to the top plate:</p>
 
-<p><img src="/assets/images/posts/charging-case/5_top_plate_layout_create.jpg" alt="top plate with layout drawn on it" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/5_top_plate_layout_create.jpg" alt="top plate with layout drawn on it" class="center" /></p>
 
 <p>And of course I verified it by adding the components on top:</p>
 
-<p><img src="/assets/images/posts/charging-case/6_top_plate_layout_verify.jpg" alt="top plate with components on top" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/6_top_plate_layout_verify.jpg" alt="top plate with components on top" class="center" /></p>
 
 <p>At this point, I started prepping wires already. This would allow me to already connect the chargers and start charging.
 That way, I didn’t have to wait to the end of the project until I’d have a functioning charging setup!</p>
 
-<p><img src="/assets/images/posts/charging-case/7_prep_wires.jpg" alt="wires prepped" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/7_prep_wires.jpg" alt="wires prepped" class="center" /></p>
 
 <p>As you can see, the rig was already functionally usable:</p>
 
-<p><img src="/assets/images/posts/charging-case/8_already_usable.jpg" alt="functional chargers" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/8_already_usable.jpg" alt="functional chargers" class="center" /></p>
 
 <p>I wanted a single wire to go from the PSU to the rest of the electronics. This allows me to easily disconnect the electronics
 on the top plate from the PSU on the bottom for maintenance and testing. In theory, I could just solder all the XT60 connectors
@@ -590,55 +590,55 @@ than the PDB will give me. The BECs allow me to regulate the voltage, effectivel
 
 <p>I am adding XT60 and XT30 connectors, because I want the entire thing to be modular and easy to disassemble:</p>
 
-<p><img src="/assets/images/posts/charging-case/9_power_distribution.jpg" alt="PDB and BECs" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/9_power_distribution.jpg" alt="PDB and BECs" class="center" /></p>
 
 <p>Originally, I had only 1 BEC. This provided insufficient power to start rotating all fans at the same time.
 I added a second BEC to solve this problem, but in the end it was still insufficient. The proper fix would be to have a setup
 where each fan gets its own switch. That way, they can all individually get their needed current spike to start spinning - but
 not at least not at the same time!</p>
 
-<p><img src="/assets/images/posts/charging-case/11_cooling_becs.jpg" alt="PDB, BECs and fans" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/11_cooling_becs.jpg" alt="PDB, BECs and fans" class="center" /></p>
 
 <p>At this point I started cutting out the top plate:</p>
 
-<p><img src="/assets/images/posts/charging-case/12_top_plate_cutting.jpg" alt="top plate cut out" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/12_top_plate_cutting.jpg" alt="top plate cut out" class="center" /></p>
 
 <p>Because I used triplex wood, and I’m not super experienced with it, the wood partially disintegrated when cutting into it.
 I used some 2 component epoxy filler to fix most of it:</p>
 
-<p><img src="/assets/images/posts/charging-case/13_top_plate_filling.jpg" alt="top plate touch up" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/13_top_plate_filling.jpg" alt="top plate touch up" class="center" /></p>
 
 <p>To finish the top plate, I painted it black:</p>
 
-<p><img src="/assets/images/posts/charging-case/14_top_plate_finished.jpg" alt="top plate finished" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/14_top_plate_finished.jpg" alt="top plate finished" class="center" /></p>
 
 <p>Also the fans were mounted:</p>
 
-<p><img src="/assets/images/posts/charging-case/15_top_plate_mounting.jpg" alt="top plate with fans and PDB" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/15_top_plate_mounting.jpg" alt="top plate with fans and PDB" class="center" /></p>
 
 <p>Then the XT60 top-mounted connectors were added:</p>
 
-<p><img src="/assets/images/posts/charging-case/16_top_plate_fitting.jpg" alt="top plate with XT60 connectors" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/16_top_plate_fitting.jpg" alt="top plate with XT60 connectors" class="center" /></p>
 
 <p>Because the chargers were shaped irregularly, and I needed to support the balance boards with something, I designed and
 printed out some parts. You can also buy some wood or plexiglass and cut out similar parts by hand. I used 2 component
 epoxy filler (yes, filler) to glue the charger brackets on:</p>
 
-<p><img src="/assets/images/posts/charging-case/17_printed_brackets.jpg" alt="top plate with charger brackets" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/17_printed_brackets.jpg" alt="top plate with charger brackets" class="center" /></p>
 
 <p>Then I put the balance charging cables in place and glued in the supports for the balance board:</p>
 
-<p><img src="/assets/images/posts/charging-case/18_balance_done_a.jpg" alt="top plate with balance charging setup" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/18_balance_done_a.jpg" alt="top plate with balance charging setup" class="center" /></p>
 
-<p><img src="/assets/images/posts/charging-case/18_balance_done_b.jpg" alt="top plate with balance charging setup" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/18_balance_done_b.jpg" alt="top plate with balance charging setup" class="center" /></p>
 
 <p>The lasts step was to connect everything:</p>
 
-<p><img src="/assets/images/posts/charging-case/19_wired_all.jpg" alt="everything connected" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/19_wired_all.jpg" alt="everything connected" class="center" /></p>
 
 <p>And then the project was finished:</p>
 
-<p><img src="/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" /></p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I will take you through the steps I took to create a charging case for 3 chargers. I hope you enjoy reading about my successes, findings and failures.]]></summary></entry><entry><title type="html">ESC fuse fix</title><link href="/posts/2020/06/30/esc-fuse-fix.html" rel="alternate" type="text/html" title="ESC fuse fix" /><published>2020-06-30T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>/posts/2020/06/30/esc-fuse-fix</id><content type="html" xml:base="/posts/2020/06/30/esc-fuse-fix.html"><![CDATA[<p>I ordered a bunch of <code class="language-plaintext highlighter-rouge">RushFPV Mini Tank Stacks</code> that were rated for <code class="language-plaintext highlighter-rouge">30 A</code> and connected them to some <code class="language-plaintext highlighter-rouge">DYS Samguk 2600 Kv</code>
+<p><img src="http://localhost:4000/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" /></p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I will take you through the steps I took to create a charging case for 3 chargers. I hope you enjoy reading about my successes, findings and failures.]]></summary></entry><entry><title type="html">ESC fuse fix</title><link href="http://localhost:4000/posts/2020/06/30/esc-fuse-fix.html" rel="alternate" type="text/html" title="ESC fuse fix" /><published>2020-06-30T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>http://localhost:4000/posts/2020/06/30/esc-fuse-fix</id><content type="html" xml:base="http://localhost:4000/posts/2020/06/30/esc-fuse-fix.html"><![CDATA[<p>I ordered a bunch of <code class="language-plaintext highlighter-rouge">RushFPV Mini Tank Stacks</code> that were rated for <code class="language-plaintext highlighter-rouge">30 A</code> and connected them to some <code class="language-plaintext highlighter-rouge">DYS Samguk 2600 Kv</code>
 motors <em>without propellers</em>. This minimal load blew the fuse on the ESC, making the ESC unusable.
 The result was that BetaFlight showed <code class="language-plaintext highlighter-rouge">0.01 V</code> when a lipo was connected.</p>
 
@@ -663,48 +663,48 @@ I was given some pictures as a guide, but decided to make a comprehensive photo 
 
 <p>First, let’s take a look at the fuse itself. It’s the green SMD component on the ESC:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/01_fuse.jpg" alt="broken fuse on PCB" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/01_fuse.jpg" alt="broken fuse on PCB" class="center" /></p>
 
 <p>As mentioned in the list of tools, I used a fine chisel tip:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/02_tool_chisel.jpg" alt="soldering iron chisel tip" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/02_tool_chisel.jpg" alt="soldering iron chisel tip" class="center" /></p>
 
 <p>Use the clippers to splice the wire length-wise. Then cut a smaller piece off that is a bit smaller than
 the size of the fuse:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/03_wire_cut_small.jpg" alt="copper wire with piece cut off" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/03_wire_cut_small.jpg" alt="copper wire with piece cut off" class="center" /></p>
 
 <p>Have your soldering iron on high heat (I put mine on <code class="language-plaintext highlighter-rouge">425 C</code>) and add a little bit of solder.
 This solder will help spread the heat on the SMD component:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/04_solder.jpg" alt="chisel tip with solder" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/04_solder.jpg" alt="chisel tip with solder" class="center" /></p>
 
 <p>Start holding the fuse with the tweezers. Don’t put a lot of force on it, but make sure you grab hold of it:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/05_hold_fuse.jpg" alt="holding fuse with tweezers" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/05_hold_fuse.jpg" alt="holding fuse with tweezers" class="center" /></p>
 
 <p>Bring the soldering iron to the fuse (don’t push hard) and gently pull the fuse off with the tweezers:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/06_lift_fuse.jpg" alt="fuse pulled off with tweezers" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/06_lift_fuse.jpg" alt="fuse pulled off with tweezers" class="center" /></p>
 
 <p>The ESC will now look like this:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/07_lifted.jpg" alt="ESC without fuse" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/07_lifted.jpg" alt="ESC without fuse" class="center" /></p>
 
 <p>Add some fresh solder to the fuse pads. I used the sharp end of the chisel tip to set down my iron
 in a stable manner, and then I fed a little bit of solder into it:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/08_tin.jpg" alt="ESC with tinned pads" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/08_tin.jpg" alt="ESC with tinned pads" class="center" /></p>
 
 <p>Now place the tiny piece of copper wire, with the flat side down, between the ESC fuse pads.</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/09_bridge.jpg" alt="copper wire between ESC fuse pads" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/09_bridge.jpg" alt="copper wire between ESC fuse pads" class="center" /></p>
 
 <p>Before you put the soldering iron down, make sure that you have some grip on the wire, as it will start
 sliding a bit when the solder is flowing. To solder it, just put your iron down on the copper bit and
 let the heat of the copper conduct into the solder and melt the solder into the copper:</p>
 
-<p><img src="/assets/images/posts/esc-fuse-fix/10_finish.jpg" alt="ESC with bridged fuse" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/10_finish.jpg" alt="ESC with bridged fuse" class="center" /></p>
 
 <p>That’s it, you’ve now bridged the fuse!</p>
 
@@ -715,7 +715,7 @@ let the heat of the copper conduct into the solder and melt the solder into the 
   <li>Power on the ESC with a battery and a smoke stopper.</li>
   <li>Remove battery power, add the FC and do another power on test with the smoke stopper.</li>
   <li>Remove battery power, connect setup through USB, re-connect power (with smoke stopper) and verify the voltage readout in BetaFlight</li>
-</ol>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected.]]></summary></entry><entry><title type="html">Making a Li-Ion battery pack</title><link href="/posts/2020/06/06/li-ion-battery-pack.html" rel="alternate" type="text/html" title="Making a Li-Ion battery pack" /><published>2020-06-06T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>/posts/2020/06/06/li-ion-battery-pack</id><content type="html" xml:base="/posts/2020/06/06/li-ion-battery-pack.html"><![CDATA[<p>This post shows the steps involved in making a <code class="language-plaintext highlighter-rouge">2S</code> pack with <code class="language-plaintext highlighter-rouge">21700</code> cells.
+</ol>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected.]]></summary></entry><entry><title type="html">Making a Li-Ion battery pack</title><link href="http://localhost:4000/posts/2020/06/06/li-ion-battery-pack.html" rel="alternate" type="text/html" title="Making a Li-Ion battery pack" /><published>2020-06-06T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>http://localhost:4000/posts/2020/06/06/li-ion-battery-pack</id><content type="html" xml:base="http://localhost:4000/posts/2020/06/06/li-ion-battery-pack.html"><![CDATA[<p>This post shows the steps involved in making a <code class="language-plaintext highlighter-rouge">2S</code> pack with <code class="language-plaintext highlighter-rouge">21700</code> cells.
 This guide is also relevant for constructing with <code class="language-plaintext highlighter-rouge">18650</code> cells.</p>
 
 <!--more-->
@@ -751,104 +751,104 @@ The author is not responsible for any damage or harm that may happen from follow
 
 <p>First we start with two identical cells. These are Samsung <code class="language-plaintext highlighter-rouge">INR21700-50E</code> cells:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/01_start.jpg" alt="2 Samsung 21700 cells " class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/01_start.jpg" alt="2 Samsung 21700 cells " class="center" /></p>
 
 <p>You can find the specifications of these cells <a href="https://lygte-info.dk/review/batteries2012/Samsung%20INR21700-50E%205000mAh%20(Cyan)%20UK.html">here</a>.</p>
 
 <p>Before we actually start, please note that all wires should be pre-tinned.
 This will make it much easier to combine the components:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/02_prep.jpg" alt="2 pre-tinned wires" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/02_prep.jpg" alt="2 pre-tinned wires" class="center" /></p>
 
 <p>Now put the cells together. They must touch each other. I used 2 coasters to help me with that.
 You can then use a tool to align them vertically:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/03_arrange.jpg" alt="2 cells laying flat and aligned" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/03_arrange.jpg" alt="2 cells laying flat and aligned" class="center" /></p>
 
 <p>Carefully apply hot glue on one side of the cells. Make sure your glue gun doesn’t touch the cells,
 so you don’t melt the plastic wrapper. Let it dry for 30-60 seconds and then do the other side too:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/04_glue.jpg" alt="2 cells with hot glue" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/04_glue.jpg" alt="2 cells with hot glue" class="center" /></p>
 
 <p>Since I don’t have a spot, I need to solder them regularly.
 Before we can add solder to the cells, we need to remove the oxidised layer from the cells.
 I do this by scraping carefully with a knife. But the cell flat on the table and start scraping at
 the center of the contact point.</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/05_roughen.jpg" alt="2 cells with knife" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/05_roughen.jpg" alt="2 cells with knife" class="center" /></p>
 
 <p>Heat the soldering iron to <code class="language-plaintext highlighter-rouge">450 C</code> (<code class="language-plaintext highlighter-rouge">842 F</code>). Less might also work, but this is the temperature that I used.
 Put some solder on your iron, then put the soldering iron on the cell, then add a bunch more solder:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/06_solder.jpg" alt="2 cells, 1 with solder" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/06_solder.jpg" alt="2 cells, 1 with solder" class="center" /></p>
 
 <p>Let it cool and then clean off the resin:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/07_clean.jpg" alt="2 cells, 1 with clean solder" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/07_clean.jpg" alt="2 cells, 1 with clean solder" class="center" /></p>
 
 <p>You can test the strength of your weld by applying force with a knife on the edge of the solder.
 I had to hold my camera to take a picture, but you should hold the batteries with one hand, and then carefully
 apply a few kilograms of force with the other hand. Be careful to not cut yourself.</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/08_strength.jpg" alt="testing solder weld strength with a knife" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/08_strength.jpg" alt="testing solder weld strength with a knife" class="center" /></p>
 
 <p>Repeat the knife scraping, soldering, cleaning and strength testing for all 4 contact points:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/09_solder_all.jpg" alt="2 cells both with solder" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/09_solder_all.jpg" alt="2 cells both with solder" class="center" /></p>
 
 <p>Cut a small piece of wire to length to connect 2 battery cells in the back:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/10_bridge.jpg" alt="2 cells with wire connecting them" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/10_bridge.jpg" alt="2 cells with wire connecting them" class="center" /></p>
 
 <p>Make a <code class="language-plaintext highlighter-rouge">2S</code> (3-pin) balance cable to length, or cut one from an existing balance extension cable:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/11_balance_measure.jpg" alt="measuring a balance cable" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/11_balance_measure.jpg" alt="measuring a balance cable" class="center" /></p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/12_balance_cut.jpg" alt="prepared balance cable" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/12_balance_cut.jpg" alt="prepared balance cable" class="center" /></p>
 
 <p>Solder the center cable of the balance connector to the back of the battery:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/13_balance_solder.jpg" alt="center wire of balance cable is soldered" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/13_balance_solder.jpg" alt="center wire of balance cable is soldered" class="center" /></p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/14_balance_solder_detail.jpg" alt="close-up of soldered balance cable" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/14_balance_solder_detail.jpg" alt="close-up of soldered balance cable" class="center" /></p>
 
 <p>Fasten the balance cable with some hot glue. This will make it easier to work with:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/15_fasten.jpg" alt="balance cable is glued with hot glue" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/15_fasten.jpg" alt="balance cable is glued with hot glue" class="center" /></p>
 
 <p>Measure and cut the remaining 2 wires of the balance cable. Make sure the red cable goes
 to the positive side of the cell, and the black cable goes to the negative side of the other cell:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/16_measure.jpg" alt="measuring balance cable before cutting" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/16_measure.jpg" alt="measuring balance cable before cutting" class="center" /></p>
 
 <p>Then solder the two balance cables onto the cells:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/17_solder_balance.jpg" alt="balance cable is fully soldered" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/17_solder_balance.jpg" alt="balance cable is fully soldered" class="center" /></p>
 
 <p>Now solder an XT30 connector to the same contacts:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/18_solder_xt30.jpg" alt="XT30 soldered onto cells" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/18_solder_xt30.jpg" alt="XT30 soldered onto cells" class="center" /></p>
 
 <p>We’re about to make some covers to protect the top and bottom of the battery pack.
 Take some double-sided tape, cut it to length. Then apply kapton tape (or electrical tape?) on one side.</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/19_protective_cover_prep.jpg" alt="double-sided tape and kapton tape" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/19_protective_cover_prep.jpg" alt="double-sided tape and kapton tape" class="center" /></p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/20_protective_cover_applied.jpg" alt="tape applied to cells" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/20_protective_cover_applied.jpg" alt="tape applied to cells" class="center" /></p>
 
 <p>Measure some shrink tube. It should stick out about 8-10mm on each end of the cells:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/20_shrink_tube_measuring.jpg" alt="2 cells with shrink tube to measure" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/20_shrink_tube_measuring.jpg" alt="2 cells with shrink tube to measure" class="center" /></p>
 
 <p>Hold the lipo by all of its wires and use the heat gun to carefully heat the shrink tube.
 Your pack is now finished:</p>
 
-<p><img src="/assets/images/posts/li-ion-battery-pack/21_shrink_tube_finished.jpg" alt="finished battery pack" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/li-ion-battery-pack/21_shrink_tube_finished.jpg" alt="finished battery pack" class="center" /></p>
 
 <p>Since we used Samsung <code class="language-plaintext highlighter-rouge">INR21700-50E</code> cells, this battery pack is a <code class="language-plaintext highlighter-rouge">2S</code> pack with <code class="language-plaintext highlighter-rouge">5000 mAh</code>. Even though these are <code class="language-plaintext highlighter-rouge">Li-Ion</code> cells, they are charged to <code class="language-plaintext highlighter-rouge">4.2 V</code>. The cut-off voltage is a mere <code class="language-plaintext highlighter-rouge">2.5 V</code>! You can charge at maximum <code class="language-plaintext highlighter-rouge">4900 mA</code>, but it’s advised to charge them slower. They can be discharged at <code class="language-plaintext highlighter-rouge">9800 mAh</code> continuously, or <code class="language-plaintext highlighter-rouge">14700 mA</code> pulse. (according to <a href="https://lygte-info.dk/review/batteries2012/Samsung%20INR21700-50E%205000mAh%20(Cyan)%20UK.html">this page</a>)</p>
 
 <p>When using different cells than the ones above, make sure to look up the the specifications of these cells.
-The voltages and currents will very likely be different.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[This post shows the steps involved in making a 2S pack with 21700 cells. This guide is also relevant for constructing with 18650 cells.]]></summary></entry><entry><title type="html">Upgrading your merge requests</title><link href="/posts/2020/02/26/upgrading-your-merge-requests.html" rel="alternate" type="text/html" title="Upgrading your merge requests" /><published>2020-02-26T23:00:00+01:00</published><updated>2020-02-26T23:00:00+01:00</updated><id>/posts/2020/02/26/upgrading-your-merge-requests</id><content type="html" xml:base="/posts/2020/02/26/upgrading-your-merge-requests.html"><![CDATA[<p>I did a write-up on how to improve merge request (or pull request) quality control on <a href="https://medium.com/ing-blog/upgrading-your-merge-requests-fe5e953b2f93">ING’s Medium Blog</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I did a write-up on how to improve merge request (or pull request) quality control on ING’s Medium Blog.]]></summary></entry><entry><title type="html">Installing Linux Mint on a Surface Go</title><link href="/posts/2019/08/13/surface-go-linux-mint.html" rel="alternate" type="text/html" title="Installing Linux Mint on a Surface Go" /><published>2019-08-13T00:28:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>/posts/2019/08/13/surface-go-linux-mint</id><content type="html" xml:base="/posts/2019/08/13/surface-go-linux-mint.html"><![CDATA[<p>This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.</p>
+The voltages and currents will very likely be different.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[This post shows the steps involved in making a 2S pack with 21700 cells. This guide is also relevant for constructing with 18650 cells.]]></summary></entry><entry><title type="html">Upgrading your merge requests</title><link href="http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests.html" rel="alternate" type="text/html" title="Upgrading your merge requests" /><published>2020-02-26T23:00:00+01:00</published><updated>2020-02-26T23:00:00+01:00</updated><id>http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests</id><content type="html" xml:base="http://localhost:4000/posts/2020/02/26/upgrading-your-merge-requests.html"><![CDATA[<p>I did a write-up on how to improve merge request (or pull request) quality control on <a href="https://medium.com/ing-blog/upgrading-your-merge-requests-fe5e953b2f93">ING’s Medium Blog</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I did a write-up on how to improve merge request (or pull request) quality control on ING’s Medium Blog.]]></summary></entry><entry><title type="html">Installing Linux Mint on a Surface Go</title><link href="http://localhost:4000/posts/2019/08/13/surface-go-linux-mint.html" rel="alternate" type="text/html" title="Installing Linux Mint on a Surface Go" /><published>2019-08-13T00:28:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>http://localhost:4000/posts/2019/08/13/surface-go-linux-mint</id><content type="html" xml:base="http://localhost:4000/posts/2019/08/13/surface-go-linux-mint.html"><![CDATA[<p>This is a step-by-step guide describing the steps I took to install Linux Mint 19.2 on a Surface Go device as the sole OS.</p>
 
 <!--more-->
 
@@ -857,7 +857,7 @@ It was then that I realized the need to document the process, in case I ever nee
 
 <p>This document contains my notes, that I rewrote into this post.</p>
 
-<p><img src="/assets/images/posts/surface-go-with-linux-mint.jpg" alt="Surface Go with Linux Mint" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/surface-go-with-linux-mint.jpg" alt="Surface Go with Linux Mint" class="center" /></p>
 
 <p>Before you start, it’s important to know that Linux Mint isn’t perfect on the Surface Go. The cameras don’t work, as there are no drivers available. I also currently have a non-working hybernate/sleep mode. This did work in the first few hours, so I’ll
 investigate whether an apt-get update broke one of the applied fixes below.</p>
