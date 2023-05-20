@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Building a handheld PC</title>
+  <meta name="description" content="I’d like to share with you my latest project: Decktility.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/posts/2023/05/20/building-a-handheld-pc.html">
+  <link rel="alternate" type="application/rss+xml" title="ByteWelder" href="/feed.xml">
+  <link rel="icon" type="image/png" href="assets/images/bytewelder.png">
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">ByteWelder</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Building a handheld PC</h1>
+    <p class="post-meta">
+      <time datetime="2023-05-20T22:00:00+02:00" itemprop="datePublished">
+        
+        May 20, 2023
+      </time>
+      </p>
+      <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I’d like to share with you my latest project: <a href="https://github.com/ByteWelder/Decktility">Decktility</a>.</p>
+
+<!--more-->
+
+<p>For several years, I’ve been looking for a project where I could dump a bunch of creativity in,
+A project of my own, that would be challenging and rewarding. Preferrably a project that combines
+electronics and software.
+Handheld PCs always had a special place in my heart. Palm III was my first one, and a bit later I got my hands on a Sharp HC-4500.
+I was intrigued by the <a href="https://yarh.io/">Yarh.io</a> projects and early this year I considered buying
+a <a href="https://www.clockworkpi.com/uconsole">uConsole</a>. The uConsole was supposed to be shipped in
+March, but currently it’s still pending. So with a bunch of ideas and motivation, I started my own handheld PC project: Decktility.</p>
+
+<h1 id="initial-design-criteria">Initial design criteria</h1>
+
+<p>I wanted to challenge myself and push the boundaries of homebrew solutions.
+The Yarh.io Micro 2’s design was too crude for my taste. It was clearly limited by the hardware availability
+at the time of development. The Yarh.io documentation gave me a good understanding of what I was about to embark on.
+I set out to make device that looked more refined. I wanted the end result to be sufficiently light, and the battery life had to
+be at least a couple of hours.</p>
+
+<p>At this point, I was already considering the BigTreeTech Pad 5 as a foundation, as this was the thinnest
+touchscreen and Pi combination that I could find. It seemed logical that I wasn’t going to make a foldable device.
+Making a foldable device would pose several problems:</p>
+
+<ul>
+  <li>The Pad 5 would introduce about <code class="language-plaintext highlighter-rouge">15 mm</code> thickness on one side, while the side with the keyboard would be
+at least about <code class="language-plaintext highlighter-rouge">20 mm</code> thick considering an <code class="language-plaintext highlighter-rouge">18 mm</code> 18650 battery cell and a case. <code class="language-plaintext highlighter-rouge">35 mm</code> would not be
+acceptable. I considered a regular flat lipo, but I didn’t like that they get spicy when they short-circuit.</li>
+  <li>Hinges are difficult to implement well. The screen part would be heavy, and you don’t want it to open/close while typing.</li>
+</ul>
+
+<p>So the decision was made: it was going to be a package size similar to Yarh.io Mini 2 and uConsole.</p>
+
+<h1 id="prototyping">Prototyping</h1>
+
+<p>Before starting the 3D design, I bought some basic components online. This allowed me to measure them,
+so I could get an idea of how much space each component would take up.
+It also enabled me to start building up a prototype:</p>
+
+<p><img src="/assets/images/posts/decktility/prototyping.jpg" alt="prototyping bms" class="center" /></p>
+
+<p>Just like the wiring in the assembly guide, I started by building up the power delivery:
+A USB battery management system (BMS) that can charge two 18650 lithium cells, paired with a
+<code class="language-plaintext highlighter-rouge">5 V</code> step down converter as the Pi, keyboard and fan would require <code class="language-plaintext highlighter-rouge">5 V</code>.
+I used a USB-C PD tester to verify the power while charging.</p>
+
+<p>Once that was working, I added some breadboard wires and connected the Pi:</p>
+
+<p><img src="/assets/images/posts/decktility/prototyping-with-pi.jpg" alt="prototyping bms with pi" class="center" /></p>
+
+<p>I found out that that the BMS was getting quite hot while charging. It was stepping up the <code class="language-plaintext highlighter-rouge">5 V</code> from USB
+to about <code class="language-plaintext highlighter-rouge">8.4 V</code> that the batteries require. Increasing the voltage is much less efficient than decreasing it,
+so there is more heat involved. This implied that I would need to accomodate cooling for this scenario.
+<code class="language-plaintext highlighter-rouge">45 C</code> is not too bad in open air, but it wouldn’t be great in an enclosure, where the Pi would generate heat too.</p>
+
+<p><img src="/assets/images/posts/decktility/prototyping-bms-heat.jpg" alt="prototyping bms flir heat signature" class="center" /></p>
+
+<p>In theory, having a battery, a switch and a Pi is going to result in a working product,
+but what if the battery was running low? If the power switch would remain on, it would drain and damage the battery.
+To solve this problem, I introduced an Arduino Nano. The Arduino would end up doing many things, but it started 
+with reading the voltage from the battery. To do this, I added two resistors with a high resistance value,
+because they would always be connected to the battery and thus leak power. By selecting <code class="language-plaintext highlighter-rouge">2.2M R</code> and <code class="language-plaintext highlighter-rouge">3.9 MR</code>,
+they would leak only <code class="language-plaintext highlighter-rouge">0.82 μA</code> (5 / (2200000 + 3900000)). That’s about <code class="language-plaintext highlighter-rouge">4.1 μW</code>, or in other words: it would take
+<code class="language-plaintext highlighter-rouge">203252 days</code> to drain a <code class="language-plaintext highlighter-rouge">20 Wh</code> battery. It’s not going to be problematic this way.</p>
+
+<p><img src="/assets/images/posts/decktility/prototyping-arduino.jpg" alt="prototyping with arduino to read voltage" class="center" /></p>
+
+<p>Now that we know when it’s safe to turn on the hardware, I had to add the ability to actually do so.
+I used a special kind of transistor - a power MOSFET (or “power FET”).
+The green PCB behind the cable mess holds the FET circuit:</p>
+
+<p><img src="/assets/images/posts/decktility/prototyping-fet.jpg" alt="prototyping with arduino and fet" class="center" /></p>
+
+<p>Around this time, I started designing the CAD prototypes in OnShape. Many hours were spent measuring and drawing
+various components that would go into Decktility. I needed their 3D representation so I could do an integration
+test of sorts as I was creating the case:</p>
+
+<p><img src="/assets/images/posts/decktility/decktility-cad-prototypes.png" alt="cad  prototypes" class="center" /></p>
+
+<p>In the early stages, I had to solve the dilemma of battery placement. Firstly, the battery had to be a counter-weight
+to the screen. It’s important that the device feels balanced in your hands. The screen and the battery are both quite heavy,
+so they cannot be on one side of the device.</p>
+
+<p>I thought of 2 options for the battery: Either on the sides, as to create handles to grab the device,
+or I near the bottom center of the case.
+Having them on the sides would require two separate battery holders, and it would create a minimum height of about <code class="language-plaintext highlighter-rouge">7.5 cm</code>
+for the bottom half of the device. I really liked the idea of the handles, but the downsides resulted in chosing the alternative setup.</p>
+
+<h1 id="building">Building</h1>
+
+<p>After working out the basic case design, it was time to print the first one. The first of many…</p>
+
+<p><img src="/assets/images/posts/decktility/building-first-case.jpg" alt="first case 3D-printed" class="center" /></p>
+
+<p>The massive FET board quickly catches the eye. The board in the picture is just to showcase how out-of-place it really is.
+I swapped it with a smaller one before continueing.</p>
+
+<p>Swapping the FET board was harder than I thought. There are many pre-built modules available, but 
+most of them are built with N-FETs and not P-FETs. The N-FET boards are cheaper and easier to build,
+and result in an electronic switch that switches the GND wire. I would later find out that I need
+a P-FET, because I need a common ground connected at all times for the Arduino logic and the Pi logic
+to work together (for I2C communication).</p>
+
+<p>In the end, I couldn’t find a small enough FET board, so I started reverse-engineering the existing one in my very first KiCad project:</p>
+
+<p><img src="/assets/images/posts/decktility/building-fet-kicad.png" alt="reverse-engineering the FET board in kicad" class="center" /></p>
+
+<p>and then rebuilding it on an experiment board:</p>
+
+<p><img src="/assets/images/posts/decktility/building-fet-comparison.jpg" alt="comparing original FET with rebuilt one" class="center" /></p>
+
+<p>I might make a custom PCB in the future. That way, I can add some connectors for various components, making the project easier
+to assemble.</p>
+
+<p>Before the custom FET board, I was able to get most of the basic components working before adding the Pi to the mix.
+I would quickly find out that I didn’t have the correct wire thickness for the main power. I was using <code class="language-plaintext highlighter-rouge">20 AWG</code>, which I use
+for drones that draw way more power. I would later replace them with <code class="language-plaintext highlighter-rouge">24 AWG</code> wires.</p>
+
+<p><img src="/assets/images/posts/decktility/building-first-power-on.jpg" alt="first time turning on the power" class="center" /></p>
+
+<p>When I was working on the Arduino firmware, I had a problem: every time I would upload a new firmware, the Arduino would restart.
+This would make the electronic switch go off, and thus restart the Pi. To overcome this, I would wire a second Arduino to I2C,
+isntead of using the one in the device. At a later stage, I also added a JST-SH connector to be able to easily disconnect the
+Arduino inside the device.</p>
+
+<p><img src="/assets/images/posts/decktility/building-two-arduinos.jpg" alt="two arduinos during firmware development" class="center" /></p>
+
+<p>Charging status LEDs would be a nice touch. But adding 1 or 2 LEDs to the case would require a relatively considerable effort.
+And then it hit me: I could use fiber optics! Fishing wire (or flexible bracelet wire) can guide the light from the existing LEDs
+on the BMS to the edge of the case.
+All I would have to do is glue the wire in place. An overnight shipping and a quick experiment later, the theory was proven:</p>
+
+<p><img src="/assets/images/posts/decktility/building-charging-leds.jpg" alt="using transparent wire to guide light" class="center" /></p>
+
+<p>After a lot of iterations, the hardware was finally finished:</p>
+
+<p><img src="/assets/images/posts/decktility/building-finished.jpg" alt="decktility finished" class="center" /></p>
+
+<p>At this point, a custom I2C device implementation was enable the Pi and the Arduino to talk to eachother. 
+The Pi could ask the Arduino about the charging status or the battery voltage, and the Arduino would report it back.
+I started investigating how to integrate it into a Linux desktop, so I read about dbus and upower.
+At first, the intention was to write a custom kernel driver, but then it hit me:
+What if I change my Arduino firmware so that it acts like an already supported Linux device?
+I did some research and settled on the LTC294x “Battery Fuel Gauges” implementation. It was one of the very few
+power-related Linux kernel drivers that were avaible in Raspberry Pi OS.
+The Arduino now acts like such a device, so it is fully supported in Linux.</p>
+
+<p>I was stoked when I saw the battery icon appear for the first time:</p>
+
+<p><img src="/assets/images/posts/decktility/building-battery-status.jpg" alt="decktility finished" class="center" /></p>
+
+<h1 id="various-learnings">Various learnings</h1>
+
+<p>In this chapter, I’ll do a quick summarization of my most notable learnings that aren’t covered above:</p>
+
+<p>As mentioned before, <strong>airflow</strong> was important. I had to cool the BMS board and also the Pi. Some holes for airflow would be insufficient.
+I ended up roughly aligning my components in the direct airflow of the fan. This ended up also as a bit of a constraint on the rest of
+the electronics design, as I wouldn’t be able to easily move the BMS board anymore.</p>
+
+<p><strong>Less fasteners(/parts) is better</strong>: The best fastener is the one you don’t need. If you create a groove and latch mechanism to save
+yourself some parts, it might be worth it! The cost for me was added complexity in the design.</p>
+
+<p><strong>Designing for …</strong> 3D printers? Or CNC milling? The plan was to initially make a 3D printed case and then later attempt an aluminum
+CNC-milled case. Designing for 3D printers is very different. It would require big changes to make the cases millable.</p>
+
+<p><strong>Electronics placement is difficult</strong>: Next to the airflow considerations, you also have to consider the amount of wiring needed to
+connect all the parts. I also wanted to make the build as small as I could. Finding the best trade-off is not an easy task.
+Then there is theory versus usability: Your SD card might fit in the slot, but is it easy to pull it out? Can you grip it with your nail?</p>
+
+<p><strong>Chamfer is life</strong>: I used chamfers on overhangs as to not require support when 3D printing them. I also used chamfers on certain edges
+near case openings (e.g. ethernet and GPIO connectors), to slide objects into the case more easily.</p>
+
+<p><strong>Manual painted-on supports</strong>: These are very handy if you have lots of overhangs, but only some of them need support. (used with SuperSlicer/PrusaSlicer)</p>
+
+<p><strong>3D printed materials flex</strong>: If you make a battery tray, the pressure of the battery inside the case might budge it outward.
+This can result in your battery tray not being placeable when batteries are in it. More importantly: you should measure the flex
+and see if it’s bending outwards too much, because you don’t want a critical failure with lithium cells.</p>
+
+<p><strong>Use SSH to the fullest</strong>: I increased my dev cycle by using remote commands. I could execute my local Python remotely with <code class="language-plaintext highlighter-rouge">ssh me@cyberdeck 'python' &lt; powermanager.py</code></p>
+
+<p><strong>Raspberry Pi 4 has more than two I2C buses</strong>: When you fry your CM4 I2C bus, you can <a href="https://medium.com/cemac/creating-multiple-i2c-ports-on-a-raspberry-pi-e31ce72a3eb2">use other GPIO pins to create extra I2C ports</a>.</p>
+
+<p><strong>Naming your project matters</strong>: While “Decktility” is probably not the best name out there, it is a good name because it’s easy to remember,
+and it’s a unique name so an online search will easily turn up the correct results. You can use ChatGPT to help you find a good name.
+(Decktility refers to ductility/utility, where ductility is a wink towards the <em>welder</em> part in my online persona)</p>
+
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-1">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/ByteWelder"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">ByteWelder</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Learnings, experiments and projects.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -10,7 +10,7 @@
   <meta name="description" content="A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you ...">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html">
+  <link rel="canonical" href="/posts/2022/04/15/openpyrojet-print-head.html">
   <link rel="alternate" type="application/rss+xml" title="ByteWelder" href="/feed.xml">
   <link rel="icon" type="image/png" href="assets/images/bytewelder.png">
 
@@ -66,7 +66,7 @@
         Apr 15, 2022
       </time>
       </p>
-      <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -78,7 +78,7 @@ In this post, I’ll show you how I assembled the print head prototype.</p>
 
 <p>This is what the finished print head looks like:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
 
 <h1 id="how-does-the-printer-work">How does the printer work?</h1>
 
@@ -93,23 +93,23 @@ Due to the heat, the metal melts and hits a surface (substrate) to which it atta
 <p>To build a strong print head, we’re using multiple layers made from PCBs.
 These layers are stacked in the order as they are laid out below:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" alt="all pcb parts" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" alt="all pcb parts" class="center" /></p>
 
 <p>I first prepared the inlet and outlet. I need to connect Viton tubing to the
 print head, so I’m soldering small copper pipes (<code class="language-plaintext highlighter-rouge">3 mm</code> diameter) to the PCB.
 The picture shows a larger copper pipe, because I used the wrong size when taking pictures:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" alt="pcb with inlet, outlet and copper pipes" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" alt="pcb with inlet, outlet and copper pipes" class="center" /></p>
 
 <p>I started with adding solder to the pads:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" alt="inlet pad with some solder" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" alt="inlet pad with some solder" class="center" /></p>
 
 <p>Initially, the solder will likely not connect neatly all around the copper pipe.
 It might look like the picture below. I take some extra solder on my iron and
 then place the iron at the base of the copper pipe to fix this issue:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" alt="copper pipe with bad solder connection" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" alt="copper pipe with bad solder connection" class="center" /></p>
 
 <p>Another problem that might occur is when your solder smudges.
 I cleaned it off by wiping my (cleaned) soldering iron on it.
@@ -117,71 +117,71 @@ It’s not problematic if there is some solder on the side,
 but I have to make sure it’s not sharp.
 That way, it won’t cut the Viton tubing later on:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" alt="solder smudged on copper pipe" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" alt="solder smudged on copper pipe" class="center" /></p>
 
 <p>When I used too much solder, the inlet became too narrow. I could’ve desoldered
 it. Instead, I used a set of drills to carefully drill it out by hand.
 I kept increasing the drill diameter by <code class="language-plaintext highlighter-rouge">0.1 mm</code> until the diameter was the right size:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" alt="pcb with narrow inlet" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" alt="pcb with narrow inlet" class="center" /></p>
 
 <p>Finally, I had a neat collar on the copper pipe:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" alt="copper pipe on pcb with solder" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" alt="copper pipe on pcb with solder" class="center" /></p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" alt="finished inlet and oultet on pcb" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" alt="finished inlet and oultet on pcb" class="center" /></p>
 
 <p>The next step was to put the monofilament on one of the PCB layers. This monofilament
 is what heats up the fuel, which causes the fuel to eject through the nozzle.
 The filament gets sandwiched between the nozzle PCB and the PCB that holds the connector.
 I store the filament in a folded sheet of paper:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" alt="monofilament displayed" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" alt="monofilament displayed" class="center" /></p>
 
 <p>First I cut the filament to size. We make it as wide as possible, so the thickness
 of the glue won’t interfere with the electrical conductivity:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" alt="monofilament cut" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" alt="monofilament cut" class="center" /></p>
 
 <p>Combining them is tricky, because the filament won’t lay still on a flat surface.
 I used some CA glue on the edges to keep it into place. I learned later that
 glue is not the ideal way. In the future, I will tape it near the edges if the PCB
 with some kapton tape.</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" alt="monofilament glued to PCB" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" alt="monofilament glued to PCB" class="center" /></p>
 
 <p>The nozzle PCB layer had holes that were too small in diameter. I widened them
 by hand with some cheap drills, slowly increasing the diameter <code class="language-plaintext highlighter-rouge">0.1 mm</code> at a time:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" alt="nozzle PCB with drill in it" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" alt="nozzle PCB with drill in it" class="center" /></p>
 
 <p>When attaching the nozzle PCB to the connector PCB, I start with a single row of screws:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" alt="nozzle PCB on connector PCB with a single row of screws" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" alt="nozzle PCB on connector PCB with a single row of screws" class="center" /></p>
 
 <p>It’s important to tighten the screws evenly, so initially all screws are kept loose.
 I then tightened them carefully and as evenly as possible. When everything stops sliding
 around, I start measuring resistance before continueing to tighten further.
 The resistance measurements are repeated until the values are in an acceptable range.</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" alt="nozzle PCB on connector PCB with all screws" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" alt="nozzle PCB on connector PCB with all screws" class="center" /></p>
 
 <p>I had to make sure that the nozzle plate wasn’t crooked, like in the picture below:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" alt="nozzle PCB badly aligned with connector PCB" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" alt="nozzle PCB badly aligned with connector PCB" class="center" /></p>
 
 <p>The prepared PCBs are ready to be combined. I took 8 pieces of <code class="language-plaintext highlighter-rouge">M2 x 10mm</code> and
 some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match. I also used medium-strength loctite:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" alt="all layers finished, displayed with M2 hardware and loctite" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" alt="all layers finished, displayed with M2 hardware and loctite" class="center" /></p>
 
 <p>At this point, I have a finished physical assembly:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" alt="back view of assembled print head" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" alt="back view of assembled print head" class="center" /></p>
 
-<p><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" alt="side view of assembled print head" class="center" /></p>
+<p><img src="/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" alt="side view of assembled print head" class="center" /></p>
 
   </div>
 
