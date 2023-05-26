@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  "Building a handheld PC"
-date:   2023-05-20 22:00:00 +0200
+date:   2023-05-20 22:00:00 +0100
 categories: posts
 excerpt_separator: <!--more-->
-last_modified_at: 2022-05-20 22:00:00 +0200
+last_modified_at: 2022-05-26 12:30:00 +0100
 ---
 
 I'd like to share with you my latest project: Decktility!
 
 <!--more-->
 
-For several years, I've been looking for a project where I could dump a bunch of creativity in,
+For several years, I've been looking for a project where I could dump a bunch of creativity in.
 A project of my own, that would be challenging and rewarding. Preferrably a project that combines
 electronics and software.
 Handheld PCs always had a special place in my heart. Palm III was my first one, and a bit later I got my hands on a Sharp HC-4500.
@@ -143,7 +143,7 @@ After a lot of iterations, the hardware was finally finished:
 
 ![decktility finished]({{ site.url }}/assets/images/posts/decktility/building-finished.jpg){: .center }
 
-At this point, a custom I2C device implementation was enable the Pi and the Arduino to talk to eachother. 
+At this point, a custom I2C device implementation was enabling the Pi and the Arduino to talk to eachother. 
 The Pi could ask the Arduino about the charging status or the battery voltage, and the Arduino would report it back.
 I started investigating how to integrate it into a Linux desktop, so I read about dbus and upower.
 At first, the intention was to write a custom kernel driver, but then it hit me:
@@ -158,7 +158,7 @@ I was stoked when I saw the battery icon appear for the first time:
 
 # Various learnings
 
-In this chapter, I'll do a quick summarization of my most notable learnings that aren't covered above:
+Here's a quick summarization of some noteworthy learnings that aren't covered above:
 
 As mentioned before, **airflow** was important. I had to cool the BMS board and also the Pi. Some holes for airflow would be insufficient.
 I ended up roughly aligning my components in the direct airflow of the fan. This ended up also as a bit of a constraint on the rest of
@@ -168,18 +168,18 @@ the electronics design, as I wouldn't be able to easily move the BMS board anymo
 yourself some parts, it might be worth it! The cost for me was added complexity in the design.
 
 **Designing for ...** 3D printers? Or CNC milling? The plan was to initially make a 3D printed case and then later attempt an aluminum
-CNC-milled case. Designing for 3D printers is very different. It would require big changes to make the cases millable.
+CNC-milled case. Designing for 3D printers is very different. It would require changes to make the cases millable on a 3 axis mill.
 
 **Electronics placement is difficult**: Next to the airflow considerations, you also have to consider the amount of wiring needed to
 connect all the parts. I also wanted to make the build as small as I could. Finding the best trade-off is not an easy task.
 Then there is theory versus usability: Your SD card might fit in the slot, but is it easy to pull it out? Can you grip it with your nail?
 
-**Chamfer is life**: I used chamfers on overhangs as to not require support when 3D printing them. I also used chamfers on certain edges
+**3D printing - Chamfer is life**: I used chamfers on overhangs as to not require support when 3D printing them. I also used chamfers on certain edges
 near case openings (e.g. ethernet and GPIO connectors), to slide objects into the case more easily.
 
-**Manual painted-on supports**: These are very handy if you have lots of overhangs, but only some of them need support. (used with SuperSlicer/PrusaSlicer)
+**3D printing - Manual painted-on supports**: These are very handy if you have lots of overhangs, but only some of them need support. (used with SuperSlicer/PrusaSlicer)
 
-**3D printed materials flex**: If you make a battery tray, the pressure of the battery inside the case might budge it outward.
+**3D printing - Parts can flex**: If you make a battery tray, the pressure of the battery inside the case might budge it outward.
 This can result in your battery tray not being placeable when batteries are in it. More importantly: you should measure the flex
 and see if it's bending outwards too much, because you don't want a critical failure with lithium cells.
 

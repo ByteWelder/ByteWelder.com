@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-05-21T01:40:21+02:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
-</subtitle><entry><title type="html">Building a handheld PC</title><link href="/posts/2023/05/20/building-a-handheld-pc.html" rel="alternate" type="text/html" title="Building a handheld PC" /><published>2023-05-20T22:00:00+02:00</published><updated>2022-05-20T22:00:00+02:00</updated><id>/posts/2023/05/20/building-a-handheld-pc</id><content type="html" xml:base="/posts/2023/05/20/building-a-handheld-pc.html"><![CDATA[<p>I’d like to share with you my latest project: Decktility!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-05-26T12:23:48+02:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
+</subtitle><entry><title type="html">Building a handheld PC</title><link href="/posts/2023/05/20/building-a-handheld-pc.html" rel="alternate" type="text/html" title="Building a handheld PC" /><published>2023-05-20T23:00:00+02:00</published><updated>2022-05-26T13:30:00+02:00</updated><id>/posts/2023/05/20/building-a-handheld-pc</id><content type="html" xml:base="/posts/2023/05/20/building-a-handheld-pc.html"><![CDATA[<p>I’d like to share with you my latest project: Decktility!</p>
 
 <!--more-->
 
-<p>For several years, I’ve been looking for a project where I could dump a bunch of creativity in,
+<p>For several years, I’ve been looking for a project where I could dump a bunch of creativity in.
 A project of my own, that would be challenging and rewarding. Preferrably a project that combines
 electronics and software.
 Handheld PCs always had a special place in my heart. Palm III was my first one, and a bit later I got my hands on a Sharp HC-4500.
@@ -137,7 +137,7 @@ All I would have to do is glue the wire in place. An overnight shipping and a qu
 
 <p><img src="/assets/images/posts/decktility/building-finished.jpg" alt="decktility finished" class="center" /></p>
 
-<p>At this point, a custom I2C device implementation was enable the Pi and the Arduino to talk to eachother. 
+<p>At this point, a custom I2C device implementation was enabling the Pi and the Arduino to talk to eachother. 
 The Pi could ask the Arduino about the charging status or the battery voltage, and the Arduino would report it back.
 I started investigating how to integrate it into a Linux desktop, so I read about dbus and upower.
 At first, the intention was to write a custom kernel driver, but then it hit me:
@@ -152,7 +152,7 @@ The Arduino now acts like such a device, so it is fully supported in Linux.</p>
 
 <h1 id="various-learnings">Various learnings</h1>
 
-<p>In this chapter, I’ll do a quick summarization of my most notable learnings that aren’t covered above:</p>
+<p>Here’s a quick summarization of some noteworthy learnings that aren’t covered above:</p>
 
 <p>As mentioned before, <strong>airflow</strong> was important. I had to cool the BMS board and also the Pi. Some holes for airflow would be insufficient.
 I ended up roughly aligning my components in the direct airflow of the fan. This ended up also as a bit of a constraint on the rest of
@@ -162,18 +162,18 @@ the electronics design, as I wouldn’t be able to easily move the BMS board any
 yourself some parts, it might be worth it! The cost for me was added complexity in the design.</p>
 
 <p><strong>Designing for …</strong> 3D printers? Or CNC milling? The plan was to initially make a 3D printed case and then later attempt an aluminum
-CNC-milled case. Designing for 3D printers is very different. It would require big changes to make the cases millable.</p>
+CNC-milled case. Designing for 3D printers is very different. It would require changes to make the cases millable on a 3 axis mill.</p>
 
 <p><strong>Electronics placement is difficult</strong>: Next to the airflow considerations, you also have to consider the amount of wiring needed to
 connect all the parts. I also wanted to make the build as small as I could. Finding the best trade-off is not an easy task.
 Then there is theory versus usability: Your SD card might fit in the slot, but is it easy to pull it out? Can you grip it with your nail?</p>
 
-<p><strong>Chamfer is life</strong>: I used chamfers on overhangs as to not require support when 3D printing them. I also used chamfers on certain edges
+<p><strong>3D printing - Chamfer is life</strong>: I used chamfers on overhangs as to not require support when 3D printing them. I also used chamfers on certain edges
 near case openings (e.g. ethernet and GPIO connectors), to slide objects into the case more easily.</p>
 
-<p><strong>Manual painted-on supports</strong>: These are very handy if you have lots of overhangs, but only some of them need support. (used with SuperSlicer/PrusaSlicer)</p>
+<p><strong>3D printing - Manual painted-on supports</strong>: These are very handy if you have lots of overhangs, but only some of them need support. (used with SuperSlicer/PrusaSlicer)</p>
 
-<p><strong>3D printed materials flex</strong>: If you make a battery tray, the pressure of the battery inside the case might budge it outward.
+<p><strong>3D printing - Parts can flex</strong>: If you make a battery tray, the pressure of the battery inside the case might budge it outward.
 This can result in your battery tray not being placeable when batteries are in it. More importantly: you should measure the flex
 and see if it’s bending outwards too much, because you don’t want a critical failure with lithium cells.</p>
 
