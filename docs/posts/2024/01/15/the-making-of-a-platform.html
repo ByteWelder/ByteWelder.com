@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The making of a platform</title>
+  <meta name="description" content="I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/posts/2024/01/15/the-making-of-a-platform.html">
+  <link rel="alternate" type="application/rss+xml" title="ByteWelder" href="/feed.xml">
+  <link rel="icon" type="image/png" href="assets/images/bytewelder.png">
+
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">ByteWelder</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">The making of a platform</h1>
+    <p class="post-meta">
+      <time datetime="2024-01-15T21:30:00+01:00" itemprop="datePublished">
+        
+        Jan 15, 2024
+      </time>
+      </p>
+      <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.</p>
+
+<!--more-->
+
+<h1 id="prologue">Prologue</h1>
+
+<p>Some time in mid-December, I was wondering if I should buy a <a href="https://flipperzero.one/">Flipper Zero</a> device.
+The official website describes it as follows:</p>
+
+<blockquote>
+  <p>Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff,
+such as radio protocols, access control systems, hardware, and more. It’s fully open-source and customizable,
+so you can extend it in whatever way you like.</p>
+</blockquote>
+
+<p><img src="/assets/images/posts/tactility/flipperzero.png" alt="Flipper Zero device" class="center" /></p>
+<center><small>(image by <a href="https://flipperzero.one/">Flipper Zero</a>)</small></center>
+
+<p>I’ll refer to F0 instead of Flipper Zero in the text below.</p>
+
+<p>F0 allows you to play around with technologies such as BlueTooth, USB, infrared, NFC and much more.
+It offers a neat software development platform so you can easily output graphics and communicate with peripherals.
+It also has a cute dolphin pet that levels up as you explore.
+Its software is very interesting and I found myself wondering whether I could port
+the code to another microcontroller (MCU).</p>
+
+<p><a href="https://www.espressif.com">ESP32</a> has been my favourite MCU for the past few years.
+Most variants of the hardware come with a multi-core 240 MHz CPU, WiFi, bluetooth, 520kB of RAM (expandable to 8MB),
+several megabytes of storage and a bunch of wired connectivity options.
+It’s roughly the size of a postage stamp (18 x 25.5 x 3.1 mm) and it costs about 2 EUR before adding a USB port and a battery to it.
+For those who are interested: Flipper uses an STM32WB55 MCU.</p>
+
+<p><img src="/assets/images/posts/tactility/esp32.jpg" alt="ESP32 front and back" class="center" /></p>
+<center><small>(image by <a href="https://www.espressif.com">Espressif.com</a>)</small></center>
+
+<p>My porting efforts didn’t start out smoothly, but one thing led to another and 3 completely separate iterations later,
+I’ve got something that looks usable. The result is an application platform called <a href="https://github.com/ByteWelder/Tactility">Tactility</a>.</p>
+
+<p>Originally, I intended to port the F0 project partially to ESP32 with as little deviation from the original as possible. 
+I first started with copying a ton of code and removing the bits that weren’t needed (yet) or that were blatantly incompatible.
+This was not a successful approach: once everything compiled, it was too hard to debug memory corruption issues.</p>
+
+<p>In a second attempt to make a Flipper-like platform, I tried to make everything from scratch.
+It didn’t take long for me to realise that it was <em>way</em> too much work and I found myself copying in more and more bits
+from the Flipper project.</p>
+
+<p>In my third and final attempt, I did something in-between: I started building up the platform
+with mostly existing F0 code. The main difference was that I was importing smaller bits and verifying them
+before moving on to the next feature. I also wasn’t afraid to implement certain things radically different
+if it was beneficial to the project. This worked better and I soon had a functional prototype.
+It featured an application launcher and the ability to start and quit applications:</p>
+
+<p><img src="/assets/images/posts/tactility/early-prototype.jpg" alt="two devices running the software prototype for Tactility" class="center" /></p>
+
+<h1 id="making-the-app-makes-the-platform">Making the app makes the platform</h1>
+
+<p>Let’s dive into the software development journey…</p>
+
+<p>It didn’t take long to build a few simple apps like “Hello world” and one that showed memory information.
+I also had a ‘desktop’ app at this point, but this wasn’t very challenging as it just lists the installed applications and launches them
+when you click on them.</p>
+
+<p>When I set out to make a Wi-Fi service and related app, I didn’t know just how much it would change the entire platform!
+A good Wi-Fi app does a lot more things than you’d expect. Not only is it multi-threaded, you also need to store settings.
+And then there’s the increased complexity in UI and user experience.</p>
+
+<p>As I was making this feature, it resulted in a complete change of the platform.
+I started with a simple screen to toggle Wi-Fi on/off. So far so good. Then I needed an additional screen so the user can
+enter credentials to connect to a network. This almost doubled the amount of code and suddenly the app had to
+manage “which screen should I show - and when?”.</p>
+
+<p>I decided to split the Wi-Fi app into two separate apps: one for the Wi-Fi overview and one for connecting to a new network.
+To implement this, I now had to support:</p>
+<ul>
+  <li>Launching an app from another app, and being able to return to the original one.</li>
+  <li>Launching an app with parameters, because I wanted to have the SSID field pre-filled when you pressed on it in the Wi-Fi overview.</li>
+  <li>Storing the Wi-Fi credentials.</li>
+  <li>… securely, so I had to implement encryption/decryption …</li>
+  <li>… and I had to find a way to store the decryption keys in a safe (enough) manner.</li>
+</ul>
+
+<p><img src="/assets/images/posts/tactility/wifi-app.jpg" alt="3 panels of the same device showing the Wi-Fi app connecting to an access point" class="center" /></p>
+
+<h1 id="whats-in-an-app">What’s in an app?</h1>
+
+<p>Similar to <a href="https://developer.android.com/guide/topics/manifest/manifest-intro">Android</a>
+and <a href="https://github.com/search?q=repo%3Aflipperdevices%2Fflipperzero-firmware%20application.fam&amp;type=code">Flipper Zero</a>,
+I created a ledger that defines a user app. It looks like this:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">void</span> <span class="nf">app_show</span><span class="p">(</span><span class="n">App</span> <span class="n">app</span><span class="p">,</span> <span class="n">lv_obj_t</span><span class="o">*</span> <span class="n">parent</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">lv_obj_t</span><span class="o">*</span> <span class="n">label</span> <span class="o">=</span> <span class="n">lv_label_create</span><span class="p">(</span><span class="n">parent</span><span class="p">);</span>
+    <span class="n">lv_label_set_text</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="s">"Hello, world!"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">const</span> <span class="n">AppManifest</span> <span class="n">hello_world_app</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="s">"helloworld"</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Hello World"</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">icon</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">type</span> <span class="o">=</span> <span class="n">AppTypeUser</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">on_start</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">on_stop</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">on_show</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">app_show</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">on_hide</span> <span class="o">=</span> <span class="nb">NULL</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>This is a functional app. It shows the text label on the screen and nothing more.
+It almost looks like object-oriented programming. In fact, I might create a C++ wrapper in the future.</p>
+
+<p>Background services work in a similar manner.
+The main difference is that they don’t define <code class="language-plaintext highlighter-rouge">on_show</code>, <code class="language-plaintext highlighter-rouge">on_hide</code>, an <code class="language-plaintext highlighter-rouge">icon</code> or a human-readable <code class="language-plaintext highlighter-rouge">name</code>.</p>
+
+<h1 id="app-lifecycle">App lifecycle</h1>
+
+<p>When you have apps starting other apps, you can consider it as a stack, which you aproach as LIFO or “Last In, First Out”:
+The last app that is put on the stack is the one that is shown to the user. It is also the first one to be closed before 
+you can get back to the app that was launched before it.</p>
+
+<p>Starting an app and closing goes like this:</p>
+
+<ol>
+  <li>Create the app (allocate data)</li>
+  <li>Create the views (UI) for the app and show them</li>
+  <li>Hide the app and destroy the views</li>
+  <li>Destroy the app (free up data)</li>
+</ol>
+
+<p>When app A starts app B, then the views of app A would be destroyed as the app is hidden, but app A itself would not be destroyed.
+When app B is closed and destroyed, the views of app A would be re-created and shown again.</p>
+
+<p>Once I was able to launch apps onto a stack, I wanted to be able to launch them with certain parameters.
+Flipper Zero originally just passed a string, but I wasn’t a fan of that: command line arguments are terrible to process.
+Instead, I opted to use “bundles” <a href="https://developer.android.com/reference/android/os/Bundle">like on Android</a>.
+A bundle is a sort of flexible dictionary that maps strings onto a specific set of types.
+It’s a simplified in-memory database (key-value store) with a flexible type system, while still using explicit typing.</p>
+
+<p>This is how bundles work on Tactility:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Make a bundle and store some data in it</span>
+<span class="n">Bundle</span> <span class="n">bundle</span> <span class="o">=</span> <span class="n">tt_bundle_alloc</span><span class="p">();</span>
+<span class="n">tt_bundle_put_bool</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"is_enabled"</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+<span class="n">tt_bundle_put_int</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"count"</span><span class="p">,</span> <span class="mi">42</span><span class="p">);</span>
+<span class="n">tt_bundle_put_string</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"label"</span><span class="p">,</span> <span class="s">"Hello, world!"</span><span class="p">);</span>
+
+<span class="c1">// Check if the key and value exist...</span>
+<span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">tt_bundle_opt_bool</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"some_key"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">value</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="c1">// This one crashes if the key doesn't exist:</span>
+<span class="n">bool</span> <span class="n">is_enabled</span> <span class="o">=</span> <span class="n">tt_bundle_get_bool</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"is_enabled"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h1 id="security-and-risk">Security and risk</h1>
+
+<p>Typing the Wi-Fi password on a touchscreen was becoming tedious. It was happening after every reboot.
+That’s why I needed to store the Wi-Fi credentials on the device.
+Once encrypting and decrypting was working, I still wasn’t done.
+The problem with encryption is that you need to store the secret that decodes the encrypted data.
+You can ask the user every time for a password to decrypt, but then you’ve got yourself the same problem
+as when entering the Wi-Fi password manually: that’s tedious!</p>
+
+<p>The most simple way to approach this, is to create a reasonably safe random set of numbers as the key,
+and store that key somewhere safe.
+This approach is not safe if an attacker has physical access to your device: they can connect via USB
+and fetch all the data from the flash memory (all the partitions on disk). This holds the encryption key
+and the encrypted data.</p>
+
+<p>This was pretty bad, but the solution was fairly obvious: enable boot protection and flash encryption.
+The problem with these features is that they are not easy to set up. Most hobby developers won’t bother.
+So, instead, I opted to show a warning when a credential is stored on an unprotected ESP32.</p>
+
+<p>It didn’t sit right with me. I knew most hobby devs won’t bother with setting up these security features.
+I knew there wasn’t much I could do to make it safe, but I found a way to make it better:
+If I can use some kind of secret information that isn’t readable from flash, but also isn’t easily
+available via the USB interface, perhaps I can mix this into the cryptographic key?</p>
+
+<p>That’s where the <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/efuse.html">eFuses</a> come in:
+An eFuse is a programmatic fuse. You can blow the fuse once with software, and that’s it. Each fuse can be seen as a single bit of data,
+so if you have enough fuses, you can create a storage mechanism.</p>
+
+<p>The ESP32’s eFuses already offer 6-8 bytes of random data. There is more data space, but it’s all set to 0 by default.
+With the hardware identifier, I could now create the private key as follows:</p>
+<ol>
+  <li>Make a buffer with 32 bytes and fill it with random data (in a safe manner with a seed).</li>
+  <li>Make another 32 byte buffer and fill it with the repeating hardware identifier.</li>
+  <li>Perform a binary XOR operation to combine both buffers.</li>
+</ol>
+
+<p>An attack wouldn’t be as simple as just copying the data over USB. An attacker that wants to remain unseen would have to:</p>
+<ol>
+  <li>Copy all the flash data (complete backup)</li>
+  <li>Upload a malicious app to fetch the eFuse data</li>
+  <li>Re-flash the original data</li>
+</ol>
+
+<p>It’s not <em>a lot</em> more secure this way, but it sure takes a whole lot more effort.
+I’ll still keep showing warnings when secure boot and flash encryption aren’t enabled though.</p>
+
+<h1 id="whats-next">What’s next?</h1>
+
+<p>I’m still working on UI/UX improvements for the Wi-Fi app.
+The connection dialog doesn’t have a “busy” animation as it connects.
+At a later stage, I also want to have Wi-Fi auto-reconnect and have the option to have Wi-Fi enabled (and connecting) on boot.</p>
+
+<p>Right now, I’m looking at writing some tests…</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-1">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/ByteWelder"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">ByteWelder</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Learnings, experiments and projects.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
