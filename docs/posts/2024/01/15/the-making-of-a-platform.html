@@ -10,9 +10,9 @@
   <meta name="description" content="I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/posts/2024/01/15/the-making-of-a-platform.html">
+  <link rel="canonical" href="/posts/2024/01/15/the-making-of-a-platform.html">
   <link rel="alternate" type="application/rss+xml" title="ByteWelder" href="/feed.xml">
-  <link rel="icon" type="image/png" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/images/bytewelder.png">
 
   
 </head>
@@ -24,10 +24,8 @@
 
   <div class="wrapper">
     
-
     
-    
-    <a class="site-title" href="/"><img src="/assets/images/favicon.svg" width="40" height="40" alt="logo" /> ByteWelder</a>
+    <a class="site-title" href="/">ByteWelder</a>
   
     
       <nav class="site-nav">
@@ -68,7 +66,7 @@
         Jan 15, 2024
       </time>
       </p>
-      <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -87,7 +85,7 @@ such as radio protocols, access control systems, hardware, and more. It’s full
 so you can extend it in whatever way you like.</p>
 </blockquote>
 
-<p><img src="http://localhost:4000/assets/images/posts/tactility/flipperzero.png" alt="Flipper Zero device" class="center" /></p>
+<p><img src="/assets/images/posts/tactility/flipperzero.png" alt="Flipper Zero device" class="center" /></p>
 <center><small>(image by <a href="https://flipperzero.one/">Flipper Zero</a>)</small></center>
 
 <p>I’ll refer to F0 instead of Flipper Zero in the text below.</p>
@@ -104,7 +102,7 @@ several megabytes of storage and a bunch of wired connectivity options.
 It’s roughly the size of a postage stamp (18 x 25.5 x 3.1 mm) and it costs about 2 EUR before adding a USB port and a battery to it.
 For those who are interested: Flipper uses an STM32WB55 MCU.</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/tactility/esp32.jpg" alt="ESP32 front and back" class="center" /></p>
+<p><img src="/assets/images/posts/tactility/esp32.jpg" alt="ESP32 front and back" class="center" /></p>
 <center><small>(image by <a href="https://www.espressif.com">Espressif.com</a>)</small></center>
 
 <p>My porting efforts didn’t start out smoothly, but one thing led to another and 3 completely separate iterations later,
@@ -124,7 +122,7 @@ before moving on to the next feature. I also wasn’t afraid to implement certai
 if it was beneficial to the project. This worked better and I soon had a functional prototype.
 It featured an application launcher and the ability to start and quit applications:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/tactility/early-prototype.jpg" alt="two devices running the software prototype for Tactility" class="center" /></p>
+<p><img src="/assets/images/posts/tactility/early-prototype.jpg" alt="two devices running the software prototype for Tactility" class="center" /></p>
 
 <h1 id="making-the-app-makes-the-platform">Making the app makes the platform</h1>
 
@@ -153,7 +151,7 @@ To implement this, I now had to support:</p>
   <li>… and I had to find a way to store the decryption keys in a safe (enough) manner.</li>
 </ul>
 
-<p><img src="http://localhost:4000/assets/images/posts/tactility/wifi-app.jpg" alt="3 panels of the same device showing the Wi-Fi app connecting to an access point" class="center" /></p>
+<p><img src="/assets/images/posts/tactility/wifi-app.jpg" alt="3 panels of the same device showing the Wi-Fi app connecting to an access point" class="center" /></p>
 
 <h1 id="whats-in-an-app">What’s in an app?</h1>
 

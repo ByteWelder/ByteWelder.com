@@ -10,9 +10,9 @@
   <meta name="description" content="I’d like to share with you my latest project: Decktility!">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/posts/2023/05/20/building-a-handheld-pc.html">
+  <link rel="canonical" href="/posts/2023/05/20/building-a-handheld-pc.html">
   <link rel="alternate" type="application/rss+xml" title="ByteWelder" href="/feed.xml">
-  <link rel="icon" type="image/png" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/images/bytewelder.png">
 
   
 </head>
@@ -24,10 +24,8 @@
 
   <div class="wrapper">
     
-
     
-    
-    <a class="site-title" href="/"><img src="/assets/images/favicon.svg" width="40" height="40" alt="logo" /> ByteWelder</a>
+    <a class="site-title" href="/">ByteWelder</a>
   
     
       <nav class="site-nav">
@@ -68,7 +66,7 @@
         May 20, 2023
       </time>
       </p>
-      <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -111,7 +109,7 @@ acceptable. I considered a regular flat lipo, but I didn’t like that they get 
 so I could get an idea of how much space each component would take up.
 It also enabled me to start building up a prototype:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/prototyping.jpg" alt="prototyping bms" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/prototyping.jpg" alt="prototyping bms" class="center" /></p>
 
 <p>Just like the wiring in the assembly guide, I started by building up the power delivery:
 A USB battery management system (BMS) that can charge two 18650 lithium cells, paired with a
@@ -120,14 +118,14 @@ I used a USB-C PD tester to verify the power while charging.</p>
 
 <p>Once that was working, I added some breadboard wires and connected the Pi:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/prototyping-with-pi.jpg" alt="prototyping bms with pi" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/prototyping-with-pi.jpg" alt="prototyping bms with pi" class="center" /></p>
 
 <p>I found out that that the BMS was getting quite hot while charging. It was stepping up the <code class="language-plaintext highlighter-rouge">5 V</code> from USB
 to about <code class="language-plaintext highlighter-rouge">8.4 V</code> that the batteries require. Increasing the voltage is much less efficient than decreasing it,
 so there is more heat involved. This implied that I would need to accomodate cooling for this scenario.
 <code class="language-plaintext highlighter-rouge">45 C</code> is not too bad in open air, but it wouldn’t be great in an enclosure, where the Pi would generate heat too.</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/prototyping-bms-heat.jpg" alt="prototyping bms flir heat signature" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/prototyping-bms-heat.jpg" alt="prototyping bms flir heat signature" class="center" /></p>
 
 <p>In theory, having a battery, a switch and a Pi is going to result in a working product,
 but what if the battery was running low? If the power switch would remain on, it would drain and damage the battery.
@@ -137,19 +135,19 @@ because they would always be connected to the battery and thus leak power. By se
 they would leak only <code class="language-plaintext highlighter-rouge">0.82 μA</code> (5 / (2200000 + 3900000)). That’s about <code class="language-plaintext highlighter-rouge">4.1 μW</code>, or in other words: it would take
 <code class="language-plaintext highlighter-rouge">203252 days</code> to drain a <code class="language-plaintext highlighter-rouge">20 Wh</code> battery. It’s not going to be problematic this way.</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/prototyping-arduino.jpg" alt="prototyping with arduino to read voltage" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/prototyping-arduino.jpg" alt="prototyping with arduino to read voltage" class="center" /></p>
 
 <p>Now that we know when it’s safe to turn on the hardware, I had to add the ability to actually do so.
 I used a special kind of transistor - a power MOSFET (or “power FET”).
 The green PCB behind the cable mess holds the FET circuit:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/prototyping-fet.jpg" alt="prototyping with arduino and fet" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/prototyping-fet.jpg" alt="prototyping with arduino and fet" class="center" /></p>
 
 <p>Around this time, I started designing the CAD prototypes in OnShape. Many hours were spent measuring and drawing
 various components that would go into Decktility. I needed their 3D representation so I could do an integration
 test of sorts as I was creating the case:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/decktility-cad-prototypes.png" alt="cad  prototypes" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/decktility-cad-prototypes.png" alt="cad  prototypes" class="center" /></p>
 
 <p>In the early stages, I had to solve the dilemma of battery placement. Firstly, the battery had to be a counter-weight
 to the screen. It’s important that the device feels balanced in your hands. The screen and the battery are both quite heavy,
@@ -164,7 +162,7 @@ for the bottom half of the device. I really liked the idea of the handles, but t
 
 <p>After working out the basic case design, it was time to print the first one. The first of many…</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/building-first-case.jpg" alt="first case 3D-printed" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/building-first-case.jpg" alt="first case 3D-printed" class="center" /></p>
 
 <p>The massive FET board quickly catches the eye. The board in the picture is just to showcase how out-of-place it really is.
 I swapped it with a smaller one before continueing.</p>
@@ -177,11 +175,11 @@ to work together (for I2C communication).</p>
 
 <p>In the end, I couldn’t find a small enough FET board, so I started reverse-engineering the existing one in my very first KiCad project:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/building-fet-kicad.png" alt="reverse-engineering the FET board in kicad" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/building-fet-kicad.png" alt="reverse-engineering the FET board in kicad" class="center" /></p>
 
 <p>and then rebuilding it on an experiment board:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/building-fet-comparison.jpg" alt="comparing original FET with rebuilt one" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/building-fet-comparison.jpg" alt="comparing original FET with rebuilt one" class="center" /></p>
 
 <p>I might make a custom PCB in the future. That way, I can add some connectors for various components, making the project easier
 to assemble.</p>
@@ -190,25 +188,25 @@ to assemble.</p>
 I would quickly find out that I didn’t have the correct wire thickness for the main power. I was using <code class="language-plaintext highlighter-rouge">20 AWG</code>, which I use
 for drones that draw way more power. I would later replace them with <code class="language-plaintext highlighter-rouge">24 AWG</code> wires.</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/building-first-power-on.jpg" alt="first time turning on the power" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/building-first-power-on.jpg" alt="first time turning on the power" class="center" /></p>
 
 <p>When I was working on the Arduino firmware, I had a problem: every time I would upload a new firmware, the Arduino would restart.
 This would make the electronic switch go off, and thus restart the Pi. To overcome this, I would wire a second Arduino to I2C,
 isntead of using the one in the device. At a later stage, I also added a JST-SH connector to be able to easily disconnect the
 Arduino inside the device.</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/building-two-arduinos.jpg" alt="two arduinos during firmware development" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/building-two-arduinos.jpg" alt="two arduinos during firmware development" class="center" /></p>
 
 <p>Charging status LEDs would be a nice touch. But adding 1 or 2 LEDs to the case would require a relatively considerable effort.
 And then it hit me: I could use fiber optics! Fishing wire (or flexible bracelet wire) can guide the light from the existing LEDs
 on the BMS to the edge of the case.
 All I would have to do is glue the wire in place. An overnight shipping and a quick experiment later, the theory was proven:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/building-charging-leds.jpg" alt="using transparent wire to guide light" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/building-charging-leds.jpg" alt="using transparent wire to guide light" class="center" /></p>
 
 <p>After a lot of iterations, the hardware was finally finished:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/building-finished.jpg" alt="decktility finished" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/building-finished.jpg" alt="decktility finished" class="center" /></p>
 
 <p>At this point, a custom I2C device implementation was enabling the Pi and the Arduino to talk to eachother. 
 The Pi could ask the Arduino about the charging status or the battery voltage, and the Arduino would report it back.
@@ -221,7 +219,7 @@ The Arduino now acts like such a device, so it is fully supported in Linux.</p>
 
 <p>I was stoked when I saw the battery icon appear for the first time:</p>
 
-<p><img src="http://localhost:4000/assets/images/posts/decktility/building-battery-status.jpg" alt="decktility finished" class="center" /></p>
+<p><img src="/assets/images/posts/decktility/building-battery-status.jpg" alt="decktility finished" class="center" /></p>
 
 <h1 id="various-learnings">Various learnings</h1>
 
