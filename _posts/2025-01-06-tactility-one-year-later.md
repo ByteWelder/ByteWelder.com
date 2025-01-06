@@ -4,7 +4,7 @@ title:  "Tactility...One Year Later"
 date:   2025-01-06 20:15:00 +0100
 categories: posts
 excerpt_separator: <!--more-->
-last_modified_at: 2025-01-06 20:25:00 +0100
+last_modified_at: 2025-01-06 20:44:00 +0100
 ---
 
 Not a lot of my projects survive this long, so let's take a look what made [this one](https://tactility.one) special.
@@ -112,7 +112,7 @@ Not everything worked out of the box, but after some code changes, I had it runn
 </center>
 <br/>
 
-I think it took less and a day to go from a prototype to a fully functional app.
+I think it took less than a day to go from a prototype to a fully functional app.
 External apps also implied I had to build an SDK so people can build apps for it, so that's what I did!
 It's still a work in progress, but it's already usable to a great extent.
 
