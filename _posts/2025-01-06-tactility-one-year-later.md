@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 last_modified_at: 2025-01-06 20:15:00 +0100
 ---
 
-Not a lot of my projects survive this long, so let's take a look what made this one special.
+Not a lot of my projects survive this long, so let's take a look what made [this one](https://tactility.one) special.
 
 <!--more-->
 
