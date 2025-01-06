@@ -1,5 +1,169 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-01-15T21:38:23+01:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
-</subtitle><entry><title type="html">The making of a platform</title><link href="/posts/2024/01/15/the-making-of-a-platform.html" rel="alternate" type="text/html" title="The making of a platform" /><published>2024-01-15T21:30:00+01:00</published><updated>2024-01-15T21:30:00+01:00</updated><id>/posts/2024/01/15/the-making-of-a-platform</id><content type="html" xml:base="/posts/2024/01/15/the-making-of-a-platform.html"><![CDATA[<p>I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-01-06T20:17:17+01:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
+</subtitle><entry><title type="html">Tactility…One Year Later</title><link href="/posts/2025/01/06/tactility-one-year-later.html" rel="alternate" type="text/html" title="Tactility…One Year Later" /><published>2025-01-06T20:15:00+01:00</published><updated>2025-01-06T20:15:00+01:00</updated><id>/posts/2025/01/06/tactility-one-year-later</id><content type="html" xml:base="/posts/2025/01/06/tactility-one-year-later.html"><![CDATA[<p>Not a lot of my projects survive this long, so let’s take a look what made this one special.</p>
+
+<!--more-->
+
+<h1 id="how-it-started">How it started</h1>
+
+<p>It all started in December 2023, when I was considering to buy a Flipper Zero device. 
+I still don’t have one, but I got to borrow one from a friend (thanks, Hanneke!).
+Flipper Zero is a multi-tool/gadget for people who like to tinker with electronics or software.
+I won’t go into too many details, as you can read up on that in my <a href="/posts/2024/01/15/the-making-of-a-platform.html">previous post</a>.</p>
+
+<p><img src="/assets/images/posts/tactility/early-prototype.jpg" alt="early prototype of Tactility showing on 2 different devices" class="center" /></p>
+
+<p>In short, I started re-using some of the Flipper Zero code and started building an application platform.
+Meanwhile, very little of that original code is still there, with the exception of some comments and maybe a few lines of code.
+I’ve also implemented Tactility on a couple more devices:</p>
+
+<p><img src="/assets/images/posts/tactility/tactility-devices-with-logo.jpg" alt="3 different devices showing the boot screen with the tactility logo" class="center" /></p>
+
+<p>Before we dive into some of the major changes, let’s talk about motivation:</p>
+
+<h1 id="motivation">Motivation</h1>
+
+<p>So what kept me going?</p>
+
+<p>I think it’s mainly the variety of challenges that keep me interested in this project.
+One time I can focus on just writing an app, the other time I can dive into systems programming or driver development,
+another day I’ll be busy with website development. There’s always something different to do.</p>
+
+<p>I keep a list of issues, ideas and tasks in a <a href="https://github.com/ByteWelder/Tactility/blob/main/Documentation/ideas.md">document</a>.
+Such documents generally tend to become large and can be a demotivator for me.
+The way I approach it now is that I see it more as a shopping list with no strings attached:
+Do I feel like fixing a bug? Or do I want to make something new? Or do I improve something that isn’t up to standards?</p>
+
+<p>It seems that no-one has built something like this for ESP32 before - at least not as open source - so that gives me some motivation too.</p>
+
+<p><img src="/assets/images/posts/tactility/discord-support.png" alt="Discord post tagged with positive emojis" class="center" /></p>
+
+<p>And then there’s all the support I get from the lovely people in various Discord communities! They are awesome:
+They motivate me, and they help me take the right decisions. If you’re in one of those channels: Thank you for the support! 💙</p>
+
+<h1 id="apps-continued">Apps, continued…</h1>
+
+<p>There are about two dozen apps right now! That includes the various settings apps and some helpers like an alert, selection or input dialog app.
+You might have guessed it, but the desktop in Tactility is just a “special” kind of app! And so is the app launcher that you use to start other apps.</p>
+
+<p>My aim for the desktop is for it to remain simple, so it works well on devices with smaller screens.
+I’ve paid attention to details, such as the icons being displayed either horizontally or vertically depending on the screen orientation or size.</p>
+
+<center>
+<img src="/assets/images/posts/tactility/screenshot-Desktop.png" alt="screenshot of the desktop" />&nbsp;
+<img src="/assets/images/posts/tactility/screenshot-AppList.png" alt="screenshot of the app list" />
+</center>
+<p><br /></p>
+
+<p>The WiFi app is my favourite one:</p>
+
+<center>
+<img src="/assets/images/posts/tactility/screenshot-WifiManage.png" alt="screenshot of the wifi management app" />&nbsp;
+<img src="/assets/images/posts/tactility/screenshot-WifiConnect.png" alt="screenshot of the wifi connection app that connects to an SSID" />
+</center>
+<p><br /></p>
+
+<p>This was the hardest one to build, because of the complexity of WiFi itself.
+You might notice that the interface is heavily inspired by iOS.
+I paid extra care when it comes to security: passwords are stored with encryption on flash storage.
+The encryption is hardware-bound, so merely copying the data from the ESP32 shouldn’t help an attacker much.</p>
+
+<p>The WiFi app is a good example to show you that I really care about this project.</p>
+
+<p>Two of the more technical apps are the I2C Scan app and the GPIO app:</p>
+
+<center>
+<img src="/assets/images/posts/tactility/screenshot-Gpio.png" alt="screenshot of the GPIO app" />&nbsp;
+<img src="/assets/images/posts/tactility/screenshot-I2cScan.png" alt="screenshot of the I2C scan app" />
+</center>
+<p><br /></p>
+
+<p>The GPIO app shows the state of the electrical connections to the microcontroller.
+The I2C app shows which devices are connected to the selected I2C interface.
+Both apps can help a developer to debug issues with the hardware.</p>
+
+<p>The settings list and the settings themselves are also regular apps:</p>
+
+<center>
+<img src="/assets/images/posts/tactility/screenshot-Settings.png" alt="screenshot of the Settings app" />&nbsp;
+<img src="/assets/images/posts/tactility/screenshot-Display.png" alt="screenshot of the Display app" />
+</center>
+<p><br /></p>
+
+<p>The display app is pretty basic. It allows the user to change the brightness and gamma of the display.
+Similarly, you can enable/disable charging and see how much power is left before the battery runs out.
+The USB app reboots Tactility in USB storage device mode. This allows you to access the SD card as if it were
+a USB thumb drive.</p>
+
+<h1 id="external-apps">External Apps</h1>
+
+<p>One of the major milestones for me was getting applications to run from an SD card.
+I thought it was impossible for a long time, but apparently there’s <a href="https://components.espressif.com/components/espressif/elf_loader">official support</a> for it!
+Not everything worked out of the box, but after some code changes, I had it running:</p>
+
+<center>
+<img src="/assets/images/posts/tactility/screenshot-Files.png" alt="screenshot of the Files app showing the SD card content" />&nbsp;
+<img src="/assets/images/posts/tactility/screenshot-ExternalApp.png" alt="screenshot of an external Hello World app" />
+</center>
+<p><br /></p>
+
+<p>I think it took less and a day to go from a prototype to a fully functional app.
+External apps also implied I had to build an SDK so people can build apps for it, so that’s what I did!
+It’s still a work in progress, but it’s already usable to a great extent.</p>
+
+<h1 id="simulator">Simulator</h1>
+
+<p>Shortly after writing my previous post, on January 21st 2024, I had a working simulator.
+Building this had a bunch of implications, because not all code was suitable to run on a PC.
+This includes all the microcontroller-specific parts such as WiFi, SD card and much more. 
+It motivated me to write a HAL: a Hardware Abstraction Layer. This layer of software allows me to talk to
+hardware devices without it being specifically tied to a platform.</p>
+
+<p><img src="/assets/images/posts/tactility/simulator.webp" alt="the simulator window showing the Tactility desktop" class="center" /></p>
+
+<p>The simulator helps me develop apps much quicker.
+Some bugs can be analyzed and fixed more easily. Trying out new UI layouts on the simulator is also much quicker.
+The speed is partially gained in compilation time, but mainly because I don’t have to wait for the ROM to flash to a device.</p>
+
+<h1 id="website">Website</h1>
+
+<p>Considering the big leaps, I decided to build a proper website somewhere in the second half of this year.
+I recently also registered the <a href="https://tactility.one">tactility.one</a> domain name for it.
+This led me to design a logo, which improved over the course of a few weeks with the help of some friends and people online:</p>
+
+<p><img src="/assets/images/posts/tactility/logo.svg" alt="tactility logo" class="center" /></p>
+
+<p>Because it looks like a fan, it works well as a progress indicator widget for the apps.
+This is another good example of how a relatively straight-forward task can snowball into many more.</p>
+
+<h1 id="crashing-with-qr">Crashing with QR</h1>
+
+<p>Speaking of websites… when Tactility crashes, it shows a QR code that you can scan:</p>
+
+<p><img src="/assets/images/posts/tactility/t-deck-crash-qr.webp" alt="T-Deck device showing QR after crash" class="center" /></p>
+
+<p>When you scan the QR code on your phone, it allows you to open a website that displays the crash information:</p>
+
+<p><img src="/assets/images/posts/tactility/oops-website-screenshot.png" alt="Website screenshot showing crash information" class="center" /></p>
+
+<p>Quickly after sharing this on Discord, people were asking me what that data was
+and whether I was keeping all the information on a server (I’m not), so I added a help and privacy button to the website recently.</p>
+
+<p>Crash reporting via QR code is great for devices that aren’t always connected online.
+It’ll make it easier for non-techies to give me basic info on their crashes,
+and it already helped me debug issues that otherwise were impossible to debug.</p>
+
+<h1 id="an-operating-system-an-application-platform">An operating system? An application platform?</h1>
+
+<p>This is one of the least technical changes. I guess it’s mostly a rebranding to call it an operating system instead of an application platform.
+Considering that there’s a desktop and apps, and you can develop applications with an SDK, and you can run apps from an SD card … 
+and the whole thing runs on FreeRT<strong>OS</strong> (RTOS stands for Real-Time Operating System), I decided it is appropriate to call it an operating system.</p>
+
+<p>It just sounds a bit cooler too, doesn’t it? ;)</p>
+
+<h1 id="thats-a-lot">That’s… a lot!</h1>
+
+<p>So what started as a Flipper Zero experiment led to developing an operating system, an SDK, over 2 dozen apps, 2 websites and a logo.
+There is so much more to unpack and I’m just getting started!</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Not a lot of my projects survive this long, so let’s take a look what made this one special.]]></summary></entry><entry><title type="html">The making of a platform</title><link href="/posts/2024/01/15/the-making-of-a-platform.html" rel="alternate" type="text/html" title="The making of a platform" /><published>2024-01-15T21:30:00+01:00</published><updated>2024-01-15T21:30:00+01:00</updated><id>/posts/2024/01/15/the-making-of-a-platform</id><content type="html" xml:base="/posts/2024/01/15/the-making-of-a-platform.html"><![CDATA[<p>I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.</p>
 
 <!--more-->
 
@@ -1109,137 +1273,4 @@ let the heat of the copper conduct into the solder and melt the solder into the 
   <li>Power on the ESC with a battery and a smoke stopper.</li>
   <li>Remove battery power, add the FC and do another power on test with the smoke stopper.</li>
   <li>Remove battery power, connect setup through USB, re-connect power (with smoke stopper) and verify the voltage readout in BetaFlight</li>
-</ol>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected.]]></summary></entry><entry><title type="html">Making a Li-Ion battery pack</title><link href="/posts/2020/06/06/li-ion-battery-pack.html" rel="alternate" type="text/html" title="Making a Li-Ion battery pack" /><published>2020-06-06T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>/posts/2020/06/06/li-ion-battery-pack</id><content type="html" xml:base="/posts/2020/06/06/li-ion-battery-pack.html"><![CDATA[<p>This post shows the steps involved in making a <code class="language-plaintext highlighter-rouge">2S</code> pack with <code class="language-plaintext highlighter-rouge">21700</code> cells.
-This guide is also relevant for constructing with <code class="language-plaintext highlighter-rouge">18650</code> cells.</p>
-
-<!--more-->
-
-<p>Materials needed:</p>
-<ul>
-  <li>2x <code class="language-plaintext highlighter-rouge">18650</code> or <code class="language-plaintext highlighter-rouge">21700</code> cells (they must both be exactly the same cell!)</li>
-  <li>Large shrink tube (alternative: electrical tape)</li>
-  <li>A balance plug and wire for it (or balance extension cord that you cut)</li>
-  <li>18 AWG wire (can be thicker if you need more amps)</li>
-</ul>
-
-<p>Let’s first list the tools that I used:</p>
-
-<ul>
-  <li>Soldering iron</li>
-  <li>Hot glue gun</li>
-  <li>Wire cutters</li>
-  <li>Knife</li>
-  <li>Heat gun (optional)</li>
-  <li>Tweezers and soldering stand (optional)</li>
-  <li>Multimeter</li>
-</ul>
-
-<h1 id="before-you-begin">Before you begin</h1>
-
-<p>Making a battery pack is dangerous. Ensure that you have a basic understanding electricity and lipo &amp; li-ion battery tech.
-This guide might not be perfect, so proceed at your own risk.
-Using battery cells incorrectly may lead to fire and physical harm. Treat them with the respect that they deserve.
-The author is not responsible for any damage or harm that may happen from following the steps in this document.</p>
-
-<h1 id="steps">Steps</h1>
-
-<p>First we start with two identical cells. These are Samsung <code class="language-plaintext highlighter-rouge">INR21700-50E</code> cells:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/01_start.jpg" alt="2 Samsung 21700 cells " class="center" /></p>
-
-<p>You can find the specifications of these cells <a href="https://lygte-info.dk/review/batteries2012/Samsung%20INR21700-50E%205000mAh%20(Cyan)%20UK.html">here</a>.</p>
-
-<p>Before we actually start, please note that all wires should be pre-tinned.
-This will make it much easier to combine the components:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/02_prep.jpg" alt="2 pre-tinned wires" class="center" /></p>
-
-<p>Now put the cells together. They must touch each other. I used 2 coasters to help me with that.
-You can then use a tool to align them vertically:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/03_arrange.jpg" alt="2 cells laying flat and aligned" class="center" /></p>
-
-<p>Carefully apply hot glue on one side of the cells. Make sure your glue gun doesn’t touch the cells,
-so you don’t melt the plastic wrapper. Let it dry for 30-60 seconds and then do the other side too:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/04_glue.jpg" alt="2 cells with hot glue" class="center" /></p>
-
-<p>Since I don’t have a spot, I need to solder them regularly.
-Before we can add solder to the cells, we need to remove the oxidised layer from the cells.
-I do this by scraping carefully with a knife. But the cell flat on the table and start scraping at
-the center of the contact point.</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/05_roughen.jpg" alt="2 cells with knife" class="center" /></p>
-
-<p>Heat the soldering iron to <code class="language-plaintext highlighter-rouge">450 C</code> (<code class="language-plaintext highlighter-rouge">842 F</code>). Less might also work, but this is the temperature that I used.
-Put some solder on your iron, then put the soldering iron on the cell, then add a bunch more solder:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/06_solder.jpg" alt="2 cells, 1 with solder" class="center" /></p>
-
-<p>Let it cool and then clean off the resin:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/07_clean.jpg" alt="2 cells, 1 with clean solder" class="center" /></p>
-
-<p>You can test the strength of your weld by applying force with a knife on the edge of the solder.
-I had to hold my camera to take a picture, but you should hold the batteries with one hand, and then carefully
-apply a few kilograms of force with the other hand. Be careful to not cut yourself.</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/08_strength.jpg" alt="testing solder weld strength with a knife" class="center" /></p>
-
-<p>Repeat the knife scraping, soldering, cleaning and strength testing for all 4 contact points:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/09_solder_all.jpg" alt="2 cells both with solder" class="center" /></p>
-
-<p>Cut a small piece of wire to length to connect 2 battery cells in the back:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/10_bridge.jpg" alt="2 cells with wire connecting them" class="center" /></p>
-
-<p>Make a <code class="language-plaintext highlighter-rouge">2S</code> (3-pin) balance cable to length, or cut one from an existing balance extension cable:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/11_balance_measure.jpg" alt="measuring a balance cable" class="center" /></p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/12_balance_cut.jpg" alt="prepared balance cable" class="center" /></p>
-
-<p>Solder the center cable of the balance connector to the back of the battery:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/13_balance_solder.jpg" alt="center wire of balance cable is soldered" class="center" /></p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/14_balance_solder_detail.jpg" alt="close-up of soldered balance cable" class="center" /></p>
-
-<p>Fasten the balance cable with some hot glue. This will make it easier to work with:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/15_fasten.jpg" alt="balance cable is glued with hot glue" class="center" /></p>
-
-<p>Measure and cut the remaining 2 wires of the balance cable. Make sure the red cable goes
-to the positive side of the cell, and the black cable goes to the negative side of the other cell:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/16_measure.jpg" alt="measuring balance cable before cutting" class="center" /></p>
-
-<p>Then solder the two balance cables onto the cells:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/17_solder_balance.jpg" alt="balance cable is fully soldered" class="center" /></p>
-
-<p>Now solder an XT30 connector to the same contacts:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/18_solder_xt30.jpg" alt="XT30 soldered onto cells" class="center" /></p>
-
-<p>We’re about to make some covers to protect the top and bottom of the battery pack.
-Take some double-sided tape, cut it to length. Then apply kapton tape (or electrical tape?) on one side.</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/19_protective_cover_prep.jpg" alt="double-sided tape and kapton tape" class="center" /></p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/20_protective_cover_applied.jpg" alt="tape applied to cells" class="center" /></p>
-
-<p>Measure some shrink tube. It should stick out about 8-10mm on each end of the cells:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/20_shrink_tube_measuring.jpg" alt="2 cells with shrink tube to measure" class="center" /></p>
-
-<p>Hold the lipo by all of its wires and use the heat gun to carefully heat the shrink tube.
-Your pack is now finished:</p>
-
-<p><img src="/assets/images/posts/li-ion-battery-pack/21_shrink_tube_finished.jpg" alt="finished battery pack" class="center" /></p>
-
-<p>Since we used Samsung <code class="language-plaintext highlighter-rouge">INR21700-50E</code> cells, this battery pack is a <code class="language-plaintext highlighter-rouge">2S</code> pack with <code class="language-plaintext highlighter-rouge">5000 mAh</code>. Even though these are <code class="language-plaintext highlighter-rouge">Li-Ion</code> cells, they are charged to <code class="language-plaintext highlighter-rouge">4.2 V</code>. The cut-off voltage is a mere <code class="language-plaintext highlighter-rouge">2.5 V</code>! You can charge at maximum <code class="language-plaintext highlighter-rouge">4900 mA</code>, but it’s advised to charge them slower. They can be discharged at <code class="language-plaintext highlighter-rouge">9800 mAh</code> continuously, or <code class="language-plaintext highlighter-rouge">14700 mA</code> pulse. (according to <a href="https://lygte-info.dk/review/batteries2012/Samsung%20INR21700-50E%205000mAh%20(Cyan)%20UK.html">this page</a>)</p>
-
-<p>When using different cells than the ones above, make sure to look up the the specifications of these cells.
-The voltages and currents will very likely be different.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[This post shows the steps involved in making a 2S pack with 21700 cells. This guide is also relevant for constructing with 18650 cells.]]></summary></entry></feed>
+</ol>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected.]]></summary></entry></feed>
