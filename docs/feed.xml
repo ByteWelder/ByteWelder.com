@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-01-06T20:20:57+01:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-01-06T20:24:52+01:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
 </subtitle><entry><title type="html">Tactility…One Year Later</title><link href="/posts/2025/01/06/tactility-one-year-later.html" rel="alternate" type="text/html" title="Tactility…One Year Later" /><published>2025-01-06T20:15:00+01:00</published><updated>2025-01-06T20:15:00+01:00</updated><id>/posts/2025/01/06/tactility-one-year-later</id><content type="html" xml:base="/posts/2025/01/06/tactility-one-year-later.html"><![CDATA[<p>Not a lot of my projects survive this long, so let’s take a look what made <a href="https://tactility.one">this one</a> special.</p>
 
 <!--more-->
@@ -9,8 +9,6 @@
 I still don’t have one, but I got to borrow one from a friend (thanks, Hanneke!).
 Flipper Zero is a multi-tool/gadget for people who like to tinker with electronics or software.
 I won’t go into too many details, as you can read up on that in my <a href="/posts/2024/01/15/the-making-of-a-platform.html">previous post</a>.</p>
-
-<p><img src="/assets/images/posts/tactility/early-prototype.jpg" alt="early prototype of Tactility showing on 2 different devices" class="center" /></p>
 
 <p>In short, I started re-using some of the Flipper Zero code and started building an application platform.
 Meanwhile, very little of that original code is still there, with the exception of some comments and maybe a few lines of code.

@@ -18,8 +18,6 @@ I still don't have one, but I got to borrow one from a friend (thanks, Hanneke!)
 Flipper Zero is a multi-tool/gadget for people who like to tinker with electronics or software.
 I won't go into too many details, as you can read up on that in my [previous post]({{page.previous.url}}).
 
-![early prototype of Tactility showing on 2 different devices]({{ site.url }}/assets/images/posts/tactility/early-prototype.jpg){: .center }
-
 In short, I started re-using some of the Flipper Zero code and started building an application platform.
 Meanwhile, very little of that original code is still there, with the exception of some comments and maybe a few lines of code.
 I've also implemented Tactility on a couple more devices:
