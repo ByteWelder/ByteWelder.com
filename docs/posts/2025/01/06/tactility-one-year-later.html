@@ -10,9 +10,9 @@
   <meta name="description" content="Not a lot of my projects survive this long, so let’s take a look what made this one special.">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/posts/2025/01/06/tactility-one-year-later.html">
+  <link rel="canonical" href="http://localhost:4000/posts/2025/01/06/tactility-one-year-later.html">
   <link rel="alternate" type="application/rss+xml" title="ByteWelder" href="/feed.xml">
-  <link rel="icon" type="image/png" href="assets/images/bytewelder.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.svg">
 
   
 </head>
@@ -24,8 +24,10 @@
 
   <div class="wrapper">
     
+
     
-    <a class="site-title" href="/">ByteWelder</a>
+    
+    <a class="site-title" href="/"><img src="/assets/images/favicon.svg" width="40" height="40" alt="logo" /> ByteWelder</a>
   
     
       <nav class="site-nav">
@@ -66,7 +68,7 @@
         Jan 6, 2025
       </time>
       </p>
-      <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/style.css">
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -85,7 +87,7 @@ I won’t go into too many details, as you can read up on that in my <a href="/p
 Meanwhile, very little of that original code is still there, with the exception of some comments and maybe a few lines of code.
 I’ve also implemented Tactility on a couple more devices:</p>
 
-<p><img src="/assets/images/posts/tactility/tactility-devices-with-logo.jpg" alt="3 different devices showing the boot screen with the tactility logo" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/tactility/tactility-devices-with-logo.jpg" alt="3 different devices showing the boot screen with the tactility logo" class="center" /></p>
 
 <p>Before we dive into some of the major changes, let’s talk about motivation:</p>
 
@@ -104,7 +106,7 @@ Do I feel like fixing a bug? Or do I want to make something new? Or do I improve
 
 <p>It seems that no-one has built something like this for ESP32 before - at least not as open source - so that gives me some motivation too.</p>
 
-<p><img src="/assets/images/posts/tactility/discord-support.png" alt="Discord post tagged with positive emojis" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/tactility/discord-support.png" alt="Discord post tagged with positive emojis" class="center" /></p>
 
 <p>And then there’s all the support I get from the lovely people in various Discord communities! They are awesome:
 They motivate me, and they help me take the right decisions. If you’re in one of those channels: Thank you for the support! 💙</p>
@@ -118,16 +120,16 @@ You might have guessed it, but the desktop in Tactility is just a “special” 
 I’ve paid attention to details, such as the icons being displayed either horizontally or vertically depending on the screen orientation or size.</p>
 
 <center>
-<img src="/assets/images/posts/tactility/screenshot-Desktop.png" alt="screenshot of the desktop" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-AppList.png" alt="screenshot of the app list" />
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-Desktop.png" alt="screenshot of the desktop" />&nbsp;
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-AppList.png" alt="screenshot of the app list" />
 </center>
 <p><br /></p>
 
 <p>The WiFi app is my favourite one:</p>
 
 <center>
-<img src="/assets/images/posts/tactility/screenshot-WifiManage.png" alt="screenshot of the wifi management app" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-WifiConnect.png" alt="screenshot of the wifi connection app that connects to an SSID" />
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-WifiManage.png" alt="screenshot of the wifi management app" />&nbsp;
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-WifiConnect.png" alt="screenshot of the wifi connection app that connects to an SSID" />
 </center>
 <p><br /></p>
 
@@ -141,8 +143,8 @@ The encryption is hardware-bound, so merely copying the data from the ESP32 shou
 <p>Two of the more technical apps are the I2C Scan app and the GPIO app:</p>
 
 <center>
-<img src="/assets/images/posts/tactility/screenshot-Gpio.png" alt="screenshot of the GPIO app" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-I2cScan.png" alt="screenshot of the I2C scan app" />
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-Gpio.png" alt="screenshot of the GPIO app" />&nbsp;
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-I2cScan.png" alt="screenshot of the I2C scan app" />
 </center>
 <p><br /></p>
 
@@ -153,8 +155,8 @@ Both apps can help a developer to debug issues with the hardware.</p>
 <p>The settings list and the settings themselves are also regular apps:</p>
 
 <center>
-<img src="/assets/images/posts/tactility/screenshot-Settings.png" alt="screenshot of the Settings app" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-Display.png" alt="screenshot of the Display app" />
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-Settings.png" alt="screenshot of the Settings app" />&nbsp;
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-Display.png" alt="screenshot of the Display app" />
 </center>
 <p><br /></p>
 
@@ -170,8 +172,8 @@ I thought it was impossible for a long time, but apparently there’s <a href="h
 Not everything worked out of the box, but after some code changes, I had it running:</p>
 
 <center>
-<img src="/assets/images/posts/tactility/screenshot-Files.png" alt="screenshot of the Files app showing the SD card content" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-ExternalApp.png" alt="screenshot of an external Hello World app" />
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-Files.png" alt="screenshot of the Files app showing the SD card content" />&nbsp;
+<img src="http://localhost:4000/assets/images/posts/tactility/screenshot-ExternalApp.png" alt="screenshot of an external Hello World app" />
 </center>
 <p><br /></p>
 
@@ -187,7 +189,7 @@ This includes all the microcontroller-specific parts such as WiFi, SD card and m
 It motivated me to write a HAL: a Hardware Abstraction Layer. This layer of software allows me to talk to
 hardware devices without it being specifically tied to a platform.</p>
 
-<p><img src="/assets/images/posts/tactility/simulator.webp" alt="the simulator window showing the Tactility desktop" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/tactility/simulator.webp" alt="the simulator window showing the Tactility desktop" class="center" /></p>
 
 <p>The simulator helps me develop apps much quicker.
 Some bugs can be analyzed and fixed more easily. Trying out new UI layouts on the simulator is also much quicker.
@@ -199,7 +201,7 @@ The speed is partially gained in compilation time, but mainly because I don’t 
 I recently also registered the <a href="https://tactility.one">tactility.one</a> domain name for it.
 This led me to design a logo, which improved over the course of a few weeks with the help of some friends and people online:</p>
 
-<p><img src="/assets/images/posts/tactility/logo.svg" alt="tactility logo" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/tactility/logo.svg" alt="tactility logo" class="center" /></p>
 
 <p>Because it looks like a fan, it works well as a progress indicator widget for the apps.
 This is another good example of how a relatively straight-forward task can snowball into many more.</p>
@@ -208,11 +210,11 @@ This is another good example of how a relatively straight-forward task can snowb
 
 <p>Speaking of websites… when Tactility crashes, it shows a QR code that you can scan:</p>
 
-<p><img src="/assets/images/posts/tactility/t-deck-crash-qr.webp" alt="T-Deck device showing QR after crash" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/tactility/t-deck-crash-qr.webp" alt="T-Deck device showing QR after crash" class="center" /></p>
 
 <p>When you scan the QR code on your phone, it allows you to open a website that displays the crash information:</p>
 
-<p><img src="/assets/images/posts/tactility/oops-website-screenshot.png" alt="Website screenshot showing crash information" class="center" /></p>
+<p><img src="http://localhost:4000/assets/images/posts/tactility/oops-website-screenshot.png" alt="Website screenshot showing crash information" class="center" /></p>
 
 <p>Quickly after sharing this on Discord, people were asking me what that data was
 and whether I was keeping all the information on a server (I’m not), so I added a help and privacy button to the website recently.</p>
