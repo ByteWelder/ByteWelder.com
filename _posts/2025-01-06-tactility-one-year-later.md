@@ -4,7 +4,7 @@ title:  "Tactility...One Year Later"
 date:   2025-01-06 20:15:00 +0100
 categories: posts
 excerpt_separator: <!--more-->
-last_modified_at: 2025-01-06 20:44:00 +0100
+last_modified_at: 2025-01-07 23:02:00 +0100
 ---
 
 Not a lot of my projects survive this long, so let's take a look what made [this one](https://tactility.one) special.
@@ -49,13 +49,13 @@ They motivate me, and they help me take the right decisions. If you're in one of
 # Apps, continued...
 
 There are about two dozen apps right now! That includes the various settings apps and some helpers like an alert, selection or input dialog app.
-You might have guessed it, but the desktop in Tactility is just a "special" kind of app! And so is the app launcher that you use to start other apps.
+You might have guessed it, but the launcher in Tactility is just a "special" kind of app!
 
-My aim for the desktop is for it to remain simple, so it works well on devices with smaller screens.
+My plan for the launcher is for it to remain simple, so it works well on devices with smaller screens.
 I've paid attention to details, such as the icons being displayed either horizontally or vertically depending on the screen orientation or size.
 
 <center>
-<img src="{{ site.url }}/assets/images/posts/tactility/screenshot-Desktop.png" alt="screenshot of the desktop" />&nbsp;
+<img src="{{ site.url }}/assets/images/posts/tactility/screenshot-Launcher.png" alt="screenshot of the launcher screen" />&nbsp;
 <img src="{{ site.url }}/assets/images/posts/tactility/screenshot-AppList.png" alt="screenshot of the app list" />
 </center>
 <br/>

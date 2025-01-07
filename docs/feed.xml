@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-01-07T00:09:39+01:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
-</subtitle><entry><title type="html">Tactility…One Year Later</title><link href="/posts/2025/01/06/tactility-one-year-later.html" rel="alternate" type="text/html" title="Tactility…One Year Later" /><published>2025-01-06T20:15:00+01:00</published><updated>2025-01-06T20:44:00+01:00</updated><id>/posts/2025/01/06/tactility-one-year-later</id><content type="html" xml:base="/posts/2025/01/06/tactility-one-year-later.html"><![CDATA[<p>Not a lot of my projects survive this long, so let’s take a look what made <a href="https://tactility.one">this one</a> special.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-01-07T23:05:04+01:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
+</subtitle><entry><title type="html">Tactility…One Year Later</title><link href="/posts/2025/01/06/tactility-one-year-later.html" rel="alternate" type="text/html" title="Tactility…One Year Later" /><published>2025-01-06T20:15:00+01:00</published><updated>2025-01-07T23:02:00+01:00</updated><id>/posts/2025/01/06/tactility-one-year-later</id><content type="html" xml:base="/posts/2025/01/06/tactility-one-year-later.html"><![CDATA[<p>Not a lot of my projects survive this long, so let’s take a look what made <a href="https://tactility.one">this one</a> special.</p>
 
 <!--more-->
 
@@ -41,13 +41,13 @@ They motivate me, and they help me take the right decisions. If you’re in one 
 <h1 id="apps-continued">Apps, continued…</h1>
 
 <p>There are about two dozen apps right now! That includes the various settings apps and some helpers like an alert, selection or input dialog app.
-You might have guessed it, but the desktop in Tactility is just a “special” kind of app! And so is the app launcher that you use to start other apps.</p>
+You might have guessed it, but the launcher in Tactility is just a “special” kind of app!</p>
 
-<p>My aim for the desktop is for it to remain simple, so it works well on devices with smaller screens.
+<p>My plan for the launcher is for it to remain simple, so it works well on devices with smaller screens.
 I’ve paid attention to details, such as the icons being displayed either horizontally or vertically depending on the screen orientation or size.</p>
 
 <center>
-<img src="/assets/images/posts/tactility/screenshot-Desktop.png" alt="screenshot of the desktop" />&nbsp;
+<img src="/assets/images/posts/tactility/screenshot-Launcher.png" alt="screenshot of the launcher screen" />&nbsp;
 <img src="/assets/images/posts/tactility/screenshot-AppList.png" alt="screenshot of the app list" />
 </center>
 <p><br /></p>
