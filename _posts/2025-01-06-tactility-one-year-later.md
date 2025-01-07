@@ -4,7 +4,7 @@ title:  "Tactility...One Year Later"
 date:   2025-01-06 20:15:00 +0100
 categories: posts
 excerpt_separator: <!--more-->
-last_modified_at: 2025-01-07 23:02:00 +0100
+last_modified_at: 2025-01-07 23:06:00 +0100
 ---
 
 Not a lot of my projects survive this long, so let's take a look what made [this one](https://tactility.one) special.
@@ -124,7 +124,7 @@ This includes all the microcontroller-specific parts such as WiFi, SD card and m
 It motivated me to write a HAL: a Hardware Abstraction Layer. This layer of software allows me to talk to
 hardware devices without it being specifically tied to a platform.
 
-![the simulator window showing the Tactility desktop]({{ site.url }}/assets/images/posts/tactility/simulator.webp){: .center }
+![the simulator window showing the Tactility launcher]({{ site.url }}/assets/images/posts/tactility/simulator.webp){: .center }
 
 The simulator helps me develop apps much quicker.
 Some bugs can be analyzed and fixed more easily. Trying out new UI layouts on the simulator is also much quicker.
@@ -161,7 +161,7 @@ and it already helped me debug issues that otherwise were impossible to debug.
 # An operating system? An application platform?
 
 This is one of the least technical changes. I guess it's mostly a rebranding to call it an operating system instead of an application platform.
-Considering that there's a desktop and apps, and you can develop applications with an SDK, and you can run apps from an SD card ... 
+Considering that there's a launcher and apps, and you can develop applications with an SDK, and you can run apps from an SD card ... 
 and the whole thing runs on FreeRT**OS** (RTOS stands for Real-Time Operating System), I decided it is appropriate to call it an operating system. 
 
 It just sounds a bit cooler too, doesn't it? ;)
