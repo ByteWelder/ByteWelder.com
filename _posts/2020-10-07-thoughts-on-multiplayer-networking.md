@@ -3,6 +3,7 @@ layout: post
 title:  "Thoughts on multiplayer networking"
 date:   2020-10-07 23:00:00 +0200
 categories: posts
+tags: software
 excerpt_separator: <!--more-->
 last_modified_at: 2019-08-13 17:57:00 +0200
 ---

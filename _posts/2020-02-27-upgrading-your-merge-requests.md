@@ -3,6 +3,7 @@ layout: post
 title:  "Upgrading your merge requests"
 date:   2020-02-27 00:00:00 +0200
 categories: posts
+tags: software
 last_modified_at: 2020-02-27 00:00:00 +0200
 ---
 

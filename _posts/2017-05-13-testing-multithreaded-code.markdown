@@ -3,6 +3,7 @@ layout: post
 title:  "Testing multithreaded code"
 date:   2017-05-13 13:54:00 +0200
 categories: posts
+tags: software
 ---
 
 Writing multi-threaded code for Java/Android is not the easiest of tasks. Making it testable can also be a challenge.

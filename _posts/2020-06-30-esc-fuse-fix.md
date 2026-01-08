@@ -3,6 +3,7 @@ layout: post
 title:  "ESC fuse fix"
 date:   2020-06-30 02:00:00 +0200
 categories: posts
+tags: hardware
 excerpt_separator: <!--more-->
 last_modified_at: 2023-05-20 22:00:00 +0200
 ---

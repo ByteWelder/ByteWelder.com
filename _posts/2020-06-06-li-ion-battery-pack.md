@@ -3,6 +3,7 @@ layout: post
 title:  "Making a Li-Ion battery pack"
 date:   2020-06-06 02:00:00 +0200
 categories: posts
+tags: hardware
 last_modified_at: 2023-05-20 22:00:00 +0200
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Hobby CNC electronics"
 date:   2021-12-28 01:00:00 +0200
 categories: posts
+tags: hardware
 excerpt_separator: <!--more-->
 last_modified_at: 2021-12-28 01:00:00 +0200
 ---

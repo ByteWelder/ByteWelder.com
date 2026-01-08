@@ -1,1274 +1,143 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-01-07T23:07:06+01:00</updated><id>/feed.xml</id><title type="html">ByteWelder</title><subtitle>Learnings, experiments and projects.
-</subtitle><entry><title type="html">Tactility…One Year Later</title><link href="/posts/2025/01/06/tactility-one-year-later.html" rel="alternate" type="text/html" title="Tactility…One Year Later" /><published>2025-01-06T20:15:00+01:00</published><updated>2025-01-07T23:06:00+01:00</updated><id>/posts/2025/01/06/tactility-one-year-later</id><content type="html" xml:base="/posts/2025/01/06/tactility-one-year-later.html"><![CDATA[<p>Not a lot of my projects survive this long, so let’s take a look what made <a href="https://tactility.one">this one</a> special.</p>
 
-<!--more-->
 
-<h1 id="how-it-started">How it started</h1>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/</id>
+  <title>ByteWelder</title>
+  <subtitle>ByteWelder is an alias used by Ken Van Hoeylandt. It is used to share learnings, experiments and projects.</subtitle>
+  <updated>2026-01-08T22:21:10+01:00</updated>
+  <author>
+    <name>ByteWelder</name>
+    <uri>/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2026 ByteWelder </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Tactility's second year</title>
+    <link href="/posts/2026/01/07/tactility-second-year.html" rel="alternate" type="text/html" title="Tactility&amp;apos;s second year" />
+    <published>2026-01-07T20:00:00+01:00</published>
+  
+    <updated>2026-01-07T20:00:00+01:00</updated>
+  
+    <id>/posts/2026/01/07/tactility-second-year.html</id>
+    <content type="text/html" src="/posts/2026/01/07/tactility-second-year.html" />
+    <author>
+      <name>ByteWelder</name>
+    </author>
+
+  
+    
+    <category term="posts" />
+    
+  
+
+  <summary>The Tactility community and I have been working on many aspects over the past year: devices, apps, quality-of-life features for developers, and much more. Let’s take a close look.    How it started  At the end of 2023, I got inspired by Flipper Zero and decided that there should be an application platform for ESP32 devices. I wrote about this in my previous post, which explains its roots and pa...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Tactility...One Year Later</title>
+    <link href="/posts/2025/01/06/tactility-one-year-later.html" rel="alternate" type="text/html" title="Tactility...One Year Later" />
+    <published>2025-01-06T20:15:00+01:00</published>
+  
+    <updated>2025-01-07T23:06:00+01:00</updated>
+  
+    <id>/posts/2025/01/06/tactility-one-year-later.html</id>
+    <content type="text/html" src="/posts/2025/01/06/tactility-one-year-later.html" />
+    <author>
+      <name>ByteWelder</name>
+    </author>
+
+  
+    
+    <category term="posts" />
+    
+  
+
+  <summary>Not a lot of my projects survive this long, so let’s take a look what made this one special.    How it started  It all started in December 2023, when I was considering to buy a Flipper Zero device.  I still don’t have one, but I got to borrow one from a friend (thanks, Hanneke!). Flipper Zero is a multi-tool/gadget for people who like to tinker with electronics or software. I won’t go into too ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>The making of a platform</title>
+    <link href="/posts/2024/01/15/the-making-of-a-platform.html" rel="alternate" type="text/html" title="The making of a platform" />
+    <published>2024-01-15T21:30:00+01:00</published>
+  
+    <updated>2024-01-15T21:30:00+01:00</updated>
+  
+    <id>/posts/2024/01/15/the-making-of-a-platform.html</id>
+    <content type="text/html" src="/posts/2024/01/15/the-making-of-a-platform.html" />
+    <author>
+      <name>ByteWelder</name>
+    </author>
+
+  
+    
+    <category term="posts" />
+    
+  
+
+  <summary>I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.    Prologue  Some time in mid-December, I was wondering if I should buy a Flipper Zero device. The official website describes it as follows:     Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff, such as radio protocols, acc...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Building a handheld PC</title>
+    <link href="/posts/2023/05/20/building-a-handheld-pc.html" rel="alternate" type="text/html" title="Building a handheld PC" />
+    <published>2023-05-20T23:00:00+02:00</published>
+  
+    <updated>2022-05-26T13:30:00+02:00</updated>
+  
+    <id>/posts/2023/05/20/building-a-handheld-pc.html</id>
+    <content type="text/html" src="/posts/2023/05/20/building-a-handheld-pc.html" />
+    <author>
+      <name>ByteWelder</name>
+    </author>
+
+  
+    
+    <category term="posts" />
+    
+  
+
+  <summary>I’d like to share with you my latest project: Decktility!    For several years, I’ve been looking for a project where I could dump a bunch of creativity in. A project of my own, that would be challenging and rewarding. Preferrably a project that combines electronics and software. Handheld PCs always had a special place in my heart. Palm III was my first one, and a bit later I got my hands on a ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>OpenPyrojet Print Head Prototype</title>
+    <link href="/posts/2022/04/15/openpyrojet-print-head.html" rel="alternate" type="text/html" title="OpenPyrojet Print Head Prototype" />
+    <published>2022-04-15T18:00:00+02:00</published>
+  
+    <updated>2022-04-16T18:38:00+02:00</updated>
+  
+    <id>/posts/2022/04/15/openpyrojet-print-head.html</id>
+    <content type="text/html" src="/posts/2022/04/15/openpyrojet-print-head.html" />
+    <author>
+      <name>ByteWelder</name>
+    </author>
+
+  
+    
+    <category term="posts" />
+    
+  
+
+  <summary>A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.    This is what the finished print head looks like:    How does the printer work?  The feedstock of the printer is a mix of micrometer-sized particles (e.g. metals or ceramics) with a fuel source li...</summary>
+
+  </entry>
+
+</feed>
 
-<p>It all started in December 2023, when I was considering to buy a Flipper Zero device. 
-I still don’t have one, but I got to borrow one from a friend (thanks, Hanneke!).
-Flipper Zero is a multi-tool/gadget for people who like to tinker with electronics or software.
-I won’t go into too many details, as you can read up on that in my <a href="/posts/2024/01/15/the-making-of-a-platform.html">previous post</a>.</p>
 
-<p>In short, I started re-using some of the Flipper Zero code and started building an application platform.
-Meanwhile, very little of that original code is still there, with the exception of some comments and maybe a few lines of code.
-I’ve also implemented Tactility on a couple more devices:</p>
-
-<p><img src="/assets/images/posts/tactility/tactility-devices-with-logo.jpg" alt="3 different devices showing the boot screen with the tactility logo" class="center" /></p>
-
-<p>Before we dive into some of the major changes, let’s talk about motivation:</p>
-
-<h1 id="motivation">Motivation</h1>
-
-<p>So what kept me going?</p>
-
-<p>I think it’s mainly the variety of challenges that keep me interested in this project.
-One time I can focus on just writing an app, the other time I can dive into systems programming or driver development,
-another day I’ll be busy with website development. There’s always something different to do.</p>
-
-<p>I keep a list of issues, ideas and tasks in a <a href="https://github.com/ByteWelder/Tactility/blob/main/Documentation/ideas.md">document</a>.
-Such documents generally tend to become large and can be a demotivator for me.
-The way I approach it now is that I see it more as a shopping list with no strings attached:
-Do I feel like fixing a bug? Or do I want to make something new? Or do I improve something that isn’t up to standards?</p>
-
-<p>It seems that no-one has built something like this for ESP32 before - at least not as open source - so that gives me some motivation too.</p>
-
-<p><img src="/assets/images/posts/tactility/discord-support.png" alt="Discord post tagged with positive emojis" class="center" /></p>
-
-<p>And then there’s all the support I get from the lovely people in various Discord communities! They are awesome:
-They motivate me, and they help me take the right decisions. If you’re in one of those channels: Thank you for the support! 💙</p>
-
-<h1 id="apps-continued">Apps, continued…</h1>
-
-<p>There are about two dozen apps right now! That includes the various settings apps and some helpers like an alert, selection or input dialog app.
-You might have guessed it, but the launcher in Tactility is just a “special” kind of app!</p>
-
-<p>My plan for the launcher is for it to remain simple, so it works well on devices with smaller screens.
-I’ve paid attention to details, such as the icons being displayed either horizontally or vertically depending on the screen orientation or size.</p>
-
-<center>
-<img src="/assets/images/posts/tactility/screenshot-Launcher.png" alt="screenshot of the launcher screen" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-AppList.png" alt="screenshot of the app list" />
-</center>
-<p><br /></p>
-
-<p>The WiFi app is my favourite one:</p>
-
-<center>
-<img src="/assets/images/posts/tactility/screenshot-WifiManage.png" alt="screenshot of the wifi management app" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-WifiConnect.png" alt="screenshot of the wifi connection app that connects to an SSID" />
-</center>
-<p><br /></p>
-
-<p>This was the hardest one to build, because of the complexity of WiFi itself.
-You might notice that the interface is heavily inspired by iOS.
-I paid extra care when it comes to security: passwords are stored with encryption on flash storage.
-The encryption is hardware-bound, so merely copying the data from the ESP32 shouldn’t help an attacker much.</p>
-
-<p>The WiFi app is a good example to show you that I really care about this project.</p>
-
-<p>Two of the more technical apps are the I2C Scan app and the GPIO app:</p>
-
-<center>
-<img src="/assets/images/posts/tactility/screenshot-Gpio.png" alt="screenshot of the GPIO app" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-I2cScan.png" alt="screenshot of the I2C scan app" />
-</center>
-<p><br /></p>
-
-<p>The GPIO app shows the state of the electrical connections to the microcontroller.
-The I2C app shows which devices are connected to the selected I2C interface.
-Both apps can help a developer to debug issues with the hardware.</p>
-
-<p>The settings list and the settings themselves are also regular apps:</p>
-
-<center>
-<img src="/assets/images/posts/tactility/screenshot-Settings.png" alt="screenshot of the Settings app" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-Display.png" alt="screenshot of the Display app" />
-</center>
-<p><br /></p>
-
-<p>The display app is pretty basic. It allows the user to change the brightness and gamma of the display.
-Similarly, you can enable/disable charging and see how much power is left before the battery runs out.
-The USB app reboots Tactility in USB storage device mode. This allows you to access the SD card as if it were
-a USB thumb drive.</p>
-
-<h1 id="external-apps">External Apps</h1>
-
-<p>One of the major milestones for me was getting applications to run from an SD card.
-I thought it was impossible for a long time, but apparently there’s <a href="https://components.espressif.com/components/espressif/elf_loader">official support</a> for it!
-Not everything worked out of the box, but after some code changes, I had it running:</p>
-
-<center>
-<img src="/assets/images/posts/tactility/screenshot-Files.png" alt="screenshot of the Files app showing the SD card content" />&nbsp;
-<img src="/assets/images/posts/tactility/screenshot-ExternalApp.png" alt="screenshot of an external Hello World app" />
-</center>
-<p><br /></p>
-
-<p>I think it took less than a day to go from a prototype to a fully functional app.
-External apps also implied I had to build an SDK so people can build apps for it, so that’s what I did!
-It’s still a work in progress, but it’s already usable to a great extent.</p>
-
-<h1 id="simulator">Simulator</h1>
-
-<p>Shortly after writing my previous post, on January 21st 2024, I had a working simulator.
-Building this had a bunch of implications, because not all code was suitable to run on a PC.
-This includes all the microcontroller-specific parts such as WiFi, SD card and much more. 
-It motivated me to write a HAL: a Hardware Abstraction Layer. This layer of software allows me to talk to
-hardware devices without it being specifically tied to a platform.</p>
-
-<p><img src="/assets/images/posts/tactility/simulator.webp" alt="the simulator window showing the Tactility launcher" class="center" /></p>
-
-<p>The simulator helps me develop apps much quicker.
-Some bugs can be analyzed and fixed more easily. Trying out new UI layouts on the simulator is also much quicker.
-The speed is partially gained in compilation time, but mainly because I don’t have to wait for the ROM to flash to a device.</p>
-
-<h1 id="website">Website</h1>
-
-<p>Considering the big leaps, I decided to build a proper website somewhere in the second half of this year.
-I recently also registered the <a href="https://tactility.one">tactility.one</a> domain name for it.
-This led me to design a logo, which improved over the course of a few weeks with the help of some friends and people online:</p>
-
-<p><img src="/assets/images/posts/tactility/logo.svg" alt="tactility logo" class="center" /></p>
-
-<p>Because it looks like a fan, it works well as a progress indicator widget for the apps.
-This is another good example of how a relatively straight-forward task can snowball into many more.</p>
-
-<h1 id="crashing-with-qr">Crashing with QR</h1>
-
-<p>Speaking of websites… when Tactility crashes, it shows a QR code that you can scan:</p>
-
-<p><img src="/assets/images/posts/tactility/t-deck-crash-qr.webp" alt="T-Deck device showing QR after crash" class="center" /></p>
-
-<p>When you scan the QR code on your phone, it allows you to open a website that displays the crash information:</p>
-
-<p><img src="/assets/images/posts/tactility/oops-website-screenshot.png" alt="Website screenshot showing crash information" class="center" /></p>
-
-<p>Quickly after sharing this on Discord, people were asking me what that data was
-and whether I was keeping all the information on a server (I’m not), so I added a help and privacy button to the website recently.</p>
-
-<p>Crash reporting via QR code is great for devices that aren’t always connected online.
-It’ll make it easier for non-techies to give me basic info on their crashes,
-and it already helped me debug issues that otherwise were impossible to debug.</p>
-
-<h1 id="an-operating-system-an-application-platform">An operating system? An application platform?</h1>
-
-<p>This is one of the least technical changes. I guess it’s mostly a rebranding to call it an operating system instead of an application platform.
-Considering that there’s a launcher and apps, and you can develop applications with an SDK, and you can run apps from an SD card … 
-and the whole thing runs on FreeRT<strong>OS</strong> (RTOS stands for Real-Time Operating System), I decided it is appropriate to call it an operating system.</p>
-
-<p>It just sounds a bit cooler too, doesn’t it? ;)</p>
-
-<h1 id="thats-a-lot">That’s… a lot!</h1>
-
-<p>So what started as a Flipper Zero experiment led to developing an operating system, an SDK, over 2 dozen apps, 2 websites and a logo.
-There is so much more to unpack and I’m just getting started!</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Not a lot of my projects survive this long, so let’s take a look what made this one special.]]></summary></entry><entry><title type="html">The making of a platform</title><link href="/posts/2024/01/15/the-making-of-a-platform.html" rel="alternate" type="text/html" title="The making of a platform" /><published>2024-01-15T21:30:00+01:00</published><updated>2024-01-15T21:30:00+01:00</updated><id>/posts/2024/01/15/the-making-of-a-platform</id><content type="html" xml:base="/posts/2024/01/15/the-making-of-a-platform.html"><![CDATA[<p>I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.</p>
-
-<!--more-->
-
-<h1 id="prologue">Prologue</h1>
-
-<p>Some time in mid-December, I was wondering if I should buy a <a href="https://flipperzero.one/">Flipper Zero</a> device.
-The official website describes it as follows:</p>
-
-<blockquote>
-  <p>Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body. It loves hacking digital stuff,
-such as radio protocols, access control systems, hardware, and more. It’s fully open-source and customizable,
-so you can extend it in whatever way you like.</p>
-</blockquote>
-
-<p><img src="/assets/images/posts/tactility/flipperzero.png" alt="Flipper Zero device" class="center" /></p>
-<center><small>(image by <a href="https://flipperzero.one/">Flipper Zero</a>)</small></center>
-
-<p>I’ll refer to F0 instead of Flipper Zero in the text below.</p>
-
-<p>F0 allows you to play around with technologies such as BlueTooth, USB, infrared, NFC and much more.
-It offers a neat software development platform so you can easily output graphics and communicate with peripherals.
-It also has a cute dolphin pet that levels up as you explore.
-Its software is very interesting and I found myself wondering whether I could port
-the code to another microcontroller (MCU).</p>
-
-<p><a href="https://www.espressif.com">ESP32</a> has been my favourite MCU for the past few years.
-Most variants of the hardware come with a multi-core 240 MHz CPU, WiFi, bluetooth, 520kB of RAM (expandable to 8MB),
-several megabytes of storage and a bunch of wired connectivity options.
-It’s roughly the size of a postage stamp (18 x 25.5 x 3.1 mm) and it costs about 2 EUR before adding a USB port and a battery to it.
-For those who are interested: Flipper uses an STM32WB55 MCU.</p>
-
-<p><img src="/assets/images/posts/tactility/esp32.jpg" alt="ESP32 front and back" class="center" /></p>
-<center><small>(image by <a href="https://www.espressif.com">Espressif.com</a>)</small></center>
-
-<p>My porting efforts didn’t start out smoothly, but one thing led to another and 3 completely separate iterations later,
-I’ve got something that looks usable. The result is an application platform called <a href="https://github.com/ByteWelder/Tactility">Tactility</a>.</p>
-
-<p>Originally, I intended to port the F0 project partially to ESP32 with as little deviation from the original as possible. 
-I first started with copying a ton of code and removing the bits that weren’t needed (yet) or that were blatantly incompatible.
-This was not a successful approach: once everything compiled, it was too hard to debug memory corruption issues.</p>
-
-<p>In a second attempt to make a Flipper-like platform, I tried to make everything from scratch.
-It didn’t take long for me to realise that it was <em>way</em> too much work and I found myself copying in more and more bits
-from the Flipper project.</p>
-
-<p>In my third and final attempt, I did something in-between: I started building up the platform
-with mostly existing F0 code. The main difference was that I was importing smaller bits and verifying them
-before moving on to the next feature. I also wasn’t afraid to implement certain things radically different
-if it was beneficial to the project. This worked better and I soon had a functional prototype.
-It featured an application launcher and the ability to start and quit applications:</p>
-
-<p><img src="/assets/images/posts/tactility/early-prototype.jpg" alt="two devices running the software prototype for Tactility" class="center" /></p>
-
-<h1 id="making-the-app-makes-the-platform">Making the app makes the platform</h1>
-
-<p>Let’s dive into the software development journey…</p>
-
-<p>It didn’t take long to build a few simple apps like “Hello world” and one that showed memory information.
-I also had a ‘desktop’ app at this point, but this wasn’t very challenging as it just lists the installed applications and launches them
-when you click on them.</p>
-
-<p>When I set out to make a Wi-Fi service and related app, I didn’t know just how much it would change the entire platform!
-A good Wi-Fi app does a lot more things than you’d expect. Not only is it multi-threaded, you also need to store settings.
-And then there’s the increased complexity in UI and user experience.</p>
-
-<p>As I was making this feature, it resulted in a complete change of the platform.
-I started with a simple screen to toggle Wi-Fi on/off. So far so good. Then I needed an additional screen so the user can
-enter credentials to connect to a network. This almost doubled the amount of code and suddenly the app had to
-manage “which screen should I show - and when?”.</p>
-
-<p>I decided to split the Wi-Fi app into two separate apps: one for the Wi-Fi overview and one for connecting to a new network.
-To implement this, I now had to support:</p>
-<ul>
-  <li>Launching an app from another app, and being able to return to the original one.</li>
-  <li>Launching an app with parameters, because I wanted to have the SSID field pre-filled when you pressed on it in the Wi-Fi overview.</li>
-  <li>Storing the Wi-Fi credentials.</li>
-  <li>… securely, so I had to implement encryption/decryption …</li>
-  <li>… and I had to find a way to store the decryption keys in a safe (enough) manner.</li>
-</ul>
-
-<p><img src="/assets/images/posts/tactility/wifi-app.jpg" alt="3 panels of the same device showing the Wi-Fi app connecting to an access point" class="center" /></p>
-
-<h1 id="whats-in-an-app">What’s in an app?</h1>
-
-<p>Similar to <a href="https://developer.android.com/guide/topics/manifest/manifest-intro">Android</a>
-and <a href="https://github.com/search?q=repo%3Aflipperdevices%2Fflipperzero-firmware%20application.fam&amp;type=code">Flipper Zero</a>,
-I created a ledger that defines a user app. It looks like this:</p>
-
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">static</span> <span class="kt">void</span> <span class="nf">app_show</span><span class="p">(</span><span class="n">App</span> <span class="n">app</span><span class="p">,</span> <span class="n">lv_obj_t</span><span class="o">*</span> <span class="n">parent</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">lv_obj_t</span><span class="o">*</span> <span class="n">label</span> <span class="o">=</span> <span class="n">lv_label_create</span><span class="p">(</span><span class="n">parent</span><span class="p">);</span>
-    <span class="n">lv_label_set_text</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="s">"Hello, world!"</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="k">const</span> <span class="n">AppManifest</span> <span class="n">hello_world_app</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="p">.</span><span class="n">id</span> <span class="o">=</span> <span class="s">"helloworld"</span><span class="p">,</span>
-    <span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Hello World"</span><span class="p">,</span>
-    <span class="p">.</span><span class="n">icon</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">,</span>
-    <span class="p">.</span><span class="n">type</span> <span class="o">=</span> <span class="n">AppTypeUser</span><span class="p">,</span>
-    <span class="p">.</span><span class="n">on_start</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">,</span>
-    <span class="p">.</span><span class="n">on_stop</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">,</span>
-    <span class="p">.</span><span class="n">on_show</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">app_show</span><span class="p">,</span>
-    <span class="p">.</span><span class="n">on_hide</span> <span class="o">=</span> <span class="nb">NULL</span>
-<span class="p">};</span>
-</code></pre></div></div>
-
-<p>This is a functional app. It shows the text label on the screen and nothing more.
-It almost looks like object-oriented programming. In fact, I might create a C++ wrapper in the future.</p>
-
-<p>Background services work in a similar manner.
-The main difference is that they don’t define <code class="language-plaintext highlighter-rouge">on_show</code>, <code class="language-plaintext highlighter-rouge">on_hide</code>, an <code class="language-plaintext highlighter-rouge">icon</code> or a human-readable <code class="language-plaintext highlighter-rouge">name</code>.</p>
-
-<h1 id="app-lifecycle">App lifecycle</h1>
-
-<p>When you have apps starting other apps, you can consider it as a stack, which you aproach as LIFO or “Last In, First Out”:
-The last app that is put on the stack is the one that is shown to the user. It is also the first one to be closed before 
-you can get back to the app that was launched before it.</p>
-
-<p>Starting an app and closing goes like this:</p>
-
-<ol>
-  <li>Create the app (allocate data)</li>
-  <li>Create the views (UI) for the app and show them</li>
-  <li>Hide the app and destroy the views</li>
-  <li>Destroy the app (free up data)</li>
-</ol>
-
-<p>When app A starts app B, then the views of app A would be destroyed as the app is hidden, but app A itself would not be destroyed.
-When app B is closed and destroyed, the views of app A would be re-created and shown again.</p>
-
-<p>Once I was able to launch apps onto a stack, I wanted to be able to launch them with certain parameters.
-Flipper Zero originally just passed a string, but I wasn’t a fan of that: command line arguments are terrible to process.
-Instead, I opted to use “bundles” <a href="https://developer.android.com/reference/android/os/Bundle">like on Android</a>.
-A bundle is a sort of flexible dictionary that maps strings onto a specific set of types.
-It’s a simplified in-memory database (key-value store) with a flexible type system, while still using explicit typing.</p>
-
-<p>This is how bundles work on Tactility:</p>
-
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Make a bundle and store some data in it</span>
-<span class="n">Bundle</span> <span class="n">bundle</span> <span class="o">=</span> <span class="n">tt_bundle_alloc</span><span class="p">();</span>
-<span class="n">tt_bundle_put_bool</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"is_enabled"</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
-<span class="n">tt_bundle_put_int</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"count"</span><span class="p">,</span> <span class="mi">42</span><span class="p">);</span>
-<span class="n">tt_bundle_put_string</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"label"</span><span class="p">,</span> <span class="s">"Hello, world!"</span><span class="p">);</span>
-
-<span class="c1">// Check if the key and value exist...</span>
-<span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">tt_bundle_opt_bool</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"some_key"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">value</span><span class="p">))</span> <span class="p">{</span>
-    <span class="c1">// ...</span>
-<span class="p">}</span>
-
-<span class="c1">// This one crashes if the key doesn't exist:</span>
-<span class="n">bool</span> <span class="n">is_enabled</span> <span class="o">=</span> <span class="n">tt_bundle_get_bool</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span> <span class="s">"is_enabled"</span><span class="p">);</span>
-</code></pre></div></div>
-
-<h1 id="security-and-risk">Security and risk</h1>
-
-<p>Typing the Wi-Fi password on a touchscreen was becoming tedious. It was happening after every reboot.
-That’s why I needed to store the Wi-Fi credentials on the device.
-Once encrypting and decrypting was working, I still wasn’t done.
-The problem with encryption is that you need to store the secret that decodes the encrypted data.
-You can ask the user every time for a password to decrypt, but then you’ve got yourself the same problem
-as when entering the Wi-Fi password manually: that’s tedious!</p>
-
-<p>The most simple way to approach this, is to create a reasonably safe random set of numbers as the key,
-and store that key somewhere safe.
-This approach is not safe if an attacker has physical access to your device: they can connect via USB
-and fetch all the data from the flash memory (all the partitions on disk). This holds the encryption key
-and the encrypted data.</p>
-
-<p>This was pretty bad, but the solution was fairly obvious: enable boot protection and flash encryption.
-The problem with these features is that they are not easy to set up. Most hobby developers won’t bother.
-So, instead, I opted to show a warning when a credential is stored on an unprotected ESP32.</p>
-
-<p>It didn’t sit right with me. I knew most hobby devs won’t bother with setting up these security features.
-I knew there wasn’t much I could do to make it safe, but I found a way to make it better:
-If I can use some kind of secret information that isn’t readable from flash, but also isn’t easily
-available via the USB interface, perhaps I can mix this into the cryptographic key?</p>
-
-<p>That’s where the <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/efuse.html">eFuses</a> come in:
-An eFuse is a programmatic fuse. You can blow the fuse once with software, and that’s it. Each fuse can be seen as a single bit of data,
-so if you have enough fuses, you can create a storage mechanism.</p>
-
-<p>The ESP32’s eFuses already offer 6-8 bytes of random data. There is more data space, but it’s all set to 0 by default.
-With the hardware identifier, I could now create the private key as follows:</p>
-<ol>
-  <li>Make a buffer with 32 bytes and fill it with random data (in a safe manner with a seed).</li>
-  <li>Make another 32 byte buffer and fill it with the repeating hardware identifier.</li>
-  <li>Perform a binary XOR operation to combine both buffers.</li>
-</ol>
-
-<p>An attack wouldn’t be as simple as just copying the data over USB. An attacker that wants to remain unseen would have to:</p>
-<ol>
-  <li>Copy all the flash data (complete backup)</li>
-  <li>Upload a malicious app to fetch the eFuse data</li>
-  <li>Re-flash the original data</li>
-</ol>
-
-<p>It’s not <em>a lot</em> more secure this way, but it sure takes a whole lot more effort.
-I’ll still keep showing warnings when secure boot and flash encryption aren’t enabled though.</p>
-
-<h1 id="whats-next">What’s next?</h1>
-
-<p>I’m still working on UI/UX improvements for the Wi-Fi app.
-The connection dialog doesn’t have a “busy” animation as it connects.
-At a later stage, I also want to have Wi-Fi auto-reconnect and have the option to have Wi-Fi enabled (and connecting) on boot.</p>
-
-<p>Right now, I’m looking at writing some tests…</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.]]></summary></entry><entry><title type="html">Building a handheld PC</title><link href="/posts/2023/05/20/building-a-handheld-pc.html" rel="alternate" type="text/html" title="Building a handheld PC" /><published>2023-05-20T23:00:00+02:00</published><updated>2022-05-26T13:30:00+02:00</updated><id>/posts/2023/05/20/building-a-handheld-pc</id><content type="html" xml:base="/posts/2023/05/20/building-a-handheld-pc.html"><![CDATA[<p>I’d like to share with you my latest project: Decktility!</p>
-
-<!--more-->
-
-<p>For several years, I’ve been looking for a project where I could dump a bunch of creativity in.
-A project of my own, that would be challenging and rewarding. Preferrably a project that combines
-electronics and software.
-Handheld PCs always had a special place in my heart. Palm III was my first one, and a bit later I got my hands on a Sharp HC-4500.
-I was intrigued by the <a href="https://yarh.io/">Yarh.io</a> projects and early this year I considered buying
-a <a href="https://www.clockworkpi.com/uconsole">uConsole</a>. The uConsole was supposed to be shipped in
-March, but currently it’s still pending. So with a bunch of ideas and motivation, I started my own handheld PC project: Decktility.</p>
-
-<h1 id="initial-design-criteria">Initial design criteria</h1>
-
-<p>I wanted to challenge myself and push the boundaries of homebrew solutions.
-The Yarh.io Micro 2’s design was too crude for my taste. It was clearly limited by the hardware availability
-at the time of development. The Yarh.io documentation gave me a good understanding of what I was about to embark on.
-I set out to make device that looked more refined. I wanted the end result to be sufficiently light, and the battery life had to
-be at least a couple of hours.</p>
-
-<p>At this point, I was already considering the BigTreeTech Pad 5 as a foundation, as this was the thinnest
-touchscreen and Pi combination that I could find. It seemed logical that I wasn’t going to make a foldable device.
-Making a foldable device would pose several problems:</p>
-
-<ul>
-  <li>The Pad 5 would introduce about <code class="language-plaintext highlighter-rouge">15 mm</code> thickness on one side, while the side with the keyboard would be
-at least about <code class="language-plaintext highlighter-rouge">20 mm</code> thick considering an <code class="language-plaintext highlighter-rouge">18 mm</code> 18650 battery cell and a case. <code class="language-plaintext highlighter-rouge">35 mm</code> would not be
-acceptable. I considered a regular flat lipo, but I didn’t like that they get spicy when they short-circuit.</li>
-  <li>Hinges are difficult to implement well. The screen part would be heavy, and you don’t want it to open/close while typing.</li>
-</ul>
-
-<p>So the decision was made: it was going to be a package size similar to Yarh.io Mini 2 and uConsole.</p>
-
-<h1 id="prototyping">Prototyping</h1>
-
-<p>Before starting the 3D design, I bought some basic components online. This allowed me to measure them,
-so I could get an idea of how much space each component would take up.
-It also enabled me to start building up a prototype:</p>
-
-<p><img src="/assets/images/posts/decktility/prototyping.jpg" alt="prototyping bms" class="center" /></p>
-
-<p>Just like the wiring in the assembly guide, I started by building up the power delivery:
-A USB battery management system (BMS) that can charge two 18650 lithium cells, paired with a
-<code class="language-plaintext highlighter-rouge">5 V</code> step down converter as the Pi, keyboard and fan would require <code class="language-plaintext highlighter-rouge">5 V</code>.
-I used a USB-C PD tester to verify the power while charging.</p>
-
-<p>Once that was working, I added some breadboard wires and connected the Pi:</p>
-
-<p><img src="/assets/images/posts/decktility/prototyping-with-pi.jpg" alt="prototyping bms with pi" class="center" /></p>
-
-<p>I found out that that the BMS was getting quite hot while charging. It was stepping up the <code class="language-plaintext highlighter-rouge">5 V</code> from USB
-to about <code class="language-plaintext highlighter-rouge">8.4 V</code> that the batteries require. Increasing the voltage is much less efficient than decreasing it,
-so there is more heat involved. This implied that I would need to accomodate cooling for this scenario.
-<code class="language-plaintext highlighter-rouge">45 C</code> is not too bad in open air, but it wouldn’t be great in an enclosure, where the Pi would generate heat too.</p>
-
-<p><img src="/assets/images/posts/decktility/prototyping-bms-heat.jpg" alt="prototyping bms flir heat signature" class="center" /></p>
-
-<p>In theory, having a battery, a switch and a Pi is going to result in a working product,
-but what if the battery was running low? If the power switch would remain on, it would drain and damage the battery.
-To solve this problem, I introduced an Arduino Nano. The Arduino would end up doing many things, but it started 
-with reading the voltage from the battery. To do this, I added two resistors with a high resistance value,
-because they would always be connected to the battery and thus leak power. By selecting <code class="language-plaintext highlighter-rouge">2.2M R</code> and <code class="language-plaintext highlighter-rouge">3.9 MR</code>,
-they would leak only <code class="language-plaintext highlighter-rouge">0.82 μA</code> (5 / (2200000 + 3900000)). That’s about <code class="language-plaintext highlighter-rouge">4.1 μW</code>, or in other words: it would take
-<code class="language-plaintext highlighter-rouge">203252 days</code> to drain a <code class="language-plaintext highlighter-rouge">20 Wh</code> battery. It’s not going to be problematic this way.</p>
-
-<p><img src="/assets/images/posts/decktility/prototyping-arduino.jpg" alt="prototyping with arduino to read voltage" class="center" /></p>
-
-<p>Now that we know when it’s safe to turn on the hardware, I had to add the ability to actually do so.
-I used a special kind of transistor - a power MOSFET (or “power FET”).
-The green PCB behind the cable mess holds the FET circuit:</p>
-
-<p><img src="/assets/images/posts/decktility/prototyping-fet.jpg" alt="prototyping with arduino and fet" class="center" /></p>
-
-<p>Around this time, I started designing the CAD prototypes in OnShape. Many hours were spent measuring and drawing
-various components that would go into Decktility. I needed their 3D representation so I could do an integration
-test of sorts as I was creating the case:</p>
-
-<p><img src="/assets/images/posts/decktility/decktility-cad-prototypes.png" alt="cad  prototypes" class="center" /></p>
-
-<p>In the early stages, I had to solve the dilemma of battery placement. Firstly, the battery had to be a counter-weight
-to the screen. It’s important that the device feels balanced in your hands. The screen and the battery are both quite heavy,
-so they cannot be on one side of the device.</p>
-
-<p>I thought of 2 options for the battery: Either on the sides, as to create handles to grab the device,
-or I near the bottom center of the case.
-Having them on the sides would require two separate battery holders, and it would create a minimum height of about <code class="language-plaintext highlighter-rouge">7.5 cm</code>
-for the bottom half of the device. I really liked the idea of the handles, but the downsides resulted in chosing the alternative setup.</p>
-
-<h1 id="building">Building</h1>
-
-<p>After working out the basic case design, it was time to print the first one. The first of many…</p>
-
-<p><img src="/assets/images/posts/decktility/building-first-case.jpg" alt="first case 3D-printed" class="center" /></p>
-
-<p>The massive FET board quickly catches the eye. The board in the picture is just to showcase how out-of-place it really is.
-I swapped it with a smaller one before continueing.</p>
-
-<p>Swapping the FET board was harder than I thought. There are many pre-built modules available, but 
-most of them are built with N-FETs and not P-FETs. The N-FET boards are cheaper and easier to build,
-and result in an electronic switch that switches the GND wire. I would later find out that I need
-a P-FET, because I need a common ground connected at all times for the Arduino logic and the Pi logic
-to work together (for I2C communication).</p>
-
-<p>In the end, I couldn’t find a small enough FET board, so I started reverse-engineering the existing one in my very first KiCad project:</p>
-
-<p><img src="/assets/images/posts/decktility/building-fet-kicad.png" alt="reverse-engineering the FET board in kicad" class="center" /></p>
-
-<p>and then rebuilding it on an experiment board:</p>
-
-<p><img src="/assets/images/posts/decktility/building-fet-comparison.jpg" alt="comparing original FET with rebuilt one" class="center" /></p>
-
-<p>I might make a custom PCB in the future. That way, I can add some connectors for various components, making the project easier
-to assemble.</p>
-
-<p>Before the custom FET board, I was able to get most of the basic components working before adding the Pi to the mix.
-I would quickly find out that I didn’t have the correct wire thickness for the main power. I was using <code class="language-plaintext highlighter-rouge">20 AWG</code>, which I use
-for drones that draw way more power. I would later replace them with <code class="language-plaintext highlighter-rouge">24 AWG</code> wires.</p>
-
-<p><img src="/assets/images/posts/decktility/building-first-power-on.jpg" alt="first time turning on the power" class="center" /></p>
-
-<p>When I was working on the Arduino firmware, I had a problem: every time I would upload a new firmware, the Arduino would restart.
-This would make the electronic switch go off, and thus restart the Pi. To overcome this, I would wire a second Arduino to I2C,
-isntead of using the one in the device. At a later stage, I also added a JST-SH connector to be able to easily disconnect the
-Arduino inside the device.</p>
-
-<p><img src="/assets/images/posts/decktility/building-two-arduinos.jpg" alt="two arduinos during firmware development" class="center" /></p>
-
-<p>Charging status LEDs would be a nice touch. But adding 1 or 2 LEDs to the case would require a relatively considerable effort.
-And then it hit me: I could use fiber optics! Fishing wire (or flexible bracelet wire) can guide the light from the existing LEDs
-on the BMS to the edge of the case.
-All I would have to do is glue the wire in place. An overnight shipping and a quick experiment later, the theory was proven:</p>
-
-<p><img src="/assets/images/posts/decktility/building-charging-leds.jpg" alt="using transparent wire to guide light" class="center" /></p>
-
-<p>After a lot of iterations, the hardware was finally finished:</p>
-
-<p><img src="/assets/images/posts/decktility/building-finished.jpg" alt="decktility finished" class="center" /></p>
-
-<p>At this point, a custom I2C device implementation was enabling the Pi and the Arduino to talk to eachother. 
-The Pi could ask the Arduino about the charging status or the battery voltage, and the Arduino would report it back.
-I started investigating how to integrate it into a Linux desktop, so I read about dbus and upower.
-At first, the intention was to write a custom kernel driver, but then it hit me:
-What if I change my Arduino firmware so that it acts like an already supported Linux device?
-I did some research and settled on the LTC294x “Battery Fuel Gauges” implementation. It was one of the very few
-power-related Linux kernel drivers that were avaible in Raspberry Pi OS.
-The Arduino now acts like such a device, so it is fully supported in Linux.</p>
-
-<p>I was stoked when I saw the battery icon appear for the first time:</p>
-
-<p><img src="/assets/images/posts/decktility/building-battery-status.jpg" alt="decktility finished" class="center" /></p>
-
-<h1 id="various-learnings">Various learnings</h1>
-
-<p>Here’s a quick summarization of some noteworthy learnings that aren’t covered above:</p>
-
-<p>As mentioned before, <strong>airflow</strong> was important. I had to cool the BMS board and also the Pi. Some holes for airflow would be insufficient.
-I ended up roughly aligning my components in the direct airflow of the fan. This ended up also as a bit of a constraint on the rest of
-the electronics design, as I wouldn’t be able to easily move the BMS board anymore.</p>
-
-<p><strong>Less fasteners(/parts) is better</strong>: The best fastener is the one you don’t need. If you create a groove and latch mechanism to save
-yourself some parts, it might be worth it! The cost for me was added complexity in the design.</p>
-
-<p><strong>Designing for …</strong> 3D printers? Or CNC milling? The plan was to initially make a 3D printed case and then later attempt an aluminum
-CNC-milled case. Designing for 3D printers is very different. It would require changes to make the cases millable on a 3 axis mill.</p>
-
-<p><strong>Electronics placement is difficult</strong>: Next to the airflow considerations, you also have to consider the amount of wiring needed to
-connect all the parts. I also wanted to make the build as small as I could. Finding the best trade-off is not an easy task.
-Then there is theory versus usability: Your SD card might fit in the slot, but is it easy to pull it out? Can you grip it with your nail?</p>
-
-<p><strong>3D printing - Chamfer is life</strong>: I used chamfers on overhangs as to not require support when 3D printing them. I also used chamfers on certain edges
-near case openings (e.g. ethernet and GPIO connectors), to slide objects into the case more easily.</p>
-
-<p><strong>3D printing - Manual painted-on supports</strong>: These are very handy if you have lots of overhangs, but only some of them need support. (used with SuperSlicer/PrusaSlicer)</p>
-
-<p><strong>3D printing - Parts can flex</strong>: If you make a battery tray, the pressure of the battery inside the case might budge it outward.
-This can result in your battery tray not being placeable when batteries are in it. More importantly: you should measure the flex
-and see if it’s bending outwards too much, because you don’t want a critical failure with lithium cells.</p>
-
-<p><strong>Use SSH to the fullest</strong>: I increased my dev cycle by using remote commands. I could execute my local Python remotely with <code class="language-plaintext highlighter-rouge">ssh me@cyberdeck 'python' &lt; powermanager.py</code></p>
-
-<p><strong>Raspberry Pi 4 has more than two I2C buses</strong>: When you fry your CM4 I2C bus, you can <a href="https://medium.com/cemac/creating-multiple-i2c-ports-on-a-raspberry-pi-e31ce72a3eb2">use other GPIO pins to create extra I2C ports</a>.</p>
-
-<p><strong>Naming your project matters</strong>: While “Decktility” is probably not the best name out there, it is a good name because it’s easy to remember,
-and it’s a unique name so an online search will easily turn up the correct results. You can use ChatGPT to help you find a good name.
-(Decktility refers to ductility/utility, where ductility is a wink towards the <em>welder</em> part in my online persona)</p>
-
-<h1 id="closing-words">Closing words</h1>
-
-<p>If you want more details, check out the <a href="https://github.com/ByteWelder/Decktility">Decktility GitHub repository</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I’d like to share with you my latest project: Decktility!]]></summary></entry><entry><title type="html">OpenPyrojet Print Head Prototype</title><link href="/posts/2022/04/15/openpyrojet-print-head.html" rel="alternate" type="text/html" title="OpenPyrojet Print Head Prototype" /><published>2022-04-15T18:00:00+02:00</published><updated>2022-04-16T18:38:00+02:00</updated><id>/posts/2022/04/15/openpyrojet-print-head</id><content type="html" xml:base="/posts/2022/04/15/openpyrojet-print-head.html"><![CDATA[<p>A few weeks ago, I joined the <a href="https://openpyrojet.com">OpenPyrojet</a> project.
-OpenPyrojet intends to build 3D printer technology based on thermal spraying.
-In this post, I’ll show you how I assembled the print head prototype.</p>
-
-<!--more-->
-
-<p>This is what the finished print head looks like:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
-
-<h1 id="how-does-the-printer-work">How does the printer work?</h1>
-
-<p>The feedstock of the printer is a mix of micrometer-sized particles
-(e.g. metals or ceramics) with a fuel source like IPA or naphtha.
-A monofilament wire is inside the fuel chamber. Heating the wire creates a hot
-gas, which is then pushed out of a nozzle, mixes with air and catches fire.
-Due to the heat, the metal melts and hits a surface (substrate) to which it attaches.</p>
-
-<h1 id="lets-begin">Let’s begin!</h1>
-
-<p>To build a strong print head, we’re using multiple layers made from PCBs.
-These layers are stacked in the order as they are laid out below:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" alt="all pcb parts" class="center" /></p>
-
-<p>I first prepared the inlet and outlet. I need to connect Viton tubing to the
-print head, so I’m soldering small copper pipes (<code class="language-plaintext highlighter-rouge">3 mm</code> diameter) to the PCB.
-The picture shows a larger copper pipe, because I used the wrong size when taking pictures:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" alt="pcb with inlet, outlet and copper pipes" class="center" /></p>
-
-<p>I started with adding solder to the pads:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" alt="inlet pad with some solder" class="center" /></p>
-
-<p>Initially, the solder will likely not connect neatly all around the copper pipe.
-It might look like the picture below. I take some extra solder on my iron and
-then place the iron at the base of the copper pipe to fix this issue:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" alt="copper pipe with bad solder connection" class="center" /></p>
-
-<p>Another problem that might occur is when your solder smudges.
-I cleaned it off by wiping my (cleaned) soldering iron on it.
-It’s not problematic if there is some solder on the side,
-but I have to make sure it’s not sharp.
-That way, it won’t cut the Viton tubing later on:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" alt="solder smudged on copper pipe" class="center" /></p>
-
-<p>When I used too much solder, the inlet became too narrow. I could’ve desoldered
-it. Instead, I used a set of drills to carefully drill it out by hand.
-I kept increasing the drill diameter by <code class="language-plaintext highlighter-rouge">0.1 mm</code> until the diameter was the right size:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" alt="pcb with narrow inlet" class="center" /></p>
-
-<p>Finally, I had a neat collar on the copper pipe:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" alt="copper pipe on pcb with solder" class="center" /></p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" alt="finished inlet and oultet on pcb" class="center" /></p>
-
-<p>The next step was to put the monofilament on one of the PCB layers. This monofilament
-is what heats up the fuel, which causes the fuel to eject through the nozzle.
-The filament gets sandwiched between the nozzle PCB and the PCB that holds the connector.
-I store the filament in a folded sheet of paper:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" alt="monofilament displayed" class="center" /></p>
-
-<p>First I cut the filament to size. We make it as wide as possible, so the thickness
-of the glue won’t interfere with the electrical conductivity:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" alt="monofilament cut" class="center" /></p>
-
-<p>Combining them is tricky, because the filament won’t lay still on a flat surface.
-I used some CA glue on the edges to keep it into place. I learned later that
-glue is not the ideal way. In the future, I will tape it near the edges if the PCB
-with some kapton tape.</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" alt="monofilament glued to PCB" class="center" /></p>
-
-<p>The nozzle PCB layer had holes that were too small in diameter. I widened them
-by hand with some cheap drills, slowly increasing the diameter <code class="language-plaintext highlighter-rouge">0.1 mm</code> at a time:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" alt="nozzle PCB with drill in it" class="center" /></p>
-
-<p>When attaching the nozzle PCB to the connector PCB, I start with a single row of screws:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" alt="nozzle PCB on connector PCB with a single row of screws" class="center" /></p>
-
-<p>It’s important to tighten the screws evenly, so initially all screws are kept loose.
-I then tightened them carefully and as evenly as possible. When everything stops sliding
-around, I start measuring resistance before continueing to tighten further.
-The resistance measurements are repeated until the values are in an acceptable range.</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" alt="nozzle PCB on connector PCB with all screws" class="center" /></p>
-
-<p>I had to make sure that the nozzle plate wasn’t crooked, like in the picture below:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" alt="nozzle PCB badly aligned with connector PCB" class="center" /></p>
-
-<p>The prepared PCBs are ready to be combined. I took 8 pieces of <code class="language-plaintext highlighter-rouge">M2 x 10mm</code> and
-some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match. I also used medium-strength loctite:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" alt="all layers finished, displayed with M2 hardware and loctite" class="center" /></p>
-
-<p>At this point, I have a finished physical assembly:</p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" /></p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" alt="back view of assembled print head" class="center" /></p>
-
-<p><img src="/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" alt="side view of assembled print head" class="center" /></p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.]]></summary></entry><entry><title type="html">Hobby CNC electronics</title><link href="/posts/2021/12/28/hobby-cnc-electronics.html" rel="alternate" type="text/html" title="Hobby CNC electronics" /><published>2021-12-28T00:00:00+01:00</published><updated>2021-12-28T00:00:00+01:00</updated><id>/posts/2021/12/28/hobby-cnc-electronics</id><content type="html" xml:base="/posts/2021/12/28/hobby-cnc-electronics.html"><![CDATA[<p>I recently started building an <a href="https://indystry.cc/indymill/">IndyMill</a> CNC router.
-In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.</p>
-
-<!--more-->
-
-<p>Please note that everything written below is written in the context of hobbyist CNC router hardware.</p>
-
-<p><img src="/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet finished and opened" class="center" /></p>
-
-<h2 id="a-brief-intro-to-hobby-cnc-routers">A brief intro to hobby CNC routers</h2>
-
-<p>A CNC router (or mill) is not a complex machine. Its main job is to move a spindle (~ drill) along the X, Y and Z axis at a specific speed. In a hobby router, you generally use stepper motors, just like you would in a 3D printer - albeit perhaps more powerful ones.</p>
-
-<p>These stepper motors require a lot of power, so they are controlled by <em>drivers</em>. A driver is a device that gets low voltage input signals and translates it into high voltage power signals for the stepper motors.</p>
-
-<p>The drivers themselves are controllerd by a <em>controller</em>. The controller is the heart and brains of the CNC mill: It translates a “job” into signals that it sends to the drivers.</p>
-
-<p>A CNC “job” is defined by “gcode” file. This contains all the commands for the machine to execute. A basic command could be something like “move the spindle 2mm along the X axis”.</p>
-
-<p>There are few more bits and pieces that I’m not talking about here, but these are the main things a hobbyist CNC router is about.</p>
-
-<h1 id="choosing-a-cabinet">Choosing a cabinet</h1>
-
-<p>The first hard part is to find a cabinet that fits your needs. Here were some of my considerations:</p>
-<ul>
-  <li>Large enough (to work comfortably and to have space for upgrades)</li>
-  <li>Affordable (cabinets often cost hundreds of euros)</li>
-  <li>Easy to work with (drilling holes)</li>
-</ul>
-
-<p>I settled on a cabinet from the German company <code class="language-plaintext highlighter-rouge">BoxExpert</code>. I chose the <code class="language-plaintext highlighter-rouge">600 x 400 x 200 mm</code> size. It comes with a transparent door that allows me to see the status LEDs of the hardware inside, and it comes with a metal plate to mount hardware on. I paid about <code class="language-plaintext highlighter-rouge">82 EUR</code> including shipping, so that was reasonable.</p>
-
-<h1 id="mounting-options">Mounting options</h1>
-
-<p>Initially, the plan was to mount the hardware directly to the plate. This has one major issue: you can’t change the layout at a later time. Imagine having to start drilling holes into it while there’s already hardware mounting!</p>
-
-<p><a href="https://en.wikipedia.org/wiki/DIN_rail">DIN-rails</a> were the answer to this! Not only did they help with strengthen the steel mounting plate, they allow me to change the entire setup freely at any time. There are lots of helpful DIN-compatible components out there that helped me in making my build clean.</p>
-
-<h1 id="cabinet-layout">Cabinet Layout</h1>
-
-<p>To make the cabinet layout, I used <a href="https://inkscape.org/">InkScape</a>. A vector graphics editor like that (or Affinity Designer and many others) is ideal for me: I created a <code class="language-plaintext highlighter-rouge">600 x 400</code> pixel image, where each pixel represents a millimeter. The end result looks like this:</p>
-
-<p><img src="/assets/images/posts/indymill-cabinet-layout.png" alt="cabinet layout design" class="center" /></p>
-
-<p>The yellow marked areas are space in the box that is unusable.</p>
-
-<p>Some considerations included:</p>
-<ul>
-  <li>Separating high power components from lower power components</li>
-  <li>Separating AC from DC components</li>
-  <li>Ensuring everything is grounded</li>
-</ul>
-
-<h1 id="cabinet-airflow">Cabinet Airflow</h1>
-
-<p>Although airflow isn’t super critical, it’s important to have at least some. We’re not generating a lot of heat inside the cabinet, but since it’s a water-proof cabinet, we want to create some airflow.</p>
-
-<p>I wanted to have a rough idea of how different kinds of airflow would behave, so I used the free tier of <a href="https://www.simscale.com/">SimScale</a> to model some scenarios. Simulating airflow for the cabinet is overkill for a project like this, but it was fun to experiment with.</p>
-
-<p>The first design has an intake fan on the bottom of the cabinet and an exit hole on the top-left. The downside of this designis that we can’t put the cabinet on a flat surface without obstructing the airflow:</p>
-
-<p><img src="/assets/images/posts/indymill-airflow1.png" alt="airflow design 1" class="center" /></p>
-
-<p>The second design has an intake fan on the bottom-left and the outtake hole on the top-left:</p>
-
-<p><img src="/assets/images/posts/indymill-airflow2.png" alt="airflow design 2" class="center" /></p>
-
-<p>The last design is the one I ended up chosing, but both were viable options.</p>
-
-<h1 id="mounting-the-din-rails">Mounting the DIN rails</h1>
-
-<p>The first real build step was mounting the DIN rails on the steel plate of the cabinet.
-I used a medium-strength thread lock for the nuts and bolts. I also ensured that the plate could be grounded by drilling an extra hole for grounding.</p>
-
-<p><img src="/assets/images/posts/indymill-din-rails-mounted.jpg" alt="base plate with din rails mounted" class="center" /></p>
-
-<h1 id="mounting-the-first-components">Mounting the first components</h1>
-
-<p>Once the rails were ready, it was time to try out the first components: The top row has all 4 stepper drivers, connected to the power supply below. I’m using <code class="language-plaintext highlighter-rouge">Wago</code> clamps to tie it all together. The power cord is temporary:</p>
-
-<p><img src="/assets/images/posts/indymill-first-din-components.jpg" alt="din plate with first components mounted" class="center" /></p>
-
-<h1 id="din-mounting-options">DIN mounting options</h1>
-
-<p>There are a lot of DIN parts on <a href="https://www.thingiverse.com/">Thingiverse</a>. A lot of the DIN brackets that I used come from there. Some of them were custom. The controller and fan brackets are a remix of an existing ones on Thingiverse:</p>
-
-<p><img src="/assets/images/posts/indymill-controller-close-up.jpg" alt="main controller close-up" class="center" /></p>
-
-<p><img src="/assets/images/posts/indymill-fan-controller.jpg" alt="fan controller close-up" class="center" /></p>
-
-<h1 id="finish-mounting-the-components">Finish mounting the components</h1>
-
-<p>The CNC controller that I’m using as <a href="https://www.makerfr.com/en/cnc/grbl-32bits-board-v2/">Grbl32bits</a> board from Makerfr. I’ve mounted it together with its power supply and the fan controller in the below picture:</p>
-
-<p><img src="/assets/images/posts/indymill-all-components-mounted.jpg" alt="all DIN components mounted on a steel plate" class="center" /></p>
-
-<h1 id="finishing-the-cabinet">Finishing the cabinet</h1>
-
-<p>The next step was drilling holes in the cabinet to facilitate all the connectors:</p>
-
-<p><img src="/assets/images/posts/indymill-cabinet-holes.jpg" alt="cabinet with holes visible" class="center" /></p>
-
-<p>In case you are wondering: yes, that is indeed my living room table being used as a workbench. My wife is awesome for putting up with it.</p>
-
-<p>After everything is wired up, the cabinet is finished!</p>
-
-<p><img src="/assets/images/posts/indymill-cabinet-finished-right.jpg" alt="cabinet view from the right" class="center" /></p>
-
-<p><img src="/assets/images/posts/indymill-cabinet-finished-closed.jpg" alt="cabinet with lid closed" class="center" /></p>
-
-<p><img src="/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet with lid open" class="center" /></p>
-
-<p>You can find my collection of 3D printable parts <a href="https://www.thingiverse.com/kenvanhoeylandt/collections/cnc">here</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.]]></summary></entry><entry><title type="html">Designing for privacy: A thought experiment</title><link href="/posts/2021/09/05/designing-for-privacy.html" rel="alternate" type="text/html" title="Designing for privacy: A thought experiment" /><published>2021-09-05T00:00:00+02:00</published><updated>2021-09-05T00:00:00+02:00</updated><id>/posts/2021/09/05/designing-for-privacy</id><content type="html" xml:base="/posts/2021/09/05/designing-for-privacy.html"><![CDATA[<p>Apple’s <a href="https://www.apple.com/child-safety/pdf/CSAM_Detection_Technical_Summary.pdf">plans</a> have been widely <a href="https://appleprivacyletter.com/">critiqued</a>. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.</p>
-
-<!--more-->
-
-<h2 id="the-idea">The Idea</h2>
-
-<p><strong>A software development platform, where the user is - by default - the sole owner of its data.</strong></p>
-
-<p>For offline applications, this is easy. Anything you store on your own devices remains in your ownership. Any offline application automatically passes this criterium.</p>
-
-<p>For online applications, this becomes a different story. Online applications imply that a server is a mediator that processes and likely also stores some of your data. There are few exceptions, such as instant messengers that implement <a href="https://en.wikipedia.org/wiki/End-to-end_encryption">E2EE</a>.</p>
-
-<p>This made me wonder: What if we wrote more software on E2EE principles? What if a calendar or contacts service wouldn’t be able to read your calendar entries or contacts? And how do we move these concepts to more complex online applications? Sometimes the server simply <strong>must</strong> know some data. Even an E2EE messenger needs to have a basic understanding of the recipient that you want to communicate with. Or perhaps you want to expose calendar through CalDAV, or share an entry from your address book via email? We want the user to remain the sole owner of its data, but we should also give the freedom to open up that data.</p>
-
-<h2 id="lets-get-more-specific">Let’s get more specific</h2>
-
-<p>In my thought experiment, all user data is encrypted before handing it over to an online service.</p>
-
-<p>This service can do few things:</p>
-
-<h4 id="1-act-as-a-storage-system-for-encrypted-data-of-our-user">1. Act as a storage system for encrypted data of our user</h4>
-
-<p>It acts as an online file system. The user’s applications can store their data here.</p>
-
-<h4 id="2-act-as-a-proxybroadcasting-system-for-applications">2. Act as a proxy/broadcasting system for applications</h4>
-
-<p>Applications can send encrypted data to other applications, within the user’s ownership.</p>
-
-<p>For example: The user has a calendar application on their phone and on their desktop. When the user adds an address on their phone, the desktop needs to be notified to update its data.</p>
-
-<h4 id="3-act-as-a-proxybroadcasting-system-for-other-service-hosts">3. Act as a proxy/broadcasting system for other service hosts.</h4>
-
-<p>For example: The user has a calendar application and whishes to share a calendar event with to a friend.
-This friend might be hosted on the same service, but he might also be hosting their own or use a third party to host it.</p>
-
-<h2 id="authentication">Authentication</h2>
-
-<p>If(!) this setup could work for various types of applications, we don’t want individual applications to have access to our secrets like our private key or password. This cryptographic secret is still required to be able to encrypt the data.
-To fix this, we could introduce a “controller” application that runs on each device. Consider this controller similar to how you can log in with iCloud on your iPhone, giving all iCloud-enabled applications access to your iCloud data, but not your iCloud credentials or cryptographic secrets.</p>
-
-<p>This controller would serve the following purpose:</p>
-
-<ul>
-  <li>The controller authenticates directly with the main service that holds/transfers our encrypted data.</li>
-  <li>The controller is a proxy to the applications on the local system that the controller is running on. It exposes an API to enable this.</li>
-  <li>Local applications must get permission to connect with the controller. This requires direct interaction, instigated by the controller’s UI.</li>
-</ul>
-
-<h2 id="mitigations-and-considerations">Mitigations and considerations</h2>
-
-<ul>
-  <li>Ensure that there is an upgrade path for cryptographic algorithms.</li>
-  <li>Users <strong>must</strong> make sure to not lose their crypto secrets, because that would mean irreversible loss of access to their data.
-We need to consider ways to easily backup passwords.
-Perhaps we can consider having different types of passwords (e.g. word list, hex byte list, passphrase, etc.)</li>
-  <li>The online service might be deployed by the users. There might be a need for such services to talk to each other.</li>
-</ul>
-
-<h2 id="closing-words">Closing words</h2>
-
-<p>I’d like to hear your thoughts on this thought experiment, so feel free to contact me through twitter/email via <a href="https://kenvanhoeylandt.net">my main website</a>.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Apple’s plans have been widely critiqued. This was breach of trust for me, and it made me reconsider my choices of software and hardware. It also made me think of how we, as software engineers, could do better in terms of privacy. Below is a thought experiment.]]></summary></entry><entry><title type="html">Google Analytics IP anonymization is a joke</title><link href="/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html" rel="alternate" type="text/html" title="Google Analytics IP anonymization is a joke" /><published>2021-07-08T22:30:00+02:00</published><updated>2021-07-10T14:54:00+02:00</updated><id>/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke</id><content type="html" xml:base="/posts/2021/07/08/google-analytics-ip-anonymization-is-a-joke.html"><![CDATA[<p>Google Analytics, the popular data gathering and statistics analysis tool, has a feature called <em>IP Anonymization</em> or <em>IP Masking</em>.
-The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!</p>
-
-<!--more-->
-
-<p>The best point to start with is the official <a href="https://support.google.com/analytics/answer/2763052">documentation</a>. In its current state (July 8, 2021) it tells us:</p>
-
-<blockquote>
-  <p>When a customer of Analytics requests IP address anonymization, Analytics anonymizes the address as soon as technically feasible. The IP anonymization feature in Analytics sets the last octet of IPv4 user IP addresses and the last 80 bits of IPv6 addresses to zeros in memory shortly after being sent to Google Analytics. The full IP address is never written to disk in this case.</p>
-</blockquote>
-
-<h2 id="whats-an-ip">What’s an IP?</h2>
-
-<p>(feel free to skip ahead)</p>
-
-<p>Your internet connection is identifyable by something that is called an “IP address” - or in short: “IP”. Most people have an IP that looks somewhat like this: <code class="language-plaintext highlighter-rouge">101.102.103.104</code>. For some devices and internet providers, this might change over time, but for many it stays the same over the course of years. This means that an IP can be used to help identify a user across the internet.</p>
-
-<p>When you browse the web or use applications, your computer talks with various other machines and they can locate each other through these IP addresses. Google Analytics is one of those entities that you can communicate with.</p>
-
-<h2 id="so-how-does-google-store-your-ip">So how does Google store your IP?</h2>
-
-<p>When a computer is talking to Google Analytics and asks it to enable IP anonymization, something happens to it before Google stores it: the last part of that number series is removed - replaced by a <code class="language-plaintext highlighter-rouge">0</code>. If your IP would be <code class="language-plaintext highlighter-rouge">101.102.103.104</code>, then it would look like this after Google’s anonymization process: <code class="language-plaintext highlighter-rouge">101.102.103.0</code></p>
-
-<p>The removed number is always in the range of <code class="language-plaintext highlighter-rouge">[0 - 255]</code>. This means that Google is only <code class="language-plaintext highlighter-rouge">256</code> guesses away from recovering your “anonymized” IP address! “Why is this a problem?” you might ask:</p>
-
-<p><code class="language-plaintext highlighter-rouge">256</code>guesses aren’t a whole lot. It’s likely that Google stores other kinds of information along your IP. Data is the bread and butter that gets the analytics engine running after all. Let’s take a further look…</p>
-
-<p>Firstly, when taking a look at the range of <code class="language-plaintext highlighter-rouge">.0</code> to <code class="language-plaintext highlighter-rouge">.255</code>, not all the related addresses are necessarily in use, which could reduce the sample set.</p>
-
-<p>More likely, the program or website that is using analytics is sending other data through. A common data point is a “user agent”. The user agent is a short definition of what kind of software is contacting the server. It can look like this: <code class="language-plaintext highlighter-rouge">Homebrew/2.5.0 (Macintosh; Intel Mac OS X 10.15.6) curl/7.64.1</code>. Depending on how unique your computer configuration is, this mere user agent is possibly unique enough to detect your computer in a group of at most <code class="language-plaintext highlighter-rouge">256</code> machines.</p>
-
-<p>A user agent is just 1 data point. There are many more that one can think of to help define a user uniquely, and that are consistent across various applications or websites.</p>
-
-<h2 id="why-is-this-problematic">Why is this problematic?</h2>
-
-<h3 id="privacy">Privacy</h3>
-
-<p>With sufficient data, Google has the ability to de-anonymize those IP addresses. With a known IP - especially combined with more data - one could easily cross-reference data from users across services.</p>
-
-<p>We don’t know if Google does this, but we should be aware of the inherent risks of using Google Analytics. Both as a customer who runs Google Analytics with their software, and as an end-user who is browsing the web.</p>
-
-<p>Even with the partial IP, Google can still make a rough estimate of your physical location. The documentation explains:</p>
-
-<blockquote>
-  <p>Geographic dimensions are later derived from anonymized IP addresses.</p>
-</blockquote>
-
-<h3 id="the-power-of-words">The power of words</h3>
-
-<p>While technically, the anonymization technique of Google <em>does</em> anonymize the IP address, it does so very poorly. Only partial anonymization is happening. Calling it that gives a false impression.</p>
-
-<p>If someone would post your mobile phone number with only the last 2 digits removed in a public space, it would be easy for a caller to try all 100 numbers and see which one is the one where you pick up. Would you consider such a phone number <em>anonymous</em>? I know I wouldn’t.</p>
-
-<h2 id="so-what-can-we-do-about-it">So what can we do about it?</h2>
-
-<p>The average person on the web could pick one of the popular browser extensions to block advertisements and analytics, such as <a href="https://ublockorigin.com/">uBlock Origin</a> and <a href="https://alternativeto.net/software/ublock-origin/">many more</a>.
-Web developers could reconsider using Google Analytics. Google could use more clear language or it could simply not store partial IP addresses.</p>
-
-<h2 id="ipv6">IPv6</h2>
-
-<p>So what about IPv6? Luckily, Google did better here: when IP anonymization is applied, the last <code class="language-plaintext highlighter-rouge">80 bits</code> of data are removed.
-This gives a massively larger pool of possible addresses when attempting to recover an IP.</p>
-
-<p>However, since most internet users use IPv4, this is not very relevant.</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Google Analytics, the popular data gathering and statistics analysis tool, has a feature called IP Anonymization or IP Masking. The name is kind of a joke to me, because it isn’t nearly as anonymous as it sounds. Let’s take a deeper look at this feature!]]></summary></entry><entry><title type="html">Thoughts on multiplayer networking</title><link href="/posts/2020/10/07/thoughts-on-multiplayer-networking.html" rel="alternate" type="text/html" title="Thoughts on multiplayer networking" /><published>2020-10-07T23:00:00+02:00</published><updated>2019-08-13T17:57:00+02:00</updated><id>/posts/2020/10/07/thoughts-on-multiplayer-networking</id><content type="html" xml:base="/posts/2020/10/07/thoughts-on-multiplayer-networking.html"><![CDATA[<p>The topic of gaming and networking was brought up on the <a href="https://korge.org">KorGE</a> Discord server.
-This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different
-considerations for their development.</p>
-
-<p>The intention of this article is to give a glimpse into various approaches and considerations. It’s likely not complete or perfect,
-but I hope it will be useful for developers that are somewhat new to networking for games.</p>
-
-<!--more-->
-
-<h2 id="serverless">Server(less)?</h2>
-
-<p>Does your game logic require a central server to host your game?
-How much centralized control does your game need?
-And how much control are you willing to cease to the local machine, a third party or even one of your players?
-Answering these questions will lead to one of the main choices that you’ll make when designing a network stack for your game.</p>
-
-<h3 id="server-with-logic">Server with logic</h3>
-
-<p>This is the first type of server, and probably the most common one. I bet that if you’d ask 10 gamers what a multi-player server
-roughly does, this is what most of them will describe.</p>
-
-<p>It is often a machine (or part of a machine) that all the players (clients) connect to.
-It that manages all the data and everything that happens in the game.
-It keeps all the game state and ensures that all communication to the clients is happening properly.</p>
-
-<p>The main benefit is that the server owner (most often the developer) is in full control of the game and everything that happens within it.</p>
-
-<h3 id="peer-to-peer">Peer-to-peer</h3>
-
-<p>With this approach, there simply is no server that runs game logic. A common peer-to-peer approach in gaming is that of master/slave:</p>
-
-<p>All the clients would vote for - and elect - a “session master”. This machine would basically act as a server. To ensure that this
-special client wouldn’t be cheating, the other clients can still observe it and vote to un-elect this machine if things don’t appear
-to be going in order.</p>
-
-<p>Another problem is that this session master would possibly get increased traffic in certain kinds of scenarios, like that of a first person shooter game.</p>
-
-<p>Peer-to-peer games might still have <em>some</em> kind of server in their toolbox.
-For example: when there is a need of a lobby mechanism, a friend list, analytics, etc.</p>
-
-<h3 id="server-as-multicasting-component-no-logic">Server as multicasting component (no logic)</h3>
-
-<p>Although this isn’t entirely an approach on its own, a multi-casting server can be a tool for a serverless network setup.
-In the case of a peer-to-peer approach, it can help with the heavy lifting on the session master: The session master can
-leverage this machine to multicast messages to all the other clients, without sacrificing too much of its own bandwidth.</p>
-
-<h2 id="network-protocols">Network Protocols</h2>
-
-<p>Most games probably will solely rely on TCP/IP for its networking stack. This ensures that data arrives in order, or that it even arrives at all.
-Connections can still fail, of course, but at least the client knows it when data fails to send.</p>
-
-<p>With UDP, this is different: Not only are you unsure about whether data (packets) arrive at their destination at all.
-There is also no guarantee about the order in which data is received, or even how many times a specific packet of data is received!
-The main reason to pick UDP would be due to its reduced latency. All that reliability of TCP costs extra bandwidth,
-because the recipient of the data must somehow acknowledge that data is received. UDP doesn’t have that kind of overhead.</p>
-
-<p>To get best of both worlds, TCP and UDP can be combined.
-For example: You could send the audio data from a voice chat over UDP, while there is also an active control channel that manages some meta-data about the UDP link.</p>
-
-<p>Another hybrid approach is <em>reliable UDP</em>, which uses UDP to create a reliable data connection. In this case you might increase
-your bandwidth and/or latency to resolve some of the reliability issues that a plain UDP protocol has. An example would be the acknowledgment of
-received packages. When a package is not acknowledged by the receiver, the sender can then retry sending it.
-Unlike with TCP/IP, a UDP protocol like this will retain full control over how this error-handling is done. With TPC/IP, such a failure to send
-would result in either a connection that stalls, or perhaps even disconnects! With a reliable UDP protocol, we can chose by ourselves which error scenarios
-are critical.</p>
-
-<h2 id="how-much-data">How much data?</h2>
-
-<p>Bandwidth is less of a consideration these days than it was before. In the 90s and early 2000s, bandwidth was simply a hard limitation.
-Games would often be designed to transfer at a rate of at most <code class="language-plaintext highlighter-rouge">56 kBps</code>, because otherwise it would affect the target market.
-These days, most of us have broadband available. We’ll still have to deal with differences in latency, though. Especially when it
-comes to mobile gaming, when the user is traveling with his device.</p>
-
-<p>Bandwidth, however, is never free. More data might also negatively affect that precious latency, which can be crucial for
-game types that are fast-paced.</p>
-
-<p>So how much data do you expect to send from each client? And how much does the server need to handle?
-Do you need to send a lot of updates in a second? Perhaps you have large amount of game entities that all move around?
-Will it require a lot of CPU capacity to process all that?</p>
-
-<p>All these questions will influence the model of the data that you will come up with. For example: a real-time strategy
-game might have hundreds of game entities moving along your screen. It might not be feasible to send updates for all
-these entities to the server at a high speed rate.</p>
-
-<h2 id="cheating-and-other-forms-of-abuse">Cheating and other forms of abuse</h2>
-
-<p>Catching cheaters and hackers in your game is one of the more difficult tasks. Banning the wrong person can be damaging to your brand or product.</p>
-
-<p>While guarding against malicious usage should be a consideration during the game design phase,
-your network stack will also affect how much control you’ll have over these scenarios:
-The more control you have over the network stack, the easier it will be to deal with cheaters and abuse.</p>
-
-<p>Since anti-cheating is a form of security, we must consider the security principle of: <em>Never trust the client-side application</em>.
-In other words: You don’t know what a user does with your application, or whether he’s even using the application that <em>you</em> built.
-Or that it is used without modifications, or using it in the way that <em>you</em> thought up.</p>
-
-<p>With that in mind, you can guess that a peer-to-peer approach is the riskiest when it comes to guarding your project.
-Since the clients <em>are</em> the server, the server might also be compromised. In this scenario, the clients might guard against
-a potentially malicious server. Perhaps they could even report potentially malicious servers… this reporting mechanic by itself
-could then be abused, by a bunch of malicious clients: these clients could join a game and vote another user onto a ban list of some sort.
-As you can see: it’s complicated!</p>
-
-<p>When a player breaks the game rules, it’s often easily visible to the players (and the server). In these scenario’s, it’s
-relatively easy to guard against it. When cheaters mimic real-world network scenarios, it becomes much harder.
-For example: a player connected to a wired network in a peer-to-peer game might use a foot switch to control when the outgoing data can exit his network.
-Imagine this player is in a first person shooter game, and he’s about to go around the corner to see (and attack) an opponent.
-He disconnects the receiving end of the network cable with his foot, walks around the corner, and shoots his opponent.
-His opponent didn’t receive his position, so he doesn’t even know he’s lost yet!
-At first, this looks like regular lag, but it starts to become more suspicious when it happens more often…</p>
-
-<h2 id="so-which-approach-is-the-right-one">So which approach is the right one?</h2>
-
-<p>In the end, your network stack design will depends on a lot of factors. While some games have more obvious approaches than others,
-I don’t think there is no cookie-cutter answer on how to tackle it.
-Instead of trying to give you such answer, here’s a summation of the main questions that will help you decide on your own stack:</p>
-
-<ul>
-  <li>What kind of game do you have? (RPG/RTS/shooter/TCG/etc.)</li>
-  <li>What kind of data (and how much) is going on in a game? (how many players? how many active games at once?)</li>
-  <li>How much money are you willing to spend? (on servers? on development?)</li>
-  <li>How much control do you need? (in terms of your product/market, but also anti-cheating)</li>
-</ul>
-
-<p>That’s it! I hope this is useful to someone out there…
-If you’d like to send me feedback, you can find my contact info on my personal <a href="https://kenvanhoeylandt.net">website</a>.</p>
-
-<p>Happy development!</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[The topic of gaming and networking was brought up on the KorGE Discord server. This made me think about the various forms of networking stacks that I’ve encountered in the past years, and some of the different considerations for their development. The intention of this article is to give a glimpse into various approaches and considerations. It’s likely not complete or perfect, but I hope it will be useful for developers that are somewhat new to networking for games.]]></summary></entry><entry><title type="html">Building a charging case</title><link href="/posts/2020/08/14/building-a-charging-case.html" rel="alternate" type="text/html" title="Building a charging case" /><published>2020-08-14T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>/posts/2020/08/14/building-a-charging-case</id><content type="html" xml:base="/posts/2020/08/14/building-a-charging-case.html"><![CDATA[<p>I will take you through the steps I took to create a charging case for 3 chargers.
-I hope you enjoy reading about my successes, findings and failures.</p>
-
-<!--more-->
-
-<p><img src="/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" /></p>
-
-<p><strong>Materials used:</strong></p>
-
-<ul>
-  <li>3x compact lipo charger (ISDT Q6 in my case)</li>
-  <li>a case that is large enough to hold everything (mine was <code class="language-plaintext highlighter-rouge">464 x 366 x 176 mm</code> internally, type “MAX 430S” on Amazon)</li>
-  <li>various electrical wire (silicon sleeved, I used <code class="language-plaintext highlighter-rouge">14 AWG</code> for the power delivery spec that I wanted)</li>
-  <li>3x balance connector distribution board (search on AliExpress for “B6AC A6 Charger”)</li>
-  <li>power distribution board (optional)</li>
-  <li>6x <code class="language-plaintext highlighter-rouge">40 mm</code> fan (can be more/less, depending on your ventilation requirements)</li>
-  <li>6x fan cover (e.g. plastic mesh)</li>
-  <li>switching power supply (<code class="language-plaintext highlighter-rouge">24 V</code> and <code class="language-plaintext highlighter-rouge">15 A</code>)</li>
-  <li>top plate material (e.g. triplex)</li>
-  <li>a bunch of XT60 and XT30 connectors, including 3x top-mounted XT60 (see pics below)</li>
-  <li><code class="language-plaintext highlighter-rouge">220 V</code> power outlet with switch and fuse (the same one as the Ender 3 Pro comes with)</li>
-</ul>
-
-<p>(note: this might be incomplete)</p>
-
-<p><strong>These are some of the tools that I remember using:</strong></p>
-
-<ul>
-  <li>Soldering iron</li>
-  <li>3D printer (optional)</li>
-  <li>Hot glue gun</li>
-  <li>Wire cutters</li>
-  <li>Knife</li>
-  <li>Heat gun (optional)</li>
-  <li>Tweezers and soldering stand</li>
-  <li>Multimeter</li>
-  <li>Something to cut out the top plate (e.g. drill, jigsaw and Dremel**</li>
-</ul>
-
-<p><strong>I also designed some parts:</strong></p>
-
-<ul>
-  <li>ISDT Q6 bracket: <a href="/assets/images/posts/charging-case/isdt_q6_bracket.stl">STL</a>, <a href="/assets/images/posts/charging-case/isdt_q6_bracket.FCStd">FreeCAD</a></li>
-  <li>Balance board support plate: <a href="/assets/images/posts/charging-case/balance_board_plate.stl">STL</a>, <a href="/assets/images/posts/charging-case/balance_board_plate.FCStd">FreeCAD</a></li>
-</ul>
-
-<p>These parts are optional, as you can also use pieces of wood or plexiglass to construct something similar.</p>
-
-<p>The total cost as about EUR 250 with the ISDT chargers. Half of that amount was just the cost of the chargers,
-so buying a cheaper charger could save some money. I also bought some components that were optional (PDB, more fans, etc.)
-You could probably bring the total down to slightly below EUR 200 if you’re making some different choices here and there.</p>
-
-<h1 id="steps">Steps</h1>
-
-<p>First, I bought a case. It was relatively cheap, and the only downside was that it is a bit heavy:</p>
-
-<p><img src="/assets/images/posts/charging-case/1_case_closed.jpg" alt="closed case" class="center" /></p>
-
-<p><img src="/assets/images/posts/charging-case/1_case_open.jpg" alt="open case" class="center" /></p>
-
-<p>The next step was to start creating a bottom plate. I wanted to keep it detachable, so I bought some 3M Dual Lock.
-I added a bit too much in retrospect, so when I detach the plate, sometimes the sticky tape comes off rather than the
-Dual Lock:</p>
-
-<p><img src="/assets/images/posts/charging-case/2_bottom_plate.jpg" alt="bottom plate" class="center" /></p>
-
-<p>On this bottom plate, I added the switching power supply. The main consideration here was to have it placed in such a way
-that the combined airflow of the power supply unit (PSU) was working well with the airflow of the chargers. Another
-consideration was how the placement would affect the center of gravity of the case, so it would be nice to carry.</p>
-
-<p>I mounted the PSU on the wooden plate with standoffs, so that the airflow would be better. I also wanted to make sure that
-if the power supply ever got really hot (which I don’t expect), it wouldn’t be touching the wood:</p>
-
-<p><img src="/assets/images/posts/charging-case/3_psu_on_bottom_plate_a.jpg" alt="power supply mounted" class="center" /></p>
-
-<p>Here it is placed in the case:</p>
-
-<p><img src="/assets/images/posts/charging-case/3_psu_on_bottom_plate_b.jpg" alt="power supply mounted" class="center" /></p>
-
-<p>Similarly, I created a top plate. It rests nicely on the rim of the case, and due to the design of the case, the lid
-still closes perfectly.</p>
-
-<p><img src="/assets/images/posts/charging-case/3_top_plate.jpg" alt="top plate" class="center" /></p>
-
-<p>I drew some edges on it, to visualize how much actual space was usable. That way, I wouldn’t be hitting the side of the case:</p>
-
-<p><img src="/assets/images/posts/charging-case/4_top_plate_edge.jpg" alt="top plate with edge marked" class="center" /></p>
-
-<p>I made many sketches on paper before picking my preferred layout. I laid some of the components on the paper to see if it would
-work well. The considerations were: airflow, wire connections (amount of wire needed), space during charging (how close is
-everything to each other).</p>
-
-<p>After that was done, I transferred my layout to the top plate:</p>
-
-<p><img src="/assets/images/posts/charging-case/5_top_plate_layout_create.jpg" alt="top plate with layout drawn on it" class="center" /></p>
-
-<p>And of course I verified it by adding the components on top:</p>
-
-<p><img src="/assets/images/posts/charging-case/6_top_plate_layout_verify.jpg" alt="top plate with components on top" class="center" /></p>
-
-<p>At this point, I started prepping wires already. This would allow me to already connect the chargers and start charging.
-That way, I didn’t have to wait to the end of the project until I’d have a functioning charging setup!</p>
-
-<p><img src="/assets/images/posts/charging-case/7_prep_wires.jpg" alt="wires prepped" class="center" /></p>
-
-<p>As you can see, the rig was already functionally usable:</p>
-
-<p><img src="/assets/images/posts/charging-case/8_already_usable.jpg" alt="functional chargers" class="center" /></p>
-
-<p>I wanted a single wire to go from the PSU to the rest of the electronics. This allows me to easily disconnect the electronics
-on the top plate from the PSU on the bottom for maintenance and testing. In theory, I could just solder all the XT60 connectors
-together, in parallel, and be done with it. I chose another path and bought a power distribution board (PDB) to make the job a bit prettier.
-This PDB also comes with a BEC, so I could easily add some LEDs to the case later, or add more electronics that require a lower voltage.</p>
-
-<p>To this PDB, I added some extra BECs (step down converters) that will drive the fans. They are separate, as I need more current from it
-than the PDB will give me. The BECs allow me to regulate the voltage, effectively allowing me to change the speed of the fans.</p>
-
-<p>I am adding XT60 and XT30 connectors, because I want the entire thing to be modular and easy to disassemble:</p>
-
-<p><img src="/assets/images/posts/charging-case/9_power_distribution.jpg" alt="PDB and BECs" class="center" /></p>
-
-<p>Originally, I had only 1 BEC. This provided insufficient power to start rotating all fans at the same time.
-I added a second BEC to solve this problem, but in the end it was still insufficient. The proper fix would be to have a setup
-where each fan gets its own switch. That way, they can all individually get their needed current spike to start spinning - but
-not at least not at the same time!</p>
-
-<p><img src="/assets/images/posts/charging-case/11_cooling_becs.jpg" alt="PDB, BECs and fans" class="center" /></p>
-
-<p>At this point I started cutting out the top plate:</p>
-
-<p><img src="/assets/images/posts/charging-case/12_top_plate_cutting.jpg" alt="top plate cut out" class="center" /></p>
-
-<p>Because I used triplex wood, and I’m not super experienced with it, the wood partially disintegrated when cutting into it.
-I used some 2 component epoxy filler to fix most of it:</p>
-
-<p><img src="/assets/images/posts/charging-case/13_top_plate_filling.jpg" alt="top plate touch up" class="center" /></p>
-
-<p>To finish the top plate, I painted it black:</p>
-
-<p><img src="/assets/images/posts/charging-case/14_top_plate_finished.jpg" alt="top plate finished" class="center" /></p>
-
-<p>Also the fans were mounted:</p>
-
-<p><img src="/assets/images/posts/charging-case/15_top_plate_mounting.jpg" alt="top plate with fans and PDB" class="center" /></p>
-
-<p>Then the XT60 top-mounted connectors were added:</p>
-
-<p><img src="/assets/images/posts/charging-case/16_top_plate_fitting.jpg" alt="top plate with XT60 connectors" class="center" /></p>
-
-<p>Because the chargers were shaped irregularly, and I needed to support the balance boards with something, I designed and
-printed out some parts. You can also buy some wood or plexiglass and cut out similar parts by hand. I used 2 component
-epoxy filler (yes, filler) to glue the charger brackets on:</p>
-
-<p><img src="/assets/images/posts/charging-case/17_printed_brackets.jpg" alt="top plate with charger brackets" class="center" /></p>
-
-<p>Then I put the balance charging cables in place and glued in the supports for the balance board:</p>
-
-<p><img src="/assets/images/posts/charging-case/18_balance_done_a.jpg" alt="top plate with balance charging setup" class="center" /></p>
-
-<p><img src="/assets/images/posts/charging-case/18_balance_done_b.jpg" alt="top plate with balance charging setup" class="center" /></p>
-
-<p>The lasts step was to connect everything:</p>
-
-<p><img src="/assets/images/posts/charging-case/19_wired_all.jpg" alt="everything connected" class="center" /></p>
-
-<p>And then the project was finished:</p>
-
-<p><img src="/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" /></p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I will take you through the steps I took to create a charging case for 3 chargers. I hope you enjoy reading about my successes, findings and failures.]]></summary></entry><entry><title type="html">ESC fuse fix</title><link href="/posts/2020/06/30/esc-fuse-fix.html" rel="alternate" type="text/html" title="ESC fuse fix" /><published>2020-06-30T02:00:00+02:00</published><updated>2023-05-20T22:00:00+02:00</updated><id>/posts/2020/06/30/esc-fuse-fix</id><content type="html" xml:base="/posts/2020/06/30/esc-fuse-fix.html"><![CDATA[<p>I ordered a bunch of <code class="language-plaintext highlighter-rouge">RushFPV Mini Tank Stacks</code> that were rated for <code class="language-plaintext highlighter-rouge">30 A</code> and connected them to some <code class="language-plaintext highlighter-rouge">DYS Samguk 2600 Kv</code>
-motors <em>without propellers</em>. This minimal load blew the fuse on the ESC, making the ESC unusable.
-The result was that BetaFlight showed <code class="language-plaintext highlighter-rouge">0.01 V</code> when a lipo was connected.</p>
-
-<!--more-->
-
-<p>A friendly RushFPV customer support representative stated that this stack wasn’t meant for <code class="language-plaintext highlighter-rouge">5"</code> quadcopters and motors with
-such high <code class="language-plaintext highlighter-rouge">Kv</code> values. In my opinion, <code class="language-plaintext highlighter-rouge">30 A</code> is <code class="language-plaintext highlighter-rouge">30 A</code>, regardless of motor size, so I’m still under the impression
-that this stack just can’t deliver what it says on the specifications.
-Thanks to the help of the RushFPV CSR, I was advised to bridge the fuse.
-I was given some pictures as a guide, but decided to make a comprehensive photo write-up myself.</p>
-
-<p>These are the tools that I used:</p>
-
-<ul>
-  <li>ultra-fine tweezers</li>
-  <li>soldering iron with (thin) chisel tip</li>
-  <li>copper wire (preferably single core)</li>
-  <li>clippers</li>
-</ul>
-
-<p>If you plan to fix your own ESC, you should understand that removing the fuse (and shorting/bridging it) means that there is nothing preventing damage to the ESC if too much current is pulled through it. It can lead to smoke and fire if you abuse the ESC beyond its limits without this safety net.</p>
-
-<p>First, let’s take a look at the fuse itself. It’s the green SMD component on the ESC:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/01_fuse.jpg" alt="broken fuse on PCB" class="center" /></p>
-
-<p>As mentioned in the list of tools, I used a fine chisel tip:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/02_tool_chisel.jpg" alt="soldering iron chisel tip" class="center" /></p>
-
-<p>Use the clippers to splice the wire length-wise. Then cut a smaller piece off that is a bit smaller than
-the size of the fuse:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/03_wire_cut_small.jpg" alt="copper wire with piece cut off" class="center" /></p>
-
-<p>Have your soldering iron on high heat (I put mine on <code class="language-plaintext highlighter-rouge">425 C</code>) and add a little bit of solder.
-This solder will help spread the heat on the SMD component:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/04_solder.jpg" alt="chisel tip with solder" class="center" /></p>
-
-<p>Start holding the fuse with the tweezers. Don’t put a lot of force on it, but make sure you grab hold of it:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/05_hold_fuse.jpg" alt="holding fuse with tweezers" class="center" /></p>
-
-<p>Bring the soldering iron to the fuse (don’t push hard) and gently pull the fuse off with the tweezers:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/06_lift_fuse.jpg" alt="fuse pulled off with tweezers" class="center" /></p>
-
-<p>The ESC will now look like this:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/07_lifted.jpg" alt="ESC without fuse" class="center" /></p>
-
-<p>Add some fresh solder to the fuse pads. I used the sharp end of the chisel tip to set down my iron
-in a stable manner, and then I fed a little bit of solder into it:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/08_tin.jpg" alt="ESC with tinned pads" class="center" /></p>
-
-<p>Now place the tiny piece of copper wire, with the flat side down, between the ESC fuse pads.</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/09_bridge.jpg" alt="copper wire between ESC fuse pads" class="center" /></p>
-
-<p>Before you put the soldering iron down, make sure that you have some grip on the wire, as it will start
-sliding a bit when the solder is flowing. To solder it, just put your iron down on the copper bit and
-let the heat of the copper conduct into the solder and melt the solder into the copper:</p>
-
-<p><img src="/assets/images/posts/esc-fuse-fix/10_finish.jpg" alt="ESC with bridged fuse" class="center" /></p>
-
-<p>That’s it, you’ve now bridged the fuse!</p>
-
-<p>You can test as follows:</p>
-
-<ol>
-  <li>Continuity test on fuse and ESC battery pads.</li>
-  <li>Power on the ESC with a battery and a smoke stopper.</li>
-  <li>Remove battery power, add the FC and do another power on test with the smoke stopper.</li>
-  <li>Remove battery power, connect setup through USB, re-connect power (with smoke stopper) and verify the voltage readout in BetaFlight</li>
-</ol>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected.]]></summary></entry></feed>

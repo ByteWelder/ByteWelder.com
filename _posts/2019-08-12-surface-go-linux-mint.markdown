@@ -3,6 +3,7 @@ layout: post
 title:  "Installing Linux Mint on a Surface Go"
 date:   2019-08-13 00:28:00 +0200
 categories: posts
+tags: software linux
 excerpt_separator: <!--more-->
 last_modified_at: 2019-08-13 17:57:00 +0200
 ---

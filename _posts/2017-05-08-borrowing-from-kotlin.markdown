@@ -3,6 +3,7 @@ layout: post
 title:  "Borrowing from Kotlin"
 date:   2017-05-08 23:17:00 +0200
 categories: posts
+tags: software
 ---
 
 Not all projects can be easily migrated to Kotlin, but that doesn't mean we can't benefit from Kotlin within other languages.

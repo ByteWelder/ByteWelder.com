@@ -3,6 +3,7 @@ layout: post
 title:  "Building a handheld PC"
 date:   2023-05-20 22:00:00 +0100
 categories: posts
+tags: hardware
 excerpt_separator: <!--more-->
 last_modified_at: 2022-05-26 12:30:00 +0100
 ---

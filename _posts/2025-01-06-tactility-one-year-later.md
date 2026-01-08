@@ -3,6 +3,7 @@ layout: post
 title:  "Tactility...One Year Later"
 date:   2025-01-06 20:15:00 +0100
 categories: posts
+tags: tactility software
 excerpt_separator: <!--more-->
 last_modified_at: 2025-01-07 23:06:00 +0100
 ---

@@ -3,6 +3,7 @@ layout: post
 title:  "The making of a platform"
 date:   2024-01-15 21:30:00 +0100
 categories: posts
+tags: tactility software
 excerpt_separator: <!--more-->
 last_modified_at: 2024-01-15 21:30:00 +0100
 ---

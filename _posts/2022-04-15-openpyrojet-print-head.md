@@ -3,6 +3,7 @@ layout: post
 title:  "OpenPyrojet Print Head Prototype"
 date:   2022-04-15 18:00:00 +0200
 categories: posts
+tags: hardware software
 excerpt_separator: <!--more-->
 last_modified_at: 2022-04-16 18:38:00 +0200
 ---
