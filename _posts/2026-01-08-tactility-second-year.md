@@ -13,14 +13,14 @@ Let's take a close look.
 
 <!--more-->
 
-# How it started
+## How it started
 
 At the end of 2023, I got inspired by Flipper Zero and decided that there should be an application platform for ESP32 devices.
 I wrote about this in my [previous post]({{page.previous.url}}), which explains its roots and past progress.
 
 Now, two years later, the project has come a long way toward realizing that goal.
 
-# How it's going: Platform growth and usability
+## How it's going: Platform growth and usability
 
 A lot has improved in the past year, including support for [more than 20 new devices](https://tactility.one/#/supported-devices).
 Counting incubating implementations, the total is now nearly 40.
@@ -36,7 +36,7 @@ the most obvious change is the switch to dark mode:
 
 As you can see, the launcher itself didn't change much, but what did change a lot was the amount of available apps!
 
-# Apps
+## Apps
 
 About a dozen apps were added, including a couple of internal ones that are now available as downloadable/installable external apps.
 The most exciting new app is the App Hub: a simple "app store" with downloadable applications. All of them are open source:
@@ -63,7 +63,7 @@ Some of the other additions include: a calculator, the game "2048", a serial con
 Along with several settings apps, the Wi-Fi management is completely renewed.
 This is partly because of the introduction of devices with very small screens.
 
-# UI Scaling
+## UI Scaling
 
 During the development for the Cardputer, I found that many apps didn't work well on its small screen.
 I needed to find a way to scale buttons and other controls down, so that I could fit more of them inside an app.
@@ -91,7 +91,7 @@ This is only the start, as I'm looking further into improving the UI on all sort
 
 To make all these apps happen, I've worked a lot on improving the workflow for app development.
 
-# Development
+## Development
 
 Another new app is called "Development" and is accessible via the Settings menu. It's inspired by Android's `adb`:
 It allows a developer to install and run applications remotely over Wi-Fi. This makes the code-build-run cycle much faster.
@@ -107,7 +107,7 @@ Developers use the `tactility.py` Python script to talk to the ESP32.
 
 Just as tooling for app development is important, so is the tooling for operating system development.
 
-# Automation
+## Automation
 
 A lot of actions related to releasing required manual intervention.
 Whether it was Tactility firmwares, the SDKs or the apps: it was tedious and fully manual.
@@ -131,11 +131,11 @@ Every new feature now automatically becomes available via new firmware downloads
 Freeing up that tedious manual work allows me to focus on more important things.
 And I'm not just saving time: it also enables the community to try out new features quicker!
 
-# Internal tech
+## Internal tech
 
 There have been a lot of internal changes. I'll explain some of the most notable ones:
 
-## Configuration
+### Configuration
 
 It used to be difficult to deal with Wi-Fi settings and settings for other services: every time you'd flash a new firmware during development,
 it would reset these settings. I would work around this by manually changing these configurations in the project,
@@ -143,7 +143,7 @@ but it was tedious to do so and they would sometimes accidentally be merged into
 To fix this, I implemented provisioning from SD card:
 You can now have certain configuration files on an SD card to automatically configure the operating system. These files get imported at boot.
 
-## Core Driver technology
+### Core Driver technology
 
 APIs for "core" drivers were introduced and are currently available for displays and touch input. When you use them, it disables the desktop
 and LVGL rendering systems, and gives a developer more direct access to the hardware.
@@ -151,7 +151,7 @@ and LVGL rendering systems, and gives a developer more direct access to the hard
 This is intended for game development where rendering performance matters: LVGL and the GUI have limited performance and take up a decent chunk of memory.
 Now that developers can disable those layers of the operating system, they gain extra resources to develop high performance applications.
 
-## Language support and diagnostics
+### Language support and diagnostics
 
 Applications used to be written in C exclusively. Thanks to some special tricks, I've managed to put some C++ support in.
 
@@ -166,7 +166,7 @@ This is mainly useful on ESP32 devices that don't have external memory.
 
 It's now possible to provide translations for apps. This is not widely implemented yet across apps and currently only available for internal apps.
 
-# Sponsors
+## Sponsors
 
 I'm grateful that several companies agreed to sponsor the project. Some are providing hardware while others provide services:
 
@@ -179,7 +179,7 @@ I'd like to thank these companies:
 
 [Cloudflare](https://cloudflare.com) gets a special mention as I'm using the free tier for DNS proxying and their CDN.
 
-# Special thanks & closing words
+## Special thanks & closing words
 
 In my closing words, I want to thank [NellowTCS](https://nellowtcs.me/) and [Shadowtrance](https://github.com/Shadowtrance) especially for their dedication in implementing many devices and apps over the past 2 years,
 and I'd like to thank everyone else who contributed code or in other ways! Your input and contributions have been immensely valuable!
