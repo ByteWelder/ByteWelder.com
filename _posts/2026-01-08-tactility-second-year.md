@@ -183,6 +183,6 @@ I'd like to thank these companies:
 
 In my closing words, I want to thank [NellowTCS](https://nellowtcs.me/) and [Shadowtrance](https://github.com/Shadowtrance) especially for their dedication in implementing many devices and apps over the past 2 years,
 and I'd like to thank everyone else who contributed code or in other ways! Your input and contributions have been immensely valuable!
-Lastly, I want to thank my wife for reminding me to eat whenever I got to engrossed in the project.
+Lastly, I want to thank my wife for reminding me to eat whenever I got too engrossed in the project.
 
 If you have questions, feel free to join the [Discord community](https://discord.gg/pXs2xGS6fs) or send [me](https://kenvanhoeylandt.net) an email.
