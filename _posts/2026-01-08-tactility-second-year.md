@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Tactility's second year"
-date:   2026-01-07 20:00:00 +0100
+date:   2026-01-08 22:00:00 +0100
 categories: posts
 tags: tactility software
 excerpt_separator: <!--more-->
-last_modified_at: 2026-01-07 20:00:00 +0100
+last_modified_at: 2026-01-08 22:30:00 +0100
 ---
 
 The [Tactility](https://tactility.one) community and I have been working on many aspects over the past year: devices, apps, quality-of-life features for developers, and much more.

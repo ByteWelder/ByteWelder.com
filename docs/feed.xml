@@ -4,7 +4,7 @@
   <id>/</id>
   <title>ByteWelder</title>
   <subtitle>ByteWelder is an alias used by Ken Van Hoeylandt. It is used to share learnings, experiments and projects.</subtitle>
-  <updated>2026-01-08T22:21:10+01:00</updated>
+  <updated>2026-01-08T22:30:31+01:00</updated>
   <author>
     <name>ByteWelder</name>
     <uri>/</uri>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>Tactility's second year</title>
-    <link href="/posts/2026/01/07/tactility-second-year.html" rel="alternate" type="text/html" title="Tactility&amp;apos;s second year" />
-    <published>2026-01-07T20:00:00+01:00</published>
+    <link href="/posts/2026/01/08/tactility-second-year.html" rel="alternate" type="text/html" title="Tactility&amp;apos;s second year" />
+    <published>2026-01-08T22:00:00+01:00</published>
   
-    <updated>2026-01-07T20:00:00+01:00</updated>
+    <updated>2026-01-08T22:30:00+01:00</updated>
   
-    <id>/posts/2026/01/07/tactility-second-year.html</id>
-    <content type="text/html" src="/posts/2026/01/07/tactility-second-year.html" />
+    <id>/posts/2026/01/08/tactility-second-year.html</id>
+    <content type="text/html" src="/posts/2026/01/08/tactility-second-year.html" />
     <author>
       <name>ByteWelder</name>
     </author>
