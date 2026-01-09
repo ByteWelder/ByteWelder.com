@@ -5,7 +5,7 @@ date:   2026-01-08 22:00:00 +0100
 categories: posts
 tags: tactility software
 excerpt_separator: <!--more-->
-last_modified_at: 2026-01-08 22:46:00 +0100
+last_modified_at: 2026-01-09 17:32:00 +0100
 ---
 
 The [Tactility](https://tactility.one) community and I have been working on many aspects over the past year: devices, apps, quality-of-life features for developers, and much more.
@@ -38,7 +38,7 @@ As you can see, the launcher itself didn't change much, but what did change a lo
 
 ## Apps
 
-About a dozen apps were added, including a couple of internal ones that are now available as downloadable/installable external apps.
+About a dozen apps were added, including a couple of internal ones that are now available as downloadable/installable [external apps](https://github.com/ByteWelder/TactilityApps).
 The most exciting new app is the App Hub: a simple "app store" with downloadable applications. All of them are open source:
 
 <center>
