@@ -5,7 +5,7 @@ date:   2024-01-15 21:30:00 +0100
 categories: posts
 tags: tactility software
 excerpt_separator: <!--more-->
-last_modified_at: 2024-01-15 21:30:00 +0100
+last_modified_at: 2026-01-24 18:00:00 +0100
 ---
 
 I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.
@@ -42,7 +42,7 @@ For those who are interested: Flipper uses an STM32WB55 MCU.
 <center><small>(image by <a href="https://www.espressif.com">Espressif.com</a>)</small></center>
 
 My porting efforts didn't start out smoothly, but one thing led to another and 3 completely separate iterations later,
-I've got something that looks usable. The result is an application platform called [Tactility](https://github.com/ByteWelder/Tactility).
+I've got something that looks usable. The result is an application platform called [Tactility](https://github.com/TactilityProject/Tactility).
 
 Originally, I intended to port the F0 project partially to ESP32 with as little deviation from the original as possible. 
 I first started with copying a ton of code and removing the bits that weren't needed (yet) or that were blatantly incompatible.

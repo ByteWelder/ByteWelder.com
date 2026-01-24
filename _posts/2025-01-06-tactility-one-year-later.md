@@ -5,10 +5,10 @@ date:   2025-01-06 20:15:00 +0100
 categories: posts
 tags: tactility software
 excerpt_separator: <!--more-->
-last_modified_at: 2025-01-07 23:06:00 +0100
+last_modified_at: 2026-01-24 18:00:00 +0100
 ---
 
-Not a lot of my projects survive this long, so let's take a look what made [this one](https://tactility.one) special.
+Not a lot of my projects survive this long, so let's take a look what made [this one](https://tactilityproject.org) special.
 
 <!--more-->
 
@@ -35,7 +35,7 @@ I think it's mainly the variety of challenges that keep me interested in this pr
 One time I can focus on just writing an app, the other time I can dive into systems programming or driver development,
 another day I'll be busy with website development. There's always something different to do.
 
-I keep a list of issues, ideas and tasks in a [document](https://github.com/ByteWelder/Tactility/blob/main/Documentation/ideas.md).
+I keep a list of issues, ideas and tasks in a [document](https://github.com/TactilityProject/Tactility/blob/main/Documentation/ideas.md).
 Such documents generally tend to become large and can be a demotivator for me.
 The way I approach it now is that I see it more as a shopping list with no strings attached:
 Do I feel like fixing a bug? Or do I want to make something new? Or do I improve something that isn't up to standards?
@@ -134,7 +134,7 @@ The speed is partially gained in compilation time, but mainly because I don't ha
 # Website
 
 Considering the big leaps, I decided to build a proper website somewhere in the second half of this year.
-I recently also registered the [tactility.one](https://tactility.one) domain name for it.
+I recently also registered the [tactility.one](https://tactilityproject.org) domain name for it.
 This led me to design a logo, which improved over the course of a few weeks with the help of some friends and people online:
 
 ![tactility logo]({{ site.url }}/assets/images/posts/tactility/logo.svg){: .center }

@@ -5,10 +5,10 @@ date:   2026-01-08 22:00:00 +0100
 categories: posts
 tags: tactility software
 excerpt_separator: <!--more-->
-last_modified_at: 2026-01-09 17:32:00 +0100
+last_modified_at: 2026-01-24 18:00:00 +0100
 ---
 
-The [Tactility](https://tactility.one) community and I have been working on many aspects over the past year: devices, apps, quality-of-life features for developers, and much more.
+The [Tactility](https://tactilityproject.org) community and I have been working on many aspects over the past year: devices, apps, quality-of-life features for developers, and much more.
 Let's take a close look.
 
 <!--more-->
@@ -22,7 +22,7 @@ Now, two years later, the project has come a long way toward realizing that goal
 
 ## How it's going: Platform growth and usability
 
-A lot has improved in the past year, including support for [more than 20 new devices](https://tactility.one/#/supported-devices).
+A lot has improved in the past year, including support for [more than 20 new devices](https://tactilityproject.org/#/supported-devices).
 Counting incubating implementations, the total is now nearly 40.
 Since this week, there's also support for the newer and faster ESP32 P4 chip.
 Various quality-of-life improvements were added and many additional apps have become available, but when you start the latest Tactility,
@@ -38,7 +38,7 @@ As you can see, the launcher itself didn't change much, but what did change a lo
 
 ## Apps
 
-About a dozen apps were added, including a couple of internal ones that are now available as downloadable/installable [external apps](https://github.com/ByteWelder/TactilityApps).
+About a dozen apps were added, including a couple of internal ones that are now available as downloadable/installable [external apps](https://github.com/TactilityProject/TactilityApps).
 The most exciting new app is the App Hub: a simple "app store" with downloadable applications. All of them are open source:
 
 <center>
