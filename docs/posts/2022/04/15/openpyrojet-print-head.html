@@ -11,43 +11,41 @@
 
 
 
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html
+  lang="en"
+  >
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
     name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+    content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   ><!-- Setup Open Graph image -->
 
   
 
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="OpenPyrojet Print Head Prototype" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype." />
-<meta property="og:description" content="A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype." />
-<link rel="canonical" href="/posts/2022/04/15/openpyrojet-print-head.html" />
-<meta property="og:url" content="/posts/2022/04/15/openpyrojet-print-head.html" />
+<meta name="twitter:description" property="og:description" content="A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype." />
+<link rel="canonical" href="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html" />
+<meta property="og:url" content="http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html" />
 <meta property="og:site_name" content="ByteWelder" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-04-15T18:00:00+02:00" />
+<meta property="article:modified_time" content="2022-04-16T18:38:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="OpenPyrojet Print Head Prototype" />
+<meta name="twitter:title" content="OpenPyrojet Print Head Prototype" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-16T18:38:00+02:00","datePublished":"2022-04-15T18:00:00+02:00","description":"A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.","headline":"OpenPyrojet Print Head Prototype","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2022/04/15/openpyrojet-print-head.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/favicon.svg"}},"url":"/posts/2022/04/15/openpyrojet-print-head.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-16T18:38:00+02:00","datePublished":"2022-04-15T18:00:00+02:00","description":"A few weeks ago, I joined the OpenPyrojet project. OpenPyrojet intends to build 3D printer technology based on thermal spraying. In this post, I’ll show you how I assembled the print head prototype.","headline":"OpenPyrojet Print Head Prototype","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"url":"http://localhost:4000/posts/2022/04/15/openpyrojet-print-head.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>OpenPyrojet Print Head Prototype | ByteWelder
-  </title>
+  <title>OpenPyrojet Print Head Prototype | ByteWelder</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -90,7 +88,7 @@
 
   <!-- Bootstrap -->
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
   
 
   <!-- Theme style -->
@@ -100,21 +98,21 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css">
 
   <!-- 3rd-party Dependencies -->
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.css">
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2/dist/loading-attribute-polyfill.min.css">
   
 
   
     <!-- Image Popup -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3/dist/css/glightbox.min.css">
   
 
   <!-- Scripts -->
@@ -209,7 +207,7 @@
 
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.18/dayjs.min.js,npm/dayjs@1.11.18/locale/en.js,npm/dayjs@1.11.18/plugin/relativeTime.js,npm/dayjs@1.11.18/plugin/localizedFormat.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3/dist/js/glightbox.min.js,npm/clipboard@2/dist/clipboard.min.js,npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.js,npm/dayjs@1/plugin/relativeTime.js,npm/dayjs@1/plugin/localizedFormat.js"></script>
 
 
 
@@ -302,11 +300,27 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+    <div class="btn-group dropup">
+        <button
+          type="button"
+          class="btn btn-link nav-link"
+          aria-label="Switch Mode"
+          id="mode-toggle"
+          data-bs-toggle="dropdown"
+        ><i class="fa-regular fa-sun" data-theme-mode="light"></i><i class="fa-regular fa-moon" data-theme-mode="dark"></i><i class="fa-solid fa-display" data-theme-mode="system"></i></button>
+        <ul class="dropdown-menu rounded-3 mb-1 p-1">
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="light"><i class="fa-regular fa-sun" data-theme-mode="light"></i>Light</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="dark"><i class="fa-regular fa-moon" data-theme-mode="dark"></i>Dark</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system"><i class="fa-solid fa-display" data-theme-mode="system"></i>System</button>
+          </li>
+        </ul>
+      </div>
 
       
         <span class="icon-border"></span>
@@ -1986,7 +2000,7 @@
         Posted
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -1994,7 +2008,7 @@
 
 <time
   
-  data-ts="1650038400"
+  datetime="2022-04-15T18:00:00+02:00"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -2011,7 +2025,7 @@
           Updated
           <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -2019,7 +2033,7 @@
 
 <time
   
-  data-ts="1650127080"
+  datetime="2022-04-16T18:38:00+02:00"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -2092,7 +2106,7 @@ In this post, I’ll show you how I assembled the print head prototype.</p>
 
 <p>This is what the finished print head looks like:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" loading="lazy"></a></p>
 
 <h1 id="how-does-the-printer-work">How does the printer work?</h1>
 
@@ -2107,23 +2121,23 @@ Due to the heat, the metal melts and hits a surface (substrate) to which it atta
 <p>To build a strong print head, we’re using multiple layers made from PCBs.
 These layers are stacked in the order as they are laid out below:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" alt="all pcb parts" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/01-pcb-overview.jpg" alt="all pcb parts" class="center" loading="lazy"></a></p>
 
 <p>I first prepared the inlet and outlet. I need to connect Viton tubing to the
 print head, so I’m soldering small copper pipes (<code class="language-plaintext highlighter-rouge">3 mm</code> diameter) to the PCB.
 The picture shows a larger copper pipe, because I used the wrong size when taking pictures:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" alt="pcb with inlet, outlet and copper pipes" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/02-inlet-outlet-prep.jpg" alt="pcb with inlet, outlet and copper pipes" class="center" loading="lazy"></a></p>
 
 <p>I started with adding solder to the pads:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" alt="inlet pad with some solder" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/03-inlet-outlet-pre-solder.jpg" alt="inlet pad with some solder" class="center" loading="lazy"></a></p>
 
 <p>Initially, the solder will likely not connect neatly all around the copper pipe.
 It might look like the picture below. I take some extra solder on my iron and
 then place the iron at the base of the copper pipe to fix this issue:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" alt="copper pipe with bad solder connection" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/05-inlet-outlet-solder-bad-connection.jpg" alt="copper pipe with bad solder connection" class="center" loading="lazy"></a></p>
 
 <p>Another problem that might occur is when your solder smudges.
 I cleaned it off by wiping my (cleaned) soldering iron on it.
@@ -2131,83 +2145,97 @@ It’s not problematic if there is some solder on the side,
 but I have to make sure it’s not sharp.
 That way, it won’t cut the Viton tubing later on:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" alt="solder smudged on copper pipe" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/06-inlet-outlet-solder-smudges.jpg" alt="solder smudged on copper pipe" class="center" loading="lazy"></a></p>
 
 <p>When I used too much solder, the inlet became too narrow. I could’ve desoldered
 it. Instead, I used a set of drills to carefully drill it out by hand.
 I kept increasing the drill diameter by <code class="language-plaintext highlighter-rouge">0.1 mm</code> until the diameter was the right size:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" alt="pcb with narrow inlet" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/07-inlet-outlet-solder-narrow.jpg" alt="pcb with narrow inlet" class="center" loading="lazy"></a></p>
 
 <p>Finally, I had a neat collar on the copper pipe:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" alt="copper pipe on pcb with solder" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/04-inlet-outlet-solder-good.jpg" alt="copper pipe on pcb with solder" class="center" loading="lazy"></a></p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" alt="finished inlet and oultet on pcb" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/08-inlet-outlet-solder-finished.jpg" alt="finished inlet and oultet on pcb" class="center" loading="lazy"></a></p>
 
 <p>The next step was to put the monofilament on one of the PCB layers. This monofilament
 is what heats up the fuel, which causes the fuel to eject through the nozzle.
 The filament gets sandwiched between the nozzle PCB and the PCB that holds the connector.
 I store the filament in a folded sheet of paper:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" alt="monofilament displayed" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/09-filament-prep.jpg" alt="monofilament displayed" class="center" loading="lazy"></a></p>
 
 <p>First I cut the filament to size. We make it as wide as possible, so the thickness
 of the glue won’t interfere with the electrical conductivity:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" alt="monofilament cut" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/10-filament-cut.jpg" alt="monofilament cut" class="center" loading="lazy"></a></p>
 
 <p>Combining them is tricky, because the filament won’t lay still on a flat surface.
 I used some CA glue on the edges to keep it into place. I learned later that
 glue is not the ideal way. In the future, I will tape it near the edges if the PCB
 with some kapton tape.</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" alt="monofilament glued to PCB" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/11-filament-glued.jpg" alt="monofilament glued to PCB" class="center" loading="lazy"></a></p>
 
 <p>The nozzle PCB layer had holes that were too small in diameter. I widened them
 by hand with some cheap drills, slowly increasing the diameter <code class="language-plaintext highlighter-rouge">0.1 mm</code> at a time:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" alt="nozzle PCB with drill in it" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/12-nozzle-prep.jpg" alt="nozzle PCB with drill in it" class="center" loading="lazy"></a></p>
 
 <p>When attaching the nozzle PCB to the connector PCB, I start with a single row of screws:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" alt="nozzle PCB on connector PCB with a single row of screws" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/13-nozzle-initial-screws.jpg" alt="nozzle PCB on connector PCB with a single row of screws" class="center" loading="lazy"></a></p>
 
 <p>It’s important to tighten the screws evenly, so initially all screws are kept loose.
 I then tightened them carefully and as evenly as possible. When everything stops sliding
 around, I start measuring resistance before continueing to tighten further.
 The resistance measurements are repeated until the values are in an acceptable range.</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" alt="nozzle PCB on connector PCB with all screws" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/14-nozzle-all-screws.jpg" alt="nozzle PCB on connector PCB with all screws" class="center" loading="lazy"></a></p>
 
 <p>I had to make sure that the nozzle plate wasn’t crooked, like in the picture below:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" alt="nozzle PCB badly aligned with connector PCB" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/15-nozzle-bad-alignment.jpg" alt="nozzle PCB badly aligned with connector PCB" class="center" loading="lazy"></a></p>
 
 <p>The prepared PCBs are ready to be combined. I took 8 pieces of <code class="language-plaintext highlighter-rouge">M2 x 10mm</code> and
 some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match. I also used medium-strength loctite:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" alt="all layers finished, displayed with M2 hardware and loctite" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/16-all-layers-ready.jpg" alt="all layers finished, displayed with M2 hardware and loctite" class="center" loading="lazy"></a></p>
 
 <p>At this point, I have a finished physical assembly:</p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/17-assembled-front.jpg" alt="front view of assembled print head" class="center" loading="lazy"></a></p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" alt="back view of assembled print head" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/18-assembled-back.jpg" alt="back view of assembled print head" class="center" loading="lazy"></a></p>
 
-<p><a href="/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" alt="side view of assembled print head" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/openpyrojet-print-head/19-assembled-side.jpg" alt="side view of assembled print head" class="center" loading="lazy"></a></p>
 
   </div>
 
   <div class="post-tail-wrapper text-muted">
-    <!-- categories -->
-    
-      <div class="post-meta mb-3">
-        <i class="far fa-folder-open fa-fw me-1"></i>
-        
-          <a href="/categories/posts/">posts</a>
-      </div>
-    
+    <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+      <!-- categories -->
+      
+        <div class="post-meta">
+          <i class="far fa-folder-open fa-fw me-1"></i>
+          
+            <a href="/categories/posts/">posts</a>
+        </div>
+      
+
+      <!-- "Edit this post" link -->
+      <!-- Link to edit the post to contribute. -->
+
+
+
+
+
+
+
+
+
+    </div>
 
     <!-- tags -->
     
@@ -2258,21 +2286,21 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=OpenPyrojet%20Print%20Head%20Prototype%20-%20ByteWelder&url=%2Fposts%2F2022%2F04%2F15%2Fopenpyrojet-print-head.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=OpenPyrojet%20Print%20Head%20Prototype%20-%20ByteWelder&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2022%2F04%2F15%2Fopenpyrojet-print-head.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=OpenPyrojet%20Print%20Head%20Prototype%20-%20ByteWelder&u=%2Fposts%2F2022%2F04%2F15%2Fopenpyrojet-print-head.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=OpenPyrojet%20Print%20Head%20Prototype%20-%20ByteWelder&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2022%2F04%2F15%2Fopenpyrojet-print-head.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=%2Fposts%2F2022%2F04%2F15%2Fopenpyrojet-print-head.html&text=OpenPyrojet%20Print%20Head%20Prototype%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2022%2F04%2F15%2Fopenpyrojet-print-head.html&text=OpenPyrojet%20Print%20Head%20Prototype%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -2327,6 +2355,13 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html">A Tool That Gets Out of the Way</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/2024/01/15/the-making-of-a-platform.html">The making of a platform</a>
         </li>
       
@@ -2349,13 +2384,6 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
         
         <li class="text-truncate lh-lg">
           <a href="/posts/2017/05/08/borrowing-from-kotlin.html">Borrowing from Kotlin</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/2017/05/13/testing-multithreaded-code.html">Testing multithreaded code</a>
         </li>
       
     </ul>
@@ -2708,6 +2736,18 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -2727,7 +2767,7 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -2735,7 +2775,7 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
 
 <time
   
-  data-ts="1602104400"
+  datetime="2020-10-07T23:00:00+02:00"
   data-df="ll"
   
 >
@@ -2755,7 +2795,7 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -2763,7 +2803,7 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
 
 <time
   
-  data-ts="1597363200"
+  datetime="2020-08-14T02:00:00+02:00"
   data-df="ll"
   
 >
@@ -2783,7 +2823,7 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -2791,7 +2831,7 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
 
 <time
   
-  data-ts="1593475200"
+  datetime="2020-06-30T02:00:00+02:00"
   data-df="ll"
   
 >
@@ -2870,7 +2910,7 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
   <p>Using the <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.4.1"
+        title="v7.6.0"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -3009,26 +3049,26 @@ some <code class="language-plaintext highlighter-rouge">M2</code> nuts to match.
     
       <aside
   id="notification"
-  class="toast"
+  class="toast w-auto rounded-5 text-nowrap"
   role="alert"
   aria-live="assertive"
   aria-atomic="true"
   data-bs-animation="true"
   data-bs-autohide="false"
 >
-  <div class="toast-header">
+  <div class="d-flex align-items-center">
+    <div class="toast-body ps-3">New content available</div>
     <button
       type="button"
-      class="btn-close ms-auto"
+      class="btn btn-primary btn-sm rounded-2 py-0"
+      aria-label="Update"
+    >Update</button>
+    <button
+      type="button"
+      class="btn-close mx-3 ms-2"
       data-bs-dismiss="toast"
       aria-label="Close"
     ></button>
-  </div>
-  <div class="toast-body text-center pt-0">
-    <p class="px-2 mb-3">A new version of content is available.</p>
-    <button type="button" class="btn btn-primary" aria-label="Update">
-      Update
-    </button>
   </div>
 </aside>
 

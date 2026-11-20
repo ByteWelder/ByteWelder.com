@@ -11,43 +11,41 @@
 
 
 
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html
+  lang="en"
+  >
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
     name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+    content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   ><!-- Setup Open Graph image -->
 
   
 
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="ESC fuse fix" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected." />
-<meta property="og:description" content="I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected." />
-<link rel="canonical" href="/posts/2020/06/30/esc-fuse-fix.html" />
-<meta property="og:url" content="/posts/2020/06/30/esc-fuse-fix.html" />
+<meta name="twitter:description" property="og:description" content="I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected." />
+<link rel="canonical" href="http://localhost:4000/posts/2020/06/30/esc-fuse-fix.html" />
+<meta property="og:url" content="http://localhost:4000/posts/2020/06/30/esc-fuse-fix.html" />
 <meta property="og:site_name" content="ByteWelder" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-06-30T02:00:00+02:00" />
+<meta property="article:modified_time" content="2023-05-20T22:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="ESC fuse fix" />
+<meta name="twitter:title" content="ESC fuse fix" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-20T22:00:00+02:00","datePublished":"2020-06-30T02:00:00+02:00","description":"I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected.","headline":"ESC fuse fix","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2020/06/30/esc-fuse-fix.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/favicon.svg"}},"url":"/posts/2020/06/30/esc-fuse-fix.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-20T22:00:00+02:00","datePublished":"2020-06-30T02:00:00+02:00","description":"I ordered a bunch of RushFPV Mini Tank Stacks that were rated for 30 A and connected them to some DYS Samguk 2600 Kv motors without propellers. This minimal load blew the fuse on the ESC, making the ESC unusable. The result was that BetaFlight showed 0.01 V when a lipo was connected.","headline":"ESC fuse fix","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2020/06/30/esc-fuse-fix.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"url":"http://localhost:4000/posts/2020/06/30/esc-fuse-fix.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>ESC fuse fix | ByteWelder
-  </title>
+  <title>ESC fuse fix | ByteWelder</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -90,7 +88,7 @@
 
   <!-- Bootstrap -->
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
   
 
   <!-- Theme style -->
@@ -100,21 +98,21 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css">
 
   <!-- 3rd-party Dependencies -->
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.css">
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2/dist/loading-attribute-polyfill.min.css">
   
 
   
     <!-- Image Popup -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3/dist/css/glightbox.min.css">
   
 
   <!-- Scripts -->
@@ -209,7 +207,7 @@
 
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.18/dayjs.min.js,npm/dayjs@1.11.18/locale/en.js,npm/dayjs@1.11.18/plugin/relativeTime.js,npm/dayjs@1.11.18/plugin/localizedFormat.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3/dist/js/glightbox.min.js,npm/clipboard@2/dist/clipboard.min.js,npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.js,npm/dayjs@1/plugin/relativeTime.js,npm/dayjs@1/plugin/localizedFormat.js"></script>
 
 
 
@@ -302,11 +300,27 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+    <div class="btn-group dropup">
+        <button
+          type="button"
+          class="btn btn-link nav-link"
+          aria-label="Switch Mode"
+          id="mode-toggle"
+          data-bs-toggle="dropdown"
+        ><i class="fa-regular fa-sun" data-theme-mode="light"></i><i class="fa-regular fa-moon" data-theme-mode="dark"></i><i class="fa-solid fa-display" data-theme-mode="system"></i></button>
+        <ul class="dropdown-menu rounded-3 mb-1 p-1">
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="light"><i class="fa-regular fa-sun" data-theme-mode="light"></i>Light</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="dark"><i class="fa-regular fa-moon" data-theme-mode="dark"></i>Dark</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system"><i class="fa-solid fa-display" data-theme-mode="system"></i>System</button>
+          </li>
+        </ul>
+      </div>
 
       
         <span class="icon-border"></span>
@@ -1256,7 +1270,7 @@
         Posted
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -1264,7 +1278,7 @@
 
 <time
   
-  data-ts="1593475200"
+  datetime="2020-06-30T02:00:00+02:00"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1281,7 +1295,7 @@
           Updated
           <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -1289,7 +1303,7 @@
 
 <time
   
-  data-ts="1684612800"
+  datetime="2023-05-20T22:00:00+02:00"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1379,48 +1393,48 @@ I was given some pictures as a guide, but decided to make a comprehensive photo 
 
 <p>First, let’s take a look at the fuse itself. It’s the green SMD component on the ESC:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/01_fuse.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/01_fuse.jpg" alt="broken fuse on PCB" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/01_fuse.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/01_fuse.jpg" alt="broken fuse on PCB" class="center" loading="lazy"></a></p>
 
 <p>As mentioned in the list of tools, I used a fine chisel tip:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/02_tool_chisel.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/02_tool_chisel.jpg" alt="soldering iron chisel tip" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/02_tool_chisel.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/02_tool_chisel.jpg" alt="soldering iron chisel tip" class="center" loading="lazy"></a></p>
 
 <p>Use the clippers to splice the wire length-wise. Then cut a smaller piece off that is a bit smaller than
 the size of the fuse:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/03_wire_cut_small.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/03_wire_cut_small.jpg" alt="copper wire with piece cut off" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/03_wire_cut_small.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/03_wire_cut_small.jpg" alt="copper wire with piece cut off" class="center" loading="lazy"></a></p>
 
 <p>Have your soldering iron on high heat (I put mine on <code class="language-plaintext highlighter-rouge">425 C</code>) and add a little bit of solder.
 This solder will help spread the heat on the SMD component:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/04_solder.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/04_solder.jpg" alt="chisel tip with solder" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/04_solder.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/04_solder.jpg" alt="chisel tip with solder" class="center" loading="lazy"></a></p>
 
 <p>Start holding the fuse with the tweezers. Don’t put a lot of force on it, but make sure you grab hold of it:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/05_hold_fuse.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/05_hold_fuse.jpg" alt="holding fuse with tweezers" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/05_hold_fuse.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/05_hold_fuse.jpg" alt="holding fuse with tweezers" class="center" loading="lazy"></a></p>
 
 <p>Bring the soldering iron to the fuse (don’t push hard) and gently pull the fuse off with the tweezers:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/06_lift_fuse.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/06_lift_fuse.jpg" alt="fuse pulled off with tweezers" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/06_lift_fuse.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/06_lift_fuse.jpg" alt="fuse pulled off with tweezers" class="center" loading="lazy"></a></p>
 
 <p>The ESC will now look like this:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/07_lifted.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/07_lifted.jpg" alt="ESC without fuse" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/07_lifted.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/07_lifted.jpg" alt="ESC without fuse" class="center" loading="lazy"></a></p>
 
 <p>Add some fresh solder to the fuse pads. I used the sharp end of the chisel tip to set down my iron
 in a stable manner, and then I fed a little bit of solder into it:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/08_tin.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/08_tin.jpg" alt="ESC with tinned pads" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/08_tin.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/08_tin.jpg" alt="ESC with tinned pads" class="center" loading="lazy"></a></p>
 
 <p>Now place the tiny piece of copper wire, with the flat side down, between the ESC fuse pads.</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/09_bridge.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/09_bridge.jpg" alt="copper wire between ESC fuse pads" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/09_bridge.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/09_bridge.jpg" alt="copper wire between ESC fuse pads" class="center" loading="lazy"></a></p>
 
 <p>Before you put the soldering iron down, make sure that you have some grip on the wire, as it will start
 sliding a bit when the solder is flowing. To solder it, just put your iron down on the copper bit and
 let the heat of the copper conduct into the solder and melt the solder into the copper:</p>
 
-<p><a href="/assets/images/posts/esc-fuse-fix/10_finish.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/esc-fuse-fix/10_finish.jpg" alt="ESC with bridged fuse" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/esc-fuse-fix/10_finish.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/esc-fuse-fix/10_finish.jpg" alt="ESC with bridged fuse" class="center" loading="lazy"></a></p>
 
 <p>That’s it, you’ve now bridged the fuse!</p>
 
@@ -1437,14 +1451,28 @@ let the heat of the copper conduct into the solder and melt the solder into the 
   </div>
 
   <div class="post-tail-wrapper text-muted">
-    <!-- categories -->
-    
-      <div class="post-meta mb-3">
-        <i class="far fa-folder-open fa-fw me-1"></i>
-        
-          <a href="/categories/posts/">posts</a>
-      </div>
-    
+    <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+      <!-- categories -->
+      
+        <div class="post-meta">
+          <i class="far fa-folder-open fa-fw me-1"></i>
+          
+            <a href="/categories/posts/">posts</a>
+        </div>
+      
+
+      <!-- "Edit this post" link -->
+      <!-- Link to edit the post to contribute. -->
+
+
+
+
+
+
+
+
+
+    </div>
 
     <!-- tags -->
     
@@ -1490,21 +1518,21 @@ let the heat of the copper conduct into the solder and melt the solder into the 
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=ESC%20fuse%20fix%20-%20ByteWelder&url=%2Fposts%2F2020%2F06%2F30%2Fesc-fuse-fix.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=ESC%20fuse%20fix%20-%20ByteWelder&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2020%2F06%2F30%2Fesc-fuse-fix.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=ESC%20fuse%20fix%20-%20ByteWelder&u=%2Fposts%2F2020%2F06%2F30%2Fesc-fuse-fix.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=ESC%20fuse%20fix%20-%20ByteWelder&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2020%2F06%2F30%2Fesc-fuse-fix.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=%2Fposts%2F2020%2F06%2F30%2Fesc-fuse-fix.html&text=ESC%20fuse%20fix%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2020%2F06%2F30%2Fesc-fuse-fix.html&text=ESC%20fuse%20fix%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1559,6 +1587,13 @@ let the heat of the copper conduct into the solder and melt the solder into the 
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html">A Tool That Gets Out of the Way</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/2024/01/15/the-making-of-a-platform.html">The making of a platform</a>
         </li>
       
@@ -1581,13 +1616,6 @@ let the heat of the copper conduct into the solder and melt the solder into the 
         
         <li class="text-truncate lh-lg">
           <a href="/posts/2017/05/08/borrowing-from-kotlin.html">Borrowing from Kotlin</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/2017/05/13/testing-multithreaded-code.html">Testing multithreaded code</a>
         </li>
       
     </ul>
@@ -1940,6 +1968,18 @@ let the heat of the copper conduct into the solder and melt the solder into the 
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1959,7 +1999,7 @@ let the heat of the copper conduct into the solder and melt the solder into the 
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -1967,7 +2007,7 @@ let the heat of the copper conduct into the solder and melt the solder into the 
 
 <time
   
-  data-ts="1597363200"
+  datetime="2020-08-14T02:00:00+02:00"
   data-df="ll"
   
 >
@@ -1987,7 +2027,7 @@ let the heat of the copper conduct into the solder and melt the solder into the 
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -1995,7 +2035,7 @@ let the heat of the copper conduct into the solder and melt the solder into the 
 
 <time
   
-  data-ts="1591401600"
+  datetime="2020-06-06T02:00:00+02:00"
   data-df="ll"
   
 >
@@ -2015,7 +2055,7 @@ let the heat of the copper conduct into the solder and melt the solder into the 
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -2023,7 +2063,7 @@ let the heat of the copper conduct into the solder and melt the solder into the 
 
 <time
   
-  data-ts="1684616400"
+  datetime="2023-05-20T23:00:00+02:00"
   data-df="ll"
   
 >
@@ -2102,7 +2142,7 @@ let the heat of the copper conduct into the solder and melt the solder into the 
   <p>Using the <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.4.1"
+        title="v7.6.0"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -2241,26 +2281,26 @@ let the heat of the copper conduct into the solder and melt the solder into the 
     
       <aside
   id="notification"
-  class="toast"
+  class="toast w-auto rounded-5 text-nowrap"
   role="alert"
   aria-live="assertive"
   aria-atomic="true"
   data-bs-animation="true"
   data-bs-autohide="false"
 >
-  <div class="toast-header">
+  <div class="d-flex align-items-center">
+    <div class="toast-body ps-3">New content available</div>
     <button
       type="button"
-      class="btn-close ms-auto"
+      class="btn btn-primary btn-sm rounded-2 py-0"
+      aria-label="Update"
+    >Update</button>
+    <button
+      type="button"
+      class="btn-close mx-3 ms-2"
       data-bs-dismiss="toast"
       aria-label="Close"
     ></button>
-  </div>
-  <div class="toast-body text-center pt-0">
-    <p class="px-2 mb-3">A new version of content is available.</p>
-    <button type="button" class="btn btn-primary" aria-label="Update">
-      Update
-    </button>
   </div>
 </aside>
 

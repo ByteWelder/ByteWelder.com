@@ -11,43 +11,41 @@
 
 
 
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html
+  lang="en"
+  >
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
     name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+    content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   ><!-- Setup Open Graph image -->
 
   
 
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Building a charging case" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="I will take you through the steps I took to create a charging case for 3 chargers. I hope you enjoy reading about my successes, findings and failures." />
-<meta property="og:description" content="I will take you through the steps I took to create a charging case for 3 chargers. I hope you enjoy reading about my successes, findings and failures." />
-<link rel="canonical" href="/posts/2020/08/14/building-a-charging-case.html" />
-<meta property="og:url" content="/posts/2020/08/14/building-a-charging-case.html" />
+<meta name="twitter:description" property="og:description" content="I will take you through the steps I took to create a charging case for 3 chargers. I hope you enjoy reading about my successes, findings and failures." />
+<link rel="canonical" href="http://localhost:4000/posts/2020/08/14/building-a-charging-case.html" />
+<meta property="og:url" content="http://localhost:4000/posts/2020/08/14/building-a-charging-case.html" />
 <meta property="og:site_name" content="ByteWelder" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-08-14T02:00:00+02:00" />
+<meta property="article:modified_time" content="2023-05-20T22:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Building a charging case" />
+<meta name="twitter:title" content="Building a charging case" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-20T22:00:00+02:00","datePublished":"2020-08-14T02:00:00+02:00","description":"I will take you through the steps I took to create a charging case for 3 chargers. I hope you enjoy reading about my successes, findings and failures.","headline":"Building a charging case","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2020/08/14/building-a-charging-case.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/favicon.svg"}},"url":"/posts/2020/08/14/building-a-charging-case.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-20T22:00:00+02:00","datePublished":"2020-08-14T02:00:00+02:00","description":"I will take you through the steps I took to create a charging case for 3 chargers. I hope you enjoy reading about my successes, findings and failures.","headline":"Building a charging case","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2020/08/14/building-a-charging-case.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"url":"http://localhost:4000/posts/2020/08/14/building-a-charging-case.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Building a charging case | ByteWelder
-  </title>
+  <title>Building a charging case | ByteWelder</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -90,7 +88,7 @@
 
   <!-- Bootstrap -->
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
   
 
   <!-- Theme style -->
@@ -100,21 +98,21 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css">
 
   <!-- 3rd-party Dependencies -->
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.css">
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2/dist/loading-attribute-polyfill.min.css">
   
 
   
     <!-- Image Popup -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3/dist/css/glightbox.min.css">
   
 
   <!-- Scripts -->
@@ -209,7 +207,7 @@
 
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.18/dayjs.min.js,npm/dayjs@1.11.18/locale/en.js,npm/dayjs@1.11.18/plugin/relativeTime.js,npm/dayjs@1.11.18/plugin/localizedFormat.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3/dist/js/glightbox.min.js,npm/clipboard@2/dist/clipboard.min.js,npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.js,npm/dayjs@1/plugin/relativeTime.js,npm/dayjs@1/plugin/localizedFormat.js"></script>
 
 
 
@@ -302,11 +300,27 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+    <div class="btn-group dropup">
+        <button
+          type="button"
+          class="btn btn-link nav-link"
+          aria-label="Switch Mode"
+          id="mode-toggle"
+          data-bs-toggle="dropdown"
+        ><i class="fa-regular fa-sun" data-theme-mode="light"></i><i class="fa-regular fa-moon" data-theme-mode="dark"></i><i class="fa-solid fa-display" data-theme-mode="system"></i></button>
+        <ul class="dropdown-menu rounded-3 mb-1 p-1">
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="light"><i class="fa-regular fa-sun" data-theme-mode="light"></i>Light</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="dark"><i class="fa-regular fa-moon" data-theme-mode="dark"></i>Dark</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system"><i class="fa-solid fa-display" data-theme-mode="system"></i>System</button>
+          </li>
+        </ul>
+      </div>
 
       
         <span class="icon-border"></span>
@@ -2278,7 +2292,7 @@
         Posted
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -2286,7 +2300,7 @@
 
 <time
   
-  data-ts="1597363200"
+  datetime="2020-08-14T02:00:00+02:00"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -2303,7 +2317,7 @@
           Updated
           <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -2311,7 +2325,7 @@
 
 <time
   
-  data-ts="1684612800"
+  datetime="2023-05-20T22:00:00+02:00"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -2381,7 +2395,7 @@ I hope you enjoy reading about my successes, findings and failures.</p>
 
 <!--more-->
 
-<p><a href="/assets/images/posts/charging-case/20_done.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/20_done.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" loading="lazy"></a></p>
 
 <p><strong>Materials used:</strong></p>
 
@@ -2418,8 +2432,8 @@ I hope you enjoy reading about my successes, findings and failures.</p>
 <p><strong>I also designed some parts:</strong></p>
 
 <ul>
-  <li>ISDT Q6 bracket: <a href="/assets/images/posts/charging-case/isdt_q6_bracket.stl">STL</a>, <a href="/assets/images/posts/charging-case/isdt_q6_bracket.FCStd">FreeCAD</a></li>
-  <li>Balance board support plate: <a href="/assets/images/posts/charging-case/balance_board_plate.stl">STL</a>, <a href="/assets/images/posts/charging-case/balance_board_plate.FCStd">FreeCAD</a></li>
+  <li>ISDT Q6 bracket: <a href="http://localhost:4000/assets/images/posts/charging-case/isdt_q6_bracket.stl">STL</a>, <a href="http://localhost:4000/assets/images/posts/charging-case/isdt_q6_bracket.FCStd">FreeCAD</a></li>
+  <li>Balance board support plate: <a href="http://localhost:4000/assets/images/posts/charging-case/balance_board_plate.stl">STL</a>, <a href="http://localhost:4000/assets/images/posts/charging-case/balance_board_plate.FCStd">FreeCAD</a></li>
 </ul>
 
 <p>These parts are optional, as you can also use pieces of wood or plexiglass to construct something similar.</p>
@@ -2432,15 +2446,15 @@ You could probably bring the total down to slightly below EUR 200 if you’re ma
 
 <p>First, I bought a case. It was relatively cheap, and the only downside was that it is a bit heavy:</p>
 
-<p><a href="/assets/images/posts/charging-case/1_case_closed.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/1_case_closed.jpg" alt="closed case" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/1_case_closed.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/1_case_closed.jpg" alt="closed case" class="center" loading="lazy"></a></p>
 
-<p><a href="/assets/images/posts/charging-case/1_case_open.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/1_case_open.jpg" alt="open case" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/1_case_open.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/1_case_open.jpg" alt="open case" class="center" loading="lazy"></a></p>
 
 <p>The next step was to start creating a bottom plate. I wanted to keep it detachable, so I bought some 3M Dual Lock.
 I added a bit too much in retrospect, so when I detach the plate, sometimes the sticky tape comes off rather than the
 Dual Lock:</p>
 
-<p><a href="/assets/images/posts/charging-case/2_bottom_plate.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/2_bottom_plate.jpg" alt="bottom plate" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/2_bottom_plate.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/2_bottom_plate.jpg" alt="bottom plate" class="center" loading="lazy"></a></p>
 
 <p>On this bottom plate, I added the switching power supply. The main consideration here was to have it placed in such a way
 that the combined airflow of the power supply unit (PSU) was working well with the airflow of the chargers. Another
@@ -2449,20 +2463,20 @@ consideration was how the placement would affect the center of gravity of the ca
 <p>I mounted the PSU on the wooden plate with standoffs, so that the airflow would be better. I also wanted to make sure that
 if the power supply ever got really hot (which I don’t expect), it wouldn’t be touching the wood:</p>
 
-<p><a href="/assets/images/posts/charging-case/3_psu_on_bottom_plate_a.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/3_psu_on_bottom_plate_a.jpg" alt="power supply mounted" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/3_psu_on_bottom_plate_a.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/3_psu_on_bottom_plate_a.jpg" alt="power supply mounted" class="center" loading="lazy"></a></p>
 
 <p>Here it is placed in the case:</p>
 
-<p><a href="/assets/images/posts/charging-case/3_psu_on_bottom_plate_b.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/3_psu_on_bottom_plate_b.jpg" alt="power supply mounted" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/3_psu_on_bottom_plate_b.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/3_psu_on_bottom_plate_b.jpg" alt="power supply mounted" class="center" loading="lazy"></a></p>
 
 <p>Similarly, I created a top plate. It rests nicely on the rim of the case, and due to the design of the case, the lid
 still closes perfectly.</p>
 
-<p><a href="/assets/images/posts/charging-case/3_top_plate.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/3_top_plate.jpg" alt="top plate" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/3_top_plate.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/3_top_plate.jpg" alt="top plate" class="center" loading="lazy"></a></p>
 
 <p>I drew some edges on it, to visualize how much actual space was usable. That way, I wouldn’t be hitting the side of the case:</p>
 
-<p><a href="/assets/images/posts/charging-case/4_top_plate_edge.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/4_top_plate_edge.jpg" alt="top plate with edge marked" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/4_top_plate_edge.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/4_top_plate_edge.jpg" alt="top plate with edge marked" class="center" loading="lazy"></a></p>
 
 <p>I made many sketches on paper before picking my preferred layout. I laid some of the components on the paper to see if it would
 work well. The considerations were: airflow, wire connections (amount of wire needed), space during charging (how close is
@@ -2470,20 +2484,20 @@ everything to each other).</p>
 
 <p>After that was done, I transferred my layout to the top plate:</p>
 
-<p><a href="/assets/images/posts/charging-case/5_top_plate_layout_create.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/5_top_plate_layout_create.jpg" alt="top plate with layout drawn on it" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/5_top_plate_layout_create.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/5_top_plate_layout_create.jpg" alt="top plate with layout drawn on it" class="center" loading="lazy"></a></p>
 
 <p>And of course I verified it by adding the components on top:</p>
 
-<p><a href="/assets/images/posts/charging-case/6_top_plate_layout_verify.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/6_top_plate_layout_verify.jpg" alt="top plate with components on top" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/6_top_plate_layout_verify.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/6_top_plate_layout_verify.jpg" alt="top plate with components on top" class="center" loading="lazy"></a></p>
 
 <p>At this point, I started prepping wires already. This would allow me to already connect the chargers and start charging.
 That way, I didn’t have to wait to the end of the project until I’d have a functioning charging setup!</p>
 
-<p><a href="/assets/images/posts/charging-case/7_prep_wires.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/7_prep_wires.jpg" alt="wires prepped" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/7_prep_wires.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/7_prep_wires.jpg" alt="wires prepped" class="center" loading="lazy"></a></p>
 
 <p>As you can see, the rig was already functionally usable:</p>
 
-<p><a href="/assets/images/posts/charging-case/8_already_usable.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/8_already_usable.jpg" alt="functional chargers" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/8_already_usable.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/8_already_usable.jpg" alt="functional chargers" class="center" loading="lazy"></a></p>
 
 <p>I wanted a single wire to go from the PSU to the rest of the electronics. This allows me to easily disconnect the electronics
 on the top plate from the PSU on the bottom for maintenance and testing. In theory, I could just solder all the XT60 connectors
@@ -2495,68 +2509,82 @@ than the PDB will give me. The BECs allow me to regulate the voltage, effectivel
 
 <p>I am adding XT60 and XT30 connectors, because I want the entire thing to be modular and easy to disassemble:</p>
 
-<p><a href="/assets/images/posts/charging-case/9_power_distribution.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/9_power_distribution.jpg" alt="PDB and BECs" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/9_power_distribution.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/9_power_distribution.jpg" alt="PDB and BECs" class="center" loading="lazy"></a></p>
 
 <p>Originally, I had only 1 BEC. This provided insufficient power to start rotating all fans at the same time.
 I added a second BEC to solve this problem, but in the end it was still insufficient. The proper fix would be to have a setup
 where each fan gets its own switch. That way, they can all individually get their needed current spike to start spinning - but
 not at least not at the same time!</p>
 
-<p><a href="/assets/images/posts/charging-case/11_cooling_becs.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/11_cooling_becs.jpg" alt="PDB, BECs and fans" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/11_cooling_becs.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/11_cooling_becs.jpg" alt="PDB, BECs and fans" class="center" loading="lazy"></a></p>
 
 <p>At this point I started cutting out the top plate:</p>
 
-<p><a href="/assets/images/posts/charging-case/12_top_plate_cutting.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/12_top_plate_cutting.jpg" alt="top plate cut out" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/12_top_plate_cutting.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/12_top_plate_cutting.jpg" alt="top plate cut out" class="center" loading="lazy"></a></p>
 
 <p>Because I used triplex wood, and I’m not super experienced with it, the wood partially disintegrated when cutting into it.
 I used some 2 component epoxy filler to fix most of it:</p>
 
-<p><a href="/assets/images/posts/charging-case/13_top_plate_filling.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/13_top_plate_filling.jpg" alt="top plate touch up" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/13_top_plate_filling.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/13_top_plate_filling.jpg" alt="top plate touch up" class="center" loading="lazy"></a></p>
 
 <p>To finish the top plate, I painted it black:</p>
 
-<p><a href="/assets/images/posts/charging-case/14_top_plate_finished.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/14_top_plate_finished.jpg" alt="top plate finished" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/14_top_plate_finished.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/14_top_plate_finished.jpg" alt="top plate finished" class="center" loading="lazy"></a></p>
 
 <p>Also the fans were mounted:</p>
 
-<p><a href="/assets/images/posts/charging-case/15_top_plate_mounting.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/15_top_plate_mounting.jpg" alt="top plate with fans and PDB" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/15_top_plate_mounting.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/15_top_plate_mounting.jpg" alt="top plate with fans and PDB" class="center" loading="lazy"></a></p>
 
 <p>Then the XT60 top-mounted connectors were added:</p>
 
-<p><a href="/assets/images/posts/charging-case/16_top_plate_fitting.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/16_top_plate_fitting.jpg" alt="top plate with XT60 connectors" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/16_top_plate_fitting.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/16_top_plate_fitting.jpg" alt="top plate with XT60 connectors" class="center" loading="lazy"></a></p>
 
 <p>Because the chargers were shaped irregularly, and I needed to support the balance boards with something, I designed and
 printed out some parts. You can also buy some wood or plexiglass and cut out similar parts by hand. I used 2 component
 epoxy filler (yes, filler) to glue the charger brackets on:</p>
 
-<p><a href="/assets/images/posts/charging-case/17_printed_brackets.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/17_printed_brackets.jpg" alt="top plate with charger brackets" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/17_printed_brackets.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/17_printed_brackets.jpg" alt="top plate with charger brackets" class="center" loading="lazy"></a></p>
 
 <p>Then I put the balance charging cables in place and glued in the supports for the balance board:</p>
 
-<p><a href="/assets/images/posts/charging-case/18_balance_done_a.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/18_balance_done_a.jpg" alt="top plate with balance charging setup" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/18_balance_done_a.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/18_balance_done_a.jpg" alt="top plate with balance charging setup" class="center" loading="lazy"></a></p>
 
-<p><a href="/assets/images/posts/charging-case/18_balance_done_b.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/18_balance_done_b.jpg" alt="top plate with balance charging setup" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/18_balance_done_b.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/18_balance_done_b.jpg" alt="top plate with balance charging setup" class="center" loading="lazy"></a></p>
 
 <p>The lasts step was to connect everything:</p>
 
-<p><a href="/assets/images/posts/charging-case/19_wired_all.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/19_wired_all.jpg" alt="everything connected" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/19_wired_all.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/19_wired_all.jpg" alt="everything connected" class="center" loading="lazy"></a></p>
 
 <p>And then the project was finished:</p>
 
-<p><a href="/assets/images/posts/charging-case/20_done.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" loading="lazy"></a></p>
+<p><a href="http://localhost:4000/assets/images/posts/charging-case/20_done.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/charging-case/20_done.jpg" alt="finished charging case" class="center" loading="lazy"></a></p>
 
 
   </div>
 
   <div class="post-tail-wrapper text-muted">
-    <!-- categories -->
-    
-      <div class="post-meta mb-3">
-        <i class="far fa-folder-open fa-fw me-1"></i>
-        
-          <a href="/categories/posts/">posts</a>
-      </div>
-    
+    <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+      <!-- categories -->
+      
+        <div class="post-meta">
+          <i class="far fa-folder-open fa-fw me-1"></i>
+          
+            <a href="/categories/posts/">posts</a>
+        </div>
+      
+
+      <!-- "Edit this post" link -->
+      <!-- Link to edit the post to contribute. -->
+
+
+
+
+
+
+
+
+
+    </div>
 
     <!-- tags -->
     
@@ -2602,21 +2630,21 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Building%20a%20charging%20case%20-%20ByteWelder&url=%2Fposts%2F2020%2F08%2F14%2Fbuilding-a-charging-case.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Building%20a%20charging%20case%20-%20ByteWelder&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2020%2F08%2F14%2Fbuilding-a-charging-case.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Building%20a%20charging%20case%20-%20ByteWelder&u=%2Fposts%2F2020%2F08%2F14%2Fbuilding-a-charging-case.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Building%20a%20charging%20case%20-%20ByteWelder&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2020%2F08%2F14%2Fbuilding-a-charging-case.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=%2Fposts%2F2020%2F08%2F14%2Fbuilding-a-charging-case.html&text=Building%20a%20charging%20case%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2020%2F08%2F14%2Fbuilding-a-charging-case.html&text=Building%20a%20charging%20case%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -2671,6 +2699,13 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html">A Tool That Gets Out of the Way</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/2024/01/15/the-making-of-a-platform.html">The making of a platform</a>
         </li>
       
@@ -2693,13 +2728,6 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/2017/05/08/borrowing-from-kotlin.html">Borrowing from Kotlin</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/2017/05/13/testing-multithreaded-code.html">Testing multithreaded code</a>
         </li>
       
     </ul>
@@ -3052,6 +3080,18 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -3071,7 +3111,7 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -3079,7 +3119,7 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
 
 <time
   
-  data-ts="1593475200"
+  datetime="2020-06-30T02:00:00+02:00"
   data-df="ll"
   
 >
@@ -3099,7 +3139,7 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -3107,7 +3147,7 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
 
 <time
   
-  data-ts="1591401600"
+  datetime="2020-06-06T02:00:00+02:00"
   data-df="ll"
   
 >
@@ -3127,7 +3167,7 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
             <div class="card-body">
               <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -3135,7 +3175,7 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
 
 <time
   
-  data-ts="1684616400"
+  datetime="2023-05-20T23:00:00+02:00"
   data-df="ll"
   
 >
@@ -3214,7 +3254,7 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
   <p>Using the <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.4.1"
+        title="v7.6.0"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -3353,26 +3393,26 @@ epoxy filler (yes, filler) to glue the charger brackets on:</p>
     
       <aside
   id="notification"
-  class="toast"
+  class="toast w-auto rounded-5 text-nowrap"
   role="alert"
   aria-live="assertive"
   aria-atomic="true"
   data-bs-animation="true"
   data-bs-autohide="false"
 >
-  <div class="toast-header">
+  <div class="d-flex align-items-center">
+    <div class="toast-body ps-3">New content available</div>
     <button
       type="button"
-      class="btn-close ms-auto"
+      class="btn btn-primary btn-sm rounded-2 py-0"
+      aria-label="Update"
+    >Update</button>
+    <button
+      type="button"
+      class="btn-close mx-3 ms-2"
       data-bs-dismiss="toast"
       aria-label="Close"
     ></button>
-  </div>
-  <div class="toast-body text-center pt-0">
-    <p class="px-2 mb-3">A new version of content is available.</p>
-    <button type="button" class="btn btn-primary" aria-label="Update">
-      Update
-    </button>
   </div>
 </aside>
 

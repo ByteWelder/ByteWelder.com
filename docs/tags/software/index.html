@@ -11,42 +11,39 @@
 
 
 
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" >
+<html
+  lang="en"
+  >
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
     name="viewport"
-    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+    content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   ><!-- Setup Open Graph image -->
 
   
 
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <!-- Begin Jekyll SEO tag v2.9.1 -->
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="software" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="ByteWelder is an alias used by Ken Van Hoeylandt. It is used to share learnings, experiments and projects." />
-<meta property="og:description" content="ByteWelder is an alias used by Ken Van Hoeylandt. It is used to share learnings, experiments and projects." />
-<link rel="canonical" href="/tags/software/" />
-<meta property="og:url" content="/tags/software/" />
+<meta name="twitter:description" property="og:description" content="ByteWelder is an alias used by Ken Van Hoeylandt. It is used to share learnings, experiments and projects." />
+<link rel="canonical" href="http://localhost:4000/tags/software/" />
+<meta property="og:url" content="http://localhost:4000/tags/software/" />
 <meta property="og:site_name" content="ByteWelder" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="software" />
+<meta name="twitter:title" content="software" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"ByteWelder is an alias used by Ken Van Hoeylandt. It is used to share learnings, experiments and projects.","headline":"software","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/favicon.svg"}},"url":"/tags/software/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"ByteWelder is an alias used by Ken Van Hoeylandt. It is used to share learnings, experiments and projects.","headline":"software","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"url":"http://localhost:4000/tags/software/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>software | ByteWelder
-  </title>
+  <title>software | ByteWelder</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -89,7 +86,7 @@
 
   <!-- Bootstrap -->
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
   
 
   <!-- Theme style -->
@@ -99,7 +96,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css">
 
   <!-- 3rd-party Dependencies -->
 
@@ -173,7 +170,7 @@
 
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.18/dayjs.min.js,npm/dayjs@1.11.18/locale/en.js,npm/dayjs@1.11.18/plugin/relativeTime.js,npm/dayjs@1.11.18/plugin/localizedFormat.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1/dest/simple-jekyll-search.min.js,npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.js,npm/dayjs@1/plugin/relativeTime.js,npm/dayjs@1/plugin/localizedFormat.js"></script>
 
 
 
@@ -262,11 +259,27 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
-        <i class="fas fa-adjust"></i>
-      </button>
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+    <div class="btn-group dropup">
+        <button
+          type="button"
+          class="btn btn-link nav-link"
+          aria-label="Switch Mode"
+          id="mode-toggle"
+          data-bs-toggle="dropdown"
+        ><i class="fa-regular fa-sun" data-theme-mode="light"></i><i class="fa-regular fa-moon" data-theme-mode="dark"></i><i class="fa-solid fa-display" data-theme-mode="system"></i></button>
+        <ul class="dropdown-menu rounded-3 mb-1 p-1">
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="light"><i class="fa-regular fa-sun" data-theme-mode="light"></i>Light</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="dark"><i class="fa-regular fa-moon" data-theme-mode="dark"></i>Dark</button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system"><i class="fa-solid fa-display" data-theme-mode="system"></i>System</button>
+          </li>
+        </ul>
+      </div>
 
       
         <span class="icon-border"></span>
@@ -404,16 +417,16 @@
   <h1 class="ps-lg-2">
     <i class="fa fa-tag fa-fw text-muted"></i>
     software
-    <span class="lead text-muted ps-2">10</span>
+    <span class="lead text-muted ps-2">11</span>
   </h1>
   <ul class="content ps-0">
     
       <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/2026/01/08/tactility-second-year.html">Tactility's second year</a>
+        <a href="/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html">A Tool That Gets Out of the Way</a>
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -423,7 +436,31 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1767906000"
+  datetime="2026-11-20T08:50:00+01:00"
+  data-df="ll"
+  
+>
+  Nov 20, 2026
+</time>
+
+      </li>
+    
+      <li class="d-flex justify-content-between px-md-3">
+        <a href="/posts/2026/01/08/tactility-second-year.html">Tactility's second year</a>
+        <span class="dash flex-grow-1"></span>
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
+-->
+
+
+
+
+<time
+  
+    class="text-muted small text-nowrap"
+  
+  datetime="2026-01-08T22:00:00+01:00"
   data-df="ll"
   
 >
@@ -437,7 +474,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -447,7 +484,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1736190900"
+  datetime="2025-01-06T20:15:00+01:00"
   data-df="ll"
   
 >
@@ -461,7 +498,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -471,7 +508,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1705350600"
+  datetime="2024-01-15T21:30:00+01:00"
   data-df="ll"
   
 >
@@ -485,7 +522,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -495,7 +532,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1650038400"
+  datetime="2022-04-15T18:00:00+02:00"
   data-df="ll"
   
 >
@@ -509,7 +546,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -519,7 +556,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1602104400"
+  datetime="2020-10-07T23:00:00+02:00"
   data-df="ll"
   
 >
@@ -533,7 +570,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -543,7 +580,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1582754400"
+  datetime="2020-02-26T23:00:00+01:00"
   data-df="ll"
   
 >
@@ -557,7 +594,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -567,7 +604,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1565648880"
+  datetime="2019-08-13T00:28:00+02:00"
   data-df="ll"
   
 >
@@ -581,7 +618,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -591,7 +628,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1494774660"
+  datetime="2017-05-14T17:11:00+02:00"
   data-df="ll"
   
 >
@@ -605,7 +642,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -615,7 +652,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1494676440"
+  datetime="2017-05-13T13:54:00+02:00"
   data-df="ll"
   
 >
@@ -629,7 +666,7 @@
         <span class="dash flex-grow-1"></span>
         <!--
   Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
 -->
 
 
@@ -639,7 +676,7 @@
   
     class="text-muted small text-nowrap"
   
-  data-ts="1494278220"
+  datetime="2017-05-08T23:17:00+02:00"
   data-df="ll"
   
 >
@@ -683,6 +720,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html">A Tool That Gets Out of the Way</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/2024/01/15/the-making-of-a-platform.html">The making of a platform</a>
         </li>
       
@@ -705,13 +749,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/2017/05/08/borrowing-from-kotlin.html">Borrowing from Kotlin</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/2017/05/13/testing-multithreaded-code.html">Testing multithreaded code</a>
         </li>
       
     </ul>
@@ -862,7 +899,7 @@
   <p>Using the <a
         data-bs-toggle="tooltip"
         data-bs-placement="top"
-        title="v7.4.1"
+        title="v7.6.0"
         href="https://github.com/cotes2020/jekyll-theme-chirpy"
         target="_blank"
         rel="noopener"
@@ -1001,26 +1038,26 @@
     
       <aside
   id="notification"
-  class="toast"
+  class="toast w-auto rounded-5 text-nowrap"
   role="alert"
   aria-live="assertive"
   aria-atomic="true"
   data-bs-animation="true"
   data-bs-autohide="false"
 >
-  <div class="toast-header">
+  <div class="d-flex align-items-center">
+    <div class="toast-body ps-3">New content available</div>
     <button
       type="button"
-      class="btn-close ms-auto"
+      class="btn btn-primary btn-sm rounded-2 py-0"
+      aria-label="Update"
+    >Update</button>
+    <button
+      type="button"
+      class="btn-close mx-3 ms-2"
       data-bs-dismiss="toast"
       aria-label="Close"
     ></button>
-  </div>
-  <div class="toast-body text-center pt-0">
-    <p class="px-2 mb-3">A new version of content is available.</p>
-    <button type="button" class="btn btn-primary" aria-label="Update">
-      Update
-    </button>
   </div>
 </aside>
 

@@ -2,9 +2,22 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", "~> 7.4", ">= 7.4.1"
+group :jekyll_plugins do
+  gem "jekyll-remote-theme"
+  # Chirpy theme dependencies (not installed by jekyll-remote-theme)
+  gem "jekyll-paginate"
+  gem "jekyll-redirect-from"
+  gem "jekyll-seo-tag"
+  gem "jekyll-archives"
+  gem "jekyll-sitemap"
+  gem "jekyll-include-cache"
+  gem "jekyll-feed"
+end
 
-gem "html-proofer", "~> 5.0", group: :test
+# No longer default gems since Ruby 4.0
+gem "logger"
+
+gem "html-proofer", "~> 5.2.2", group: :test
 
 platforms :windows, :jruby do
   gem "tzinfo", ">= 1", "< 3"

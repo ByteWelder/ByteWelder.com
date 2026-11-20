@@ -6,6 +6,8 @@ MathJax = {
       ['$$', '$$'],
       ['\\[', '\\]']
     ],tags: 'ams'
+  },
+  output: {displayOverflow: 'scroll'
   }
 };
 
