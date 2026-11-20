@@ -32,8 +32,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices." />
 <meta name="twitter:description" property="og:description" content="I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices." />
-<link rel="canonical" href="http://localhost:4000/posts/2024/01/15/the-making-of-a-platform.html" />
-<meta property="og:url" content="http://localhost:4000/posts/2024/01/15/the-making-of-a-platform.html" />
+<link rel="canonical" href="/posts/2024/01/15/the-making-of-a-platform.html" />
+<meta property="og:url" content="/posts/2024/01/15/the-making-of-a-platform.html" />
 <meta property="og:site_name" content="ByteWelder" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-01-15T21:30:00+01:00" />
@@ -41,7 +41,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="The making of a platform" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-24T18:00:00+01:00","datePublished":"2024-01-15T21:30:00+01:00","description":"I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.","headline":"The making of a platform","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2024/01/15/the-making-of-a-platform.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"url":"http://localhost:4000/posts/2024/01/15/the-making-of-a-platform.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-24T18:00:00+01:00","datePublished":"2024-01-15T21:30:00+01:00","description":"I got inspired by Flipper Zero and started developing an application platform for ESP32 touchscreen devices.","headline":"The making of a platform","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2024/01/15/the-making-of-a-platform.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/favicon.svg"}},"url":"/posts/2024/01/15/the-making-of-a-platform.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -945,7 +945,7 @@ such as radio protocols, access control systems, hardware, and more. It’s full
 so you can extend it in whatever way you like.</p>
 </blockquote>
 
-<p><a href="http://localhost:4000/assets/images/posts/tactility/flipperzero.png" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/tactility/flipperzero.png" alt="Flipper Zero device" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/tactility/flipperzero.png" class="popup img-link shimmer"><img src="/assets/images/posts/tactility/flipperzero.png" alt="Flipper Zero device" class="center" loading="lazy"></a></p>
 <center><small>(image by <a href="https://flipperzero.one/">Flipper Zero</a>)</small></center>
 
 <p>I’ll refer to F0 instead of Flipper Zero in the text below.</p>
@@ -962,7 +962,7 @@ several megabytes of storage and a bunch of wired connectivity options.
 It’s roughly the size of a postage stamp (18 x 25.5 x 3.1 mm) and it costs about 2 EUR before adding a USB port and a battery to it.
 For those who are interested: Flipper uses an STM32WB55 MCU.</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/tactility/esp32.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/tactility/esp32.jpg" alt="ESP32 front and back" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/tactility/esp32.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/tactility/esp32.jpg" alt="ESP32 front and back" class="center" loading="lazy"></a></p>
 <center><small>(image by <a href="https://www.espressif.com">Espressif.com</a>)</small></center>
 
 <p>My porting efforts didn’t start out smoothly, but one thing led to another and 3 completely separate iterations later,
@@ -982,7 +982,7 @@ before moving on to the next feature. I also wasn’t afraid to implement certai
 if it was beneficial to the project. This worked better and I soon had a functional prototype.
 It featured an application launcher and the ability to start and quit applications:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/tactility/early-prototype.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/tactility/early-prototype.jpg" alt="two devices running the software prototype for Tactility" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/tactility/early-prototype.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/tactility/early-prototype.jpg" alt="two devices running the software prototype for Tactility" class="center" loading="lazy"></a></p>
 
 <h1 id="making-the-app-makes-the-platform">Making the app makes the platform</h1>
 
@@ -1011,7 +1011,7 @@ To implement this, I now had to support:</p>
   <li>… and I had to find a way to store the decryption keys in a safe (enough) manner.</li>
 </ul>
 
-<p><a href="http://localhost:4000/assets/images/posts/tactility/wifi-app.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/tactility/wifi-app.jpg" alt="3 panels of the same device showing the Wi-Fi app connecting to an access point" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/tactility/wifi-app.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/tactility/wifi-app.jpg" alt="3 panels of the same device showing the Wi-Fi app connecting to an access point" class="center" loading="lazy"></a></p>
 
 <h1 id="whats-in-an-app">What’s in an app?</h1>
 
@@ -1246,21 +1246,21 @@ At a later stage, I also want to have Wi-Fi auto-reconnect and have the option t
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=The%20making%20of%20a%20platform%20-%20ByteWelder&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2024%2F01%2F15%2Fthe-making-of-a-platform.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=The%20making%20of%20a%20platform%20-%20ByteWelder&url=%2Fposts%2F2024%2F01%2F15%2Fthe-making-of-a-platform.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=The%20making%20of%20a%20platform%20-%20ByteWelder&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2024%2F01%2F15%2Fthe-making-of-a-platform.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=The%20making%20of%20a%20platform%20-%20ByteWelder&u=%2Fposts%2F2024%2F01%2F15%2Fthe-making-of-a-platform.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2024%2F01%2F15%2Fthe-making-of-a-platform.html&text=The%20making%20of%20a%20platform%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=%2Fposts%2F2024%2F01%2F15%2Fthe-making-of-a-platform.html&text=The%20making%20of%20a%20platform%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     

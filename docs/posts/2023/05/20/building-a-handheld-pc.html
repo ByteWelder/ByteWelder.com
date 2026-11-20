@@ -32,8 +32,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="I’d like to share with you my latest project: Decktility!" />
 <meta name="twitter:description" property="og:description" content="I’d like to share with you my latest project: Decktility!" />
-<link rel="canonical" href="http://localhost:4000/posts/2023/05/20/building-a-handheld-pc.html" />
-<meta property="og:url" content="http://localhost:4000/posts/2023/05/20/building-a-handheld-pc.html" />
+<link rel="canonical" href="/posts/2023/05/20/building-a-handheld-pc.html" />
+<meta property="og:url" content="/posts/2023/05/20/building-a-handheld-pc.html" />
 <meta property="og:site_name" content="ByteWelder" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-05-20T23:00:00+02:00" />
@@ -41,7 +41,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Building a handheld PC" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-05-26T13:30:00+02:00","datePublished":"2023-05-20T23:00:00+02:00","description":"I’d like to share with you my latest project: Decktility!","headline":"Building a handheld PC","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2023/05/20/building-a-handheld-pc.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"url":"http://localhost:4000/posts/2023/05/20/building-a-handheld-pc.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-05-26T13:30:00+02:00","datePublished":"2023-05-20T23:00:00+02:00","description":"I’d like to share with you my latest project: Decktility!","headline":"Building a handheld PC","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2023/05/20/building-a-handheld-pc.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/favicon.svg"}},"url":"/posts/2023/05/20/building-a-handheld-pc.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1699,7 +1699,7 @@ acceptable. I considered a regular flat lipo, but I didn’t like that they get 
 so I could get an idea of how much space each component would take up.
 It also enabled me to start building up a prototype:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/prototyping.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/prototyping.jpg" alt="prototyping bms" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/prototyping.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/prototyping.jpg" alt="prototyping bms" class="center" loading="lazy"></a></p>
 
 <p>Just like the wiring in the assembly guide, I started by building up the power delivery:
 A USB battery management system (BMS) that can charge two 18650 lithium cells, paired with a
@@ -1708,14 +1708,14 @@ I used a USB-C PD tester to verify the power while charging.</p>
 
 <p>Once that was working, I added some breadboard wires and connected the Pi:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/prototyping-with-pi.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/prototyping-with-pi.jpg" alt="prototyping bms with pi" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/prototyping-with-pi.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/prototyping-with-pi.jpg" alt="prototyping bms with pi" class="center" loading="lazy"></a></p>
 
 <p>I found out that that the BMS was getting quite hot while charging. It was stepping up the <code class="language-plaintext highlighter-rouge">5 V</code> from USB
 to about <code class="language-plaintext highlighter-rouge">8.4 V</code> that the batteries require. Increasing the voltage is much less efficient than decreasing it,
 so there is more heat involved. This implied that I would need to accomodate cooling for this scenario.
 <code class="language-plaintext highlighter-rouge">45 C</code> is not too bad in open air, but it wouldn’t be great in an enclosure, where the Pi would generate heat too.</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/prototyping-bms-heat.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/prototyping-bms-heat.jpg" alt="prototyping bms flir heat signature" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/prototyping-bms-heat.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/prototyping-bms-heat.jpg" alt="prototyping bms flir heat signature" class="center" loading="lazy"></a></p>
 
 <p>In theory, having a battery, a switch and a Pi is going to result in a working product,
 but what if the battery was running low? If the power switch would remain on, it would drain and damage the battery.
@@ -1725,19 +1725,19 @@ because they would always be connected to the battery and thus leak power. By se
 they would leak only <code class="language-plaintext highlighter-rouge">0.82 μA</code> (5 / (2200000 + 3900000)). That’s about <code class="language-plaintext highlighter-rouge">4.1 μW</code>, or in other words: it would take
 <code class="language-plaintext highlighter-rouge">203252 days</code> to drain a <code class="language-plaintext highlighter-rouge">20 Wh</code> battery. It’s not going to be problematic this way.</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/prototyping-arduino.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/prototyping-arduino.jpg" alt="prototyping with arduino to read voltage" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/prototyping-arduino.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/prototyping-arduino.jpg" alt="prototyping with arduino to read voltage" class="center" loading="lazy"></a></p>
 
 <p>Now that we know when it’s safe to turn on the hardware, I had to add the ability to actually do so.
 I used a special kind of transistor - a power MOSFET (or “power FET”).
 The green PCB behind the cable mess holds the FET circuit:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/prototyping-fet.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/prototyping-fet.jpg" alt="prototyping with arduino and fet" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/prototyping-fet.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/prototyping-fet.jpg" alt="prototyping with arduino and fet" class="center" loading="lazy"></a></p>
 
 <p>Around this time, I started designing the CAD prototypes in OnShape. Many hours were spent measuring and drawing
 various components that would go into Decktility. I needed their 3D representation so I could do an integration
 test of sorts as I was creating the case:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/decktility-cad-prototypes.png" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/decktility-cad-prototypes.png" alt="cad  prototypes" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/decktility-cad-prototypes.png" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/decktility-cad-prototypes.png" alt="cad  prototypes" class="center" loading="lazy"></a></p>
 
 <p>In the early stages, I had to solve the dilemma of battery placement. Firstly, the battery had to be a counter-weight
 to the screen. It’s important that the device feels balanced in your hands. The screen and the battery are both quite heavy,
@@ -1752,7 +1752,7 @@ for the bottom half of the device. I really liked the idea of the handles, but t
 
 <p>After working out the basic case design, it was time to print the first one. The first of many…</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/building-first-case.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/building-first-case.jpg" alt="first case 3D-printed" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/building-first-case.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/building-first-case.jpg" alt="first case 3D-printed" class="center" loading="lazy"></a></p>
 
 <p>The massive FET board quickly catches the eye. The board in the picture is just to showcase how out-of-place it really is.
 I swapped it with a smaller one before continueing.</p>
@@ -1765,11 +1765,11 @@ to work together (for I2C communication).</p>
 
 <p>In the end, I couldn’t find a small enough FET board, so I started reverse-engineering the existing one in my very first KiCad project:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/building-fet-kicad.png" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/building-fet-kicad.png" alt="reverse-engineering the FET board in kicad" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/building-fet-kicad.png" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/building-fet-kicad.png" alt="reverse-engineering the FET board in kicad" class="center" loading="lazy"></a></p>
 
 <p>and then rebuilding it on an experiment board:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/building-fet-comparison.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/building-fet-comparison.jpg" alt="comparing original FET with rebuilt one" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/building-fet-comparison.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/building-fet-comparison.jpg" alt="comparing original FET with rebuilt one" class="center" loading="lazy"></a></p>
 
 <p>I might make a custom PCB in the future. That way, I can add some connectors for various components, making the project easier
 to assemble.</p>
@@ -1778,25 +1778,25 @@ to assemble.</p>
 I would quickly find out that I didn’t have the correct wire thickness for the main power. I was using <code class="language-plaintext highlighter-rouge">20 AWG</code>, which I use
 for drones that draw way more power. I would later replace them with <code class="language-plaintext highlighter-rouge">24 AWG</code> wires.</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/building-first-power-on.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/building-first-power-on.jpg" alt="first time turning on the power" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/building-first-power-on.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/building-first-power-on.jpg" alt="first time turning on the power" class="center" loading="lazy"></a></p>
 
 <p>When I was working on the Arduino firmware, I had a problem: every time I would upload a new firmware, the Arduino would restart.
 This would make the electronic switch go off, and thus restart the Pi. To overcome this, I would wire a second Arduino to I2C,
 isntead of using the one in the device. At a later stage, I also added a JST-SH connector to be able to easily disconnect the
 Arduino inside the device.</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/building-two-arduinos.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/building-two-arduinos.jpg" alt="two arduinos during firmware development" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/building-two-arduinos.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/building-two-arduinos.jpg" alt="two arduinos during firmware development" class="center" loading="lazy"></a></p>
 
 <p>Charging status LEDs would be a nice touch. But adding 1 or 2 LEDs to the case would require a relatively considerable effort.
 And then it hit me: I could use fiber optics! Fishing wire (or flexible bracelet wire) can guide the light from the existing LEDs
 on the BMS to the edge of the case.
 All I would have to do is glue the wire in place. An overnight shipping and a quick experiment later, the theory was proven:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/building-charging-leds.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/building-charging-leds.jpg" alt="using transparent wire to guide light" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/building-charging-leds.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/building-charging-leds.jpg" alt="using transparent wire to guide light" class="center" loading="lazy"></a></p>
 
 <p>After a lot of iterations, the hardware was finally finished:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/building-finished.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/building-finished.jpg" alt="decktility finished" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/building-finished.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/building-finished.jpg" alt="decktility finished" class="center" loading="lazy"></a></p>
 
 <p>At this point, a custom I2C device implementation was enabling the Pi and the Arduino to talk to eachother. 
 The Pi could ask the Arduino about the charging status or the battery voltage, and the Arduino would report it back.
@@ -1809,7 +1809,7 @@ The Arduino now acts like such a device, so it is fully supported in Linux.</p>
 
 <p>I was stoked when I saw the battery icon appear for the first time:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/decktility/building-battery-status.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/decktility/building-battery-status.jpg" alt="decktility finished" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/decktility/building-battery-status.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/decktility/building-battery-status.jpg" alt="decktility finished" class="center" loading="lazy"></a></p>
 
 <h1 id="various-learnings">Various learnings</h1>
 
@@ -1921,21 +1921,21 @@ and it’s a unique name so an online search will easily turn up the correct res
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Building%20a%20handheld%20PC%20-%20ByteWelder&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2023%2F05%2F20%2Fbuilding-a-handheld-pc.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Building%20a%20handheld%20PC%20-%20ByteWelder&url=%2Fposts%2F2023%2F05%2F20%2Fbuilding-a-handheld-pc.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Building%20a%20handheld%20PC%20-%20ByteWelder&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2023%2F05%2F20%2Fbuilding-a-handheld-pc.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Building%20a%20handheld%20PC%20-%20ByteWelder&u=%2Fposts%2F2023%2F05%2F20%2Fbuilding-a-handheld-pc.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2023%2F05%2F20%2Fbuilding-a-handheld-pc.html&text=Building%20a%20handheld%20PC%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=%2Fposts%2F2023%2F05%2F20%2Fbuilding-a-handheld-pc.html&text=Building%20a%20handheld%20PC%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     

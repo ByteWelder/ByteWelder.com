@@ -96,19 +96,9 @@ What's missing is the proxy: you have to install each IDF version yourself and r
 `rustup` reads `rust-toolchain.toml` and `nvm` reads `.nvmrc`. They pick the right compiler or runtime per project and download it when needed.
 `rustup` works a lot like `tt`: `cargo` is a proxy that forwards to the toolchain of the current project. The difference is mostly scope: they manage a language toolchain, while `tt` manages an entire SDK including device communication.
 
-### Summary
-
-| Tool | Version pinned in | Auto-download | Tool matches SDK | Installed per |
-|------|-------------------|---------------|------------------|---------------|
-| `tt` | app manifest | yes | always | user |
-| Gradle Wrapper | wrapper properties | yes | Gradle only | project |
-| Android SDK | build.gradle | via IDE / sdkmanager | partially | user |
-| ESP-IDF | nothing (manual) | no | always | user |
-| rustup | rust-toolchain.toml | yes | always | user |
-
 ## Conclusion
 
-The best tool is one that does almost nothing. By moving all the logic into the SDK and making the installed tool a thin proxy, the compatibility problem mostly disappears.
+The best tool is one that does a single thing well. By moving all the logic into the SDK and making the installed tool a thin proxy, the compatibility problem mostly disappears.
 It costs an internet connection on first use, but I haven't had to tell anyone "please update your tools" since.
 
 If you want to try it out, check out the [Tactility documentation](https://tactilityproject.org) and build an app!

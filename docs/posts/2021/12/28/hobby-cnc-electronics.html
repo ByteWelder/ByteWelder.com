@@ -32,8 +32,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build." />
 <meta name="twitter:description" property="og:description" content="I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build." />
-<link rel="canonical" href="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html" />
-<meta property="og:url" content="http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html" />
+<link rel="canonical" href="/posts/2021/12/28/hobby-cnc-electronics.html" />
+<meta property="og:url" content="/posts/2021/12/28/hobby-cnc-electronics.html" />
 <meta property="og:site_name" content="ByteWelder" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-12-28T00:00:00+01:00" />
@@ -41,7 +41,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Hobby CNC electronics" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-12-28T00:00:00+01:00","datePublished":"2021-12-28T00:00:00+01:00","description":"I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.","headline":"Hobby CNC electronics","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"url":"http://localhost:4000/posts/2021/12/28/hobby-cnc-electronics.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-12-28T00:00:00+01:00","datePublished":"2021-12-28T00:00:00+01:00","description":"I recently started building an IndyMill CNC router. In this post, I’ll share some progress and decisions I’ve made when working on the electronics cabinet of this build.","headline":"Hobby CNC electronics","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2021/12/28/hobby-cnc-electronics.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/favicon.svg"}},"url":"/posts/2021/12/28/hobby-cnc-electronics.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1619,7 +1619,7 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 
 <p>Please note that everything written below is written in the context of hobbyist CNC router hardware.</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet finished and opened" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-cabinet-finished-open.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet finished and opened" class="center" loading="lazy"></a></p>
 
 <h2 id="a-brief-intro-to-hobby-cnc-routers"><span class="me-2">A brief intro to hobby CNC routers</span><a href="#a-brief-intro-to-hobby-cnc-routers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
@@ -1654,7 +1654,7 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 
 <p>To make the cabinet layout, I used <a href="https://inkscape.org/">InkScape</a>. A vector graphics editor like that (or Affinity Designer and many others) is ideal for me: I created a <code class="language-plaintext highlighter-rouge">600 x 400</code> pixel image, where each pixel represents a millimeter. The end result looks like this:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-cabinet-layout.png" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-layout.png" alt="cabinet layout design" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-cabinet-layout.png" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-cabinet-layout.png" alt="cabinet layout design" class="center" loading="lazy"></a></p>
 
 <p>The yellow marked areas are space in the box that is unusable.</p>
 
@@ -1673,11 +1673,11 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 
 <p>The first design has an intake fan on the bottom of the cabinet and an exit hole on the top-left. The downside of this designis that we can’t put the cabinet on a flat surface without obstructing the airflow:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-airflow1.png" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-airflow1.png" alt="airflow design 1" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-airflow1.png" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-airflow1.png" alt="airflow design 1" class="center" loading="lazy"></a></p>
 
 <p>The second design has an intake fan on the bottom-left and the outtake hole on the top-left:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-airflow2.png" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-airflow2.png" alt="airflow design 2" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-airflow2.png" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-airflow2.png" alt="airflow design 2" class="center" loading="lazy"></a></p>
 
 <p>The last design is the one I ended up chosing, but both were viable options.</p>
 
@@ -1686,43 +1686,43 @@ In this post, I’ll share some progress and decisions I’ve made when working 
 <p>The first real build step was mounting the DIN rails on the steel plate of the cabinet.
 I used a medium-strength thread lock for the nuts and bolts. I also ensured that the plate could be grounded by drilling an extra hole for grounding.</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-din-rails-mounted.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-din-rails-mounted.jpg" alt="base plate with din rails mounted" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-din-rails-mounted.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-din-rails-mounted.jpg" alt="base plate with din rails mounted" class="center" loading="lazy"></a></p>
 
 <h1 id="mounting-the-first-components">Mounting the first components</h1>
 
 <p>Once the rails were ready, it was time to try out the first components: The top row has all 4 stepper drivers, connected to the power supply below. I’m using <code class="language-plaintext highlighter-rouge">Wago</code> clamps to tie it all together. The power cord is temporary:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-first-din-components.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-first-din-components.jpg" alt="din plate with first components mounted" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-first-din-components.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-first-din-components.jpg" alt="din plate with first components mounted" class="center" loading="lazy"></a></p>
 
 <h1 id="din-mounting-options">DIN mounting options</h1>
 
 <p>There are a lot of DIN parts on <a href="https://www.thingiverse.com/">Thingiverse</a>. A lot of the DIN brackets that I used come from there. Some of them were custom. The controller and fan brackets are a remix of an existing ones on Thingiverse:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-controller-close-up.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-controller-close-up.jpg" alt="main controller close-up" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-controller-close-up.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-controller-close-up.jpg" alt="main controller close-up" class="center" loading="lazy"></a></p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-fan-controller.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-fan-controller.jpg" alt="fan controller close-up" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-fan-controller.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-fan-controller.jpg" alt="fan controller close-up" class="center" loading="lazy"></a></p>
 
 <h1 id="finish-mounting-the-components">Finish mounting the components</h1>
 
 <p>The CNC controller that I’m using as <a href="https://www.makerfr.com/en/cnc/grbl-32bits-board-v2/">Grbl32bits</a> board from Makerfr. I’ve mounted it together with its power supply and the fan controller in the below picture:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-all-components-mounted.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-all-components-mounted.jpg" alt="all DIN components mounted on a steel plate" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-all-components-mounted.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-all-components-mounted.jpg" alt="all DIN components mounted on a steel plate" class="center" loading="lazy"></a></p>
 
 <h1 id="finishing-the-cabinet">Finishing the cabinet</h1>
 
 <p>The next step was drilling holes in the cabinet to facilitate all the connectors:</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-cabinet-holes.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-holes.jpg" alt="cabinet with holes visible" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-cabinet-holes.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-cabinet-holes.jpg" alt="cabinet with holes visible" class="center" loading="lazy"></a></p>
 
 <p>In case you are wondering: yes, that is indeed my living room table being used as a workbench. My wife is awesome for putting up with it.</p>
 
 <p>After everything is wired up, the cabinet is finished!</p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-right.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-right.jpg" alt="cabinet view from the right" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-cabinet-finished-right.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-cabinet-finished-right.jpg" alt="cabinet view from the right" class="center" loading="lazy"></a></p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-closed.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-closed.jpg" alt="cabinet with lid closed" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-cabinet-finished-closed.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-cabinet-finished-closed.jpg" alt="cabinet with lid closed" class="center" loading="lazy"></a></p>
 
-<p><a href="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg" class="popup img-link shimmer"><img src="http://localhost:4000/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet with lid open" class="center" loading="lazy"></a></p>
+<p><a href="/assets/images/posts/indymill-cabinet-finished-open.jpg" class="popup img-link shimmer"><img src="/assets/images/posts/indymill-cabinet-finished-open.jpg" alt="cabinet with lid open" class="center" loading="lazy"></a></p>
 
 <p>You can find my collection of 3D printable parts <a href="https://www.thingiverse.com/kenvanhoeylandt/collections/cnc">here</a>.</p>
 
@@ -1796,21 +1796,21 @@ I used a medium-strength thread lock for the nuts and bolts. I also ensured that
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Hobby%20CNC%20electronics%20-%20ByteWelder&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2021%2F12%2F28%2Fhobby-cnc-electronics.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Hobby%20CNC%20electronics%20-%20ByteWelder&url=%2Fposts%2F2021%2F12%2F28%2Fhobby-cnc-electronics.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Hobby%20CNC%20electronics%20-%20ByteWelder&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2021%2F12%2F28%2Fhobby-cnc-electronics.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Hobby%20CNC%20electronics%20-%20ByteWelder&u=%2Fposts%2F2021%2F12%2F28%2Fhobby-cnc-electronics.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2021%2F12%2F28%2Fhobby-cnc-electronics.html&text=Hobby%20CNC%20electronics%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=%2Fposts%2F2021%2F12%2F28%2Fhobby-cnc-electronics.html&text=Hobby%20CNC%20electronics%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     

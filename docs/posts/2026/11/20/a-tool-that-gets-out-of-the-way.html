@@ -32,8 +32,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Developer tools and SDKs tend to drift apart. A new SDK needs a new tool, an old project needs an old tool, and you end up juggling versions. For Tactility I solved this with a tiny script called tt.py. It’s barely a tool at all: it’s a proxy." />
 <meta name="twitter:description" property="og:description" content="Developer tools and SDKs tend to drift apart. A new SDK needs a new tool, an old project needs an old tool, and you end up juggling versions. For Tactility I solved this with a tiny script called tt.py. It’s barely a tool at all: it’s a proxy." />
-<link rel="canonical" href="http://localhost:4000/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html" />
-<meta property="og:url" content="http://localhost:4000/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html" />
+<link rel="canonical" href="/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html" />
+<meta property="og:url" content="/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html" />
 <meta property="og:site_name" content="ByteWelder" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-11-20T08:50:00+01:00" />
@@ -41,7 +41,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="A Tool That Gets Out of the Way" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-20T08:50:00+01:00","datePublished":"2026-11-20T08:50:00+01:00","description":"Developer tools and SDKs tend to drift apart. A new SDK needs a new tool, an old project needs an old tool, and you end up juggling versions. For Tactility I solved this with a tiny script called tt.py. It’s barely a tool at all: it’s a proxy.","headline":"A Tool That Gets Out of the Way","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/favicon.svg"}},"url":"http://localhost:4000/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-20T08:50:00+01:00","datePublished":"2026-11-20T08:50:00+01:00","description":"Developer tools and SDKs tend to drift apart. A new SDK needs a new tool, an old project needs an old tool, and you end up juggling versions. For Tactility I solved this with a tiny script called tt.py. It’s barely a tool at all: it’s a proxy.","headline":"A Tool That Gets Out of the Way","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/favicon.svg"}},"url":"/posts/2026/11/20/a-tool-that-gets-out-of-the-way.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -628,17 +628,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -741,7 +730,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1140 words"
+  title="1097 words"
 >
   <em>6 min</em> read</span>
 
@@ -867,60 +856,9 @@ What’s missing is the proxy: you have to install each IDF version yourself and
 <p><code class="language-plaintext highlighter-rouge">rustup</code> reads <code class="language-plaintext highlighter-rouge">rust-toolchain.toml</code> and <code class="language-plaintext highlighter-rouge">nvm</code> reads <code class="language-plaintext highlighter-rouge">.nvmrc</code>. They pick the right compiler or runtime per project and download it when needed.
 <code class="language-plaintext highlighter-rouge">rustup</code> works a lot like <code class="language-plaintext highlighter-rouge">tt</code>: <code class="language-plaintext highlighter-rouge">cargo</code> is a proxy that forwards to the toolchain of the current project. The difference is mostly scope: they manage a language toolchain, while <code class="language-plaintext highlighter-rouge">tt</code> manages an entire SDK including device communication.</p>
 
-<h3 id="summary"><span class="me-2">Summary</span><a href="#summary" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>Tool</th>
-      <th>Version pinned in</th>
-      <th>Auto-download</th>
-      <th>Tool matches SDK</th>
-      <th>Installed per</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">tt</code></td>
-      <td>app manifest</td>
-      <td>yes</td>
-      <td>always</td>
-      <td>user</td>
-    </tr>
-    <tr>
-      <td>Gradle Wrapper</td>
-      <td>wrapper properties</td>
-      <td>yes</td>
-      <td>Gradle only</td>
-      <td>project</td>
-    </tr>
-    <tr>
-      <td>Android SDK</td>
-      <td>build.gradle</td>
-      <td>via IDE / sdkmanager</td>
-      <td>partially</td>
-      <td>user</td>
-    </tr>
-    <tr>
-      <td>ESP-IDF</td>
-      <td>nothing (manual)</td>
-      <td>no</td>
-      <td>always</td>
-      <td>user</td>
-    </tr>
-    <tr>
-      <td>rustup</td>
-      <td>rust-toolchain.toml</td>
-      <td>yes</td>
-      <td>always</td>
-      <td>user</td>
-    </tr>
-  </tbody>
-</table></div>
-
 <h2 id="conclusion"><span class="me-2">Conclusion</span><a href="#conclusion" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>The best tool is one that does almost nothing. By moving all the logic into the SDK and making the installed tool a thin proxy, the compatibility problem mostly disappears.
+<p>The best tool is one that does a single thing well. By moving all the logic into the SDK and making the installed tool a thin proxy, the compatibility problem mostly disappears.
 It costs an internet connection on first use, but I haven’t had to tell anyone “please update your tools” since.</p>
 
 <p>If you want to try it out, check out the <a href="https://tactilityproject.org">Tactility documentation</a> and build an app!</p>
@@ -1000,21 +938,21 @@ It costs an internet connection on first use, but I haven’t had to tell anyone
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=A%20Tool%20That%20Gets%20Out%20of%20the%20Way%20-%20ByteWelder&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2026%2F11%2F20%2Fa-tool-that-gets-out-of-the-way.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=A%20Tool%20That%20Gets%20Out%20of%20the%20Way%20-%20ByteWelder&url=%2Fposts%2F2026%2F11%2F20%2Fa-tool-that-gets-out-of-the-way.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=A%20Tool%20That%20Gets%20Out%20of%20the%20Way%20-%20ByteWelder&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2026%2F11%2F20%2Fa-tool-that-gets-out-of-the-way.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=A%20Tool%20That%20Gets%20Out%20of%20the%20Way%20-%20ByteWelder&u=%2Fposts%2F2026%2F11%2F20%2Fa-tool-that-gets-out-of-the-way.html" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F2026%2F11%2F20%2Fa-tool-that-gets-out-of-the-way.html&text=A%20Tool%20That%20Gets%20Out%20of%20the%20Way%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=%2Fposts%2F2026%2F11%2F20%2Fa-tool-that-gets-out-of-the-way.html&text=A%20Tool%20That%20Gets%20Out%20of%20the%20Way%20-%20ByteWelder" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
