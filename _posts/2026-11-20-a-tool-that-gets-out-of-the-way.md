@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Tool That Gets Out of the Way"
-date:   2026-11-20 8:50:00 +0100
+date:   2026-11-20 9:00:00 +0100
 categories: posts
 tags: tactility software
 excerpt_separator: <!--more-->
@@ -102,3 +102,4 @@ The best tool is one that does a single thing well. By moving all the logic into
 It costs an internet connection on first use, but I haven't had to tell anyone "please update your tools" since.
 
 If you want to try it out, check out the [Tactility documentation](https://tactilityproject.org) and build an app!
+
