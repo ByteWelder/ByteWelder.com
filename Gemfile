@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 group :jekyll_plugins do
-  gem "jekyll-remote-theme"
+  gem "jekyll-theme-chirpy", "~> 7.6"
   # Chirpy theme dependencies (not installed by jekyll-remote-theme)
   gem "jekyll-paginate"
   gem "jekyll-redirect-from"
