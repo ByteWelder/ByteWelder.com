@@ -29,11 +29,11 @@ tagline: Learnings, experiments and projects
 description:
   ByteWelder is an alias used by Ken Van Hoeylandt. It is used to share learnings, experiments and projects.
 
-destination: docs
+destination: _site
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://bytewelder.com"
 
 github:
   username: ByteWelder # change to your GitHub username
